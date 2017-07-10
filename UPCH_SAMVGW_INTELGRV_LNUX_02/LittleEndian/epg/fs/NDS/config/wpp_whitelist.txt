@@ -1,0 +1,14 @@
+[http://widgets.metrological.com]
+http://googleapis.com=TRUE
+http://googlevideo.com=TRUE
+http://www.youtube.com=TRUE
+https://googleapis.com=TRUE
+https://googlevideo.com=TRUE
+https://www.youtube.com=TRUE
+[https://widgets.metrological.com]
+http://googleapis.com=TRUE
+http://googlevideo.com=TRUE
+http://www.youtube.com=TRUE
+https://googleapis.com=TRUE
+https://googlevideo.com=TRUE
+https://www.youtube.com=TRUE

@@ -1,0 +1,35 @@
+;
+;  FATF test parameter file
+;
+
+;
+; Service context tests
+;
+
+;
+; Automated test
+;
+[AutomatedTest]
+;FirstInstall can be:
+; * "interactive" : Execute firstInstall and wait for OK at the end (default behavior)
+; * "automatic" : Execute firstInstall but do not wait for OK at the end + Execute a test script if it exists
+StartMode="interactive"
+
+;OSD Display in automatic mode  
+;"yes" : OSD is visible
+;"no" : OSD is visible only during the scanning step
+OSDisVisible="yes"
+
+;The test script is described in the following file
+AutoTest="Record.dat"
+
+;
+; Service Plan tests
+;
+
+;Scanning
+[ScanningFirstInstall]
+;Scanning Automated Tests for TV Channels and Radios
+;check_i_nb_tv=58
+;check_i_nb_radio=12
+

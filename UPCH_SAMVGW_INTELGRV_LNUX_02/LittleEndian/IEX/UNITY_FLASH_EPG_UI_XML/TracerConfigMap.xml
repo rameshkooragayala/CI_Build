@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- tracer configuration for the components through XML-->
+<config>
+	<!-- Enable the output mask . Should be in sync with the mask vars declared in Tracer.as
+	If DEBUG_ONBOOT is true, the traces are enabled by default on boot up, else they are enabled through cheatcodes
+	Valid masks are : APP_OUTPUT_MASK, TIME_COUNT_OUTPUT_MASK, IEX_OUTPUT_MASK -->
+	<TracerConfig name="enabled_mask" DEBUG_ONBOOT="1">
+		<TracerConfigMask id="ERROR_OUTPUT_MASK" />
+		<TracerConfigMask id="WARNING_OUTPUT_MASK" />
+		<TracerConfigMask id="INFO_OUTPUT_MASK"/>
+		<!--TracerConfigMask id="APP_OUTPUT_MASK" /-->
+		<!--TracerConfigMask id="IEX_OUTPUT_MASK" /-->
+	</TracerConfig>
+	
+	<!-- Enable traces for method entry/exit. -->
+	<TracerConfig name="method_in_out" enable="1"/>
+	
+	<!-- Select level of displayed traces. All levels below selected one will be displayed. Should be in sync with the constants declared in Tracer.as:
+		VERBOSE
+		INFO
+		DEBUG
+		WARNING
+		ERROR
+		NONE																																		-->
+	<TracerConfig name="level" id="DEBUG"/>
+	
+	<!-- Enable traces for specific components. Should be in sync with the vars declared in TracerConstants.as
+	-->
+	<TracerConfig name="component">
+		<TracerConfigComp id="DEBUG_SETINTERVAL" enable="1"/>
+		<TracerConfigComp id="DEBUG_ONENTERFRAME" enable="1"/>
+		<TracerConfigComp id="DEBUG_ONLOAD" enable="1"/>
+		<TracerConfigComp id="DEBUG_FRAME_LOOP" enable="1"/>
+		<TracerConfigComp id="DEBUG_CLEAR_GRAPHIC_BUFFERS" enable="1"/>
+		<TracerConfigComp id="DEBUG_STATEMACHINE" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_GUI_ANIM" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_GUI_STILL" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_WIDGET" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_WIDGET_SCROLLING" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_UTIL" enable="1"/>
+		<TracerConfigComp id="INFO_CORE_UTIL" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_USERTRACK" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_USERTRACK_KEY" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_SCREENSAV_LAUNCH" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_SCREENSAV" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_STATE_EVT" enable="1"/>
+		<TracerConfigComp id="DEBUG_CORE_NOTIFICATION" enable="1"/>
+		<TracerConfigComp id="DEBUG_NAV" enable="1"/>
+		<TracerConfigComp id="DEBUG_NAV_BOOT" enable="1"/>
+		<TracerConfigComp id="DEBUG_NAV_CA" enable="1"/>
+		<TracerConfigComp id="DEBUG_NAV_FIRST_INSTALL" enable="1"/>
+		<TracerConfigComp id="DEBUG_NAV_STATE" enable="1"/>
+		<TracerConfigComp id="DEBUG_NAV_ZAPPING" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX_APP" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX_CTRL" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX_STATE" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX_CORE" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX_ACTION" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX_GUI_ICON" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX_GUI_FILTER" enable="1"/>
+		<TracerConfigComp id="DEBUG_INFOBOX_GUI_FILTER_CHANNEL" enable="1"/>
+		<TracerConfigComp id="DEBUG_CHBAR" enable="1"/>
+		<TracerConfigComp id="DEBUG_CHBAR_STATE" enable="1"/>
+		<TracerConfigComp id="DEBUG_CHBAR_CTRL" enable="1"/>
+		<TracerConfigComp id="DEBUG_CHBAR_MODEL" enable="1"/>
+		<TracerConfigComp id="DEBUG_CHBAR_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_FIRSTINST" enable="1"/>
+		<TracerConfigComp id="DEBUG_FIRSTINST_APP" enable="1"/>
+		<TracerConfigComp id="DEBUG_FIRSTINST_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_FIRSTINST_CORE" enable="1"/>
+		<TracerConfigComp id="DEBUG_SETUP" enable="1"/>
+		<TracerConfigComp id="DEBUG_SETUP_APP" enable="1"/>
+		<TracerConfigComp id="DEBUG_SETUP_CTRL" enable="1"/>
+		<TracerConfigComp id="DEBUG_SETUP_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_MAIN_MENU" enable="1"/>
+		<TracerConfigComp id="DEBUG_MAIN_MENU_APP" enable="1"/>
+		<TracerConfigComp id="DEBUG_MAIN_MENU_CTRL" enable="1"/>
+		<TracerConfigComp id="DEBUG_MAIN_MENU_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_HINWEIS" enable="1"/>
+		<TracerConfigComp id="DEBUG_UTILS" enable="1"/>
+		<TracerConfigComp id="DEBUG_VOLUME" enable="1"/>
+		<TracerConfigComp id="DEBUG_GRID" enable="1"/>
+		<TracerConfigComp id="DEBUG_GRID_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_GRID_MODEL" enable="1"/>
+		<TracerConfigComp id="DEBUG_GRID_CORE" enable="1"/>
+		<TracerConfigComp id="DEBUG_GRID_TOPBAR" enable="1"/>
+		<TracerConfigComp id="DEBUG_GRID_TIMEBAR" enable="1"/>
+		<TracerConfigComp id="DEBUG_LIBRARY" enable="1"/>
+		<TracerConfigComp id="DEBUG_LIBRARY_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_LIBRARY_STATE" enable="1"/>
+		<TracerConfigComp id="DEBUG_LIBRARY_CTRLR" enable="1"/>
+		<TracerConfigComp id="DEBUG_PVR_PLAYER" enable="1"/>
+		<TracerConfigComp id="DEBUG_PVR_PLAYER_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_PVR_RECLIST" enable="1"/>
+		<TracerConfigComp id="DEBUG_PVR_RECLIST_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_TELETEXT" enable="1"/>
+		<TracerConfigComp id="DEBUG_BOOKING" enable="1"/>
+		<TracerConfigComp id="DEBUG_STILL" enable="1"/>
+		<TracerConfigComp id="DEBUG_SIGQUAL" enable="1"/>
+		<TracerConfigComp id="DEBUG_RECORD" enable="1"/>
+		<TracerConfigComp id="DEBUG_STANDBY" enable="1"/>
+		<TracerConfigComp id="DEBUG_XAPP" enable="1"/>
+		<TracerConfigComp id="DEBUG_APP" enable="1"/>
+		<TracerConfigComp id="DEBUG_INVITE" enable="1"/>
+		<TracerConfigComp id="DEBUG_MAINTENANCE" enable="1"/>
+		<TracerConfigComp id="DEBUG_POST_INSTALL" enable="1"/>
+		<TracerConfigComp id="DEBUG_UPDATE_TASK" enable="1"/>
+		<TracerConfigComp id="DEBUG_PREF" enable="1"/>
+		<TracerConfigComp id="DEBUG_WIDGET" enable="1"/>
+		<TracerConfigComp id="DEBUG_IEX" enable="1"/>
+		<TracerConfigComp id="DEBUG_EPG_PERFORMANCE" enable="0"/>
+		<TracerConfigComp id="DISPLAY_SYNCHRO_EPG_PERFORMANCE" enable="0"/>
+		<TracerConfigComp id="DEBUG_STORAGE" enable="1"/>
+		<TracerConfigComp id="DEBUG_HUB" enable="1"/>
+		<TracerConfigComp id="DEBUG_PROFILES" enable="1"/>
+		<TracerConfigComp id="DEBUG_UPCMAINMENU" enable="1"/>
+		<TracerConfigComp id="DEBUG_SEARCH" enable="1"/>
+		<TracerConfigComp id="DEBUG_SEARCH_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_SEARCH_STATE" enable="1"/>
+		<TracerConfigComp id="DEBUG_SEARCH_CTRLR" enable="1"/>
+		<TracerConfigComp id="DEBUG_CUSTOMER_CARE" enable="1"/>
+		<TracerConfigComp id="DEBUG_CUSTOMER_CARE_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_CUSTOMER_CARE_STATE" enable="1"/>
+		<TracerConfigComp id="DEBUG_CUSTOMER_CARE_CTRLR" enable="1"/>
+		<TracerConfigComp id="DEBUG_CRUMBTRAIL" enable="1"/>
+		<TracerConfigComp id="DEBUG_CRUMBTRAIL_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_STORE" enable="1"/>
+		<TracerConfigComp id="DEBUG_STORE_GUI" enable="1"/>
+		<TracerConfigComp id="DEBUG_STORE_STATE" enable="1"/>
+		<TracerConfigComp id="DEBUG_STORE_CTRLR" enable="1"/>
+		<TracerConfigComp id="DEBUG_STORE_MDL" enable="1"/>
+		<TracerConfigComp id="DEBUG_LANG" enable="1"/>
+		<TracerConfigComp id="DEBUG_FONT" enable="1"/>
+		<TracerConfigComp id="DEBUG_CONFIG" enable="1"/>
+	</TracerConfig>
+	
+</config>

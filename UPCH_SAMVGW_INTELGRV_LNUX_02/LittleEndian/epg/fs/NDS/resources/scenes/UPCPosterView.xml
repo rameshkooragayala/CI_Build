@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<u:scene xmlns:u="scene_desc">
+  <markers>  	
+  
+    <marker name="00"	position="0.0"></marker>
+    <marker name="01"	position="1.0"></marker>
+	<marker name="02"	position="2.0"></marker>
+	<marker name="03"	position="3.0"></marker>
+	<marker name="04"	position="4.0"></marker>
+	<marker name="05"	position="5.0"></marker>
+    <marker name="06"	position="6.0"></marker>
+    <marker name="07"	position="7.0"></marker>
+	<marker name="08"	position="8.0"></marker>
+    <marker name="09"	position="9.0"></marker>
+    <marker name="10"	position="10.0"></marker>
+    <marker name="11"	position="11.0"></marker>
+	<marker name="12"	position="12.0"></marker>
+	<marker name="13"	position="13.0"></marker>
+	<marker name="14"	position="14.0"></marker>
+	<marker name="15"	position="15.0"></marker>
+	<marker name="16"	position="16.0"></marker>
+	<marker name="17"	position="17.0"></marker>
+	<marker name="18"	position="18.0"></marker>
+    <marker name="19"	position="19.0"></marker>
+    <marker name="20"	position="20.0"></marker>
+    <marker name="21"	position="21.0"></marker>
+	<marker name="22"	position="22.0"></marker>
+	<marker name="23"	position="23.0"></marker>
+	<marker name="24"	position="24.0"></marker>
+	<marker name="25"	position="25.0"></marker>
+	<marker name="26"	position="26.0"></marker>
+	<marker name="27"	position="27.0"></marker>
+	<marker name="28"	position="28.0"></marker>
+    <marker name="29"	position="29.0"></marker>
+	<marker name="30"	position="30.0"></marker>
+    <marker name="31"	position="31.0"></marker>
+	<marker name="32"	position="32.0"></marker>
+	<marker name="33"	position="33.0"></marker>
+	<marker name="34"	position="34.0"></marker>
+	<marker name="35"	position="35.0"></marker>
+	<marker name="36"	position="36.0"></marker>
+	<marker name="37"	position="37.0"></marker>
+	<marker name="38"	position="38.0"></marker>
+    <marker name="39"	position="39.0"></marker>
+	<marker name="40"	position="40.0"></marker>
+    <marker name="41"	position="41.0"></marker>
+	<marker name="42"	position="42.0"></marker>
+	<marker name="43"	position="43.0"></marker>
+	<marker name="44"	position="44.0"></marker>
+	<marker name="45"	position="45.0"></marker>
+	<marker name="46"	position="46.0"></marker>
+	<marker name="47"	position="47.0"></marker>
+	<marker name="48"	position="48.0"></marker>
+	<marker name="49"	position="49.0"></marker>
+	<marker name="50"	position="50.0"></marker>
+	<marker name="51"	position="51.0"></marker>
+	<marker name="52"	position="52.0"></marker>
+	<marker name="53"	position="53.0"></marker>
+	<marker name="54"	position="54.0"></marker>
+	<marker name="55"	position="55.0"></marker>
+	<marker name="56"	position="56.0"></marker>
+	<marker name="57"	position="57.0"></marker>
+	<marker name="58"	position="58.0"></marker>
+	<marker name="59"	position="59.0"></marker>
+	<marker name="60"	position="60.0"></marker>
+    <marker name="61"	position="61.0"></marker>
+	<marker name="62"	position="62.0"></marker>
+	<marker name="63"	position="63.0"></marker>
+	<marker name="64"	position="64.0"></marker>
+	<marker name="65"	position="65.0"></marker>
+    <marker name="66"	position="66.0"></marker>
+    <marker name="67"	position="67.0"></marker>
+	<marker name="68"	position="68.0"></marker>
+    <marker name="69"	position="69.0"></marker>
+    <marker name="70"	position="70.0"></marker>
+    <marker name="71"	position="71.0"></marker>
+	<marker name="72"	position="72.0"></marker>
+	<marker name="73"	position="73.0"></marker>
+	<marker name="74"	position="74.0"></marker>
+	<marker name="75"	position="75.0"></marker>
+	<marker name="76"	position="76.0"></marker>
+	<marker name="77"	position="77.0"></marker>
+	<marker name="78"	position="78.0"></marker>
+    <marker name="79"	position="79.0"></marker>
+    <marker name="80"	position="80.0"></marker>
+    <marker name="81"	position="81.0"></marker>
+	<marker name="82"	position="82.0"></marker>
+	<marker name="83"	position="83.0"></marker>
+	<marker name="84"	position="84.0"></marker>
+	<marker name="85"	position="85.0"></marker>
+	<marker name="86"	position="86.0"></marker>
+	<marker name="87"	position="87.0"></marker>
+	<marker name="88"	position="88.0"></marker>
+    <marker name="89"	position="89.0"></marker>
+	<marker name="90"	position="90.0"></marker>
+    <marker name="91"	position="91.0"></marker>
+	<marker name="92"	position="92.0"></marker>
+	<marker name="93"	position="93.0"></marker>
+	<marker name="94"	position="94.0"></marker>
+	<marker name="95"	position="95.0"></marker>
+	<marker name="96"	position="96.0"></marker>
+	<marker name="97"	position="97.0"></marker>
+	<marker name="98"	position="98.0"></marker>
+    <marker name="99"	position="99.0"></marker>   
+
+    <marker name="100"	position="100.0"></marker>
+    <marker name="101"	position="101.0"></marker>
+	<marker name="102"	position="102.0"></marker>
+	<marker name="103"	position="103.0"></marker>
+	<marker name="104"	position="104.0"></marker>
+	<marker name="105"	position="105.0"></marker>
+    <marker name="106"	position="106.0"></marker>
+    <marker name="107"	position="107.0"></marker>
+	<marker name="108"	position="108.0"></marker>
+    <marker name="109"	position="109.0"></marker>
+    <marker name="110"	position="110.0"></marker>
+    <marker name="111"	position="111.0"></marker>
+	<marker name="112"	position="112.0"></marker>
+	<marker name="113"	position="113.0"></marker>
+	<marker name="114"	position="114.0"></marker>
+	<marker name="115"	position="115.0"></marker>
+	<marker name="116"	position="116.0"></marker>
+	<marker name="117"	position="117.0"></marker>
+	<marker name="118"	position="118.0"></marker>
+    <marker name="119"	position="119.0"></marker>
+    <marker name="120"	position="120.0"></marker>
+    <marker name="121"	position="121.0"></marker>
+	<marker name="122"	position="122.0"></marker>
+	<marker name="123"	position="123.0"></marker>
+	<marker name="124"	position="124.0"></marker>
+	<marker name="125"	position="125.0"></marker>
+	<marker name="126"	position="126.0"></marker>
+	<marker name="127"	position="127.0"></marker>
+	<marker name="128"	position="128.0"></marker>
+    <marker name="129"	position="129.0"></marker>
+	<marker name="130"	position="130.0"></marker>
+    <marker name="131"	position="131.0"></marker>
+	<marker name="132"	position="132.0"></marker>
+	<marker name="133"	position="133.0"></marker>
+	<marker name="134"	position="134.0"></marker>
+	<marker name="135"	position="135.0"></marker>
+	<marker name="136"	position="136.0"></marker>
+	<marker name="137"	position="137.0"></marker>
+	<marker name="138"	position="138.0"></marker>
+    <marker name="139"	position="139.0"></marker>
+	<marker name="140"	position="140.0"></marker>
+    <marker name="141"	position="141.0"></marker>
+	<marker name="142"	position="142.0"></marker>
+	<marker name="143"	position="143.0"></marker>
+	<marker name="144"	position="144.0"></marker>
+	<marker name="145"	position="145.0"></marker>
+	<marker name="146"	position="146.0"></marker>
+	<marker name="147"	position="147.0"></marker>
+	<marker name="148"	position="148.0"></marker>
+	<marker name="149"	position="149.0"></marker>
+	<marker name="150"	position="150.0"></marker>
+	<marker name="151"	position="151.0"></marker>
+	<marker name="152"	position="152.0"></marker>
+	<marker name="153"	position="153.0"></marker>
+	<marker name="154"	position="154.0"></marker>
+	<marker name="155"	position="155.0"></marker>
+	<marker name="156"	position="156.0"></marker>
+	<marker name="157"	position="157.0"></marker>
+	<marker name="158"	position="158.0"></marker>
+	<marker name="159"	position="159.0"></marker>
+	<marker name="160"	position="160.0"></marker>
+    <marker name="161"	position="161.0"></marker>
+	<marker name="162"	position="162.0"></marker>
+	<marker name="163"	position="163.0"></marker>
+	<marker name="164"	position="164.0"></marker>
+	<marker name="165"	position="165.0"></marker>
+    <marker name="166"	position="166.0"></marker>
+    <marker name="167"	position="167.0"></marker>
+	<marker name="168"	position="168.0"></marker>
+    <marker name="169"	position="169.0"></marker>
+    <marker name="170"	position="170.0"></marker>
+    <marker name="171"	position="171.0"></marker>
+	<marker name="172"	position="172.0"></marker>
+	<marker name="173"	position="173.0"></marker>
+	<marker name="174"	position="174.0"></marker>
+	<marker name="175"	position="175.0"></marker>
+	<marker name="176"	position="176.0"></marker>
+	<marker name="177"	position="177.0"></marker>
+	<marker name="178"	position="178.0"></marker>
+    <marker name="179"	position="179.0"></marker>
+    <marker name="180"	position="180.0"></marker>
+    
+ </markers>
+
+  <animations>
+  	
+  	<animation name="intro-showcase-FCA-o"     		 begin_marker="00"    end_marker="01"     start_pos_marker="00"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="intro-showcase-FCA-b"     		 begin_marker="02"    end_marker="03"     start_pos_marker="02"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-showcase-FCA-o"     		 begin_marker="04"    end_marker="05"     start_pos_marker="04"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-showcase-FCA-b"     		 begin_marker="06"    end_marker="07"     start_pos_marker="06"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCA-bg"     		     begin_marker="08"    end_marker="09"     start_pos_marker="08"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCA-nobg"    		     begin_marker="10"    end_marker="11"     start_pos_marker="10"    speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="showcase-FCA-r"     		     begin_marker="12"    end_marker="13"     start_pos_marker="12"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCA-l"     		     begin_marker="14"    end_marker="15"     start_pos_marker="14"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-menuList1-FCA-FCB-u"   begin_marker="16"    end_marker="17"     start_pos_marker="16"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-showcase-FCB-FCA-d"   begin_marker="18"    end_marker="19"     start_pos_marker="18"    speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="showcase-showcase-FCA-FCC-d"    begin_marker="20"    end_marker="21"     start_pos_marker="20"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCC-FCA-u"    begin_marker="22"    end_marker="23"     start_pos_marker="22"    speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="intro-menuList1-FCB-o"  		 begin_marker="40"    end_marker="41"     start_pos_marker="40"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="intro-menuList1-FCB-b"  		 begin_marker="42"    end_marker="43"     start_pos_marker="42"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-menuList1-FCB-o"  		 begin_marker="44"    end_marker="45"     start_pos_marker="44"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-menuList1-FCB-b"  		 begin_marker="46"    end_marker="47"     start_pos_marker="46"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-FCB-bg"   		     begin_marker="48"    end_marker="49"     start_pos_marker="48"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-FCB-nobg" 		     begin_marker="50"    end_marker="51"     start_pos_marker="50"    speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="subMenuList1-subMenuList2-FCB-FCB-0-r"  	     begin_marker="52"    end_marker="53"     start_pos_marker="52"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="subMenuList1-subMenuList2-FCB-FCB-0-l"  	     begin_marker="54"    end_marker="55"     start_pos_marker="54"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="subMenuList1-subMenuList2-FCB-FCB-1-r" 		     begin_marker="56"    end_marker="57"     start_pos_marker="56"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="subMenuList1-subMenuList2-FCB-FCB-1-l" 		     begin_marker="58"    end_marker="59"     start_pos_marker="58"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="subMenuList1-subMenuList2-FCB-FCB-2-r" 		     begin_marker="60"    end_marker="61"     start_pos_marker="60"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="subMenuList1-subMenuList2-FCB-FCB-2-l" 		     begin_marker="62"    end_marker="63"     start_pos_marker="62"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="subMenuList1-subMenuList2-FCB-FCB-3-r"           begin_marker="150"   end_marker="151"    start_pos_marker="150"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="subMenuList1-subMenuList2-FCB-FCB-3-l"           begin_marker="150"   end_marker="151"    start_pos_marker="150"   speed="1" loop="false" reverse="false"></animation>  	
+
+  	<animation name="menuList1-menuList2-FCB-FCB-d"                  begin_marker="64"   end_marker="65"          start_pos_marker="64"  speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-menuList2-FCB-FCB-u"                  begin_marker="66"   end_marker="67"          start_pos_marker="66"  speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="menuList1-showcase-FCB-FCA-o"   begin_marker="68"    end_marker="69"     start_pos_marker="68"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-menuList1-FCA-FCB-b"   begin_marker="70"    end_marker="71"     start_pos_marker="70"    speed="1" loop="false" reverse="false"></animation>  	
+
+  	<animation name="intro-showcase-FCC-o"     	     begin_marker="28"    end_marker="29"     start_pos_marker="28"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="intro-showcase-FCC-b"   	     begin_marker="30"    end_marker="31"     start_pos_marker="30"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-showcase-FCC-o" 		     begin_marker="32"    end_marker="33"     start_pos_marker="32"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-showcase-FCC-b"  	     begin_marker="34"    end_marker="35"     start_pos_marker="34"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCC-bg"      		     begin_marker="36"    end_marker="37"     start_pos_marker="36"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCC-nobg"    		     begin_marker="38"    end_marker="39"     start_pos_marker="38"    speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="showcase-FCC-u"         		 begin_marker="24"    end_marker="25"     start_pos_marker="24"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCC-d"         		 begin_marker="26"    end_marker="27"     start_pos_marker="26"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCC-r"    		     begin_marker="72"    end_marker="73"     start_pos_marker="72"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCC-l"    		     begin_marker="74"    end_marker="75"     start_pos_marker="74"    speed="1" loop="false" reverse="false"></animation>
+  	 	  	  	  	   	   	   		  	  	 
+  	<animation name="intro-showcase-FCD-o" 		     begin_marker="76"    end_marker="77"     start_pos_marker="76"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="intro-showcase-FCD-b" 		     begin_marker="78"    end_marker="79"     start_pos_marker="78"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-showcase-FCD-o" 		     begin_marker="80"    end_marker="81"     start_pos_marker="80"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-showcase-FCD-b" 		     begin_marker="82"    end_marker="83"     start_pos_marker="82"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCD-bg"     		     begin_marker="84"    end_marker="85"     start_pos_marker="84"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCD-nobg"    		     begin_marker="86"    end_marker="87"     start_pos_marker="86"    speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="showcase-FCD-r"                 begin_marker="120"   end_marker="121"    start_pos_marker="120"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCD-l"                 begin_marker="122"   end_marker="123"    start_pos_marker="122"   speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="intro-menuList1-FCE-o"    		 begin_marker="104"   end_marker="105"    start_pos_marker="104"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="intro-menuList1-FCE-b"    		 begin_marker="106"   end_marker="107"    start_pos_marker="106"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-menuList1-FCE-o"    		 begin_marker="108"   end_marker="109"    start_pos_marker="108"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-menuList1-FCE-b"    		 begin_marker="110"   end_marker="111"    start_pos_marker="110"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-FCE-bg"     		     begin_marker="112"   end_marker="113"    start_pos_marker="112"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-FCE-nobg"    		 begin_marker="114"   end_marker="115"    start_pos_marker="114"   speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="menuList1-FCE-r"    		     begin_marker="116"   end_marker="117"    start_pos_marker="116"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-FCE-l"                begin_marker="118"   end_marker="119"    start_pos_marker="118"   speed="1" loop="false" reverse="false"></animation>  	  	
+
+  	<animation name="intro-showcase-FCF-o"           begin_marker="88"    end_marker="89"     start_pos_marker="88"    speed="1" loop="false" reverse="false"></animation> 
+  	<animation name="intro-showcase-FCF-b"           begin_marker="90"    end_marker="91"     start_pos_marker="90"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-showcase-FCF-o"           begin_marker="92"    end_marker="93"     start_pos_marker="92"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="outro-showcase-FCF-b"    		 begin_marker="94"    end_marker="95"     start_pos_marker="94"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-bg"       		 begin_marker="96"    end_marker="97"     start_pos_marker="96"    speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-nobg"      		 begin_marker="98"    end_marker="99"     start_pos_marker="98"    speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="showcase-FCF-r"                 begin_marker="124"   end_marker="125"    start_pos_marker="124"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-l"                 begin_marker="126"   end_marker="127"    start_pos_marker="126"   speed="1" loop="false" reverse="false"></animation>
+
+  	<animation name="showcase-FCF-nom-u"             begin_marker="128"   end_marker="129"    start_pos_marker="128"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-nom-d"             begin_marker="130"   end_marker="131"    start_pos_marker="130"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-acc-u"             begin_marker="132"   end_marker="133"    start_pos_marker="132"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-acc-d"             begin_marker="132"   end_marker="133"    start_pos_marker="132"   speed="1" loop="false" reverse="false"></animation>  	  	
+  	<animation name="showcase-FCF-lin-u"             begin_marker="134"   end_marker="135"    start_pos_marker="134"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-lin-d"             begin_marker="134"   end_marker="135"    start_pos_marker="134"   speed="1" loop="false" reverse="false"></animation>  	
+  	<animation name="showcase-FCF-dec-u"             begin_marker="136"   end_marker="137"    start_pos_marker="136"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-dec-d"             begin_marker="136"   end_marker="137"    start_pos_marker="136"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCD-acc-u"             begin_marker="138"   end_marker="139"    start_pos_marker="138"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCD-acc-d"             begin_marker="138"   end_marker="139"    start_pos_marker="138"   speed="1" loop="false" reverse="false"></animation>  	
+  	<animation name="showcase-FCD-dec-u"             begin_marker="140"   end_marker="141"    start_pos_marker="140"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCD-dec-d"             begin_marker="140"   end_marker="141"    start_pos_marker="140"   speed="1" loop="false" reverse="false"></animation>   	  	  	
+
+  	<animation name="showcase-menuList1-FCD-FCE-u"   begin_marker="100"   end_marker="101"    start_pos_marker="100"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-showcase-FCE-FCD-d"   begin_marker="102"   end_marker="103"    start_pos_marker="102"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCD-FCF-d"    begin_marker="142"   end_marker="143"    start_pos_marker="142"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCF-FCD-u"    begin_marker="144"   end_marker="145"    start_pos_marker="144"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCA-FCD-o"    begin_marker="146"   end_marker="147"    start_pos_marker="146"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCD-FCA-o"    begin_marker="180"   end_marker="181"    start_pos_marker="180"   speed="1" loop="false" reverse="false"></animation>  	
+  	<animation name="showcase-showcase-FCD-FCA-b"    begin_marker="148"   end_marker="149"    start_pos_marker="148"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCF-FCA-o"    begin_marker="182"   end_marker="183"    start_pos_marker="182"   speed="1" loop="false" reverse="false"></animation>  	
+  	<animation name="showcase-showcase-FCF-FCA-b"    begin_marker="168"   end_marker="169"    start_pos_marker="168"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-showcase-FCE-FCA-o"   begin_marker="184"   end_marker="185"    start_pos_marker="184"   speed="1" loop="false" reverse="false"></animation>  	
+  	<animation name="menuList1-showcase-FCE-FCA-b"   begin_marker="170"   end_marker="171"    start_pos_marker="170"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-showcase-FCE-FCC-b"   begin_marker="176"   end_marker="177"    start_pos_marker="176"   speed="1" loop="false" reverse="false"></animation> 
+  	<animation name="menuList1-showcase-FCE-FCD-o"   begin_marker="178"   end_marker="179"    start_pos_marker="178"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCD-FCC-b"    begin_marker="172"   end_marker="173"    start_pos_marker="172"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCF-FCC-b"    begin_marker="174"   end_marker="175"    start_pos_marker="174"   speed="1" loop="false" reverse="false"></animation>
+  	
+  	<animation name="showcase-showcase-FCC-FCA-b"    begin_marker="152"   end_marker="153"    start_pos_marker="152"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCA-FCA-b"    begin_marker="154"   end_marker="155"    start_pos_marker="154"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-showcase-FCC-FCD-o"    begin_marker="156"   end_marker="157"    start_pos_marker="156"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-showcase-FCB-FCD-o"   begin_marker="158"   end_marker="159"    start_pos_marker="158"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCA-0-r"               begin_marker="160"   end_marker="161"    start_pos_marker="160"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCC-0-r"               begin_marker="162"   end_marker="163"    start_pos_marker="162"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCA-0-l"               begin_marker="160"   end_marker="161"    start_pos_marker="160"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCC-0-l"               begin_marker="162"   end_marker="163"    start_pos_marker="162"   speed="1" loop="false" reverse="false"></animation> 
+  	<animation name="showcase-FCD-0-r"               begin_marker="164"   end_marker="165"    start_pos_marker="164"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-0-r"              begin_marker="166"   end_marker="167"    start_pos_marker="166"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-FCE-0-r"              begin_marker="166"   end_marker="167"    start_pos_marker="166"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCD-0-l"               begin_marker="164"   end_marker="165"    start_pos_marker="164"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="showcase-FCF-0-l"              begin_marker="166"   end_marker="167"    start_pos_marker="166"   speed="1" loop="false" reverse="false"></animation>
+  	<animation name="menuList1-FCE-0-l"              begin_marker="166"   end_marker="167"    start_pos_marker="166"   speed="1" loop="false" reverse="false"></animation>  	  	  	
+
+  </animations>
+</u:scene>

@@ -1,0 +1,15 @@
+    <action>
+      <name>X_NDS_ReserveTuners</name>
+      <argumentList>
+        <argument>
+          <name>BoxID</name>
+          <direction>in</direction>
+          <relatedStateVariable>A_ARG_TYPE_ObjectID</relatedStateVariable>
+        </argument>
+        <argument>
+          <name>Tuners</name>
+          <direction>in</direction>
+          <relatedStateVariable>A_ARG_TYPE_Count</relatedStateVariable>
+        </argument>
+      </argumentList>
+    </action>

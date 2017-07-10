@@ -1,0 +1,10 @@
+    <action>
+      <name>X_NDS_UndeleteObject</name>
+      <argumentList>
+        <argument>
+          <name>ObjectID</name>
+          <direction>in</direction>
+          <relatedStateVariable>A_ARG_TYPE_ObjectID</relatedStateVariable>
+        </argument>
+      </argumentList>
+    </action>

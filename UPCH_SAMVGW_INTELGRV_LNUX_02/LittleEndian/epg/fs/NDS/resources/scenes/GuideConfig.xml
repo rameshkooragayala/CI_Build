@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	<contentTypes>
+		<contentType name="filter" 	level="x1y3" stepRL="300" stepUD="100" stepOB="800"></contentType>
+		<contentType name="list" 	level="x1y6" stepRL="300" stepUD="100" stepOB="800"></contentType>
+		<contentType name="gridBF" 	level="x1y3" stepRL="300" stepUD="100" stepOB="800"></contentType>
+		<contentType name="gridLF" 	level="x1y3" stepRL="300" stepUD="100" stepOB="800"></contentType>
+	</contentTypes>
+	<animations>	
+	</animations>
+</sceneConfig>

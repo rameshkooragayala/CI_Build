@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<u:scene xmlns:u="scene_desc">
+  <markers>
+    <marker name="00"		position="0.0"></marker>
+    <marker name="01"		position="1.0"></marker>
+	<marker name="02"		position="2.0"></marker>
+    <marker name="03"		position="3.0"></marker>
+	<marker name="04"		position="4.0"></marker>
+	<marker name="05"		position="5.0"></marker>
+	<marker name="06"		position="6.0"></marker>
+	<marker name="07"		position="7.0"></marker>	
+	<marker name="08"		position="8.0"></marker>
+	<marker name="09"		position="9.0"></marker>
+	<marker name="10"		position="10.0"></marker>
+	<marker name="11"		position="11.0"></marker>
+	<marker name="12"		position="12.0"></marker>
+	<marker name="13"		position="13.0"></marker>
+	<marker name="14"		position="14.0"></marker>
+ </markers>
+
+  <animations>
+    <animation name="intro-g1-o"    begin_marker="00"    end_marker="01"   start_pos_marker="00" 	speed="1" loop="false" reverse="false"></animation>
+    <animation name="intro-g1-b"    begin_marker="11"    end_marker="12"   start_pos_marker="11" 	speed="1" loop="false" reverse="false"></animation>
+    <animation name="outro-g1-o"   	begin_marker="09"    end_marker="10"   start_pos_marker="09"  	speed="1" loop="false" reverse="false"></animation>    
+    <animation name="g1-g1-o"   	begin_marker="02"    end_marker="03"   start_pos_marker="02"  	speed="1" loop="false" reverse="false"></animation>
+    <animation name="k2000"   		begin_marker="04"    end_marker="08"   start_pos_marker="04"  	speed="1" loop="true"  reverse="false"></animation>
+    
+    <animation name="outro-g1-transi-o"   	begin_marker="09"    end_marker="10"   start_pos_marker="09"  	speed="1" loop="false" reverse="false"></animation>
+    <animation name="intro-g1-transi-o"    begin_marker="00"    end_marker="01"   start_pos_marker="00" 	speed="1" loop="false" reverse="false"></animation>
+    
+    <animation name="nobg"   	begin_marker="13"    end_marker="14"   start_pos_marker="13"  	speed="1" loop="false" reverse="false"></animation>
+    
+    
+  </animations>
+  
+</u:scene>

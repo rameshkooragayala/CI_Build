@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<TracerDataSet xmlns="http://tempuri.org/TracerDataSet.xsd">
+  <ComponentTraceDataTable>
+    <Name>MyComponent</Name>
+    <Level>WARN</Level>
+  </ComponentTraceDataTable>
+  <TracingOptions>
+    <Level>INFO</Level>
+    <EnableComponentTracing>false</EnableComponentTracing>
+    <MaxFileSize>5242880</MaxFileSize>
+    <NumberOfFiles>20</NumberOfFiles>
+    <EnableRemoteReporting>true</EnableRemoteReporting>
+    <EnableOcrReporting>false</EnableOcrReporting>
+    <EnablePerformanceCounters>true</EnablePerformanceCounters>
+  </TracingOptions>
+  <RemoteReportingOptions>
+    <IP>IexReportingServer</IP>
+    <ReportOverLevel>ERROR</ReportOverLevel>
+    <LogContextSize>5000</LogContextSize>
+  </RemoteReportingOptions>
+  <PerformanceCounters>
+    <CategoryName>process</CategoryName>
+    <CounterName>Working Set</CounterName>
+    <InstanceName />
+  </PerformanceCounters>
+  <PerformanceCounters>
+    <CategoryName>process</CategoryName>
+    <CounterName>Private Bytes</CounterName>
+    <InstanceName />
+  </PerformanceCounters>
+  <PerformanceCounters>
+    <CategoryName>process</CategoryName>
+    <CounterName>Handle Count</CounterName>
+    <InstanceName />
+  </PerformanceCounters>
+  <PerformanceCountersOptions>
+    <FilePath>c:\program files\iex\performanceCounters.csv</FilePath>
+    <MaxFileSize>5242880</MaxFileSize>
+    <SamplingPeriod>60000</SamplingPeriod>
+  </PerformanceCountersOptions>
+</TracerDataSet>

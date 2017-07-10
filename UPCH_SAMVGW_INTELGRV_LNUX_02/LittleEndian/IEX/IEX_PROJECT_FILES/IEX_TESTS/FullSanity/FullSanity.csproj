@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA956DFD-EAE0-4821-83ED-AA8796AF84A2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FullSanity</RootNamespace>
+    <AssemblyName>FullSanity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IEX.ElementaryActions">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEX.ElementaryActions.dll</HintPath>
+    </Reference>
+    <Reference Include="IEXGateway">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEXGateway.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver">
+      <HintPath>..\LightSanity\bin\Debug\WebDriver.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnumEpgKeys.cs" />
+    <Compile Include="FullSanity_0100.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0102.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0103.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0201.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0202.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0203.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0204.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0205.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0206.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0207.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0209_Live_FAV.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0208.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0280.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0304.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0370.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0402.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0403.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0405.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0406.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0407.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0408.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0409.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0410.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0411.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0501.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0502.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0504.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0505.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0601.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0602.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0603.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0604a.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0604b.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0605.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0701a.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0701b.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0702.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0703.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0704.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0705.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0802.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0803.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0804.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0805.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0806.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0901.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0902.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0903.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0904.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0905.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_0906.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1001.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1201.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1202.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1203.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1301.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1302.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1501.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1502.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1503.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1504.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1601.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1701.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_1702.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_SUBT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Robustness_InOutStandby_001.cs" />
+    <Compile Include="Robustness_Eco_Mode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2001.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2002.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2003.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2004.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2005.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2006.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2007.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2008.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2009.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Robustness_TuneViaTVGuide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Robustness_Zapping_001.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullSanity_2010.cs">
+      <SubType>Code</SubType>
+    </Compile>
+	<Compile Include="FullSanity_1801.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.IPC\IEX.ElementaryActions.EPG.SF.IPC.vbproj">
+      <Project>{E67E07EB-0665-49DC-8B32-34713FC1F6E5}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.IPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.ISTB\IEX.ElementaryActions.EPG.SF.ISTB.vbproj">
+      <Project>{8942B191-72C3-4E6B-B1BB-1368EEF50446}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.ISTB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.UPC\IEX.ElementaryActions.EPG.SF.UPC.vbproj">
+      <Project>{0E93D8AB-7FA2-4F55-9ED1-EAE98DCF2A51}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.UPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF\IEX.ElementaryActions.EPG.SF.vbproj">
+      <Project>{413AEE4B-C5B2-44F1-A3A2-41EB3307CE58}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG\IEX.ElementaryActions.EPG.vbproj">
+      <Project>{D0A8EBF2-C5FC-4D53-9DF4-C85103097963}</Project>
+      <Name>IEX.ElementaryActions.EPG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.FunctionalityCS\IEX.ElementaryActions.FunctionalityCS.csproj">
+      <Project>{12537191-089B-480F-917C-8DC86B79E7D4}</Project>
+      <Name>IEX.ElementaryActions.FunctionalityCS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.Functionality\IEX.ElementaryActions.Functionality.vbproj">
+      <Project>{C4CE3A3C-D1BC-4CAD-9661-616658CBEABB}</Project>
+      <Name>IEX.ElementaryActions.Functionality</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\Library\Library.csproj">
+      <Project>{801343B6-B685-45F5-BBA1-A4C75215563D}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_TESTS\src\IEX.Tests.Engine\IEX.Tests.Engine.csproj">
+      <Project>{684506F1-5DAD-4A3C-AB08-C34B241AF8D7}</Project>
+      <Name>IEX.Tests.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_TESTS\src\IEX.Tests.Utils\IEX.Tests.Utils.csproj">
+      <Project>{592D4503-6C86-46A3-BA03-7DA412D01D02}</Project>
+      <Name>IEX.Tests.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

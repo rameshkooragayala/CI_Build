@@ -1,0 +1,4 @@
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_Duration</name>
+      <dataType>ui4</dataType>
+    </stateVariable>

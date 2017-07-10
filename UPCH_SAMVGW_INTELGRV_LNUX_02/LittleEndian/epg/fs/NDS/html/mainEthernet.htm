@@ -1,0 +1,144 @@
+<html>
+  <head>
+   <object name="my_user_api" type="application/x-jsuserapi-plugin"></object>
+ 	<style type="text/css">
+			a {
+				font-family: Bryant Regular Condensed;
+				color: #000000;
+				font-size: 19px;
+				text-decoration: none;	
+			}
+			
+			a:focus {
+				font-family: Bryant Regular Condensed;
+				color: #f0f0f0;
+				font-size: 24px;
+				text-decoration: none;
+			}
+		</style>
+ </head>
+ 
+  	<script>
+  	 var b_surf = my_user_api.getDisplay().getBackgroundSurface();
+ 	   var v_surf = my_user_api.getDisplay().getVideoSurface(); 
+	   var v_conf=v_surf.getConfiguration();
+	   var b_conf=b_surf.getConfiguration();
+	   
+	   function destroy() {
+        my_user_api.getSelf().stop();
+     }
+	   function gotoIpSetupPage(){
+	     my_user_api.getIPNetworkInterface("default").gotoIPSetupPage();
+     }
+ 
+    function getHTTPParameters() {
+    var text = document.location.search,
+        pattern = /(?:^\?|&)([^\=]*)(?:\=)([^\=&]*)/gi,
+        //pattern = /(?:^\?|;)([^\=]*)(?:\=)([^;]*)/gi,
+        result;
+    window.$_GET = {};
+    while ((result = pattern.exec(text)) !== null) {
+        $_GET[result[1]] = result[2];
+    }
+	  }
+     
+     function init() {
+    getHTTPParameters();
+    document.addEventListener('keypress', getKey, false);
+		b_surf.displayImageFile("/NDS/resources/bck_common.m2v");
+		b_conf.setVisible(true);
+		v_conf.setVisible(false);
+		v_surf.setConfiguration(v_conf.id);
+    b_surf.setConfiguration(b_conf.id);
+  		//focus0();
+	switch ($_GET["error"])
+		{
+			case "401":
+			{
+				document.getElementById("txt").innerHTML = "Hinweis 401 - Netzwerkkabel nicht gesteckt oder beschädigt. Überprüfen Sie die Verbindung zwischen Receiver und Router.";
+				break;
+			}
+			case "402":
+			{
+				document.getElementById("txt").innerHTML = "Hinweis 402 - Fehler in der IP-\nKonfiguration. Überprüfen Sie die\nDHCP-Einstellungen Ihres Routers.";
+				break;
+			}
+			case "403":
+			{
+				document.getElementById("txt").innerHTML = "Hinweis 403 – Keine Verbindung ins Internet. Überprüfen Sie Ihren Router und Ihre Internetverbindung.";
+				break;
+			}
+		  case "404":
+			{
+				document.getElementById("txt").innerHTML = "Hinweis 404 - Zurzeit ist keine\nVerbindung zum Sky Server\nm\u00F6glich. Versuchen Sie es sp\u00E4ter\nnoch einmal.";
+				break;
+			}
+			case "406":
+			{
+				document.getElementById("txt").innerHTML = "Hinweis 406 - Keine Verbindung\nzum Proxy-Server. Überprüfen Sie\ndie Proxy-Einstellungen in der IP-\nKonfiguration Ihres Receivers.";
+				break;
+			}
+			case "407":
+			{
+				document.getElementById("txt").innerHTML = "Hinweis 407 - Keine Verbindung\nzum DNS-Server. Überprüfen Sie\ndie DNS-Einstellungen in der\nIP-Konfiguration Ihres Receivers.";
+				break;
+			}
+			case "408":
+			{
+				document.getElementById("txt").innerHTML = "Hinweis 408 - Keine Verbindung\nzum DNS-Server. Überprüfen Sie\nIhren Router und Ihre\nInternetverbindung.";
+				break;
+			}
+			default:
+			{
+				document.getElementById("txt").innerHTML = "Hinweis 401 - Netzwerkkabel nicht gesteckt oder beschädigt. Überprüfen Sie die Verbindung zwischen Receiver und Router.";
+				break;
+			}
+			
+		}
+  		
+	
+	}    	
+
+
+      function getKey(e) 
+      {
+        if (e.which == 700)	
+        {
+          javascript:back();
+        }
+      }
+  		
+  		function focus0() {
+			document.getElementById("b0").style.backgroundColor='#007090'; // Focused
+  			//document.getElementById("b0").style.color='#f0f0f0';
+  			document.getElementById("b1").style.backgroundColor='#f0f0f0'; // Not focused
+  			//document.getElementById("b1").style.color='#f0f0f0';
+  		}
+  		
+  		function focus1() {
+			//document.getElementById("b0").style.color='#909090';
+  			document.getElementById("b1").style.backgroundColor='#007090'; // Focused
+  			document.getElementById("b0").style.backgroundColor='#f0f0f0'; // Not focused
+  			//document.getElementById("b1").style.color='#f0f0f0';
+  		}
+  	</script>
+ <body width="720px" onload="init();">
+
+    <div style="position: absolute;  left:360px; top:128px; width:280px; height:32px; background-color:#D0D0D0">
+      <div style="font-family:Swis721 Cn BT; font-size:26px; padding:0px 0px 0px 10px;">
+        IP-Konfiguration
+      </div>
+    </div>
+    <div style="position: absolute; left:360px; top:160px; width:280px; height:225px; background-color:CCA5A5A5;">
+      <div id="txt" style="font-family:Swis721 Cn BT; font-size:21px; padding:10px 5px 0px 10px;">
+       </div>
+    </div>
+    <div  id="b0" style="position: absolute; left:360px; top:384px; width:280px; height:32px;">
+      <a id="beenden" href="#" style="padding-left:10px; line-height:32px" onfocus="javascript:focus0();" onclick="javascript:destroy();">Beenden</a>
+    </div>
+    <div  id="b1" style="position: absolute; left:360px; top:420px; width:280px; height:32px;">
+      <a id="ip-conf" href="#" style="padding-left:10px; line-height:32px" onfocus="javascript:focus1();" onclick="javascript:gotoIpSetupPage();">IP-Konfiguration</a>
+    </div>
+
+  </body>
+</html>

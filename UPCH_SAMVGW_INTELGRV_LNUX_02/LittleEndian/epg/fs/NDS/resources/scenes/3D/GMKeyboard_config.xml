@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- NEW zones START -->
+<!-- KEYWORD -->
+<zone name="alphanum" type="alphanum" id="null" x="10" y="832" w="1280" h="120"/>
+<zone name="kw" type="kw" id="null" x="8" y="77" w="739" h="526"/>
+<zone name="selectedChar" type="selectedChar" id="null" x="880" y="145" w="1010" h="55"/>
+<zone name="resultcount" type="resultcount" id="null" x="880" y="97" w="1010" h="28"/>
+<zone name="keypadMessage" type="keypadMessage" id="null" x="880" y="27" w="1010" h="56"/>
+
+<zone name="m1_1" type="m1_1" id="null" x="0" y="0"   w="714" h="63"/>
+<zone name="m1_2" type="m1_2" id="null" x="0" y="120"  w="714" h="63"/>
+<zone name="m1_3" type="m1_3" id="null" x="0" y="231" w="714" h="63"/>
+<zone name="m1_4" type="m1_4" id="null" x="0" y="280" w="714" h="63"/>
+<zone name="m1_5" type="m1_5" id="null" x="0" y="329" w="714" h="63"/>
+<zone name="m1_6" type="m1_6" id="null" x="0" y="378" w="714" h="63"/>
+<zone name="m1_7" type="m1_7" id="null" x="0" y="427" w="714" h="63"/>
+<zone name="m1_8" type="m1_8" id="null" x="0" y="476" w="714" h="63"/>
+<zone name="m1_9" type="m1_9" id="null" x="0" y="525" w="714" h="63"/>
+<zone name="m1_10" type="m1_10" id="null" x="0" y="574" w="714" h="63"/>
+
+<!-- NEW zones STOP -->
+
+<!-- static zones -->
+<zone name="SrchHorizonBar" type="SrchHorizonBar" id="null" x="880" y="13" w="1010" h="4"/>
+<zone name="SrchTitle" type="SrchTitle" id="null" x="90" y="1845" w="300" h="70"/>
+
+
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zone name="listview" type="listview" id="null" x="10" y="10" w="1280" h="31"/>
+
+<zone name="menuList1" type="menuList" id="1" x="10" y="10" w="1280" h="31"/>
+<zone name="menuList2" type="menuList" id="2" x="10" y="51" w="1280" h="31"/>
+	
+<zone name="firstLetters" type="firstLetters" id="null" x="2018" y="32" w="26" h="567"/>
+
+<zone name="firstLetterItem0" type="firstLetterItem0" id="null" x="0" y="-3000" w="25" h="25"/>
+<zone name="firstLetterItem1" type="firstLetterItem1" id="null" x="0" y="0" w="25" h="25"/>
+<zone name="firstLetterItem2" type="firstLetterItem2" id="null" x="0" y="30" w="25" h="25"/>
+<zone name="firstLetterItem3" type="firstLetterItem3" id="null" x="0" y="60" w="25" h="25"/>
+<zone name="firstLetterItem4" type="firstLetterItem4" id="null" x="0" y="90" w="25" h="25"/>
+<zone name="firstLetterItem5" type="firstLetterItem5" id="null" x="0" y="120" w="25" h="25"/>
+<zone name="firstLetterItem6" type="firstLetterItem6" id="null" x="0" y="150" w="25" h="25"/>
+<zone name="firstLetterItem7" type="firstLetterItem7" id="null" x="0" y="180" w="25" h="25"/>
+<zone name="firstLetterItem8" type="firstLetterItem8" id="null" x="0" y="210" w="25" h="25"/>
+<zone name="firstLetterItem9" type="firstLetterItem9" id="null" x="0" y="240" w="25" h="25"/>
+<zone name="firstLetterItem10" type="firstLetterItem10" id="null" x="0" y="270" w="25" h="25"/>
+<zone name="firstLetterItem11" type="firstLetterItem11" id="null" x="0" y="300" w="25" h="25"/>
+<zone name="firstLetterItem12" type="firstLetterItem12" id="null" x="0" y="330" w="25" h="25"/>
+<zone name="firstLetterItem13" type="firstLetterItem13" id="null" x="0" y="360" w="25" h="25"/>
+<zone name="firstLetterItem14" type="firstLetterItem14" id="null" x="0" y="390" w="25" h="25"/>
+<zone name="firstLetterItem15" type="firstLetterItem15" id="null" x="0" y="420" w="25" h="25"/>
+<zone name="firstLetterItem16" type="firstLetterItem16" id="null" x="0" y="450" w="25" h="25"/>
+<zone name="firstLetterItem17" type="firstLetterItem17" id="null" x="0" y="480" w="25" h="25"/>
+<zone name="firstLetterItem18" type="firstLetterItem18" id="null" x="0" y="510" w="25" h="25"/>
+<zone name="firstLetterItem19" type="firstLetterItem19" id="null" x="0" y="540" w="25" h="25"/>
+<zone name="firstLetterItem20" type="firstLetterItem20" id="null" x="0" y="570" w="25" h="25"/>
+<zone name="firstLetterItem21" type="firstLetterItem21" id="null" x="0" y="600" w="25" h="25"/>
+<zone name="firstLetterItem22" type="firstLetterItem22" id="null" x="0" y="630" w="25" h="25"/>
+<zone name="firstLetterItem23" type="firstLetterItem23" id="null" x="0" y="660" w="25" h="25"/>
+<zone name="firstLetterItem24" type="firstLetterItem24" id="null" x="0" y="690" w="25" h="25"/>
+<zone name="firstLetterItem25" type="firstLetterItem25" id="null" x="0" y="720" w="25" h="25"/>
+<zone name="firstLetterItem26" type="firstLetterItem26" id="null" x="0" y="750" w="25" h="25"/>
+<zone name="firstLetterItem27" type="firstLetterItem27" id="null" x="0" y="780" w="25" h="25"/>
+<zone name="firstLetterItem28" type="firstLetterItem28" id="null" x="0" y="-3000" w="25" h="25"/>
+
+<zone name="posterLight_1" type="posterLight_1" id="null" x="10" y="164" w="176" h="244"/>
+<zone name="posterLight_2" type="posterLight_2" id="null" x="10" y="418" w="176" h="244"/>
+<zone name="posterLight_3" type="posterLight_3" id="null" x="10" y="672" w="176" h="244"/>
+
+<zone name="g1Info_1_1" type="g1Info_1" id="null" x="386" y="184" w="671" h="113"/>
+<zone name="g1Info_1_2" type="g1Info_2" id="null" x="386" y="438" w="671" h="113"/>
+<zone name="g1Info_1_3" type="g1Info_3" id="null" x="386" y="692" w="671" h="113"/>
+
+<zone name="g1Info_2_1" type="g1Info_1" id="null" x="386" y="320" w="671" h="27"/>
+<zone name="g1Info_2_2" type="g1Info_2" id="null" x="386" y="574" w="671" h="27"/>
+<zone name="g1Info_2_3" type="g1Info_3" id="null" x="386" y="828" w="671" h="27"/>
+
+<zone name="g1Synopsis_1" type="g1Synopsis_1" id="null" x="386" y="351" w="671" h="55"/>
+<zone name="g1Synopsis_2" type="g1Synopsis_2" id="null" x="386" y="605" w="671" h="55"/>
+<zone name="g1Synopsis_3" type="g1Synopsis_3" id="null" x="386" y="859" w="671" h="55"/>
+
+<zone name="g1ChLogo_1" type="g1ChLogo_1" id="null" x="1848" y="37" w="160" h="104"/>
+<zone name="g1ChLogo_2" type="g1ChLogo_2" id="null" x="1848" y="545" w="160" h="104"/>
+<zone name="g1ChLogo_3" type="g1ChLogo_3" id="null" x="1848" y="1053" w="160" h="104"/>
+
+<zone name="poster_1" type="poster_1" id="null" x="1065" y="124" w="180" h="260"/>
+<zone name="poster_2" type="poster_2" id="null" x="1065" y="417" w="180" h="260"/>
+<zone name="poster_3" type="poster_3" id="null" x="1065" y="710" w="180" h="260"/>
+
+<zone name="out_of_screen" type="out_of_screen" id="null" x="-2000" y="-2000" w="880" h="44"/>
+<zone name="g1_1" type="g1_1" id="null" x="10" y="1203" w="880" h="44"/>
+<zone name="g1_2" type="g1_2" id="null" x="10" y="1330" w="880" h="44"/>
+<zone name="g1_3" type="g1_3" id="null" x="10" y="1441" w="880" h="44"/>
+<zone name="g1_4" type="g1_4" id="null" x="10" y="1495" w="880" h="44"/>
+<zone name="g1_5" type="g1_5" id="null" x="10" y="1549" w="880" h="44"/>
+<zone name="g1_6" type="g1_6" id="null" x="10" y="1603" w="880" h="44"/>
+<zone name="g1_7" type="g1_7" id="null" x="10" y="1657" w="880" h="44"/>
+<zone name="g1_8" type="g1_8" id="null" x="10" y="1711" w="880" h="44"/>
+
+<zone name="g2Info1" type="g2Info1" id="null" x="386" y="956" w="671" h="113"/>
+<zone name="g2Info2" type="g2Info2" id="null" x="386" y="1092" w="671" h="27"/>
+<zone name="g2Synopsis" type="g2Synopsis" id="null" x="386" y="1123" w="671" h="55"/>
+
+<zone name="g2Poster" type="g2Poster" id="null" x="1255" y="417" w="180" h="260"/>
+<zone name="g2ChLogo" type="g2ChLogo" id="null" x="18" y="1061" w="160" h="104"/>
+
+<zone name="g2_1" type="g2_1" id="null" x="900" y="1330"  w="880" h="44"/>
+<zone name="g2_2" type="g2_2" id="null" x="900" y="1384" w="880" h="44"/>
+<zone name="g2_3" type="g2_3" id="null" x="900" y="1438" w="880" h="44"/>
+<zone name="g2_4" type="g2_4" id="null" x="900" y="1492" w="880" h="44"/>
+<zone name="g2_5" type="g2_5" id="null" x="900" y="1546" w="880" h="44"/>
+<zone name="g2_6" type="g2_6" id="null" x="900" y="1600" w="880" h="44"/>
+
+<zone name="horizontalBar" type="horizontalBar" id="null" x="10" y="139" w="880" h="4"/>
+<zone name="horizontalLine" type="horizontalLine" id="null" x="10" y="1316" w="1280" h="2"/>
+<zone name="focusRowSeparator" type="focusRowSeparator" id="null" x="10" y="96" w="852" h="1"/>
+<zone name="hintZone" type="hintZone" id="null" x="900" y="1644" w="550" h="30"/>

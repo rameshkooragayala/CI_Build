@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE8B6970-3BFA-45E7-8527-70C9E8ECD834}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HealthCheck</RootNamespace>
+    <AssemblyName>HealthCheck</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IEX.ElementaryActions">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEX.ElementaryActions.dll</HintPath>
+    </Reference>
+    <Reference Include="IEXGateway">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEXGateway.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HealthCheck.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.IPC\IEX.ElementaryActions.EPG.SF.IPC.vbproj">
+      <Project>{E67E07EB-0665-49DC-8B32-34713FC1F6E5}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.IPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.ISTB\IEX.ElementaryActions.EPG.SF.ISTB.vbproj">
+      <Project>{8942B191-72C3-4E6B-B1BB-1368EEF50446}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.ISTB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.UPC\IEX.ElementaryActions.EPG.SF.UPC.vbproj">
+      <Project>{0E93D8AB-7FA2-4F55-9ED1-EAE98DCF2A51}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.UPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.Functionality\IEX.ElementaryActions.Functionality.vbproj">
+      <Project>{C4CE3A3C-D1BC-4CAD-9661-616658CBEABB}</Project>
+      <Name>IEX.ElementaryActions.Functionality</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_TESTS\src\IEX.HealthCheck\IEX.HealthCheck.csproj">
+      <Project>{88ECFBA7-E350-46B2-9B7F-ABBB05D1B910}</Project>
+      <Name>IEX.HealthCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_TESTS\src\IEX.Tests.Engine\IEX.Tests.Engine.csproj">
+      <Project>{684506F1-5DAD-4A3C-AB08-C34B241AF8D7}</Project>
+      <Name>IEX.Tests.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_TESTS\src\IEX.Tests.Utils\IEX.Tests.Utils.csproj">
+      <Project>{592D4503-6C86-46A3-BA03-7DA412D01D02}</Project>
+      <Name>IEX.Tests.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExpectedMilestonesPerState.txt" />
+    <EmbeddedResource Include="Navigations.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

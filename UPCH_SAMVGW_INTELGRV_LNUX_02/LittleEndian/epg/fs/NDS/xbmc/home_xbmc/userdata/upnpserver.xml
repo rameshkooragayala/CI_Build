@@ -1,0 +1,10 @@
+<upnpserver>
+    <UUID>14c75eb4-3803-3e68-8f99-1da5210ac4c2</UUID>
+    <Port>62137</Port>
+    <MaxReturnedItems>200</MaxReturnedItems>
+    <UUIDRenderer></UUIDRenderer>
+    <PortRenderer>0</PortRenderer>
+    <PortControlPoint>62138</PortControlPoint>
+    <AudioNbLimit>1500</AudioNbLimit>
+    <VideoNbLimit>0</VideoNbLimit>
+</upnpserver>

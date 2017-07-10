@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestDirectorTest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ST_CC_001bis_Channel_change_without_RB_withPplus</Name>
+  <State>CheckedOut</State>
+  <LocalPath>D:\DW-SCR\07052014-SCRIPTS\ST_CC_001bis_Channel_change_without_RB_withPplus</LocalPath>
+  <Profile>
+    <Server>ilatlantis.il.nds.com:81</Server>
+    <Domain>STB_DIVISION</Domain>
+    <Project>Stress_Durability</Project>
+    <Folder>CC_Channel_Change</Folder>
+    <Path>\Projects Test Suite\UPC\CC_Channel_Change</Path>
+    <UserName>souryam</UserName>183.111.100.63.247.233.12.79.163.15.24.34.61.148.98.153.203.35.57.127.99.200.27.124.67.222.243.225.97.109.230.109</Profile>
+</TestDirectorTest>

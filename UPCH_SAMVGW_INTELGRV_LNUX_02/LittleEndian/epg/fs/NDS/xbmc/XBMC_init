@@ -1,0 +1,156 @@
+#!/bin/sh
+
+# Script fro starting XBMC in parralel of Fusion stack
+
+#CQ1006723 /dev/loop workaround
+dev_loop_workaround(){
+	if ! [ -e /dev/loop0 ]
+	then
+		mknod /dev/loop0 b 7 0
+	fi
+
+}
+#function to format file for xbmc quota
+format_xbmc_fs()
+{
+cat <<END |  /sbin/mkfs.ext3 -q ./xbmc_fs
+y
+END
+
+}
+
+#function to prepare file containing /.xbmc used for quota the disk space
+prepare_xbmc_fs()
+{	
+
+	#Wait for Fusion stack to start
+        XBMC_PART=""
+        echo XBMC Waiting for MW to start ...
+        sleep 30
+        #Checking partition for getting the one in ext3 and big enough for xbmc
+        while [ ! $XBMC_PART ]; do
+        if [[ $(mount | grep "/dev/sda" | grep ext3 | wc -l) -eq 2 ]] ; then
+                echo XBMC  Ext3 Partitions found
+                for  i in  $(mount | grep sda | grep ext3 |  cut -d" " -f1)  ; do
+                        echo XBMC Checking partition $i
+                        if [[ $(/sbin/fdisk -l $i | grep Disk | grep MB | cut -d" " -f3) -ge 750 ]] ;then
+                                XBMC_PART=$i
+                                echo XBMC Matching partition $XBMC_PART
+                                cd $(mount | grep $i | cut -f3 -d" ")
+                                #create an ext3 image file for disksize quota for xbmc user data
+				dev_loop_workaround
+                                if [ ! -e "xbmc_fs" ]; then
+                                        echo XBMC Creating  new xbmc file system  ...
+                                        dd if=/dev/zero of=./xbmc_fs bs=4k count=262144
+                                        format_xbmc_fs
+                                        mkdir /.xbmc
+                                        mount -o loop,data=ordered ./xbmc_fs /.xbmc
+                                        cp -r /NDS/xbmc/home_xbmc/* /.xbmc/
+                                        umount /.xbmc
+                                        echo "XBMC Partition Created"
+                                fi
+                                echo XBMC Mounting xbmc_fs
+                                if [ ! -e /.xbmc ]; then
+					mkdir /.xbmc
+				fi
+                                mount -o loop,data=ordered ./xbmc_fs /.xbmc
+                                break;
+                        fi
+                done
+             fi
+             if [ ! $XBMC_PART ] ; then
+               echo XBMC Waiting for MW to start ...
+               sleep 15
+             fi
+        done
+        echo "XBMC Partition Mounted"
+}
+
+
+start()
+{
+        echo "Starting XBMC: DLNA/UPNP aggregator and scrapper"
+
+	#Changing script priority so all is child (xbmc included) i
+	#will have this priority.
+	chrt -o -p 0 $$
+
+	prepare_xbmc_fs
+
+	#Starting XBMC
+	if ! [ -s /NDS/xbmc/env_xbmc/xbmc.bin ]
+	then
+		echo "XBMC is not installed on this system"
+	else
+		xbmc_pid=$(pidof xbmc.bin)
+		if [ -w "$xbmc_pid" ]
+        	then
+                	echo "XBMC is already runnning"
+		else
+			#LD_LIBRARY_PATH=/NDS/xbmc/lib/ nice -n 19 /NDS/xbmc/env_xbmc/xbmc.bin &
+			#for video scraping since WP1385.1
+			LD_LIBRARY_PATH=/NDS/xbmc/lib/ nice -n 19 /NDS/xbmc/env_xbmc/xbmc.bin 172.21.240.101:5511 &
+		fi
+	fi
+}
+
+
+stop()
+{
+	echo "Stopping XBMC: DLNA/UPNP aggregator and scrapper"
+
+	xbmc_pid=$(pidof xbmc.bin)
+	if [ -z "$xbmc_pid" ]
+	then
+		echo "XBMC is not runnning"
+	else
+		kill $xbmc_pid
+
+		#Let xbmc stop
+		sleep 5
+
+		xbmc_pid=$(pidof xbmc.bin)
+    	if [ -n "$xbmc_pid" ]
+		then
+			echo "Unable to stop properly XBMC, use the violent method"
+			kill -9 $xbmc_pid
+		else
+			echo "XBMC properly stop"
+		fi
+	fi
+
+}
+
+
+clean_db()
+{
+	echo "Deleting XBMC database for reinitialising catalog"
+	rm -rf /.xbmc/userdata/Database/*db
+	rm -rf /.xbmc/userdata/Database/*journal
+}
+
+
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        stop
+        start
+        ;;
+	reset)
+	stop
+	clean_db
+	start
+	;;
+    *)
+        echo $"Usage: $0 {start|stop|restart|reset|status}"
+        RETVAL=1
+esac
+exit $RETVAL
+
+

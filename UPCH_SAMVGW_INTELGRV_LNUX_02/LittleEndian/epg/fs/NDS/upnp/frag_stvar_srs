@@ -1,0 +1,69 @@
+    <stateVariable sendEvents="no">
+      <name>SortCapabilities</name>
+      <dataType>string</dataType>
+      <defaultValue></defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>SortLevelCapability</name>
+      <dataType>ui4</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>StateUpdateID</name>
+      <dataType>ui4</dataType>
+      <defaultValue>0</defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>LastChange</name>
+      <dataType>string</dataType>
+      <defaultValue></defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_PropertyList</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_DataTypeID</name>
+      <dataType>string</dataType>
+      <allowedValueList>
+        <allowedValue>A_ARG_TYPE_RecordSchedule</allowedValue>
+        <allowedValue>A_ARG_TYPE_RecordTask</allowedValue>
+        <allowedValue>A_ARG_TYPE_RecordScheduleParts</allowedValue>
+      </allowedValueList>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_ObjectID</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_ObjectIDList</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_PropertyInfo</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_Index</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_Count</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_SortCriteria</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_RecordSchedule</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_RecordTask</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_RecordScheduleParts</name>
+      <dataType>string</dataType>
+    </stateVariable>

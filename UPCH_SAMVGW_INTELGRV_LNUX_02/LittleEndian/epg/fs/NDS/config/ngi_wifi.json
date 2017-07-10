@@ -1,0 +1,649 @@
+{
+    "ngi_wifi_get_capabilities": {
+        "NGI_STATUS": "NGI_STATUS_OK" ,
+        "Value": {
+            "capabilities": [
+                {
+                    "dev": 34567,
+                    "capabilites": {
+                        "wifiStandards": [
+                            "NGI_WIFI_STANDARD_802_11_G" 
+                        ],
+                        "operatingModes": [
+                            "NGI_WIFI_OPERATING_MODE_MANAGED"
+                        ],
+                        "encryptionTypes": [
+                            "NGI_WIFI_ENCRYPTION_WEP64",
+                            "NGI_WIFI_ENCRYPTION_WEP128",
+                            "NGI_WIFI_ENCRYPTION_WPA",
+                            "NGI_WIFI_ENCRYPTION_WPA2" 
+                        ],
+                        "frequencyBands": [
+                            "NGI_WIFI_FREQUENCY_BAND_2_4GHZ",
+                            "NGI_WIFI_FREQUENCY_BAND_5GHZ" 
+                        ],
+                        "wpsConfigMethods": [
+                            "NGI_WIFI_WPS_CONFIG_LABEL",
+                            "NCM_WIFI_WPS_CONFIG_PUSH_BUTTON",
+                            "NGI_WIFI_WPS_CONFIG_KEYPAD" 
+                        ],
+                        "features": [
+                            "NGI_WIFI_FEATURE_UUID_AVAILABLE",
+                            "NGI_WIFI_FEATURE_ESTIMATED_SCAN_TIME",
+                            "NGI_WIFI_FEATURE_ESTIMATED_CONNECT_TIME",
+                            "NGI_WIFI_FEATURE_STA_CONFIGURATION",
+                            "NGI_WIFI_FEATURE_CONNECTION_CONTROL",
+                            "NGI_WIFI_FEATURE_SCANNING_CONTROL",
+                            "NGI_WIFI_FEATURE_STAT_INFO",
+                            "NGI_WIFI_FEATURE_POWER_CONTROL",
+                            "NGI_WIFI_FEATURE_EVENTS",
+                            "NGI_WIFI_FEATURE_RESET_DEFAULT_SETTINGS"
+                        ],
+                        "numWEP64KeysSupported": 4,
+                        "numWEP128KeysSupported": 4,
+                        "UUID": "A122A122A122B542CD21542C542C542C",
+                        "estimatedScanTime": 5,
+                        "estimatedConnectTime": 3 
+                    } 
+                },
+                {
+                    "dev": 56789,
+                    "capabilites": {
+                        "standards": [
+                            "NGI_WIFI_STANDARD_802_11_G" 
+                        ],
+                        "operatingModes": [
+                            "NGI_WIFI_OPERATING_MODE_MASTER" 
+                        ],
+                        "encryptions": [
+                            "NGI_WIFI_ENCRYPTION_WEP64",
+                            "NGI_WIFI_ENCRYPTION_WEP128",
+                            "NGI_WIFI_ENCRYPTION_WPA",
+                            "NGI_WIFI_ENCRYPTION_WPA2" 
+                        ],
+                        "frequencyBands": [
+                            "NGI_WIFI_FREQUENCY_BAND_2_4GHZ",
+                            "NGI_WIFI_FREQUENCY_BAND_5GHZ" 
+                        ],
+                        "wpsConfigMethods": [
+                            "NGI_WIFI_WPS_CONFIG_LABEL",
+                            "NCM_WIFI_WPS_CONFIG_PUSH_BUTTON",
+                            "NGI_WIFI_WPS_CONFIG_KEYPAD" 
+                        ],
+                        "features": [
+                            "NGI_WIFI_FEATURE_UUID_AVAILABLE",
+                            "NGI_WIFI_FEATURE_ACL",
+                            "NGI_WIFI_FEATURE_DENIED_LIST",
+                            "NGI_WIFI_FEATURE_RESET_DEFAULT_SETTINGS",
+                            "NGI_WIFI_FEATURE_POWER_CONTROL",
+                            "NGI_WIFI_FEATURE_EVENTS",
+                            "NGI_WIFI_FEATURE_AP_CONFIGURATION"
+                        ],
+                        "numWEP64KeysSupported": 4,
+                        "numWEP128KeysSupported": 4,
+                        "UUID": "A122A122A122B542CD21542C542C542C",
+                        "estimatedScanTime": 5,
+                        "estimatedConnectTime": 3 
+                    } 
+                }
+            ] 
+        } 
+    },
+    "ngi_wifi_interface_configure": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_interface_get_config": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "interfaceConfigs": [
+                {
+                    "dev": 34567,
+                    "interfaceConfig": {
+                        "operatingMode": "NGI_WIFI_OPERATING_MODE_MANAGED",
+                        "regulatoryDomain": "INI" 
+                    } 
+                },
+                {
+                    "dev": 56789,
+                    "interfaceConfig": {
+                        "operatingMode": "NGI_WIFI_OPERATING_MODE_MASTER",
+                        "regulatoryDomain": "INI" 
+                    } 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wifi_reset_default_settings": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_open_event_queue": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_close_event_queue": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_subscribe_events": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_get_event": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_scan_request": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "DEFAULT_EVENT": "NGI_WIFI_EVENT_SCAN_COMPLETED" 
+    },
+    "ngi_wifi_abort_scan_request": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_get_num_scan_result_entries": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "numEntries": [
+                {
+                    "dev": 34567,
+                    "numEntries": 1 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wifi_scan_retrieve_results": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "ScanInfos": [
+                {
+                    "dev": 34567,
+                    "index": 0,
+                    "ScanInfo": {
+                        "AP": {
+                            "BSSID": "AB:12:32:12:BC:CD",
+                            "SSID": "MySSID1" 
+                        },
+                        "APInfo": {
+                            "primaryChannel": 2,
+                            "standards": [
+                                "NGI_WIFI_STANDARD_802_11_A",
+                                "NGI_WIFI_STANDARD_802_11_B" 
+                            ],
+                            "operatingMode": "NGI_WIFI_OPERATING_MODE_MANAGED",
+                            "rxSignalLevel": 200,
+                            "encryptions": [
+                                {
+                                    "encryptionType": "NGI_WIFI_ENCRYPTION_WEP64",
+                                    "groupCiphers": [
+                                        "NGI_WIFI_CIPHER_SUITE_TKIP",
+                                        "NGI_WIFI_CIPHER_SUITE_CCMP" 
+                                    ],
+                                    "pairwiseCiphers": [
+                                        "NGI_WIFI_CIPHER_SUITE_TKIP",
+                                        "NGI_WIFI_CIPHER_SUITE_CCMP" 
+                                    ],
+                                    "authenticationSuite": "NGI_WIFI_AUTHENTICATION_SUITE_PSK" 
+                                },
+                                {
+                                    "encryptionType": "NGI_WIFI_ENCRYPTION_WEP128",
+                                    "groupCiphers": [
+                                        "NGI_WIFI_CIPHER_SUITE_CCMP" 
+                                    ],
+                                    "pairwiseCiphers": [
+                                        "NGI_WIFI_CIPHER_SUITE_CCMP" 
+                                    ],
+                                    "authenticationSuite": "NGI_WIFI_AUTHENTICATION_SUITE_NONE" 
+                                }, 
+                                {
+                                    "encryptionType": "NGI_WIFI_ENCRYPTION_WPA",
+                                    "groupCiphers": [
+                                        "NGI_WIFI_CIPHER_SUITE_TKIP" 
+                                    ],
+                                    "pairwiseCiphers": [
+                                        "NGI_WIFI_CIPHER_SUITE_TKIP" 
+                                    ],
+                                    "authenticationSuite": "NGI_WIFI_AUTHENTICATION_SUITE_NONE" 
+                                } 
+                                
+                            ],
+                            "hasWpsInfo": 1,
+                            "wpsInfo": {
+                                "wpsState": "NGI_WIFI_WPS_STATE_CONFIGURED",
+                                "isAPLocked": 0,
+                                "isRegistrarActive": 1,
+                                "wpsRegistrar": {
+                                    "wpsDevicePasswordType": "NGI_WIFI_WPS_PIN_TYPE_DEFAULT",
+                                    "wpsConfigMethod": [
+                                        "NGI_WIFI_WPS_CONFIG_LABEL",
+                                        "NGI_WIFI_WPS_CONFIG_DISPLAY",
+                                        "NGI_WIFI_WPS_CONFIG_PUSH_BUTTON",
+                                        "NGI_WIFI_WPS_CONFIG_KEYPAD" 
+                                    ],
+                                    "isUUID": 1,
+                                    "UUID": "A22ABEBEA22ABEBEA22ABEBEA22ABEBE",
+                                    "rfBands": [
+                                        "NGI_WIFI_FREQUENCY_BAND_2_4GHZ",
+                                        "NGI_WIFI_FREQUENCY_BAND_5GHZ" 
+                                    ] 
+                                } 
+                            },
+                            "regulatoryDomain": "FRO" 
+                        } 
+                    } 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wifi_get_access_point_info": {
+        "NGI_STATUS": "NGI_STATUS_OK" ,
+        "Value": {
+            "APInfos": [
+                {
+                    "dev": 34567,
+                    "BSSID": "AB:12:32:12:BC:CD",
+                    "APInfo": {
+                        "primaryChannel": 10,
+                        "standards": [
+                            "NGI_WIFI_STANDARD_802_11_A",
+                            "NGI_WIFI_STANDARD_802_11_B",
+                            "NGI_WIFI_STANDARD_802_11_G",
+                            "NGI_WIFI_STANDARD_802_11_N" 
+                        ],
+                        "operatingMode": "NGI_WIFI_OPERATING_MODE_MASTER",
+                        "rxSignalLevel": 250,
+                        "encryptions": [
+                            {
+                                "encryptionType": "NGI_WIFI_ENCRYPTION_WEP128",
+                                "groupCiphers": [
+                                    "NGI_WIFI_CIPHER_SUITE_UNSUPPORTED",
+                                    "NGI_WIFI_CIPHER_SUITE_CCMP" 
+                                ],
+                                "pairwiseCiphers": [
+                                    "NGI_WIFI_CIPHER_SUITE_UNSUPPORTED",
+                                    "NGI_WIFI_CIPHER_SUITE_TKIP" 
+                                ],
+                                "authenticationSuite": "NGI_WIFI_AUTHENTICATION_SUITE_UNSUPPORTED" 
+                            },
+                            {
+                                "encryptionType": "NGI_WIFI_ENCRYPTION_WPA",
+                                "groupCiphers": [
+                                    "NGI_WIFI_CIPHER_SUITE_TKIP" 
+                                ],
+                                "pairwiseCiphers": [
+                                    "NGI_WIFI_CIPHER_SUITE_CCMP" 
+                                ],
+                                "authenticationSuite": "NGI_WIFI_AUTHENTICATION_SUITE_UNSUPPORTED" 
+                            } 
+                        ],
+                        "hasWpsInfo": 1,
+                        "wpsInfo": {
+                            "wpsState": "NGI_WIFI_WPS_STATE_NOT_CONFIGURED",
+                            "isAPLocked": 1 ,
+                            "isRegistrarActive": 1 ,
+                            "wpsRegistrar": {
+                                "wpsDevicePasswordType": "NGI_WIFI_WPS_PIN_TYPE_MACHINE_SPECIFIED",
+                                "wpsConfigMethod": [
+                                    "NGI_WIFI_WPS_CONFIG_DISPLAY",
+                                    "NGI_WIFI_WPS_CONFIG_PUSH_BUTTON" 
+                                ],
+                                "isUUID": 1,
+                                "UUID": "A22ABEBEA22ABEBEA22ABEBEA22ABEBE",
+                                "rfBands": [
+                                    "NGI_WIFI_FREQUENCY_BAND_5GHZ" 
+                                ] 
+                            } 
+                        },
+                        "regulatoryDomain": "UKO" 
+                    } 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wifi_set_connection_config": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_get_connection_info": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "connectionInfos": [
+                {
+                    "dev": 34567, 
+		    "connectionInfo":{ 
+	                    "AP": {
+        	                    "BSSID": "CA:D2:B2:12:BC:CD",
+                	            "SSID": "APSSID"
+	                     },
+        	             "connectionKey": {
+                	            "encryptionType": "NGI_WIFI_ENCRYPTION_WEP64",
+	                            "WEP64": {
+        	                        "auth_alg" : "NGI_WIFI_WEP_AUTH_ALG_OPEN",
+                	                "defaultKeyIndex": 1,
+					"isAscii":[
+					  1,
+					  0,
+					  0,
+					  1	
+					],
+                        	        "key": [
+                                	    "ABCDE",
+	                                    "A1B2C3D4E5",
+        	                            "1A1B23D4E5",
+                                	    "EFGHI"
+                	                ]
+                        	    },
+	                            "WEP128": {
+        	                        "auth_alg": "NGI_WIFI_WEP_AUTH_ALG_OPEN",
+                	                "defaultKeyIndex": 3,
+					"isAscii":[
+					1,
+					0,
+					0,
+					0
+					],
+                        	        "key": [
+                                	    "A1B2C3D4E5F1A2B3C4D5E1F2A3",
+	                                    "A1B2C3D4E5F1A2B3C4D5E1F2A3",
+        	                            "A1B2C3D4E5F1A2B3C4D5E1F2A3",
+                	                    "A1B2C3D4E5F1A2B3C4D5E1F2A3"
+                       		         ]
+	                            },
+	                            "WPA": {
+        	                        "isAscii": 0,
+                	                "passphrase": {
+                        	            "length": 10,
+                                	    "key": "1234567890"
+	                             },
+        	                     "PSK": "BACDCDCDCD"
+                	            }
+	                    },
+	                    "connectionStatus": "NGI_WIFI_CONNECTION_STATUS_DISCONNECTED" 
+        	        }
+		} 
+            ] 
+        } 
+    },
+    "ngi_wifi_set_connection_config_ex": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_get_connection_info_ex": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "connectionInfos": [
+                {
+                    "dev": 34567, 
+		    "connectionInfo":{ 
+	                    "AP": {
+        	                    "BSSID": "CA:D2:B2:12:BC:CD",
+                	            "SSID": "APSSID"
+	                     },
+                             "encryption":{
+                                    "encryptionType": "NGI_WIFI_ENCRYPTION_WEP128",
+                                    "groupCiphers": [
+                                          "NGI_WIFI_CIPHER_SUITE_UNSUPPORTED",
+                                          "NGI_WIFI_CIPHER_SUITE_CCMP" 
+                                     ],
+                                    "pairwiseCiphers": [
+                                          "NGI_WIFI_CIPHER_SUITE_UNSUPPORTED",
+                                          "NGI_WIFI_CIPHER_SUITE_TKIP" 
+                                     ],
+                                     "authenticationSuite": "NGI_WIFI_AUTHENTICATION_SUITE_UNSUPPORTED" 
+                             },
+        	             "connectionKey": {
+                	            "encryptionType": "NGI_WIFI_ENCRYPTION_WEP128",
+	                            "WEP64": {
+        	                        "auth_alg" : "NGI_WIFI_WEP_AUTH_ALG_OPEN",
+                	                "defaultKeyIndex": 1,
+					"isAscii":[
+					  1,
+					  0,
+					  0,
+					  1	
+					],
+                        	        "key": [
+                                	    "ABCDE",
+	                                    "A1B2C3D4E5",
+        	                            "1A1B23D4E5",
+                                	    "BCDEF"
+                	                ]
+                        	    },
+	                            "WEP128": {
+        	                        "auth_alg": "NGI_WIFI_WEP_AUTH_ALG_OPEN",
+                	                "defaultKeyIndex": 3,
+					"isAscii":[
+					1,
+					0,
+					0,
+					0
+					],
+                        	        "key": [
+                                	    "ABCDEFABCDEFA",
+	                                    "A1B2C3D4E5F1A2B3C4D5E1F2A3",
+        	                            "A1B2C3D4E5F1A2B3C4D5E1F2A3",
+                	                    "A1B2C3D4E5F1A2B3C4D5E1F2A3"
+                       		         ]
+	                            },
+	                            "WPA": {
+        	                        "isAscii": 0,
+                	                "passphrase": {
+                        	            "length": 10,
+                                	    "key": "1234567890"
+	                             },
+        	                     "PSK": "BACDCDCDCD"
+                	            }
+	                    },
+	                    "connectionStatus": "NGI_WIFI_CONNECTION_STATUS_DISCONNECTED" 
+        	        }
+		} 
+            ] 
+        } 
+    },
+    "ngi_wifi_connect": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_disconnect": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_power_control": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_power_get_state": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "powerStates": [
+                {
+                    "dev": 34567,
+                    "powerState": "NGI_WIFI_POWER_ON" 
+                },
+                {
+                    "dev": 56789,
+                    "powerState": "NGI_WIFI_POWER_ON" 
+                }
+            ] 
+        } 
+    },
+    "ngi_wifi_wps_initiate_registration": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_wps_cancel_registration": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_wps_get_credentials": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "credentials": [
+                {
+                    "dev": 34567,
+                    "credentials": {
+                        "AP": {
+                            "BSSID": "CA:D2:B2:12:BC:CD",
+                            "SSID": "APSSID" 
+                        },
+                        "connectionKey": {
+                            "encryptionType": "NGI_WIFI_ENCRYPTION_WEP64",
+                            "WEP64": {
+                                "auth_alg" : "NGI_WIFI_WEP_AUTH_ALG_OPEN",
+                                "defaultKeyIndex": 1,
+				"isAscii":[
+				   1,
+				   0,
+				   0,
+				   0
+				],
+                                "key": [
+                                    "ABCDE",
+                                    "A1B2C3D4E5",
+                                    "1A1B23D4E5", 
+                                    "1A1B23D4E5" 
+                                ] 
+                            },
+                            "WEP128": {
+                                "auth_alg": "NGI_WIFI_WEP_AUTH_ALG_OPEN",
+                                "defaultKeyIndex": 3,
+				"isAscii":[
+				   1,
+				   0,
+				   0,
+				   1			
+				],
+                                "key": [
+                                    "ABCDEFABCDEFA",
+                                    "A1B2C3D4E5F1A2B3C4D5E1F2A3",
+                                    "A1B2C3D4E5F1A2B3C4D5E1F2A3",
+                                    "ABCDEFABCDEFA" 
+                                ] 
+                            },
+                            "WPA": {
+                                "isAscii": 0,
+                                "passphrase": {
+                                    "length": 10,
+                                    "key": "1234567890" 
+                                },
+                                "PSK": "BACDCDCDCD" 
+                            } 
+                        } 
+                    } 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wifi_wps_generate_dev_pwd": {
+        "NGI_STATUS": "NGI_STATUS_OK" ,
+        "Value": {
+            "devicePwds": [
+                {
+                    "dev": 34567,
+                    "devicePwd": "ABCDEF" 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wifi_ap_configure": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_ap_get_config": {
+        "NGI_STATUS": "NGI_STATUS_OK" ,
+        "Value": {
+            "configs": [
+                {
+                    "dev": 56789,
+                    "config": {
+                        "apStandard": [
+                            "NGI_WIFI_STANDARD_802_11_A",
+                            "NGI_WIFI_STANDARD_802_11_B",
+                            "NGI_WIFI_STANDARD_802_11_N" 
+                        ],
+                        "apSSID": "APSSID",
+                        "apChannel": 16,
+                        "apBroadcastSSID": 1,
+                        "apEncryption": {
+                            "encryptionType": "NGI_WIFI_ENCRYPTION_WEP128",
+                            "groupCiphers": [
+                                "NGI_WIFI_CIPHER_SUITE_NONE",
+                                "NGI_WIFI_CIPHER_SUITE_TKIP",
+                                "NGI_WIFI_CIPHER_SUITE_CCMP" 
+                            ],
+                            "pairwiseCiphers": [
+                                "NGI_WIFI_CIPHER_SUITE_NONE",
+                                "NGI_WIFI_CIPHER_SUITE_TKIP",
+                                "NGI_WIFI_CIPHER_SUITE_CCMP" 
+                            ],
+                            "authenticationSuite": "NGI_WIFI_AUTHENTICATION_SUITE_NONE" 
+                        },
+                        "apConnectionKey": {
+                            "encryptionType": "NGI_WIFI_ENCRYPTION_WEP128",
+                            "WEP128": {
+                                "auth_alg": "NGI_WIFI_WEP_AUTH_ALG_SHARED_KEY",
+                                "defaultKeyIndex": 3,
+                                "key": [
+                                    "A1B2C3D4E5F1A2B3C4D5E1F2A1",
+                                    "A1B2C3D4E5F1A2B3C4D5E1F2A2",
+                                    "A1B2C3D4E5F1A2B3C4D5E1F2A3",
+                                    "A1B2C3D4E5F1A2B3C4D5E1F2A4" 
+                                ] 
+                            } 
+                        },
+                        "apWPSConfig": {
+                            "wpsConfigMethods": [
+                                "NGI_WIFI_WPS_CONFIG_LABEL",
+                                "NGI_WIFI_WPS_CONFIG_DISPLAY",
+                                "NGI_WIFI_WPS_CONFIG_KEYPAD" 
+                            ],
+                            "wpsState": "NGI_WIFI_WPS_STATE_CONFIGURED",
+                            "isAPLocked": 1,
+                            "UUID": "A122A122A122B542CD21542C542C542C",
+                            "deviceName": "UserFriendlyName",
+                            "apPin" : [11,12,13,14,15,16,17,18], 
+                            "apPinLength" : 5
+                        } 
+                    } 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wifi_ap_get_num_associated_devices": {
+        "NGI_STATUS": "NGI_STATUS_OK" ,
+        "Value": {
+            "numDevices": [
+                {
+                    "dev": 56789,
+                    "numDevices": 3 
+                }
+            ] 
+        } 
+    },
+    "ngi_wifi_ap_get_associated_device_addr": {
+        "NGI_STATUS": "NGI_STATUS_OK" ,
+        "Value": {
+            "addrs": [
+                {
+                    "dev": 56789,
+                    "index": 0,
+                    "addr": "AB:12:32:12:BC:CD" 
+                },
+                {
+                    "dev": 56789,
+                    "index": 1,
+                    "addr": "AB:12:32:12:BC:DE" 
+                },
+                {
+                    "dev": 56789,
+                    "index": 2,
+                    "addr": "AB:12:32:12:BC:EF" 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wifi_ap_configure_access_control_list": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_ap_get_access_control_list_num_entries": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_ap_get_access_control_list": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_ap_get_num_denied_sta": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_ap_retrieve_denied_sta_list": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wifi_ap_reset_denied_sta_list": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    }
+}

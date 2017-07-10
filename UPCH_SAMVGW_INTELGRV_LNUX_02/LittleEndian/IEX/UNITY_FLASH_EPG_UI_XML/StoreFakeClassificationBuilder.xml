@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fakeClassifications>
+	<fakeCLLevel1>
+		<fakeClassification name="DIC_STORE_APPS" details="" type="1" categoryType="11" isAdult="false" isLeaf="true" isHidden="false" isDefault="false" order="1" p_Id="ROOT" />
+	</fakeCLLevel1>
+</fakeClassifications>

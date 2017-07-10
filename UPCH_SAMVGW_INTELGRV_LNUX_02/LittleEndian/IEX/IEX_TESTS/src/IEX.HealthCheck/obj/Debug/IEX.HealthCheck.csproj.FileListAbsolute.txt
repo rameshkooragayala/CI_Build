@@ -1,0 +1,5 @@
+D:\Oct05\IEX_TESTS\src\bin\IEX.HealthCheck.dll
+D:\Oct05\IEX_TESTS\src\bin\IEX.HealthCheck.pdb
+D:\Oct05\IEX_TESTS\src\IEX.HealthCheck\obj\Debug\IEX.HealthCheck.csprojResolveAssemblyReference.cache
+D:\Oct05\IEX_TESTS\src\IEX.HealthCheck\obj\Debug\IEX.HealthCheck.dll
+D:\Oct05\IEX_TESTS\src\IEX.HealthCheck\obj\Debug\IEX.HealthCheck.pdb

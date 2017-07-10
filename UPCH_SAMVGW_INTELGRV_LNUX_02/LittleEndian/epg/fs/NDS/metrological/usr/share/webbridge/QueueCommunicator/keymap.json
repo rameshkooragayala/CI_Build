@@ -1,0 +1,656 @@
+[
+  {
+    "code": "0x01000005",
+    "key": 28,
+    "char": "[OK]"
+  },
+  {
+    "code": "0x01000012",
+    "key": 105,
+    "char": "[LEFT]"
+  },
+  {
+    "code": "0x01000013",
+    "key": 103,
+    "char": "[UP]"
+  },
+  {
+    "code": "0x01000014",
+    "key": 106,
+    "char": "[RIGHT]"
+  },
+  {
+    "code": "0x01000015",
+    "key": 108,
+    "char": "[DOWN]"
+  },
+  {
+    "code": "0x01000061",
+    "key": 1,
+    "char": "[ESC]"
+  },
+  {
+    "code": "0x01000005",
+    "key": 28,
+    "char": "[ENTER]"
+  },
+  {
+    "code": "0x01000003",
+    "key": 14,
+    "char": "[BACKSPACE]"
+  },
+  {
+    "code": "0x01000084",
+    "key": 64,
+    "char": "[RECORD]"
+  },
+  {
+    "code": "0x010000C5",
+    "key": 65,
+    "char": "[REWIND]"
+  },
+  {
+    "code": "0x01020005",
+    "key": 66,
+    "char": "[PLAYPAUSE]"
+  },
+  {
+    "code": "0x01000102",
+    "key": 67,
+    "char": "[FORWARD]"
+  },
+  {
+    "code": "0x01000081",
+    "key": 68,
+    "char": "[STOPCD]"
+  },
+  {
+    "code": "0x00000020",
+    "key": 57,
+    "char": "[SPACE]"
+  },
+  {
+    "code": "0x00000030",
+    "key": 11,
+    "char": "0"
+  },
+  {
+    "code": "0x00000031",
+    "key": 2,
+    "char": "1"
+  },
+  {
+    "code": "0x00000032",
+    "key": 3,
+    "char": "2"
+  },
+  {
+    "code": "0x00000033",
+    "key": 4,
+    "char": "3"
+  },
+  {
+    "code": "0x00000034",
+    "key": 5,
+    "char": "4"
+  },
+  {
+    "code": "0x00000035",
+    "key": 6,
+    "char": "5"
+  },
+  {
+    "code": "0x00000036",
+    "key": 7,
+    "char": "6"
+  },
+  {
+    "code": "0x00000037",
+    "key": 8,
+    "char": "7"
+  },
+  {
+    "code": "0x00000038",
+    "key": 9,
+    "char": "8"
+  },
+  {
+    "code": "0x00000039",
+    "key": 10,
+    "char": "9"
+  },
+  {
+    "code": "0x00000041",
+    "key": 30,
+    "char": "a"
+  },
+  {
+    "code": "0x00000042",
+    "key": 48,
+    "char": "b"
+  },
+  {
+    "code": "0x00000043",
+    "key": 46,
+    "char": "c"
+  },
+  {
+    "code": "0x00000044",
+    "key": 32,
+    "char": "d"
+  },
+  {
+    "code": "0x00000045",
+    "key": 18,
+    "char": "e"
+  },
+  {
+    "code": "0x00000046",
+    "key": 33,
+    "char": "f"
+  },
+  {
+    "code": "0x00000047",
+    "key": 34,
+    "char": "g"
+  },
+  {
+    "code": "0x00000048",
+    "key": 35,
+    "char": "h"
+  },
+  {
+    "code": "0x00000049",
+    "key": 23,
+    "char": "i"
+  },
+  {
+    "code": "0x0000004A",
+    "key": 36,
+    "char": "j"
+  },
+  {
+    "code": "0x0000004B",
+    "key": 37,
+    "char": "k"
+  },
+  {
+    "code": "0x0000004C",
+    "key": 38,
+    "char": "l"
+  },
+  {
+    "code": "0x0000004D",
+    "key": 50,
+    "char": "m"
+  },
+  {
+    "code": "0x0000004E",
+    "key": 49,
+    "char": "n"
+  },
+  {
+    "code": "0x0000004F",
+    "key": 24,
+    "char": "o"
+  },
+  {
+    "code": "0x00000050",
+    "key": 25,
+    "char": "p"
+  },
+  {
+    "code": "0x00000051",
+    "key": 16,
+    "char": "q"
+  },
+  {
+    "code": "0x00000052",
+    "key": 19,
+    "char": "r"
+  },
+  {
+    "code": "0x00000053",
+    "key": 31,
+    "char": "s"
+  },
+  {
+    "code": "0x00000054",
+    "key": 20,
+    "char": "t"
+  },
+  {
+    "code": "0x00000055",
+    "key": 22,
+    "char": "u"
+  },
+  {
+    "code": "0x00000056",
+    "key": 47,
+    "char": "v"
+  },
+  {
+    "code": "0x00000057",
+    "key": 17,
+    "char": "w"
+  },
+  {
+    "code": "0x00000058",
+    "key": 45,
+    "char": "x"
+  },
+  {
+    "code": "0x00000059",
+    "key": 21,
+    "char": "y"
+  },
+  {
+    "code": "0x0000005A",
+    "key": 44,
+    "char": "z"
+  },
+  {
+    "code": "0x02000041",
+    "key": 30,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "A"
+  },
+  {
+    "code": "0x02000042",
+    "key": 48,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "B"
+  },
+  {
+    "code": "0x02000043",
+    "key": 46,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "C"
+  },
+  {
+    "code": "0x02000044",
+    "key": 32,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "D"
+  },
+  {
+    "code": "0x02000045",
+    "key": 18,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "E"
+  },
+  {
+    "code": "0x02000046",
+    "key": 33,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "F"
+  },
+  {
+    "code": "0x02000047",
+    "key": 34,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "G"
+  },
+  {
+    "code": "0x02000048",
+    "key": 35,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "H"
+  },
+  {
+    "code": "0x02000049",
+    "key": 23,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "I"
+  },
+  {
+    "code": "0x0200004A",
+    "key": 36,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "J"
+  },
+  {
+    "code": "0x0200004B",
+    "key": 37,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "K"
+  },
+  {
+    "code": "0x0200004C",
+    "key": 38,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "L"
+  },
+  {
+    "code": "0x0200004D",
+    "key": 50,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "M"
+  },
+  {
+    "code": "0x0200004E",
+    "key": 49,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "N"
+  },
+  {
+    "code": "0x0200004F",
+    "key": 24,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "O"
+  },
+  {
+    "code": "0x02000050",
+    "key": 25,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "P"
+  },
+  {
+    "code": "0x02000051",
+    "key": 16,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "Q"
+  },
+  {
+    "code": "0x02000052",
+    "key": 19,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "R"
+  },
+  {
+    "code": "0x02000053",
+    "key": 31,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "S"
+  },
+  {
+    "code": "0x02000054",
+    "key": 20,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "T"
+  },
+  {
+    "code": "0x02000055",
+    "key": 22,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "U"
+  },
+  {
+    "code": "0x02000056",
+    "key": 47,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "V"
+  },
+  {
+    "code": "0x02000057",
+    "key": 17,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "W"
+  },
+  {
+    "code": "0x02000058",
+    "key": 45,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "X"
+  },
+  {
+    "code": "0x02000059",
+    "key": 21,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "Y"
+  },
+  {
+    "code": "0x0200005A",
+    "key": 44,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "Z"
+  },
+  {
+    "code": "0x01000004",
+    "key": 28,
+    "char": "[ENTER]"
+  },
+  {
+    "code": "0x01000048",
+    "key": 59,
+    "char": "[RED]"
+  },
+  {
+    "code": "0x01000049",
+    "key": 60,
+    "char": "[GREEN]"
+  },
+  {
+    "code": "0x0100004A",
+    "key": 61,
+    "char": "[YELLOW]"
+  },
+  {
+    "code": "0x0100004B",
+    "key": 62,
+    "char": "[BLUE]"
+  },
+  {
+    "code": "0x02000031",
+    "key": 2,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "!"
+  },
+  {
+    "code": "0x02000040",
+    "key": 3,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "@"
+  },
+  {
+    "code": "0x02000023",
+    "key": 4,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "#"
+  },
+  {
+    "code": "0x02000024",
+    "key": 5,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "$"
+  },
+  {
+    "code": "0x02000025",
+    "key": 6,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "%"
+  },
+  {
+    "code": "0x02000026",
+    "key": 8,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "&"
+  },
+  {
+    "code": "0x02000038",
+    "key": 9,
+    "modifiers": [
+      "shift"
+    ]
+  },
+  {
+    "code": "0x02000039",
+    "key": 10,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "("
+  },
+  {
+    "code": "0x02000030",
+    "key": 11,
+    "modifiers": [
+      "shift"
+    ],
+    "char": ")"
+  },
+  {
+    "code": "0x0200005F",
+    "key": 12,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "_"
+  },
+  {
+    "code": "0x0000003D",
+    "key": 13,
+    "char": "="
+  },
+  {
+    "code": "0x0A000034",
+    "key": 434,
+    "char": "£"
+  },
+  {
+    "code": "0x0000005C",
+    "key": 43,
+    "char": "\\"
+  },
+  {
+    "code": "0x0000002F",
+    "key": 53,
+    "char": "/"
+  },
+  {
+    "code": "0x0200003A",
+    "key": 39,
+    "modifiers": [
+      "shift"
+    ],
+    "char": ":"
+  },
+  {
+    "code": "0x0000003B",
+    "key": 39,
+    "char": ";"
+  },
+  {
+    "code": "0x08000035",
+    "key": 435,
+    "char": "€"
+  },
+  {
+    "code": "0x0000002D",
+    "key": 12,
+    "char": "-"
+  },
+  {
+    "code": "0x0200002B",
+    "key": 13,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "+"
+  },
+  {
+    "code": "0x0200003F",
+    "key": 53,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "question mark"
+  },
+  {
+    "code": "0x0000002C",
+    "key": 51,
+    "char": ","
+  },
+  {
+    "code": "0x0000002E",
+    "key": 52,
+    "char": "."
+  },
+  {
+    "code": "0x00000060",
+    "key": 41,
+    "char": "`"
+  },
+  {
+    "code": "0x00000022",
+    "key": 40,
+    "char": "'"
+  },
+  {
+    "code": "0x02000022",
+    "key": 40,
+    "modifiers": [
+      "shift"
+    ],
+    "char": "\""
+  },
+  {
+    "code": "0x010000BC",
+    "key": 63,
+    "char": "INFO"
+  }
+]

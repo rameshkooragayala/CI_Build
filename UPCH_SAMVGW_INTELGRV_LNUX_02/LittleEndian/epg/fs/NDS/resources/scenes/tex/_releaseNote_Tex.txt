@@ -1,0 +1,14 @@
+**************
+*   texV23   *
+*  15.06.12  *
+**************
+
+Files below have been resized in order to optimize memory
+
+Misteffect_ChannelList.png
+Reflet_2.png
+FlareLeft2Right.png
+FlareRight2Left.png
+FlareStatic.png
+flareMist512x256.png
+Horizon_2.png

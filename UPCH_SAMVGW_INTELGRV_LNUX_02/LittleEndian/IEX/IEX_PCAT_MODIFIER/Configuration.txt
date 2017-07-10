@@ -1,0 +1,18 @@
+Open Windows Explorer
+Select "Tools"
+Select "Folder Options"
+Select the "File Types" Tab
+Scroll down to find and select the XLS extension
+Click the "Advanced" Button
+Select the "Open" action from the list
+Click the "Edit..." Button
+Where is says "Application used to perform action:"
+If not already there, add:
+
+/e "%1"
+
+to the end of the file path
+Uncheck the "Use DDE" box
+Click OK
+Click OK
+Click Close 

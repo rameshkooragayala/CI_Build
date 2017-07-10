@@ -1,0 +1,27 @@
+"ui_resources";"1.0"
+# version: 2.0.4
+"object_id";"text[eng]:label";"text[dut]:label";"file:icon"
+"rating/DVB/1";"6";"6";"icon/6.png"
+"rating/DVB/2";"6";"6";"icon/6.png"
+"rating/DVB/3";"6";"6";"icon/6.png"
+"rating/DVB/4";"9";"9";"icon/9.png"
+"rating/DVB/5";"9";"9";"icon/9.png"
+"rating/DVB/6";"9";"9";"icon/9.png"
+"rating/DVB/7";"12";"12";"icon/12.png"
+"rating/DVB/8";"12";"12";"icon/12.png"
+"rating/DVB/9";"12";"12";"icon/12.png"
+"rating/DVB/10";"16";"16";"icon/16.png"
+"rating/DVB/11";"16";"16";"icon/16.png"
+"rating/DVB/12";"16";"16";"icon/16.png"
+"rating/DVB/13";"16";"16";"icon/16.png"
+"rating/DVB/14";"18";"18";"icon/18.png"
+"rating/DVB/15";"18+";"18+";"icon/adult.png"
+"rating_threshold/DVB/4";"6";"6";"icon/6.png"
+"rating_threshold/DVB/7";"9";"9";"icon/9.png"
+"rating_threshold/DVB/10";"12";"12";"icon/12.png"
+"rating_threshold/DVB/14";"16";"16";"icon/16.png"
+"rating_threshold/DVB/15";"18";"18";"icon/18.png"
+"rating_threshold/DVB/255";"UNLOCK ALL";"DEBLOKKEER ALLES";
+"PIN/master";"MASTER PIN CODE";"PINCODE";
+"PIN/validity_rule/4_digits";"The code shall be a 4 digits number.";"De code moet een 4-cijferig getal zijn.";
+"PIN/validity_rule/4_digits_2_different";"The code shall be a 4 digits number with at least 2 different digits.";"De code moet een 4-cijferig getal met minstens 2 verschillende cijfers zijn.";

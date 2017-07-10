@@ -1,0 +1,10 @@
+/local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/PWM_Process_main.o: \
+ PWM_Process_main.c \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemcommon/inc/system_common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/common_middleware/pwm/inc/pwm_init.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemstring/inc/systemstring.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemlang/inc/systemlang.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/common_middleware/pwm/src/server/pwm_main.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/diag/inc/diag.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/diag/inc/diag_common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/diag/inc/diag_log.h

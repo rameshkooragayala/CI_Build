@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	<contentTypes>
+		<contentType name="level1" level="x2y1" stepRL="100" stepUD="100" stepOB="800"></contentType>
+		<contentType name="level2" level="x2y6" stepRL="100" stepUD="100" stepOB="800"></contentType>
+	</contentTypes>
+	<animations>
+		
+	</animations>
+</sceneConfig>

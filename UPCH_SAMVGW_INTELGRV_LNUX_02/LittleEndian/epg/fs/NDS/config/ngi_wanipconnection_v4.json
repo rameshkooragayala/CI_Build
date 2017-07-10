@@ -1,0 +1,202 @@
+{
+    "ngi_wanipconnection_get_capabilities": {
+        "Value": {
+            "capabilities": [
+                {
+                    "dev" : 12345,
+                    "NGI_STATUS" : "NGI_STATUS_OK",
+                    "capabilities": {
+                        "features": [
+                            "NGI_WANIPCONNECTION_FEATURE_EVENTS",
+                            "NGI_WANIPCONNECTION_FEATURE_PORT_MAPPING"
+                        ] 
+                    } 
+                },
+                {
+                    "dev" : 67890,
+                    "NGI_STATUS" : "NGI_STATUS_NOT_SUPPORTED",
+                    "capabilities": {
+                        "features": [
+                            "NGI_WANIPCONNECTION_FEATURE_EVENTS"
+                        ] 
+                    } 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wanipconnection_get_config":{
+        "NGI_STATUS": "NGI_STATUS_OK",	
+        "Value":{
+				"configs":[
+							{
+							"dev" : 12345,
+                            "NGI_STATUS" : "NGI_STATUS_OK",
+							"config":{
+								"enable": 1,
+								"connectionType":"NGI_WANIPCONNECTION_TYPE_IP_ROUTED",
+								"NATEnabled": 1,
+								"addressingType": "NGI_ADDRESSING_TYPE_DHCP",
+								"externalIPAddress":{
+													"ss_family": "AF_INET",
+													"port_number":6500,
+													"IP_address":"10.201.76.198"
+													},								
+								"prefixLength" : 8,
+								"defaultGateway":{
+													"ss_family": "AF_INET",
+													"port_number":24,
+													"IP_address":"10.201.77.86"
+													},
+								"DNSEnabled": 13,
+								"nbDNSServers": 1,
+								"DNSServers": [
+											   {
+													"ss_family": "AF_INET",
+													"port_number":24,
+													"IP_address":"10.201.77.86"
+											   },
+											  {
+													"ss_family": "AF_INET",
+													"port_number":24,
+													"IP_address":"10.201.77.86"
+											   },
+											   {				
+													"ss_family": "AF_INET",
+													"port_number":24,
+													"IP_address":"10.201.77.86"
+											  }	  
+											],
+								"MACAddress": "10:1C:C3:07:8D:CA"								
+							}
+						},
+						{
+							"dev" : 67890,
+                            "NGI_STATUS" : "NGI_STATUS_NOT_SUPPORTED",
+							"config":{
+								"enable": 0,
+								"connectionType":"NGI_WANIPCONNECTION_TYPE_IP_ROUTED",
+								"NATEnabled": 0,
+								"addressingType": "NGI_ADDRESSING_TYPE_UNCONFIGURED",
+								"externalIPAddress":{
+													"ss_family": "AF_INET6",
+													"port_number":24,
+													"IP_address":""
+													},
+								"prefixLength" : 0,																					
+								"defaultGateway":{
+													"ss_family": "AF_INET6",
+													"port_number":24,
+													"IP_address":""
+													},
+								"DNSEnabled": 1,
+								"nbDNSServers": 1,
+								"DNSServers": [
+											   {
+													"ss_family": "AF_INET6",
+													"port_number":24,
+													"IP_address":""
+											   },
+											  {
+													"ss_family": "AF_INET6",
+													"port_number":24,
+													"IP_address":""
+											   },
+											   {				
+													"ss_family": "AF_INET6",
+													"port_number":24,
+													"IP_address":""
+											  }	  
+											],
+								"MACAddress": "00:1C:C3:07:8D:CA"
+							}
+						}
+				]
+                }
+    },
+    "ngi_wanipconnection_control":{
+	"NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_wanipconnection_get_status_info": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "statusInfo": [
+                {
+                    "dev" : 12345,
+                    "statusInfo" : {
+                        "connectionStatus" : "NGI_WANIPCONNECTION_STATUS_CONNECTED",
+                        "uptime" : 1100,
+                        "lastConnectionError": "NGI_WANIPCONNECTION_ERROR_NONE" 
+                    } 
+                },
+                {
+                    "dev" : 67890,
+                    "statusInfo" : {
+                        "connectionStatus" : "NGI_WANIPCONNECTION_STATUS_UNCONFIGURED",
+                        "uptime" : 1100,
+                        "lastConnectionError": "NGI_WANIPCONNECTION_ERROR_NONE" 
+                    } 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wanipconnection_get_port_mapping_num_entries": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "nbEntries": [
+                {
+                    "dev" : 12345,
+                    "nbEntries": 3 
+                },
+                {
+                    "dev" : 67890,
+                    "nbEntries": 0 
+                } 
+            ] 
+        } 
+    },
+    "ngi_wanipconnection_add_port_mapping": {
+        "NGI_STATUS": "NGI_STATUS_OK"
+    },
+    "ngi_wanipconnection_del_port_mapping": {
+        "NGI_STATUS": "NGI_STATUS_OK"
+    },
+    "ngi_wanipconnection_get_port_mapping_table": {
+        "NGI_STATUS": "NGI_STATUS_OK"
+    },
+	"ngi_wanipconnection_open_event_queue": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "wanip_events": [
+            {
+                "dev" : 12345,
+                "events": [
+                    "NGI_WANIPCONNECTION_EVENT_UNCONFIGURED",
+                    "NGI_WANIPCONNECTION_EVENT_CONNECTING",
+                    "NGI_WANIPCONNECTION_EVENT_CONNECTED",
+                    "NGI_WANIPCONNECTION_EVENT_DISCONNECTING",
+                    "NGI_WANIPCONNECTION_EVENT_DISCONNECTED",
+                    "NGI_WANIPCONNECTION_EVENT_NEW_EXTERNAL_IP_ADDR" 
+                ] 
+            },
+            {
+                "dev" : 67890,
+                "events": [
+                    "NGI_WANIPCONNECTION_EVENT_UNCONFIGURED",
+                    "NGI_WANIPCONNECTION_EVENT_CONNECTING",
+                    "NGI_WANIPCONNECTION_EVENT_CONNECTED",
+                    "NGI_WANIPCONNECTION_EVENT_DISCONNECTING",
+                    "NGI_WANIPCONNECTION_EVENT_DISCONNECTED",
+                    "NGI_WANIPCONNECTION_EVENT_NEW_EXTERNAL_IP_ADDR" 
+                ] 
+            }
+        ] 
+    },
+	"ngi_wanipconnection_close_event_queue": {
+        "NGI_STATUS": "NGI_STATUS_OK"
+    },
+    "ngi_wanipconnection_subscribe_events": {
+        "NGI_STATUS": "NGI_STATUS_OK"
+    },
+    "ngi_wanipconnection_get_event": {
+        "NGI_STATUS": "NGI_STATUS_OK"
+    }
+}

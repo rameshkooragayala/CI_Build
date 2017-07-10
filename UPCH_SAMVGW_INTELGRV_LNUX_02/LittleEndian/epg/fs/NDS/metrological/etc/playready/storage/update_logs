@@ -1,0 +1,47 @@
+Loaded plugins: product-id, refresh-packagekit, rhnplugin, search-disabled-
+              : repos, security, subscription-manager
+This system is receiving updates from RHN Classic or RHN Satellite.
+Setting up Update Process
+Resolving Dependencies
+--> Running transaction check
+---> Package bind-libs.x86_64 32:9.8.2-0.62.rc1.el6_9.2 will be updated
+---> Package bind-libs.x86_64 32:9.8.2-0.62.rc1.el6_9.4 will be an update
+---> Package bind-utils.x86_64 32:9.8.2-0.62.rc1.el6_9.2 will be updated
+---> Package bind-utils.x86_64 32:9.8.2-0.62.rc1.el6_9.4 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch        Version                        Repository     Size
+================================================================================
+Updating:
+ bind-libs       x86_64      32:9.8.2-0.62.rc1.el6_9.4      rhel6_64      892 k
+ bind-utils      x86_64      32:9.8.2-0.62.rc1.el6_9.4      rhel6_64      189 k
+
+Transaction Summary
+================================================================================
+Upgrade       2 Package(s)
+
+Total download size: 1.1 M
+Downloading Packages:
+--------------------------------------------------------------------------------
+Total                                           6.7 MB/s | 1.1 MB     00:00     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Updating   : 32:bind-libs-9.8.2-0.62.rc1.el6_9.4.x86_64                   1/4 
+  Updating   : 32:bind-utils-9.8.2-0.62.rc1.el6_9.4.x86_64                  2/4 
+  Cleanup    : 32:bind-utils-9.8.2-0.62.rc1.el6_9.2.x86_64                  3/4 
+  Cleanup    : 32:bind-libs-9.8.2-0.62.rc1.el6_9.2.x86_64                   4/4 
+  Verifying  : 32:bind-libs-9.8.2-0.62.rc1.el6_9.4.x86_64                   1/4 
+  Verifying  : 32:bind-utils-9.8.2-0.62.rc1.el6_9.4.x86_64                  2/4 
+  Verifying  : 32:bind-utils-9.8.2-0.62.rc1.el6_9.2.x86_64                  3/4 
+  Verifying  : 32:bind-libs-9.8.2-0.62.rc1.el6_9.2.x86_64                   4/4 
+
+Updated:
+  bind-libs.x86_64 32:9.8.2-0.62.rc1.el6_9.4                                    
+  bind-utils.x86_64 32:9.8.2-0.62.rc1.el6_9.4                                   
+
+Complete!

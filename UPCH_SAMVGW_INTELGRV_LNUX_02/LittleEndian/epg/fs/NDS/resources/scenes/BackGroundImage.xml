@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<u:scene xmlns:u="scene_desc">
+  <markers>
+    <marker name="00"		position="0.0"></marker>
+    <marker name="01"		position="1.0"></marker>
+	<marker name="02"		position="2.0"></marker>
+    <marker name="03"		position="3.0"></marker>
+ </markers>
+
+  <animations>
+    <animation name="intro" 	begin_marker="00"  	 end_marker="01"   start_pos_marker="00" 	speed="1" loop="false" reverse="false"></animation>
+    <animation name="outro"   	begin_marker="02"  	 end_marker="03"   start_pos_marker="02" 	speed="1" loop="false" reverse="false"></animation>
+  </animations>
+  
+</u:scene>

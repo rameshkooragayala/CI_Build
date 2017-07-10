@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- PIP zone chBar_pipError_mc-->
+<zone name="v1" type="v1" id="null" x="930" y="401" w="384" h="216"/>
+
+<zone name="topRow0" type="topRow0" id="null" x="10" y="10" w="530" h="120"/>
+<zone name="topRow1" type="topRow1" id="null" x="540" y="10" w="530" h="120"/>
+<zone name="topRow2" type="topRow2" id="null" x="1070" y="10" w="530" h="120"/>
+
+<zone name="middleRow0" type="middleRow0" id="null" x="10" y="140" w="530" h="120"/>
+<zone name="middleRow1" type="middleRow1" id="null" x="540" y="140" w="530" h="120"/>
+<zone name="middleRow2" type="middleRow2" id="null" x="1070" y="140" w="530" h="120"/>
+
+<zone name="bottomRow0" type="bottomRow0" id="null" x="10" y="270" w="530" h="120"/>
+<zone name="bottomRow1" type="bottomRow1" id="null" x="540" y="270" w="530" h="120"/>
+<zone name="bottomRow2" type="bottomRow2" id="null" x="1070" y="270" w="530" h="120"/>
+
+<zone name="PIPHShadow" type="PIPHShadow" id="null" x="930" y="625.85" w="434" h="27"/>
+<zone name="PIPVShadow" type="PIPVShadow" id="null" x="1324" y="401.75" w="27" h="216"/>
+
+<zone name="LockedChannel" type="LockedChannel" id="null" x="271.75" y="1710" w="760" h="40"/>
+<zone name="RBPlayback" type="LockedChannel" id="null" x="271.75" y="1764" w="760" h="35"/>
+
+<zone name="g1" type="g" id="null" x="1288" y="1645.85" w="760" h="100"/>										
+
+<zone name="p1_u" type="p1_u" id="null" x="10" y="790" w="180" h="260"/>
+<zone name="p1" type="p" id="1" x="10" y="1050" w="180" h="260"/>
+<zone name="p1_d" type="p1_d" id="null" x="10" y="1310" w="180" h="260"/>
+
+<zone name="p2_u" type="p2_u" id="null" x="200" y="790" w="180" h="260"/>
+<zone name="p2" type="p" id="2" x="200" y="1050" w="180" h="260"/>
+<zone name="p2_d" type="p2_d" id="null" x="200" y="1310" w="180" h="260"/>
+
+<zone name="zap" type="zap" id="1" x="10" y="1050" w="180" h="260"/>
+
+<zone name="p1Cut1" type="p1Cut" id="1" x="10" y="1050" w="180" h="260"/>
+<zone name="p2Cut1" type="p2Cut" id="2" x="200" y="1050" w="180" h="260"/>
+<zone name="s1Cut1" type="s1Cut" id="1" x="0" y="260" w="904.85" h="260"/>
+<zone name="s2Cut1" type="s2Cut" id="2" x="905.85" y="0" w="904" h="260"/>
+<zone name="w1Cut1" type="w1Cut" id="1" x="905.85" y="270" w="904" h="180"/>
+
+<zone name="s1" type="s" id="1" x="10" y="400" w="904" h="260"/>
+<zone name="s1_u" type="s1_u" id="2" x="0" y="0" w="180" h="260"/>
+<zone name="s1_d" type="s1_d" id="2" x="0" y="520" w="180" h="260"/>
+
+<zone name="w1" type="w" id="1" x="10" y="860" w="904" h="180"/>
+<zone name="w2" type="w" id="2" x="10" y="860" w="904" h="180"/>
+<zone name="w1_u" type="w1_u" id="2" x="10" y="680" w="180" h="180"/>
+<zone name="w1_d" type="w1_d" id="2" x="10" y="1040" w="180" h="180"/>
+
+
+<zone name="shadow1" type="shadow" id="1" x="1790" y="1817" w="180" h="27"/>
+<zone name="shadow2" type="shadow" id="2" x="1790" y="1845" w="180" h="27"/>
+
+<zone name="shadoww1" type="shadoww" id="1" x="1790" y="1957" w="180" h="27"/>
+
+
+<!-- static zones -->
+<zone name="pin" type="pin" id="null" x="0" y="532" w="1280" h="270"/>
+<zone name="CBHList" type="CBHList" id="null" x="0" y="1646" w="1280" h="160"/>
+<zone name="CBHList_mask" type="CBHList_mask" id="null" x="0.5" y="1580" w="1280" h="166"/>
+<!-- Sub zone of CBHList for actions -->
+<zone name="CBOnNowList" type="CBOnNowList" id="null" x="0" y="1646" w="1280" h="160"/>
+
+<!-- Sub zone of CBHList common bar -->
+<zone name="CBBar" type="CBBar" id="null" x="39" y="1624" w="1280" h="12"/>
+<!-- fast channel list area -->
+<zone name="CBVList" type="CBVList" id="null" x="530" y="790" w="556" h="720"/>
+<zone name="cnotif" type="cnotif" id="null" x="0" y="1452" w="1280" h="596"/>
+<zone name="UnsubscribedChannel" type="UnsubscribedChannel" id="null" x="271.75" y="1769" w="760" h="35"/>
+<zone name="CBErrorMsg" type="CBErrorMsg" id="null" x="1113" y="1685" w="935" h="100"/>
+<zone name="DCAErrorMsg" type="DCAErrorMsg" id="null" x="1113" y="1685" w="935" h="100"/>
+<zone name="channelList" type="channelList" id="null" x="1430" y="560" w="556" h="720"/>
+<zone name="CBChannelNumber" type="CBChannelNumber" id="null" x="1591.75" y="862.9" w="45" h="30"/>
+
+
+<!-- sub zones -->
+<!-- Please make the y value zero -->
+<zone name="sc0" type="sc0" id="null" x="0" y="0" w="180" h="260"/>
+<zone name="sc1" type="sc1" id="null" x="181" y="0" w="180" h="260"/>
+<zone name="sc2" type="sc2" id="null" x="362" y="0" w="180" h="260"/>
+<zone name="sc3" type="sc3" id="null" x="543" y="0" w="180" h="260"/>
+<zone name="sc4" type="sc4" id="null" x="724" y="0" w="180" h="260"/>
+
+<zone name="wsc0" type="wsc0" id="null" x="0" y="0" w="180" h="180"/>
+<zone name="wsc1" type="wsc1" id="null" x="181" y="0" w="180" h="180"/>
+<zone name="wsc2" type="wsc2" id="null" x="362" y="0" w="180" h="180"/>
+<zone name="wsc3" type="wsc3" id="null" x="543" y="0" w="180" h="180"/>
+<zone name="wsc4" type="wsc4" id="null" x="724" y="0" w="180" h="180"/>
+
+<!-- CHANNEL LIST -->
+<!--  channel bar logo zones -->
+<zone name="logo_focus" type="logo_focus" id="null" x="1633" y="1038" w="200" h="184"/>
+<zone name="logo2" type="logo2" id="null" x="1633" y="896.9" w="200" h="184"/>
+<zone name="logo3" type="logo3" id="null" x="1838" y="896.9" w="200" h="184"/>
+<zone name="logo_up" type="logo_up" id="null" x="1838" y="1038" w="200" h="184"/>
+
+
+<!-- FAST CHANNEL LIST -->
+<zone name="fc_temp" type="fc_temp" id="null" x="-3000" y="-3000" w="80" h="52"/>
+
+<zone name="fc0" type="fc0" id="null" x="1819.35" y="10" w="80" h="52"/>
+<zone name="fc1" type="fc1" id="null" x="1819.35" y="72" w="80" h="52"/>
+<zone name="fc2" type="fc2" id="null" x="1819.35" y="134" w="80" h="52"/>
+<zone name="fc3" type="fc3" id="null" x="1819.35" y="196" w="80" h="52"/>
+<zone name="fc4" type="fc4" id="null" x="1819.35" y="258" w="80" h="52"/>
+<zone name="fc5" type="fc5" id="null" x="1819.35" y="320" w="80" h="52"/>
+<zone name="fc6" type="fc6" id="null" x="1819.35" y="382" w="80" h="52"/>
+<zone name="fc7" type="fc7" id="null" x="1819.35" y="444" w="80" h="52"/>
+<zone name="fc8" type="fc8" id="null" x="1819.35" y="506" w="80" h="52"/>
+
+
+<zone name="fc_txt_0" type="fc_txt_0" id="null" x="989" y="807.35" w="586" h="26"/>
+<zone name="fc_txt_1" type="fc_txt_1" id="null" x="989" y="843.35" w="586" h="26"/>
+<zone name="fc_txt_2" type="fc_txt_2" id="null" x="989" y="879.35" w="586" h="26"/>
+
+<!-- IMPORTANT: CENTER FOCUSED TEXT ZONES These center focused zones x and y pos should be with respect to smaller zones width,height and text centering -->
+<zone name="fc_txt_3" type="fc_txt_3" id="null" x="989" y="928.25" w="586" h="26"/>
+<zone name="fc_txt_4" type="fc_txt_4" id="null" x="989" y="991.25" w="586" h="26"/>
+<zone name="fc_txt_5" type="fc_txt_5" id="null" x="989" y="1050.25" w="586" h="26"/>
+<!-- IMPORTANT: CENTER FOCUSED TEXT ZONES -->
+
+<zone name="fc_txt_6" type="fc_txt_6" id="null" x="989" y="1101.35" w="586" h="26"/>
+<zone name="fc_txt_7" type="fc_txt_7" id="null" x="989" y="1137.35" w="586" h="26"/>
+<zone name="fc_txt_8" type="fc_txt_8" id="null" x="989" y="1173.35" w="586" h="26"/>
+
+<zone name="fc_focus_pos1" type="fc_focus_pos1" id="null" x="1819.35" y="561" w="160" h="104"/>
+<zone name="fc_focus" type="fc_focus" id="null" x="1819.35" y="675" w="160" h="104"/>
+<zone name="fc_focus_pos2" type="fc_focus_pos2" id="null" x="1819.35" y="789" w="160" h="104"/>
+
+<zone name="fc_favIcon_0" type="fc_favIcon_0" id="null" x="1909.35" y="10" w="20" h="20"/>
+<zone name="fc_favIcon_1" type="fc_favIcon_1" id="null" x="1909.35" y="40" w="20" h="20"/>
+<zone name="fc_favIcon_2" type="fc_favIcon_2" id="null" x="1909.35" y="70" w="20" h="20"/>
+<zone name="fc_favIcon_3" type="fc_favIcon_3" id="null" x="1909.35" y="100" w="20" h="20"/>
+<zone name="fc_favIcon_4" type="fc_favIcon_4" id="null" x="1909.35" y="130" w="20" h="20"/>
+<zone name="fc_favIcon_5" type="fc_favIcon_5" id="null" x="1909.35" y="160" w="20" h="20"/>
+<zone name="fc_favIcon_6" type="fc_favIcon_6" id="null" x="1909.35" y="190" w="20" h="20"/>
+<zone name="fc_favIcon_7" type="fc_favIcon_7" id="null" x="1909.35" y="220" w="20" h="20"/>
+<zone name="fc_favIcon_8" type="fc_favIcon_8" id="null" x="1909.35" y="250" w="20" h="20"/>
+<!-- focused zones -->
+<zone name="list_u" type="list_u" id="null" x="1819.35" y="561" w="160" h="104"/>
+<zone name="list" type="list" id="null" x="1819.35" y="675" w="160" h="104"/>
+<zone name="list_d" type="list_d" id="null" x="1819.35" y="789" w="160" h="104"/>
+
+<!-- zoomed logo positions -->
+<zone name="origin" type="origin" id="null" x="0" y="0" w="1000" h="1000"/>
+
+<zone name="related1" type="related" id="1" x="598" y="1376" w="180" h="260"/>
+<zone name="related2" type="related" id="2" x="0" y="1376" w="180" h="260"/>
+<zone name="relatedl" type="related" id="2" x="418" y="1376" w="180" h="260"/>
+<zone name="relatedr" type="related" id="2" x="778" y="1376" w="180" h="260"/>
+<zone name="relatedwl" type="related" id="2" x="418" y="1455.5" w="180" h="180"/>
+<zone name="relatedwr" type="related" id="2" x="778" y="1456" w="180" h="180"/>
+
+<!--
+<zone name="related1" type="related" id="1" x="1266.85" y="540" w="180" h="260"/>
+<zone name="related2" type="related" id="2" x="0" y="540" w="180" h="260"/>
+<zone name="relatedl" type="related" id="2" x="1086.85" y="540" w="180" h="260"/>
+<zone name="relatedr" type="related" id="2" x="1446.85" y="540" w="180" h="260"/>
+<zone name="relatedwl" type="related" id="2" x="1086.85" y="619.5" w="180" h="180"/>
+<zone name="relatedwr" type="related" id="2" x="1446.85" y="620" w="180" h="180"/>
+-->
+
+<zone name="ImageDetails" type="ImageDetails" id="null" x="10" y="1645" w="760" h="100"/>
+<zone name="RelatedTitle" type="RelatedTitle" id="null" x="1633" y="1118.9" w="200" h="104"/>
+<zone name="RelatedHorizon" type="RelatedHorizon" id="null" x="1290" y="1754.2" w="384" h="4"/>
+<zone name="LogoRelated" type="LogoRelated" id="null" x="1641.75" y="782.9" w="160" h="104"/>
+<zone name="ChannelNameRelated" type="ChannelNameRelated" id="null" x="1290" y="1780" w="586" h="26"/>
+
+<zone name="w_0" type="w_0" id="null" x="968" y="1376" w="180" h="260"/>
+<zone name="w_1" type="w_1" id="null" x="1148" y="1376" w="180" h="260"/>
+<zone name="w_2" type="w_2" id="null" x="1328" y="1376" w="180" h="260"/>
+<zone name="w_3" type="w_3" id="null" x="1508" y="1376" w="180" h="260"/>
+<zone name="w_4" type="w_4" id="null" x="1688" y="1376" w="180" h="260"/>
+<zone name="w_5" type="w_5" id="null" x="1868" y="1376" w="180" h="260"/>
+<zone name="w_6" type="w_6" id="null" x="1868" y="1376" w="180" h="260"/>
+
+<zone name="wi_0" type="w_0" id="null" x="968" y="1456" w="180" h="180"/>
+<zone name="wi_1" type="w_1" id="null" x="1148" y="1456" w="180" h="180"/>
+<zone name="wi_2" type="w_2" id="null" x="1328" y="1456" w="180" h="180"/>
+<zone name="wi_3" type="w_3" id="null" x="1508" y="1456" w="180" h="180"/>
+<zone name="wi_4" type="w_4" id="null" x="1688" y="1456" w="180" h="180"/>
+<zone name="wi_5" type="w_5" id="null" x="1868" y="1456" w="180" h="180"/>
+<zone name="wi_6" type="w_6" id="null" x="1868" y="1456" w="180" h="180"/>
+
+<zone name="w_buffer" type="w_buffer" id="null" x="237" y="1376" w="180" h="260"/>
+<zone name="wi_buffer" type="wi_buffer" id="null" x="237" y="1456" w="180" h="180"/>
+<zone name="offStage" type="offStage" id="null" x="-1000" y="-1000" w="180" h="260"/>
+<zone name="offStageW" type="offStageW" id="null" x="-1000" y="-1000" w="180" h="180"/>
+
+<zone name="Horizon1" type="Horizon" id="1" x="1290" y="1750" w="530" h="12"/>
+<zone name="Horizon2" type="Horizon" id="2" x="1290" y="1765" w="530" h="12"/>
+
+<zone name="chBarProgBar" type="chBarProgBar" id="null" x="1290" y="1750" w="530" h="12"/>
+<zone name="TMProgBar" type="TMProgBar" id="null" x="1114" y="1294" w="1205" h="90"/>
+<zone name="time" type="time" id="null" x="1400.25" y="1247" w="552" h="34"/>
+<zone name="TMMarker" type="TMMarker" id="null" x="1400" y="1284" w="552" h="34"/>
+<zone name="duration" type="duration" id="null" x="1400.25" y="1311" w="552" h="34"/>
+<zone name="trickmode" type="trickmode" id="null" x="270" y="1695" w="1020" h="90"/>
+<zone name="speedX" type="speedX" id="null" x="110" y="1698" w="300" h="100"/>
+<zone name="speedText" type="speedText" id="null" x="145" y="1698" w="50" h="100"/>
+<zone name="TMDetails" type="TMDetails" id="null" x="40" y="1690" w="1010" h="160"/>
+<zone name="TMErrMsg" type="TMErrMsg" id="null" x="1113" y="1254" w="1280" h="90"/>
+

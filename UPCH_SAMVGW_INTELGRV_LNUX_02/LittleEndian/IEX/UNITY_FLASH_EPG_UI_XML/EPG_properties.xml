@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EPG_Properties>
+<properties>
+<prop name="version">upc/KT_REMIX_VOD/172.5.24</prop>
+<prop name="frameRate">20</prop>
+<prop name="resize">false</prop>
+<prop name="enableLockRendering">true</prop>
+<prop name="enableImages">false</prop>
+<prop name="enableSeries">true</prop>
+<prop name="enableFakeCL">true</prop>
+<prop name="defaultOrgId">5591107</prop>
+<prop name="defaultAppId">60004</prop>
+<prop name="billOnTVAppId">60001</prop>
+<prop name="autoPlayTimeout">14400000</prop>
+<prop name="screenSaverTimeout">5400</prop>
+<prop name="enableImageLoader">true</prop>
+<prop name="enablePanoramaLogger">true</prop>
+<prop name="enableLanguageSelection">true</prop>
+<prop name="enablePip">true</prop>
+<prop name="enableFastZapping">true</prop>
+<prop name="PhotoDisplayTimeout">0</prop>
+<prop name="logoPrefetchingCacheSizeToAdd">30</prop>
+<prop name="DefaultLogosCacheSize">50</prop>
+<prop name="enableForceGC">true</prop>
+<prop name="forceGCOnKeyPress">30</prop>
+<prop name="enableSimWorkaround">true</prop>
+<prop name="usePIPForDCATuning">true</prop>
+<prop name="enable3DLayout">true</prop>
+<prop name="channelbarRepeatCount">5</prop>
+<prop name="singleDaySkipTimerDelayForIPC">500</prop>
+
+<prop name="catchupGuideUseStubs">false</prop>
+<prop name="reverseGridDepth">168</prop>
+<prop name="usePredectiveDCATuning">false</prop>
+<prop name="predictiveDCACacheSize">8</prop>
+
+<prop name="platformType"/>
+<prop name="traceKeyCode"/>
+<prop name="traceKeyShortPress">true</prop>
+<prop name="checkGWStatus">true</prop>
+<prop name="useTrickmodeApp">true</prop>
+<prop name="useWifi5GHZ">false</prop>
+<prop name="enableWizard">true</prop>
+<prop name="enableStoreCMDCOptimization">true</prop>
+<prop name="enableStoreOptimization">true</prop>
+<prop name="enablePersonalisedPrice">false</prop>
+<prop name="maxEpisode">500</prop>
+<prop name="hddInterval">3</prop>
+
+<prop name="searchMaxCharLimit">40</prop>
+
+<prop name="bookingNotificationTimeout">5</prop>
+
+<prop name="restartDurationUpdateTimer">60</prop>
+
+<prop name="fastRepeatDelayBetweenKeys">1000</prop>
+
+<prop name="longRepeatTriggerTime">1</prop>
+<prop name="longRepeatSkipDurationDefault">5</prop>
+
+<prop name="longRepeatRbSkipDurationLimit1">15</prop>
+<prop name="longRepeatRbSkipDurationLimit2">30</prop>
+<prop name="longRepeatRbSkipDurationLimit3">60</prop>
+
+<prop name="longRepeatRbSkipDurationFactor1">4</prop>
+<prop name="longRepeatRbSkipDurationFactor2">3</prop>
+<prop name="longRepeatRbSkipDurationFactor3">2</prop>
+
+<prop name="longRepeatMinimumDuration">5</prop>
+<prop name="longRepeatNoAccelerationDuration">15</prop>
+
+<prop name="longRepeatAcceleration1">15</prop>
+<prop name="longRepeatAcceleration2">25</prop>
+<prop name="longRepeatAcceleration3">35</prop>
+
+<prop name="longRepeatAccelerationFactor1">0.5</prop>
+<prop name="longRepeatAccelerationFactor2">0.75</prop>
+<prop name="longRepeatAccelerationFactor3">1</prop>
+<prop name="longRepeatAccelerationFactor4">1.25</prop>
+
+<prop name="UPCStoreCollectionsUseDisplayType">true</prop>
+<prop name="UPCStoreCollectionsUsePrefetching">true</prop>
+<prop name="UPCStorePrefetchPageTimeout">1000</prop>
+<prop name="UPCStorePrefetchUpDownTimeout">500</prop>
+
+<prop name="ListViewUseCutAnimation">true</prop>
+<prop name="ListViewPosterNeededForFastNav">false</prop>
+<prop name="ListViewDisplayGenreForFastNav">false</prop>
+<prop name="IsUPCLayoutNeededEverywhere">false</prop>
+
+<!-- XmlBridge activation/configuration 
+     - xmlBridgeIP: IP of the computer with StageExplorer running
+     - xmlBridgePort: port to use (25000  by default)
+<prop name="xmlBridgeIP">172.21.244.139</prop>
+<prop name="xmlBridgePort">25000</prop>  -->
+</properties>
+
+<studioDeliveries>
+<scene name="MainMenu" version="FR2_V1.9"> </scene> 
+<scene name="Guide" version="FR3.1_v1.0"> </scene>
+<scene name="Settings" version="V15"> </scene>
+<scene name="Channel Bar" version="FR3.4_v1.3"> </scene>
+<scene name="Actions Menu" version="FR3.3_v0.2"> </scene>
+<scene name="Search" version="FR3.3_V0.1"> </scene>
+<scene name="First Install" version="V13"> </scene>
+<scene name="Icons" version="V5"> </scene>
+<scene name="Tex" version="FR2_v1.1"> </scene>
+<scene name="Floor" version="FloorFR3.4_v0.8"> </scene>
+<scene name="Filter" version="V5"> </scene>
+<scene name="Foreground" version="FR2_V2.1"> </scene>
+<scene name="StoreCat" version="FR3_v1.0"> </scene>
+<scene name="StoreHome" version="FR3_V1.1"> </scene>
+<scene name="StoreWall" version="FR3.3_V0.2"> </scene>
+<scene name="LibraryPhoto" version="FR2_v1.0"> </scene>
+<scene name="BackGroundImage" version="V2"> </scene>
+<scene name="LibraryMusic" version="FR3.3_v0.1"> </scene>
+<scene name="Fonts" version="V7"> </scene>
+<scene name="Default Poster" version="FR2_V2.0"> </scene>
+<scene name="UPC Bloom" version="V1"> </scene>
+<scene name="ListView" version="FR3.3_V0.6"> </scene>
+<scene name="Keyboard" version="FR3_V1.2"> </scene>
+<scene name="GuideCatchup" version="FR3.2_V1.0.1"> </scene>
+<scene name="UPCPosterView" version="FR3.4_V1.6"> </scene>
+<scene name="UPCActionMenu" version="FR3.4_v1.9"> </scene>
+<scene name="UPCProviderView" version="FR3.4_v0.9"> </scene>
+<scene name="UPCListView" version="FR3.4_v0.8"> </scene>
+<scene name="UPCProviderView" version="FR3.4_v0.9"> </scene>
+</studioDeliveries>
+<dictionaryDeliveries>
+<dictionary id="eng" version="9.2.2"> </dictionary> 
+</dictionaryDeliveries>
+<helpFaqDeliveries>
+<helpFaq id="dut-nld" version="2.0"> </helpFaq>
+<helpFaq id="eng-che" version="2.0"> </helpFaq>
+<helpFaq id="eng-deu" version="2.0"> </helpFaq>
+<helpFaq id="eng-irl" version="2.0"> </helpFaq>
+<helpFaq id="eng-nld" version="2.0"> </helpFaq>
+<helpFaq id="fre-che" version="2.0"> </helpFaq>
+<helpFaq id="ger-che" version="2.0"> </helpFaq>
+<helpFaq id="ger-deu" version="2.0"> </helpFaq>
+<helpFaq id="ita-che" version="2.0"> </helpFaq>
+<helpFaq id="tur-deu" version="2.0"> </helpFaq>
+</helpFaqDeliveries>
+</EPG_Properties>

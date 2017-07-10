@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	<contentTypes>
+		<contentType name="default" level="x2y2" stepRL="400" stepUD="100" stepOB="800"></contentType>	
+	</contentTypes>
+	<animations>
+		<animation name="v1-bg" 						map="x2y2-x2y2-bg" ></animation>
+		<animation name="g1-bg" 						map="x2y2-x2y2-bg" ></animation>
+		<animation name="s1-bg" 						map="x2y2-x2y2-bg" ></animation>
+        <animation name="v1-nobg" 						map="x2y2-x2y2-nobg" ></animation>
+		<animation name="g1-nobg" 						map="x2y2-x2y2-nobg" ></animation>
+		<animation name="s1-nobg" 						map="x2y2-x2y2-nobg" ></animation>
+	</animations>
+</sceneConfig>

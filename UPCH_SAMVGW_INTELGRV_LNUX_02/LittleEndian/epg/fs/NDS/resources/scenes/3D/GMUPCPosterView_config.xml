@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<zone name="menuList1" type="menuList" id="1" x="10" y="5.75" w="1280" h="31"/>
+<zone name="menuList2" type="menuList" id="2" x="10" y="46.75" w="1280" h="31"/>
+
+<zone name="menuList2Buf" type="menuList2Buf" id="null" x="10" y="46.75" w="1280" h="31"/>
+<zone name="menuListGrid" type="menuListGrid" id="null" x="10" y="5.75" w="1280" h="31"/>
+
+<zone name="subMenuList1" type="subMenuList" id="1" x="10" y="92" w="1280" h="31"/>
+<zone name="subMenuList2" type="subMenuList" id="2" x="10" y="126" w="1280" h="31"/>
+
+<zone name="showcase" type="showcase" id="null" x="10" y="10" w="1280" h="31"/>
+
+
+<zone name="line1_fb_left" type="line1_fb_left" id="null" x="2" y="433" w="180" h="260"/>
+<zone name="line1_f_2" type="line1_f_2" id="null" x="184" y="433" w="180" h="260"/>
+<zone name="line1_f_1" type="line1_f_1" id="null" x="366" y="433" w="180" h="260"/>
+<zone name="line1_focus1_g1" type="line1_focus1_g1" id="null" x="548" y="433" w="180" h="260"/>
+<zone name="line1_f1" type="line1_f1" id="null" x="730" y="433" w="180" h="260"/>
+<zone name="line1_f2" type="line1_f2" id="null" x="912" y="433" w="180" h="260"/>
+<zone name="line1_f3" type="line1_f3" id="null" x="1094" y="433" w="180" h="260"/>
+<zone name="line1_f4" type="line1_f4" id="null" x="1276" y="433" w="180" h="260"/>
+<zone name="line1_f5" type="line1_f5" id="null" x="1458" y="433" w="180" h="260"/>
+<zone name="line1_f6" type="line1_f6" id="null" x="1640" y="433" w="180" h="260"/>
+<zone name="line1_fb_right" type="line1_fb_right" id="null" x="1822" y="433" w="180" h="260"/>
+
+<zone name="category_1" type="category_1" id="null" x="1284" y="170" w="730" h="20"/>
+<zone name="category_2" type="category_2" id="null" x="1284" y="200" w="730" h="20"/>
+<zone name="category_3" type="category_3" id="null" x="1284" y="230" w="730" h="20"/>
+<zone name="category_4" type="category_4" id="null" x="1284" y="260" w="730" h="20"/>
+<zone name="category_5" type="category_5" id="null" x="-1470" y="100" w="0" h="0"/>
+
+<zone name="category_1_G2" type="category_1_G2" id="null" x="1284" y="290" w="730" h="20"/>
+<zone name="category_2_G2" type="category_2_G2" id="null" x="1284" y="320" w="730" h="20"/>
+
+
+<zone name="line2_fb_left" type="line2_fb_left" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line2_f_2" type="line2_f_2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line2_f_1" type="line2_f_1" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line2_focus1_g1" type="line2_focus1_g1" id="null" x="2" y="695" w="180" h="260"/>
+<zone name="line2_f1" type="line2_f1" id="null" x="184" y="695" w="180" h="260"/>
+<zone name="line2_f2" type="line2_f2" id="null" x="366" y="695" w="180" h="260"/>
+<zone name="line2_f3" type="line2_f3" id="null" x="548" y="695" w="180" h="260"/>
+<zone name="line2_f4" type="line2_f4" id="null" x="730" y="695" w="180" h="260"/>
+<zone name="line2_f5" type="line2_f5" id="null" x="912" y="695" w="180" h="260"/>
+<zone name="line2_f6" type="line2_f6" id="null" x="1094" y="695" w="180" h="260"/>
+<zone name="line2_fb_right" type="line2_fb_right" id="null" x="-2000" y="0" w="0" h="0"/>
+
+<zone name="line3_fb_left" type="line3_fb_left" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line3_f_2" type="line3_f_2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line3_f_1" type="line3_f_1" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line3_focus1_g1" type="line3_focus1_g1" id="null" x="2" y="957" w="180" h="260"/>
+<zone name="line3_f1" type="line3_f1" id="null" x="184" y="957" w="180" h="260"/>
+<zone name="line3_f2" type="line3_f2" id="null" x="366" y="957" w="180" h="260"/>
+<zone name="line3_f3" type="line3_f3" id="null" x="548" y="957" w="180" h="260"/>
+<zone name="line3_f4" type="line3_f4" id="null" x="730" y="957" w="180" h="260"/>
+<zone name="line3_f5" type="line3_f5" id="null" x="912" y="957" w="180" h="260"/>
+<zone name="line3_f6" type="line3_f6" id="null" x="1094" y="957" w="180" h="260"/>
+<zone name="line3_fb_right" type="line3_fb_right" id="null" x="-2000" y="0" w="0" h="0"/>
+
+
+<zone name="line1_fb_leftG2" type="line1_fb_leftG2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line1_f_2G2" type="line1_f_2G2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line1_f_1G2" type="line1_f_1G2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line1_focus1_g1G2" type="line1_focus1_g1G2" id="null" x="2" y="1481" w="180" h="260"/>
+<zone name="line1_f1G2" type="line1_f1G2" id="null" x="184" y="1481" w="180" h="260"/>
+<zone name="line1_f2G2" type="line1_f2G2" id="null" x="366" y="1481" w="180" h="260"/>
+<zone name="line1_f3G2" type="line1_f3G2" id="null" x="548" y="1481" w="180" h="260"/>
+<zone name="line1_f4G2" type="line1_f4G2" id="null" x="730" y="1481" w="180" h="260"/>
+<zone name="line1_f5G2" type="line1_f5G2" id="null" x="912" y="1481" w="180" h="260"/>
+<zone name="line1_f6G2" type="line1_f6G2" id="null" x="1094" y="1481" w="180" h="260"/>
+<zone name="line1_fb_rightG2" type="line1_fb_rightG2" id="null" x="-2000" y="0" w="0" h="0"/>
+
+<zone name="line2_fb_leftG2" type="line2_fb_leftG2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line2_f_2G2" type="line2_f_2G2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line2_f_1G2" type="line2_f_1G2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line2_focus1_g1G2" type="line2_focus1_g1G2" id="null" x="1276" y="695" w="180" h="260"/>
+<zone name="line2_f1G2" type="line2_f1G2" id="null" x="1458" y="695" w="180" h="260"/>
+<zone name="line2_f2G2" type="line2_f2G2" id="null" x="1640" y="695" w="180" h="260"/>
+<zone name="line2_f3G2" type="line2_f3G2" id="null" x="1822" y="695" w="180" h="260"/>
+<zone name="line2_f4G2" type="line2_f4G2" id="null" x="1276" y="957" w="180" h="260"/>
+<zone name="line2_f5G2" type="line2_f5G2" id="null" x="1458" y="957" w="180" h="260"/>
+<zone name="line2_f6G2" type="line2_f6G2" id="null" x="1640" y="957" w="180" h="260"/>
+<zone name="line2_fb_rightG2" type="line2_fb_rightG2" id="null" x="-2000" y="0" w="0" h="0"/>
+
+<zone name="line3_fb_leftG2" type="line3_fb_leftG2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line3_f_2G2" type="line3_f_2G2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line3_f_1G2" type="line3_f_1G2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="line3_focus1_g1G2" type="line3_focus1_g1G2" id="null" x="1276" y="1219" w="180" h="260"/>
+<zone name="line3_f1G2" type="line3_f1G2" id="null" x="1458" y="1219" w="180" h="260"/>
+<zone name="line3_f2G2" type="line3_f2G2" id="null" x="1640" y="1219" w="180" h="260"/>
+<zone name="line3_f3G2" type="line3_f3G2" id="null" x="1822" y="1219" w="180" h="260"/>
+<zone name="line3_f4G2" type="line3_f4G2" id="null" x="1276" y="1481" w="180" h="260"/>
+<zone name="line3_f5G2" type="line3_f5G2" id="null" x="1458" y="1481" w="180" h="260"/>
+<zone name="line3_f6G2" type="line3_f6G2" id="null" x="1640" y="1481" w="180" h="260"/>
+<zone name="line3_fb_rightG2" type="line3_fb_rightG2" id="null" x="-2000" y="0" w="0" h="0"/>
+
+
+<zone name="lineBD_fb_left" type="lineBD_fb_left" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="lineBD_f_2" type="lineBD_f_2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="lineBD_f_1" type="lineBD_f_1" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="lineBD_focus1_g1" type="lineBD_focus1_g1" id="null" x="2" y="1219" w="180" h="260"/>
+<zone name="lineBD_f1" type="lineBD_f1" id="null" x="184" y="1219" w="180" h="260"/>
+<zone name="lineBD_f2" type="lineBD_f2" id="null" x="366" y="1219" w="180" h="260"/>
+<zone name="lineBD_f3" type="lineBD_f3" id="null" x="548" y="1219" w="180" h="260"/>
+<zone name="lineBD_f4" type="lineBD_f4" id="null" x="730" y="1219" w="180" h="260"/>
+<zone name="lineBD_f5" type="lineBD_f5" id="null" x="912" y="1219" w="180" h="260"/>
+<zone name="lineBD_f6" type="lineBD_f6" id="null" x="1094" y="1219" w="180" h="260"/>
+<zone name="lineBD_fb_right" type="lineBD_fb_right" id="null" x="-2000" y="0" w="0" h="0"/>
+
+<zone name="lineBU_fb_left" type="lineBU_fb_left" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="lineBU_f_2" type="lineBU_f_2" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="lineBU_f_1" type="lineBU_f_1" id="null" x="-2000" y="0" w="0" h="0"/>
+<zone name="lineBU_focus1_g1" type="lineBU_focus1_g1" id="null" x="2" y="171" w="180" h="260"/>
+<zone name="lineBU_f1" type="lineBU_f1" id="null" x="184" y="171" w="180" h="260"/>
+<zone name="lineBU_f2" type="lineBU_f2" id="null" x="366" y="171" w="180" h="260"/>
+<zone name="lineBU_f3" type="lineBU_f3" id="null" x="548" y="171" w="180" h="260"/>
+<zone name="lineBU_f4" type="lineBU_f4" id="null" x="730" y="171" w="180" h="260"/>
+<zone name="lineBU_f5" type="lineBU_f5" id="null" x="912" y="171" w="180" h="260"/>
+<zone name="lineBU_f6" type="lineBU_f6" id="null" x="1094" y="171" w="180" h="260"/>
+<zone name="lineBU_fb_right" type="lineBU_fb_right" id="null" x="-2000" y="0" w="0" h="0"/>
+
+<zone name="lineBU1_fb_left" type="lineBU1_fb_left" id="null" x="-3000" y="0" w="0" h="0"/>
+<zone name="lineBU1_f_2" type="lineBU1_f_2" id="null" x="-3000" y="-3000" w="0" h="0"/>
+<zone name="lineBU1_f_1" type="lineBU1_f_1" id="null" x="-3000" y="-3000" w="0" h="0"/>
+<zone name="lineBU1_focus1_g1" type="lineBU1_focus1_g1" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBU1_f1" type="lineBU1_f1" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBU1_f2" type="lineBU1_f2" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBU1_f3" type="lineBU1_f3" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBU1_f4" type="lineBU1_f4" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBU1_f5" type="lineBU1_f5" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBU1_f6" type="lineBU1_f6" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBU1_fb_right" type="lineBU1_fb_right" id="null" x="-2000" y="-3000" w="0" h="0"/>
+
+<zone name="lineBD1_fb_left" type="lineBD1_fb_left" id="null" x="-3000" y="-3000" w="0" h="0"/>
+<zone name="lineBD1_f_2" type="lineBD1_f_2" id="null" x="-3000" y="-3000" w="0" h="0"/>
+<zone name="lineBD1_f_1" type="lineBD1_f_1" id="null" x="-3000" y="-3000" w="0" h="0"/>
+<zone name="lineBD1_focus1_g1" type="lineBD1_focus1_g1" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBD1_f1" type="lineBD1_f1" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBD1_f2" type="lineBD1_f2" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBD1_f3" type="lineBD1_f3" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBD1_f4" type="lineBD1_f4" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBD1_f5" type="lineBD1_f5" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBD1_f6" type="lineBD1_f6" id="null" x="-3000" y="-3000" w="180" h="260"/>
+<zone name="lineBD1_fb_right" type="lineBD1_fb_right" id="null" x="-3000" y="-3000" w="0" h="0"/>
+
+<zone name="horizonBar" type="horizonBar" id="null" x="1470" y="420" w="532" h="12"/>
+<zone name="hLine" type="hLine" id="null" x="10" y="162" w="1280" h="6"/>
+<zone name="menuListMask1" type="menuListMask1" id="null" x="10" y="5.75" w="1280" h="31"/>
+<zone name="menuListMask2" type="menuListMask2" id="null" x="10" y="51" w="1280" h="31"/>
+
+<!--DUMMY Focused Event Info -->
+<zone name="out_of_screen" type="out_of_screen" id="null" x="-2000" y="0" w="0" h="0"/> 
+<!--ACTUAL FOCUSED -->
+<zone name="eventInfoBuffer" type="eventInfoBuffer" id="null" x="296" y="1747" w="866" h="64"/>
+<zone name="eventInfoFocus" type="eventInfoFocus" id="null" x="1172" y="1747" w="866" h="64"/>
+<zone name="highlightZone" type="highlightZone" id="null" x="1830" y="1491" w="176" h="245"/>
+<zone name="hintZone" type="hintZone" id="null" x="1470" y="364" w="550" h="30"/>
+<zone name="rowInfo" type="rowInfo" id="null" x="1300" y="70" w="100" h="25"/>
+
+<!-- Alphabet display for A-Z sort -->
+<zone name="firstLetterRow_1" type="firstLetterRow_1" id="null" x="1300" y="10" w="200" h="20"/>
+<zone name="firstLetterRow_2" type="firstLetterRow_2" id="null" x="1300" y="40" w="200" h="20"/>
+<zone name="firstLetterRow_3" type="firstLetterRow_3" id="null" x="1510" y="10" w="200" h="20"/>
+<zone name="firstLetterRow_4" type="firstLetterRow_4" id="null" x="1510" y="40" w="200" h="20"/>
+<zone name="firstLetterRow_5" type="firstLetterRow_5" id="null" x="-1470" y="100" w="0" h="0"/>
+<zone name="firstLetterRow_6" type="firstLetterRow_6" id="null" x="-1470" y="100" w="0" h="0"/>
+<zone name="firstLetterRow_7" type="firstLetterRow_7" id="null" x="-1470" y="100" w="0" h="0"/>

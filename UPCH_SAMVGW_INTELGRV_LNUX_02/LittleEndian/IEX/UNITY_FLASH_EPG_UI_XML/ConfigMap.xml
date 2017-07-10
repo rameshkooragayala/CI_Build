@@ -1,0 +1,111 @@
+<!-- ID to Config class mapping
+-->
+<configMap>
+	<platform id="DEVICE_TYPE_GATEWAY">
+		<configEntry id="GMANIMATOR_CONFIG" config="mhwa.config.GMAnimatorConfig"/>
+		<configEntry id="EPG_CONFIG" config="mhwa.config.EPGConfig"/>
+		<configEntry id="PIN_CONFIG" config="mhwa.config.PINConfig"/>
+		<configEntry id="INFOBOX_CONFIG" config="mhwa.config.InfoBoxAuxAppConfig"/>
+		<configEntry id="GRID_CONFIG" config="mhwa.config.GridAuxAppConfig"/>
+		<configEntry id="SETTINGS_CONFIG" config="mhwa.config.SettingsAuxAppConfig"/>
+		<configEntry id="MAINMENU_CONFIG" config="mhwa.config.MainMenuAuxAppConfig"/>
+		<configEntry id="STORE_CONFIG" config="mhwa.config.StoreAuxAppConfig"/>
+		<configEntry id="SEARCH_CONFIG" config="mhwa.config.SearchAuxAppConfig"/>
+		<configEntry id="SEARCH_AUXAPP_STATE_CONFIG" config="mhwa.config.SearchAuxAppStateConfig"/>
+		<configEntry id="LIBRARY_CONFIG" config="mhwa.config.LibraryAuxAppConfig"/>
+		<configEntry id="IDE_CONFIG" config="mhwa.config.IDEConfig"/>
+		<configEntry id="GUI_CONFIG" config="mhwa.config.GUIConfig"/>
+		<configEntry id="NOTIFICATION_CONFIG" config="mhwa.config.NotificationConfig"/>
+		<configEntry id="CRUMBTRAIL_CONFIG" config="mhwa.config.CrumbTrailConfig"/>
+		<configEntry id="FRONTPANEL_CONFIG" config="mhwa.config.FrontPanelConfig"/>
+		<configEntry id="FRONTPANEL_STATE_CONFIG" config="mhwa.config.FrontPanelStateConfig"/>
+		<configEntry id="ACTION_MENU_CONFIG" config="mhwa.config.ActionMenuAuxAppConfig"/>
+		<configEntry id="GRID_AUXAPP_STATE_CONFIG" config="mhwa.config.GridAuxAppStateConfig"/>
+		<configEntry id="LIBRARY_AUXAPP_STATE_CONFIG" config="mhwa.config.LibraryAuxAppStateConfig"/>
+		<configEntry id="AUXAPP_CONFIG" config="mhwa.config.AuxAppConfig"/>
+		<configEntry id="PVR_BANNER_CONFIG" config="mhwa.config.PVRBannerConfig"/>
+		<configEntry id="QP_BUILDER_CONFIG" config="mhwa.config.QPBuilderConfig"/>
+		<configEntry id="FIRSTINST_CONFIG" config="mhwa.config.FirstInstConfig"/>
+		<configEntry id="STORE_AUXAPP_STATE_CONFIG" config="mhwa.config.StoreAuxAppStateConfig"/>
+		<configEntry id="MAIN_MENU_AUXAPP_STATE_CONFIG" config="mhwa.config.MainMenuAuxAppStateConfig"/>
+		<configEntry id="CONFLICT_CONFIG" config="mhwa.config.ConflictConfig"/>
+		<configEntry id="TRICKMODE_AUXAPP_STATE_CONFIG" config="mhwa.config.TrickmodeAuxAppStateConfig"/>
+		<configEntry id="HOTKEY_CONFIG" config="mhwa.config.HotKeyHandlerConfig"/>
+		<configEntry id="INFOBOX_AUXAPP_STATE_CONFIG" config="mhwa.config.InfoBoxAuxAppStateConfig"/>
+		<configEntry id="MANUAL_RECORD_CONFIG" config="mhwa.config.ManualRecordConfig"/>
+		<configEntry id="SCREEN_SAVER_CONFIG" config="mhwa.config.ScreenSaverConfig"/>
+		<configEntry id="TRICKMODE_AUXAPP_CONFIG" config="mhwa.config.TrickmodeAuxAppConfig"/>
+	</platform>
+	
+	<platform id="DEVICE_TYPE_IP_CLIENT">
+		<configEntry id="GMANIMATOR_CONFIG" config="mhwa.config.GMAnimatorConfig"/>
+		<configEntry id="EPG_CONFIG" config="mhwa.config.ipc.EPGConfig"/>
+		<configEntry id="PIN_CONFIG" config="mhwa.config.PINConfig"/>
+		<configEntry id="INFOBOX_CONFIG" config="mhwa.config.InfoBoxAuxAppConfig"/>
+		<configEntry id="GRID_CONFIG" config="mhwa.config.ipc.GridAuxAppConfig"/>
+		<configEntry id="SETTINGS_CONFIG" config="mhwa.config.ipc.SettingsAuxAppConfig"/>
+		<configEntry id="MAINMENU_CONFIG" config="mhwa.config.MainMenuAuxAppConfig"/>
+		<configEntry id="STORE_CONFIG" config="mhwa.config.StoreAuxAppConfig"/>
+		<configEntry id="SEARCH_CONFIG" config="mhwa.config.ipc.SearchAuxAppConfig"/>
+		<configEntry id="IDE_CONFIG" config="mhwa.config.IDEConfig"/>
+		<configEntry id="SEARCH_AUXAPP_STATE_CONFIG" config="mhwa.config.SearchAuxAppStateConfig"/>
+		<configEntry id="LIBRARY_CONFIG" config="mhwa.config.ipc.LibraryAuxAppConfig"/>
+		<configEntry id="GUI_CONFIG" config="mhwa.config.GUIConfig"/>
+		<configEntry id="NOTIFICATION_CONFIG" config="mhwa.config.NotificationConfig"/>
+		<configEntry id="CRUMBTRAIL_CONFIG" config="mhwa.config.CrumbTrailConfig"/>
+		<configEntry id="FRONTPANEL_CONFIG" config="mhwa.config.FrontPanelConfig"/>
+		<configEntry id="FRONTPANEL_STATE_CONFIG" config="mhwa.config.FrontPanelStateConfig"/>
+		<configEntry id="ACTION_MENU_CONFIG" config="mhwa.config.ActionMenuAuxAppConfig"/>
+		<configEntry id="GRID_AUXAPP_STATE_CONFIG" config="mhwa.config.GridAuxAppStateConfig"/>
+		<configEntry id="LIBRARY_AUXAPP_STATE_CONFIG" config="mhwa.config.LibraryAuxAppStateConfig"/>
+		<configEntry id="AUXAPP_CONFIG" config="mhwa.config.AuxAppConfig"/>
+		<configEntry id="PVR_BANNER_CONFIG" config="mhwa.config.PVRBannerConfig"/>
+		<configEntry id="QP_BUILDER_CONFIG" config="mhwa.config.ipc.QPBuilderConfig"/>
+		<configEntry id="FIRSTINST_CONFIG" config="mhwa.config.ipc.FirstInstConfig"/>
+		<configEntry id="STORE_AUXAPP_STATE_CONFIG" config="mhwa.config.StoreAuxAppStateConfig"/>
+		<configEntry id="MAIN_MENU_AUXAPP_STATE_CONFIG" config="mhwa.config.MainMenuAuxAppStateConfig"/>
+		<configEntry id="CONFLICT_CONFIG" config="mhwa.config.ConflictConfig"/>
+		<configEntry id="TRICKMODE_AUXAPP_STATE_CONFIG" config="mhwa.config.TrickmodeAuxAppStateConfig"/>
+		<configEntry id="HOTKEY_CONFIG" config="mhwa.config.HotKeyHandlerConfig"/>
+		<configEntry id="INFOBOX_AUXAPP_STATE_CONFIG" config="mhwa.config.InfoBoxAuxAppStateConfig"/>
+		<configEntry id="MANUAL_RECORD_CONFIG" config="mhwa.config.ManualRecordConfig"/>
+		<configEntry id="SCREEN_SAVER_CONFIG" config="mhwa.config.ScreenSaverConfig"/>
+		<configEntry id="TRICKMODE_AUXAPP_CONFIG" config="mhwa.config.TrickmodeAuxAppConfig"/>
+	</platform>
+	
+	<platform id="DEVICE_TYPE_INTERACTIVE">
+		<configEntry id="GMANIMATOR_CONFIG" config="mhwa.config.GMAnimatorConfig"/>
+		<configEntry id="EPG_CONFIG" config="mhwa.config.istb.EPGConfig"/>
+		<configEntry id="PIN_CONFIG" config="mhwa.config.PINConfig"/>
+		<configEntry id="INFOBOX_CONFIG" config="mhwa.config.InfoBoxAuxAppConfig"/>
+		<configEntry id="GRID_CONFIG" config="mhwa.config.GridAuxAppConfig"/>
+		<configEntry id="SETTINGS_CONFIG" config="mhwa.config.istb.SettingsAuxAppConfig"/>
+		<configEntry id="MAINMENU_CONFIG" config="mhwa.config.istb.MainMenuAuxAppConfig"/>
+		<configEntry id="STORE_CONFIG" config="mhwa.config.StoreAuxAppConfig"/>
+		<configEntry id="SEARCH_CONFIG" config="mhwa.config.istb.SearchAuxAppConfig"/>
+		<configEntry id="IDE_CONFIG" config="mhwa.config.IDEConfig"/>
+		<configEntry id="SEARCH_AUXAPP_STATE_CONFIG" config="mhwa.config.SearchAuxAppStateConfig"/>
+		<configEntry id="LIBRARY_CONFIG" config="mhwa.config.istb.LibraryAuxAppConfig"/>
+		<configEntry id="GUI_CONFIG" config="mhwa.config.GUIConfig"/>
+		<configEntry id="NOTIFICATION_CONFIG" config="mhwa.config.NotificationConfig"/>
+		<configEntry id="CRUMBTRAIL_CONFIG" config="mhwa.config.CrumbTrailConfig"/>
+		<configEntry id="FRONTPANEL_CONFIG" config="mhwa.config.FrontPanelConfig"/>
+		<configEntry id="FRONTPANEL_STATE_CONFIG" config="mhwa.config.FrontPanelStateConfig"/>
+		<configEntry id="ACTION_MENU_CONFIG" config="mhwa.config.istb.ActionMenuAuxAppConfig"/>
+		<configEntry id="GRID_AUXAPP_STATE_CONFIG" config="mhwa.config.GridAuxAppStateConfig"/>
+		<configEntry id="LIBRARY_AUXAPP_STATE_CONFIG" config="mhwa.config.LibraryAuxAppStateConfig"/>
+		<configEntry id="AUXAPP_CONFIG" config="mhwa.config.istb.AuxAppConfig"/>
+		<configEntry id="PVR_BANNER_CONFIG" config="mhwa.config.PVRBannerConfig"/>
+		<configEntry id="QP_BUILDER_CONFIG" config="mhwa.config.istb.QPBuilderConfig"/>
+		<configEntry id="FIRSTINST_CONFIG" config="mhwa.config.FirstInstConfig"/>
+		<configEntry id="STORE_AUXAPP_STATE_CONFIG" config="mhwa.config.StoreAuxAppStateConfig"/>
+		<configEntry id="MAIN_MENU_AUXAPP_STATE_CONFIG" config="mhwa.config.MainMenuAuxAppStateConfig"/>
+		<configEntry id="CONFLICT_CONFIG" config="mhwa.config.ConflictConfig"/>
+		<configEntry id="TRICKMODE_AUXAPP_STATE_CONFIG" config="mhwa.config.TrickmodeAuxAppStateConfig"/>
+		<configEntry id="HOTKEY_CONFIG" config="mhwa.config.istb.HotKeyHandlerConfig"/>
+		<configEntry id="INFOBOX_AUXAPP_STATE_CONFIG" config="mhwa.config.InfoBoxAuxAppStateConfig"/>
+		<configEntry id="MANUAL_RECORD_CONFIG" config="mhwa.config.ManualRecordConfig"/>
+		<configEntry id="SCREEN_SAVER_CONFIG" config="mhwa.config.ScreenSaverConfig"/>
+		<configEntry id="TRICKMODE_AUXAPP_CONFIG" config="mhwa.config.TrickmodeAuxAppConfig"/>
+	</platform>
+</configMap>

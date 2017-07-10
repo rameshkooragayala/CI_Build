@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- RESULTS -->
+
+<zone name="focus_up" type="result_focus" x="932.5" y="199" w="950" h="168"/>
+<zone name="focus_down" type="result_focus" x="932.5" y="535" w="950" h="168"/>
+<zone name="focus_1" type="result_focus" id="1" x="932.5" y="367" w="950" h="168"/>
+<zone name="focus_2" type="result_focus" id="2" x="932.5" y="713" w="950" h="168"/>
+
+<zone name="poster_up" type="result_poster" x="1778" y="891" w="180" h="260"/>
+<zone name="poster_down" type="result_poster" x="1778" y="1411" w="180" h="260"/>
+<zone name="poster_up" type="result_poster" x="1778" y="891" w="260" h="260"/>
+<zone name="poster_down" type="result_poster" x="1778" y="1411" w="260" h="260"/>
+<zone name="poster_1" type="result_poster" id="1" x="1778" y="1151" w="260" h="260"/>
+<zone name="poster_2" type="result_poster" id="2" x="1504.3" y="1545" w="260" h="260"/>
+<zone name="MusicAlbumPoster" type="MusicAlbumPoster" id="2" x="1143" y="535" w="168" h="178"/>
+<zone name="trackDetails" type="trackDetails" id="2" x="1323" y="365" w="250" h="178"/>
+
+<zone name="logo_up" type="result_logo" x="1885" y="331.4" w="160" h="224"/>
+<zone name="logo_down" type="result_logo" x="1885" y="779.4" w="160" h="224"/>
+<zone name="logo_1" type="result_logo" id="1" x="1885" y="555.4" w="160" h="224"/>
+<zone name="logo_2" type="result_logo" id="2" x="1328.25" y="1581" w="160" h="224"/>
+
+<zone name="upsrc" type="result_src" x="1609" y="890" w="158" h="168"/>
+<zone name="focussrc" type="result_src"  id= "1" x="1609" y="1058" w="158" h="168"/>
+<zone name="downsrc" type="result_src" x="1609" y="1226" w="158" h="168"/>
+
+<zone name="result" type="result" id="null" x="10" y="199" w="917" h="689"/>
+<zone name="list" type="list" id="null" x="10" y="199" w="917" h="689"/>
+
+<zone name="l_buffer_up" type="l_buffer_up" id="null" x="0" y="59" w="917" h="47"/>
+<zone name="l_01" type="l_01" id="null" x="0" y="175" w="917" h="47"/>
+<zone name="l_02" type="l_02" id="null" x="0" y="290" w="917" h="47"/>
+<zone name="l_03" type="l_03" id="null" x="0" y="347" w="917" h="47"/>
+<zone name="l_04" type="l_04" id="null" x="0" y="404" w="917" h="47"/>
+<zone name="l_05" type="l_05" id="null" x="0" y="461" w="917" h="47"/>
+<zone name="l_06" type="l_06" id="null" x="0" y="518" w="917" h="47"/>
+<zone name="l_07" type="l_07" id="null" x="0" y="575" w="917" h="47"/>
+<zone name="l_buffer_down" type="l_buffer_down" id="null" x="0" y="632" w="917" h="47"/>
+
+<zone name="refine" type="refine" id="null" x="10" y="24" w="119" h="52"/> <!-- OFFSET (-2,-6) included  -->
+<zone name="search1" type="search1" id="null" x="165" y="84" w="140" h="52"/> <!-- OFFSET (-2,-6) included  -->
+
+<zone name="refine1" type="refine1" id="null" x="10" y="24" w="300" h="50"/> <!-- OFFSET (-2,-6) included  -->
+<zone name="search2" type="search2" id="null" x="10" y="84" w="300" h="50"/> <!-- OFFSET (-2,-6) included  -->
+
+<zone name="filter1" type="filter" id="1" x="10" y="974.6" w="739.25" h="642"/>
+<zone name="filter2" type="filter" id="2" x="784" y="830.6" w="739" h="453"/>
+<zone name="m1_buffer_up" type="m1_buffer_up" id="null" x="26" y="54"   w="739" h="42"/>
+<zone name="m1_1" type="m1_1" id="null" x="26" y="150"  w="739" h="42"/>
+<zone name="m1_2" type="m1_2" id="null" x="26" y="240" w="739" h="42"/>
+<zone name="m1_3" type="m1_3" id="null" x="26" y="285" w="739" h="42"/>
+<zone name="m1_4" type="m1_4" id="null" x="26" y="330" w="739" h="42"/>
+<zone name="m1_5" type="m1_5" id="null" x="26" y="375" w="739" h="42"/>
+<zone name="m1_6" type="m1_6" id="null" x="26" y="420" w="739" h="42"/>
+<zone name="m1_7" type="m1_7" id="null" x="26" y="465" w="739" h="42"/>
+<zone name="m1_8" type="m1_9" id="null" x="26" y="510" w="739" h="42"/>
+<zone name="m1_9" type="m1_9" id="null" x="26" y="555" w="739" h="42"/>
+<zone name="m1_buffer_down" type="m1_buffer_down" id="null" x="26" y="600" w="739" h="42"/>
+
+<zone name="SrchHorizonBar" type="SrchHorizonBar" id="null" x="10" y="10" w="739" h="12"/>
+
+<zone name="focus_dateAndTime" type="focus_dateAndTime_text" id="null" x="334" y="1" w="613" h="32"/>
+<zone name="focus_title" type="focus_title_text" id="null" x="334" y="26" w="613" h="54"/>
+<zone name="focus_genre" type="focus_genre" id="null" x="334" y="70" w="187" h="35"/>
+<zone name="focus_series" type="focus_series" id="null" x="334" y="102" w="613" h="32"/>
+<zone name="focus_synopsis" type="focus_synopsis" id="null" x="334" y="134" w="613" h="32"/>
+<zone name="focus_bottomFocusSeperator" type="focus_bottomFocusSeperator" id="null" x="336" y="134" w="614" h="1"/>
+<zone name="focus_icon" type="focus_icon" id="null" x="560" y="87" w="614" h="100"/>
+
+
+

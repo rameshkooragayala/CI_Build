@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<router>
+		<host>@@WORKER_IEX_IP@@</host>
+		<port>8065</port>
+	</router>
+</configuration>

@@ -1,0 +1,6 @@
+/local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg//components/../BUILD_SYSTEM/COMMON_MAKEFILES/projects/fusion2/helper_libraries/storage_helper/src/storage_helper/src/storage_power.o: \
+ storage_power.c ../../../src/inc/storage_priv.h ../../../inc/nds/xstd.h \
+ ../../../inc/nds/xstore.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/inc/CDI_INC/include/common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/inc/CDI_INC/include/cdi_stdint.h \
+ ../../../src/inc/storage_config.h

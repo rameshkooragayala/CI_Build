@@ -1,0 +1,10 @@
+    <action>
+      <name>X_NDS_UnlinkRecordTask</name>
+      <argumentList>
+        <argument>
+          <name>RecordTaskID</name>
+          <direction>in</direction>
+          <relatedStateVariable>A_ARG_TYPE_ObjectID</relatedStateVariable>
+        </argument>
+      </argumentList>
+    </action>

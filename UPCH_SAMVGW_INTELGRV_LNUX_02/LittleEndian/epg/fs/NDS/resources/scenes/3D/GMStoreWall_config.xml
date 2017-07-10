@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone name="s1" type="s" id="1" x="0" y="0" w="1874" h="528"/>
+<zone name="s2" type="s" id="2" x="0" y="538" w="1900" h="528"/>
+
+<zone name="p1" type="p" id="1" x="1600" y="1078" w="180" h="260"/>
+<zone name="p2" type="p" id="2" x="1600" y="1348" w="180" h="260"/>
+<zone name="pl" type="p" id="null" x="1420" y="1078" w="180" h="260"/>
+<zone name="pr" type="p" id="null" x="1780" y="1078" w="180" h="260"/>
+
+<zone name="w" type="w" id="null" x="260" y="1132.50" w="260" h="260"/>
+<zone name="w1" type="w" id="1" x="260" y="1132.50" w="260" h="260"/>
+<zone name="w2" type="w" id="2" x="1356" y="1132.50" w="260" h="260"/>
+<zone name="wl" type="w" id="null" x="0" y="1132.50" w="260" h="260"/>
+<zone name="wr" type="w" id="null" x="520" y="1132.50" w="260" h="260"/>
+
+<zone name="search" type="search" id="null" x="10" y="1264" w="1200" h="35"/>
+<zone name="g1" type="g" id="1" x="10" y="1309" w="1200" h="150"/>
+<zone name="g2" type="g" id="2" x="10" y="1469" w="1200" h="150"/>
+
+
+<!-- static zones -->
+<zone name="p_0.0" type="poster" id="null" x="273" y="0" w="180" h="260"/> 
+<zone name="p_0" type="poster" id="null" x="478" y="0" w="180" h="260"/>
+<zone name="p_1" type="poster" id="null" x="683" y="0" w="180" h="260"/>
+<zone name="p_2" type="poster" id="null" x="888" y="0" w="180" h="260"/>
+<zone name="p_3" type="poster" id="null" x="1093" y="0" w="180" h="260"/>
+<zone name="p_4" type="poster" id="null" x="1298" y="0" w="180" h="260"/>
+<zone name="p_5" type="poster" id="null" x="285" y="270" w="180" h="260"/>
+<zone name="p_6" type="poster" id="null" x="490" y="270" w="180" h="260"/>
+<zone name="p_7" type="poster" id="null" x="695" y="270" w="180" h="260"/>
+<zone name="p_8" type="poster" id="null" x="900" y="270" w="180" h="260"/>
+<zone name="p_9" type="poster" id="null" x="1105" y="270" w="180" h="260"/>
+<zone name="p_10" type="poster" id="null" x="1310" y="270" w="180" h="260"/>
+<zone name="p_11" type="poster" id="null" x="1515" y="270" w="180" h="260"/> 
+<zone name="p_0.0_d" type="poster" id="null" x="273" y="0" w="180" h="260"/> 
+<zone name="p_0_d" type="poster" id="null" x="478" y="0" w="180" h="260"/>
+<zone name="p_1_d" type="poster" id="null" x="683" y="0" w="180" h="260"/>
+<zone name="p_2_d" type="poster" id="null" x="888" y="0" w="180" h="260"/>
+<zone name="p_3_d" type="poster" id="null" x="1093" y="0" w="180" h="260"/>
+<zone name="p_4_d" type="poster" id="null" x="1298" y="0" w="180" h="260"/>
+<zone name="p_5_d" type="poster" id="null" x="285" y="270" w="180" h="260"/>
+<zone name="p_6_d" type="poster" id="null" x="490" y="270" w="180" h="260"/>
+<zone name="p_7_d" type="poster" id="null" x="695" y="270" w="180" h="260"/>
+<zone name="p_8_d" type="poster" id="null" x="900" y="270" w="180" h="260"/>
+<zone name="p_9_d" type="poster" id="null" x="1105" y="270" w="180" h="260"/>
+<zone name="p_10_d" type="poster" id="null" x="1310" y="270" w="180" h="260"/>
+<zone name="p_11_d" type="poster" id="null" x="1515" y="270" w="180" h="260"/> 
+<zone name="l_0.0" type="poster" id="null" x="0"  y="0"  w="180" h="260"/>
+<zone name="l_0"  type="label" id="null" x="205"  y="0"  w="180" h="76"/>
+<zone name="l_1"  type="label" id="null" x="410"  y="0"  w="180" h="76"/>
+<zone name="l_2"  type="label" id="null" x="615"  y="0"  w="180" h="76"/>
+<zone name="l_3"  type="label" id="null" x="820"  y="0"  w="180" h="76"/>
+<zone name="l_4"  type="label" id="null" x="1025" y="0"  w="180" h="76"/>
+<zone name="l_5"  type="label" id="null" x="0"    y="86" w="180" h="76"/>
+<zone name="l_6"  type="label" id="null" x="205"  y="86" w="180" h="76"/>
+<zone name="l_7"  type="label" id="null" x="410"  y="86" w="180" h="76"/>
+<zone name="l_8"  type="label" id="null" x="615"  y="86" w="180" h="76"/>
+<zone name="l_9"  type="label" id="null" x="820"  y="86" w="180" h="76"/>
+<zone name="l_10" type="label" id="null" x="1025" y="86" w="180" h="76"/>
+<zone name="l_11" type="label" id="null" x="1230" y="86" w="180" h="76"/>
+
+<zone name="search1" type="search" id="null" x="10" y="1309" w="1200" h="150"/>
+<zone name="search2" type="search" id="null" x="10" y="1469" w="1200" h="150"/>
+
+<zone name="ContentDetails" type="ContentDetails" id="null" x="10" y="1309" w="1200" h="150"/>
+<zone name="HorizonBar" type="HorizonBar" id="null" x="10" y="1250" w="552" h="4"/>
+
+<zone name="Labels" type="Labels" id="null" x="7" y="1116" w="1410" h="76"/>

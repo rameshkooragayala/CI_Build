@@ -1,0 +1,433 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF.GET
+</name>
+</assembly>
+<members>
+<member name="M:IEX.ElementaryActions.EPG.SF.GET.Banner.CancelBooking(System.Boolean,System.Boolean)">
+	<summary>
+     Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Banner.SetEventKeep">
+	<summary>
+   Setting Event Keep From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>312 - SetEventKeepFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Banner.RemoveEventKeep">
+	<summary>
+   Removing Event Keep From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>312 - SetEventKeepFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Banner.StopRecording">
+	<summary>
+   Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>348 - StopRecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Banner.SetSubtitlesLanguage(System.String,System.String)">
+	<summary>
+    Sets Subtitles Language On Action Bar
+ </summary>
+	<param name="Language">Language Of Subtitles To Select</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Live.VerifyChannelNumber(System.String)">
+	<summary>
+   Verifies Channel Number
+ </summary>
+	<param name="ChannelNumber">The Channel Number To Verify</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Live.TuningToChannel(System.String,System.String,System.Boolean)">
+	<summary>
+   Tunning To Channel
+ </summary>
+	<param name="ChannelNumber">The Channel To Tune To</param>
+	<param name="Type">Can Be : "" For Regular Channel Surf,"Predicted" For Channel Surf With Predicted,"Not Predicted" For Channel Surf With Not Predicted</param>
+	<param name="WithSubtitles">If True Tune To Channel With Subtitles</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Live.VerifyTuneToRadioChannel">
+	<summary>
+    Verifies Tune To Radio Channel
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.ArchiveRecordings.Navigate">
+	<summary>
+   Navigating To Archive Recording
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.ArchiveRecordings.isEmpty">
+	<summary>
+   Checks If Archive Has No Events
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.ArchiveRecordings.FindEvent(System.String,System.String,System.String,System.String)">
+	<summary>
+   Finding Requested Event On Archive
+ </summary>
+	<param name="EventName">The Name Of The Event</param>
+	<param name="EventDate">The Event Converted Date</param>
+	<param name="StartTime">The Event Start Time</param>
+	<param name="EndTime">The Event End Time</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.ArchiveRecordings.NextEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Right In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.ArchiveRecordings.PreviousEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Left In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.ArchiveRecordings.DeleteAllEvents(System.Boolean)">
+	<summary>
+   Deleting All Events From Archive
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.ArchiveRecordings.LockEvent">
+	<summary>
+   Lock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>359 - LockUnlockFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.ArchiveRecordings.UnLockEvent">
+	<summary>
+   UnLock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>359 - LockUnlockFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Guide.MoveChannelUpDown(System.Boolean)">
+	<summary>
+   Moving UP/DOWN On Guide
+ </summary>
+	<param name="IsUp">If True Moves UP Else Moves Down</param>
+	<remarks>
+ Possible Error Codes:
+ <para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Guide.SurfChannelUp(System.String)">
+	<summary>
+   Surfing Up On Guide
+ </summary>
+	<param name="Type">Can Be : "" For Surf Channel Up With PIP (UPC), "WithoutPIP" For Surf Channel Up Without PIP</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Guide.SurfChannelDown(System.String)">
+	<summary>
+   Surfing Down On Guide
+ </summary>
+	<param name="Type">Can Be : "" For Surf Channel Down With PIP (UPC), "WithoutPIP" For Surf Channel Down Without PIP</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Guide.NextEvent(System.Int32)">
+	<summary>
+   Moving To Next Event X Times
+ </summary>
+	<param name="NumOfPresses">Optional Parameter Default = 1 : X Events To Move On Guide</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Guide.GetSelectedEventTime(System.String@)">
+	<summary>
+    Gets Selected Event Time
+ </summary>
+	<param name="EventTime">ByRef Event Time As String</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Guide.SelectCurrentEvent(System.String)">
+	<summary>
+   Selecting Current Event From Guide And Checking Tunning Fas Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Guide.TypeKeys(System.String,System.Boolean)">
+	<summary>
+   Typing Channel Number Keys And Checking Channel Surf Milestones
+ </summary>
+	<param name="ChannelNumber">The Requested Channel To Type</param>
+	<param name="VerifyFas">Optional Default = True : If True Verify ChannelSurf FAS Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Guide.NavigateToRecordEvent(System.Boolean)">
+	<summary>
+   Navigating To RECORD On Action Bar From Guide By Pressing RED/SELECT
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = True : If True Pressing RED Else Pressing Select For Future Events</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.TrickModes.RaiseTrickMode">
+	<summary>
+   Raising Trickmode By Pressing SELECT
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.TrickModes.SetSpeed(System.Double)">
+	<summary>
+   Sets Speed On Trickmode
+ </summary>
+	<param name="Speed">Required Speed Can Be : 1 For Play, 0 For Pause,0.5,2,6,12,30 Or -0.5,-2,-6,-12,-30</param>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>313 - SetTrickModeSpeedFailure</para>
+		<para>328 - INIFailure</para>
+		<para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.TrickModes.VerifySpeedChanged(System.String,System.Double,System.Int32)">
+	<summary>
+   Sending Verifying Speed Change FAS Milestones
+ </summary>
+	<param name="IR">IR To Send</param>
+	<param name="Speed">Speed Of Requirement Trickmode</param>
+	<param name="Timeout"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.TrickModes.VerifyEofBof(System.Int64,System.Double,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Verifying EOF/BOF
+ </summary>
+	<param name="Duration">Duration Of The Event Or Review Buffer</param>
+	<param name="Speed">Speed Of Trickmode</param>
+	<param name="IsReviewBuffer">If True Checkes Review Buffer EOF/BOF</param>
+	<param name="IsReviewBufferFull">If True Review Buffer Is Full</param>
+	<param name="EOF">If True Verifies EOF Else BOF</param>
+	<remarks>
+ Possible Error Codes:
+ <para>320 - VerifyEofBofFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Mount.GetMountCommand(System.Boolean)">
+	<summary>
+   Gets The Mount Command And Adding Values Needed To Mount
+ </summary>
+	<param name="IsFormat">If True Adds FORMAT Else Adds NOCLEAN</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Mount.SendMountCommand(System.Boolean,System.String,System.Boolean)">
+	<summary>
+   Sends Mount Command To Telnet
+ </summary>
+	<param name="MountCommand">The Mount Command To Send</param>
+	<param name="IsSerial">If True Sends The Command Through Serial Else Through Telnet</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Mount.UpdateSTBVersion(System.String,System.Boolean,System.Boolean)">
+	<summary>
+   Checkes If Burn Needed And Burn
+ </summary>
+	<param name="CurrentVersion">Current Build Version</param>
+	<param name="IsGW">If True Burns Gw Else Burns Client</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.FutureRecordings.isEmpty">
+	<summary>
+   Checking If Planner Is Empty
+ </summary>
+	<returns>True If Empty False Is Not</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.FutureRecordings.FindEvent(System.String,System.String,System.String,System.String)">
+	<summary>
+   Finding Requested Event On Planner
+ </summary>
+	<param name="EventName">The Name Of The Event</param>
+	<param name="EventDate">The Event Converted Date</param>
+	<param name="StartTime">The Event Start Time</param>
+	<param name="EndTime">The Event End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.FutureRecordings.NextEvent(System.Int32,System.Boolean)">
+	<summary>
+    Moving To Next Event In Planner X Times
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : X Events To Move On Planner</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.FutureRecordings.PreviousEvent(System.Int32,System.Boolean)">
+	<summary>
+    Moving To Previous Event In Planner X Times
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : X Events To Move On Planner</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.FutureRecordings.CancelEvent(System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Canceling Event From Planner
+ </summary>
+	<param name="shouldSucceed">Optional Parameter Default = True : Just For The Comment Trying/Cancel</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Utils.ReturnToLiveViewing(System.Boolean)">
+	<summary>
+   Return To Live Viewing
+ </summary>
+	<param name="CheckForVideo">Optional Parameter FALSE.If TRUE Checks For Video</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>349 - ReturnToLiveFailure</para>
+		<para>334 - VideoNotPresent</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Utils.SendChannelAsIRSequence(System.String,System.Int32,System.String)">
+	<summary>
+   Sends Channel As IR Sequence
+ </summary>
+	<param name="ChannelNumber">The Channel Number</param>
+	<param name="MsBetweenSending">Miliseconds To Wait Between IR</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Utils.EnterPin(System.String)">
+	<summary>
+   Entering PIN
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.Utils.GetEventTimeSeparator">
+	<summary>
+    Retrieving The Event Time Separator To Be Inserted Between Start Time And End Time  
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.GET.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.GET.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.GET.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.VOD.Navigate">
+	<summary>
+   Navigates To VOD Search Screen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.VOD.NavigateToEventName(System.String)">
+	<summary>
+   Navigating To Event Name On VOD Search
+ </summary>
+	<param name="EventName">The Request Event Name</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.VOD.PlayModule">
+	<summary>
+ Playing Asset of VOD Asset
+ Applicable for GET Live Environment
+ </summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.GET.VOD.TrickSpeed">
+	<summary>
+ Applying Trick Mode on playing VOD Asset
+ Applicable for GET Live Environment
+ </summary>
+</member>
+</members>
+</doc>

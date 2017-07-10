@@ -1,0 +1,20 @@
+[CONFIG]
+lang=VBScript
+script=script.vbs
+java=n
+soap=n
+vuser=n
+[JAVA]
+msjava=y
+[SOAP]
+client=Microsoft SOAP
+[LIB_0]
+name=SRunner
+desc=Mercury VAPI-XP Type Library
+guid={645C7663-6F73-4E9D-8FBB-973F4E746F7A}
+ver=1.0
+[LIB_1]
+name=TDAPIOLELib
+desc=OTA COM Type Library
+guid={F645BD06-E1B4-4E6A-82FB-E97D027FD456}
+ver=1.0

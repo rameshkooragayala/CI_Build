@@ -1,0 +1,163 @@
+{
+    "ngi_lanhost_get_default_params": {
+        "default_DHCPServer_configuration": {
+            "enable": 1,
+            "prefixLength" : 8,
+            "DNSServers": [
+                {
+                    "ss_family": "AF_INET",
+                    "port_number": 53,
+                    "IP_address": "10.201.88.199" 
+                },
+                {
+                    "ss_family": "AF_INET",
+                    "port_number": 53,
+                    "IP_address": "10.201.88.198" 
+                },
+                {
+                    "ss_family": "AF_INET",
+                    "port_number": 53,
+                    "IP_address": "10.201.88.197" 
+                } 
+            ],
+            "domainName": "ngiLanHostDomain",
+            "minAddress": {
+                "ss_family": "AF_INET",
+                "port_number": 6500,
+                "IP_address": "10.201.88.101" 
+            },
+            "maxAddress": {
+                "ss_family": "AF_INET",
+                "port_number": 6500,
+                "IP_address": "10.201.88.190" 
+            },
+            "IPRouters": [
+                {
+                    "ss_family": "AF_INET",
+                    "port_number": 7000,
+                    "IP_address": "10.201.88.196" 
+                },
+                {
+                    "ss_family": "AF_INET",
+                    "port_number": 7000,
+                    "IP_address": "10.201.77.195" 
+                },
+                {
+                    "ss_family": "AF_INET",
+                    "port_number": 7000,
+                    "IP_address": "10.201.77.194" 
+                } 
+            ],
+            "DHCPLeaseTime": 60 
+        } 
+    },
+    "ngi_lanhost_get_capabilities": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "capabilities": [
+                {
+                    "dev" : 23456,
+                    "capabilities": {
+                        "features": [
+                            "NGI_LANHOST_FEATURE_IP_ADDRESS_CONFIGURATION",
+                            "NGI_LANHOST_FEATURE_DHCPS_CONFIGURATION",
+                            "NGI_LANHOST_FEATURE_DHCPS_PREASSIGNED_ADDRESSES",
+                            "NGI_LANHOST_FEATURE_DHCP_ALG_METHODS",
+                            "NGI_LANHOST_FEATURE_DHCP_ALG_SEARCH_METHODS" 
+                        ],
+                        "ipConfigurationMaxNb": 5,
+                        "maxDHCPAlgDevicesInConfig": 2,
+                        "supportedDHCPAlgDevices": [
+                            {
+                                "dev": 34567,
+                                "configMethod": "NGI_LANHOST_DHCP_ALG_DEVICE_CONFIG_METHOD_WIFI_PBC"
+                            },
+                            {
+                                "dev": 45678,
+                                "configMethod": "" 
+                            }
+
+                        ] 
+                    } 
+                }
+            ] 
+        } 
+    },
+    "ngi_lanhost_get_dhcp_server_config": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_set_dhcp_server_config": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_get_preassigned_addr_num_entries": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_get_preassigned_addr_entries": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_add_preassigned_addr": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_del_preassigned_addr": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_get_ip_interfaces_num_entries": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_get_ip_interfaces": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_add_ip_interface": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_del_ip_interface": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_dhcp_alg_get_info": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "clientInfo": [
+                {
+                    "dev" : 23456,
+                    "clientInfo" : {
+                        "status" : "NGI_DHCP_ALG_STATUS_DISABLED",
+                        "dhcpServerAddr": {
+                            "ss_family": "AF_INET",
+                            "port_number": 24,
+                            "IP_address": "10.201.77.86" 
+                        },
+                        "currentActiveDevice": 45678 
+                    } 
+                } 
+            ] 
+        } 
+    },
+    "ngi_lanhost_dhcp_alg_set_config": {
+        "NGI_STATUS": "NGI_STATUS_OK"
+    },
+    "ngi_lanhost_dhcp_alg_initiate_search": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_dhcp_alg_cancel_search": {
+        "NGI_STATUS": "NGI_STATUS_OK" 
+    },
+    "ngi_lanhost_dhcp_alg_get_search_status": {
+        "NGI_STATUS": "NGI_STATUS_OK",
+        "Value": {
+            "searchStatus": [
+                {
+                    "dev" : 23456,
+                    "searchStatus" : {
+                        "status": "NGI_DHCP_ALG_STATUS_SEARCHING",
+                        "dhcpServerAddr": {
+                            "ss_family": "AF_INET",
+                            "port_number": 8000,
+                            "IP_address": "10.201.77.86" 
+                        } 
+                    } 
+                } 
+            ] 
+        } 
+    } 
+}
+

@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<TITLE>NDS Test</TITLE>
+	<object name="mhw" type="application/x-jsuserapi-plugin">
+		<param name="type" value="system.transport.network"/>
+		<param name="class" value="system.transport.riri"/>
+		<param name="class" value="system.transport.fifi"/>
+		<param name="class" value="system.transport.loulou"/>
+	</object>
+
+<script>
+	function Teminated() {
+		v1.value="Teminated";
+	}
+	function New_serv(listener_id, cookie, event) {
+		v1.value=eval(v1.value)+1;
+    progress.value = event.progress + "%";
+	}
+	function test(var1,var2,var3) {
+		v1.value = var2.tab[3].prop[1];		
+	}
+
+</script>
+
+</HEAD>
+<BODY TEXT="#D0D0D0">
+	<!--  onKeypress="update()"  -->
+	<A HREF="./index.html">Back to home page.</A> <A HREF="./mhw03.html">Reload.</A><BR/>
+
+  <!-- If the following line is missing : a bug occures -->
+	<!-- EMBED src=sample.jau type="application/x-jsuserapi-plugin" width=145 height=60 onnotifyevent="alert('event fired')" -->
+	<BR/>
+
+	Nombre de services trouv&eacute;s <INPUT type="text" name="v1" value="0"/><BR/>
+	Les boutons sens&eacute;s appeler le plug-in :<BR/>
+	start_scan ( spm, method, mode, networks_length, networks[], cb_terminated, cb_new_serv);
+	<A HREF="javascript:mhw.start_scan(0,1,2,1,0,'Teminated','New_serv')">Start Scan</A><BR/>
+
+  Progression : <INPUT type="text" name="progress" value="0"/><BR/>
+<script type="text/javascript">
+<!--
+	document.writeln("Le nombre de plugins s'&eacute;l&egrave;ve &agrave; " + navigator.plugins.length +".");
+	document.writeln("<TABLE border=1>");
+	document.writeln("<TR><TD>name<\/TD><TD>description<\/TD><\/TR>");
+	for(var i=0; i<navigator.plugins.length; i++)
+	{
+		document.writeln("<TR>");
+		document.writeln("<TD>" + navigator.plugins[i].name + "<\/TD>");
+		document.writeln("<TD>" + navigator.plugins[i].description + "<\/TD>");
+		document.writeln("<\/TR>");
+	}
+	document.writeln("<\/TABLE>");
+//-->
+</script>
+
+</BODY>
+</HTML>

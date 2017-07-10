@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone name="g1" type="g" id="1" x="10" y="276" w="552" h="230"/>
+<zone name="g2" type="g" id="2" x="572" y="276" w="552" h="230"/>
+<zone name="s1" type="s" id="1" x="0" y="0" w="940" h="260"/>
+<zone name="s2" type="s" id="2" x="960" y="0" w="940" h="260"/>
+<zone name="v1" type="v1" id="null" x="10.20" y="776" w="444" h="276"/>
+<zone name="shadow1" type="shadow" id="1" x="1790" y="1817" w="180" h="27"/>
+<zone name="shadow2" type="shadow" id="2" x="1790" y="1845" w="180" h="27"/>
+
+<zone name="gg1" type="gCut" id="1" x="10" y="276" w="552" h="230"/>
+<zone name="ss1" type="sCut" id="1" x="0" y="0" w="940" h="260"/>
+<zone name="vv1" type="vCut" id="null" x="10.20" y="776" w="444" h="276"/>
+
+<!-- static zones -->
+<zone name="MMHList" type="MMHList" id="null" x="0" y="536" w="2048" h="110"/>
+<zone name="MMHList_progress_Bar" type="MMHList_progress_Bar" id="null" x="10" y="757" w="384" h="4"/>
+<zone name="MMlogo" type="MMlogo" id="null" x="565.4" y="97.5" w="161" h="104"/>
+<zone name="MMChName" type="MMChName" id="null" x="563.45" y="169.8" w="167.95" h="34.4"/>
+<zone name="DescripTxt" type="DescripTxt" id="null" x="1024" y="648.2" w="880" h="22.35"/>
+<!-- sub zones -->
+<zone name="sc0" type="sc0" id="null" x="0" y="0" w="180" h="260"/>
+<zone name="sc1" type="sc1" id="null" x="190" y="0" w="180" h="260"/>
+<zone name="sc2" type="sc2" id="null" x="380" y="0" w="180" h="260"/>
+<zone name="sc3" type="sc3" id="null" x="570" y="0" w="180" h="260"/>
+<zone name="sc4" type="sc4" id="null" x="760" y="0" w="180" h="260"/>
+<zone name="logoHigh" type="logoHigh" id="null" x="575.4" y="841.5" w="161" h="104"/>
+<zone name="logoLow" type="logoLow" id="null" x="575.4" y="841.5" w="161" h="104"/>

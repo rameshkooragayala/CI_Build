@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zone name="DateSkipZone" type="DateSkipZone" id="null" x="46.85" y="0" w="280" h="52"/>
+<zone name="GridTimeBar" type="GridTimeBar" id="null" x="300" y="0" w="1001" h="52"/>
+
+<!-- Need to define in collada -->
+<zone name="v1" type="v1" id="null" x="1010" y="1100" w="249" h="140"/>
+
+<zone name="GridRow0" type="GridRow0" id="null" x="295" y="58" w="1001" h="66"/>
+<zone name="GridRow1" type="GridRow1" id="null" x="295" y="190" w="1001" h="66"/>
+<zone name="GridRow2" type="GridRow2" id="null" x="295" y="322" w="1001" h="66"/>
+<zone name="GridRow3" type="GridRow3" id="null" x="295" y="454" w="1001" h="66"/>
+<zone name="GridRow4" type="GridRow4" id="null" x="295" y="586" w="1001" h="66"/>
+<zone name="GridRow5" type="GridRow5" id="null" x="295" y="718" w="1001" h="66"/>
+<zone name="GridRow6" type="GridRow6" id="null" x="295" y="850" w="1001" h="66"/>
+<zone name="GridRow7" type="GridRow7" id="null" x="295" y="916" w="1001" h="66"/>
+<zone name="GridRow8" type="GridRow8" id="null" x="295" y="982" w="1001" h="66"/>
+<zone name="GridRow9" type="GridRow9" id="null" x="295" y="1048" w="1001" h="66"/>
+
+<zone name="CatchupGridRow0" type="CatchupGridRow0" id="null" x="149" y="58" w="140" h="66"/>
+<zone name="CatchupGridRow1" type="CatchupGridRow1" id="null" x="149" y="190" w="140" h="66"/>
+<zone name="CatchupGridRow2" type="CatchupGridRow2" id="null" x="149" y="322" w="140" h="66"/>
+<zone name="CatchupGridRow3" type="CatchupGridRow3" id="null" x="149" y="454" w="140" h="66"/>
+<zone name="CatchupGridRow4" type="CatchupGridRow4" id="null" x="149" y="586" w="140" h="66"/>
+<zone name="CatchupGridRow5" type="CatchupGridRow5" id="null" x="149" y="718" w="140" h="66"/>
+<zone name="CatchupGridRow6" type="CatchupGridRow6" id="null" x="149" y="850" w="140" h="66"/>
+<zone name="CatchupGridRow7" type="CatchupGridRow7" id="null" x="149" y="916" w="140" h="66"/>
+<zone name="CatchupGridRow8" type="CatchupGridRow8" id="null" x="149" y="982" w="140" h="66"/>
+<zone name="CatchupGridRow9" type="CatchupGridRow9" id="null" x="149" y="1048" w="140" h="66"/>
+
+<zone name="GridLogo0" type="GridLogo0" id="null" x="0" y="58" w="140" h="66"/>
+<zone name="GridLogo1" type="GridLogo1" id="null" x="0" y="190" w="140" h="66"/>
+<zone name="GridLogo2" type="GridLogo2" id="null" x="0" y="322" w="140" h="66"/>
+<zone name="GridLogo3" type="GridLogo3" id="null" x="0" y="454" w="140" h="66"/>
+<zone name="GridLogo4" type="GridLogo4" id="null" x="0" y="586" w="140" h="66"/>
+<zone name="GridLogo5" type="GridLogo5" id="null" x="0" y="718" w="140" h="66"/>
+<zone name="GridLogo6" type="GridLogo6" id="null" x="0" y="850" w="140" h="66"/>
+<zone name="GridLogo7" type="GridLogo7" id="null" x="0" y="916" w="140" h="66"/>
+<zone name="GridLogo8" type="GridLogo8" id="null" x="0" y="982" w="140" h="66"/>
+<zone name="GridLogo9" type="GridLogo9" id="null" x="0" y="1048" w="140" h="66"/>
+
+<zone name="GridServName0" type="GridServName0" id="null" x="0" y="58" w="109.8" h="35.3"/>
+<zone name="GridServName1" type="GridServName1" id="null" x="0" y="190" w="109.8" h="35.3"/>
+<zone name="GridServName2" type="GridServName2" id="null" x="0" y="322" w="109.8" h="35.3"/>
+<zone name="GridServName3" type="GridServName3" id="null" x="0" y="454" w="109.8" h="35.3"/>
+<zone name="GridServName4" type="GridServName4" id="null" x="0" y="586" w="109.8" h="35.3"/>
+<zone name="GridServName5" type="GridServName5" id="null" x="0" y="718" w="109.8" h="35.3"/>
+<zone name="GridServName6" type="GridServName6" id="null" x="0" y="850" w="103.9" h="33.5"/>
+<zone name="GridServName7" type="GridServName7" id="null" x="0" y="916" w="109.8" h="35.3"/>
+<zone name="GridServName8" type="GridServName8" id="null" x="0" y="982" w="109.8" h="35.3"/>
+
+<zone name="GridViewFav0" type="GridViewFav0" id="null" x="0" y="58" w="17" h="17"/>
+<zone name="GridViewFav1" type="GridViewFav1" id="null" x="0" y="190" w="17" h="17"/>
+<zone name="GridViewFav2" type="GridViewFav2" id="null" x="0" y="322" w="17" h="17"/>
+<zone name="GridViewFav3" type="GridViewFav3" id="null" x="0" y="454" w="17" h="17"/>
+<zone name="GridViewFav4" type="GridViewFav4" id="null" x="0" y="586" w="17" h="17"/>
+<zone name="GridViewFav5" type="GridViewFav5" id="null" x="0" y="718" w="17" h="17"/>
+<zone name="GridViewFav6" type="GridViewFav6" id="null" x="0" y="850" w="17" h="17"/>
+<zone name="GridViewFav7" type="GridViewFav7" id="null" x="0" y="916" w="17" h="17"/>
+<zone name="GridViewFav8" type="GridViewFav8" id="null" x="0" y="982" w="17" h="17"/>
+
+<zone name="GridNowVerticalLine" type="GridNowVerticalLine" id="null" x="0" y="1123" w="64" h="50.7"/>
+
+<!-- actual y = 1115 , changed to y = 1115 + 10-->
+<zone name="GridDCA" type="GridDCA" id="null" x="1344" y="1116" w="46" h="25"/>
+<!-- actual y = 1115  , changed to y = 1115 + 36-->
+<zone name="FocusChannelnumber" type="FocusChannelnumber" id="null" x="1344" y="1149" w="46" h="25"/>
+
+<zone name="f1" type="f" id="1" x="295" y="1316" w="1001" h="137"/>
+<zone name="f2" type="f" id="2" x="295" y="1179" w="1001" h="137"/>
+<zone name="f3" type="f" id="3" x="295" y="1453" w="1001" h="137"/>
+
+<zone name="catchupFocus1" type="catchupFocus" id="1" x="149" y="1316" w="140" h="137"/>
+<zone name="catchupFocus2" type="catchupFocus" id="2" x="149" y="1179" w="140" h="137"/>
+<zone name="catchupFocus3" type="catchupFocus" id="3" x="149" y="1453" w="140" h="137"/>
+
+<zone name="w1" type="w" id="1" x="295" y="1453" w="1001" h="137"/>
+<zone name="w2" type="w" id="2" x="295" y="1453" w="1001" h="137"/>
+
+
+<zone name="GridFocusUp" type="GridFocusUp" id="null" x="295" y="1179" w="1001" h="137"/>
+<zone name="GridRowFocus" type="GridRowFocus" id="null" x="295" y="1316" w="1001" h="137"/>
+<zone name="GridFocusBG" type="GridFocusBG" id="null" x="295" y="1316" w="1001" h="137"/>
+<zone name="GridFocusDown" type="GridFocusDown" id="null" x="295" y="1453" w="1001" h="137"/>
+
+<zone name="CatchupGridFocusUp" type="CatchupGridFocusUp" id="null" x="149" y="1179" w="140" h="137"/>
+<zone name="CatchupGridRowFocus" type="CatchupGridRowFocus" id="null" x="149" y="1316" w="140" h="137"/>
+<zone name="CatchupGridFocusBG" type="CatchupGridFocusBG" id="null" x="149" y="1316" w="140" h="137"/>
+<zone name="CatchupGridFocusDown" type="CatchupGridFocusDown" id="null" x="149" y="1453" w="140" h="137"/>
+
+
+
+<zone name="GridServFocusUp" type="GridServFocusUp" id="null" 		x="0" y="1179" w="140" h="137"/>
+<zone name="GridServFocus" type="GridServFocus" id="null" 			x="0" y="1316" w="140" h="137"/>
+<zone name="GridServFocusDown" type="GridServFocusDown" id="null" 	x="0" y="1453" w="140" h="137"/>
+
+<zone name="GridServNameFocusUp" type="GridServNameFocusUp" id="null" x="1308.2" y="1179" w="109.8" h="35.3"/>
+<zone name="GridServNameFocus" type="GridServNameFocus" id="null"   x="1308.2" y="1316" w="109.8" h="35.3"/>
+<zone name="GridServNameFocusDown" type="GridServNameFocusDown" id="null" x="1308.2" y="1453" w="109.8" h="35.3"/>
+
+<zone name="GridViewFavFocusUP" type="GridViewFavFocusUP" id="null" x="1459.2" y="1179" w="17" h="17"/>
+<zone name="GridViewFavF" type="GridViewFavF" id="null" x="1459.2" y="1316" w="17" h="17"/>
+<zone name="GridViewFavFocusDown" type="GridViewFavFocusDown" id="null" x="1459.2" y="1453" w="17" h="17"/>
+
+<zone name="GridFocusHorizontalLineFrontTop" type="GridFocusHorizontalLineFrontTop" id="null" x="0" y="1599" w="1001" h="1.9"/>
+
+<zone name="GridFocusHorizontalLineFrontBottom" type="GridFocusHorizontalLineFrontBottom" id="null" x="0" y="1609" w="1001" h="1.9"/>
+
+<zone name="GridFocusHorizontalLineBack" type="GridFocusHorizontalLineBack" id="null" x="32" y="1618" w="208.5" h="2.45"/>
+
+<zone name="GridPipError" type="GridPipError" id="null" x="1310" y="0" w="245.5" h="137"/>
+
+<zone name="CatchupGridFocusInst" type="CatchupGridFocusInst" id="null" x="0" y="1634" w="1001" h="137"/>
+
+<zone name="LeftPaneBG" type="LeftPaneBG" id="null" x="1492" y="1456" w="140" h="137"/>
+
+<zone name="RightPaneBG" type="RightPaneBG" id="null" x="1011" y="1663" w="1001" h="137"/>
+
+<zone name="GridProgressBarBg" type="GridProgressBarBg" id="null" x="0" y="1780" w="1001" h="10"/>
+<zone name="GridProgressBarSlider" type="GridProgressBarSlider" id="null" x="0" y="1784" w="1001" h="10"/>

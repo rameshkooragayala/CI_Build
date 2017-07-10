@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone name="g1" type="g" id="1" x="756.95" y="840.55" w="739.95" h="60"/>
+<zone name="g2" type="g" id="2" x="1307.95" y="5" w="630" h="720"/>
+<zone name="b1" type="b" id="1" x="10" y="325" w="954" h="340"/>
+<zone name="b2" type="b" id="2" x="974" y="325" w="954" h="340"/>
+<zone name="t1" type="t" id="1" x="10" y="10" w="954" h="305"/>
+<zone name="t2" type="t" id="2" x="974" y="10" w="954" h="305"/>
+<zone name="s1" type="s" id="1" x="10" y="704" w="549" h="118"/>
+<zone name="s2" type="s" id="2" x="566" y="704" w="549" h="118"/>
+<zone name="metaDataInfo1" type="metaDataInfo" id="1" x="10" y="675" w="600" h="200"/>
+<zone name="metaDataInfo2" type="metaDataInfo" id="2" x="566" y="675" w="600" h="200"/>
+<zone name="method1" type="method" id="1" x="35.95" y="802" w="765" h="540"/>
+<zone name="method2" type="method" id="2" x="820.65" y="802" w="765" h="540"/>
+
+<zone name="m1_1" type="m1_1" id="null" x="0" y="45"   w="738" h="45"/>
+<zone name="m1_2" type="m1_2" id="null" x="0" y="135"  w="738" h="45"/>
+<zone name="m1_3" type="m1_3" id="null" x="0" y="225" w="738" h="45"/>
+<zone name="m1_4" type="m1_4" id="null" x="0" y="270" w="738" h="45"/>
+<zone name="m1_5" type="m1_5" id="null" x="0" y="315" w="738" h="45"/>
+<zone name="m1_6" type="m1_6" id="null" x="0" y="360" w="738" h="45"/>
+<zone name="m1_7" type="m1_7" id="null" x="0" y="405" w="738" h="45"/>
+<zone name="m1_8" type="m1_8" id="null" x="0" y="450" w="738" h="45"/>
+<zone name="m1_9" type="m1_9" id="null" x="0" y="495" w="738" h="45"/>
+<zone name="m1_10" type="m1_10" id="null" x="0" y="441" w="738" h="45"/>
+	
+<!-- static zones -->
+<zone name="prgInfo" type="prgInfo" id="null" x="10" y="10" w="954" h="305"/>
+<zone name="verticalBar" type="verticalBar" id="null" x="623" y="0" w="24" h="720"/>
+<zone name="notif_title" type="notif_title" id="null" x="0" y="5" w="652" h="720"/>
+<zone name="notifMsg" type="notifMsg" id="null" x="660" y="320" w="603" h="134"/>
+<zone name="FutureLogoHolder" type="FutureLogoHolder" id="null" x="0" y="1480" w="160" h="104"/>
+<zone name="eventNameTxt" type="eventNameTxt" id="null" x="0" y="1480" w="160" h="104"/>
+<zone name="hdd_usage_lib" type="hdd_usage_lib" id="null" x="31.5" y="1644.6" w="" h=""/>
+<!--<zone name="title" type="title" id="null" x="224.95" y="53" w="650" h="200"/>-->
+<!-- new zone  -->
+<zone name="horizontalBarError" type="horizontalBarError" id="null" x="14.95" y="1352" w="739" h="12"/>
+<zone name="horizontalBar" type="horizontalBar" id="null" x="10.0" y="1352.5" w="739" h="12"/>
+<zone name="separatorBar1" type="separatorBar1" id="null" x="225" y="53" w="739" h="3"/>
+<zone name="separatorBar2" type="separatorBar2" id="null" x="225" y="140" w="739" h="3"/>
+<zone name="title" type="title" id="null" x="224.95" y="53" w="650" h="200"/>
+<zone name="messTitle" type="messTitle" id="null" x="214.95" y="48.55" w="68.50" h="30.95"/>
+<zone name="message" type="message" id="null" x="214.95" y="144" w="739" h="93"/>
+<zone name="fav_icon" type="fav_icon" id="null" x="10" y="215" w="15" h="15"/>
+
+<zone name="progInfo_date" type="progInfo_date" id="null" x="412" y="50" w="544" h="34"/>
+<zone name="progInfo_progName" type="progInfo_progName" id="null" x="412" y="84" w="544" h="52"/>
+<zone name="progInfo_genreAndDuration" type="progInfo_genreAndDuration" id="null" x="412" y="137" w="544" h="33.6"/>
+<zone name="progInfo_seasonOrEpisode" type="progInfo_seasonOrEpisode" id="null" x="412" y="176.25" w="544" h="34.35"/>
+<zone name="progInfo_price" type="progInfo_price" id="null" x="412" y="176.25" w="544" h="34.35"/>
+<zone name="progInfo_icon" type="progInfo_icon" id="null" x="500" y="155" w="31" h="20"/>
+<zone name="progInfo_separatorLine2" type="progInfo_separatorLine2" id="null" x="415" y="214" w="550" h="1"/>
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<BOOT_APP type="FLASH_ENGINE">
+	<LOCATOR>
+		file:///NDS/resources/mainHDPVR.swf
+	</LOCATOR>
+</BOOT_APP>
+

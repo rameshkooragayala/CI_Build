@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- NEW zones START -->
+<!-- KEYWORD -->
+<zone name="kw" type="kw" id="null" x="368" y="484" w="750" h="152"/>
+<zone name="kwresult" type="kwresult" id="null" x="1042" y="721" w="750" h="410"/>
+<zone name="srchalphanum" type="srchalphanum" id="null" x="0" y="1" w="1360" h="77"/>
+<zone name="pincodeInfo" type="pincodeInfo" id="null" x="366" y="484" w="676.25" h="77"/>
+
+<!-- ADVANCED -->
+<zone name="criteria" type="criteria" id="null" x="10" y="1820" w="750" h="44"/>
+<zone name="search" type="search" id="null" x="1364" y="114" w="420" h="44"/>
+<zone name="nbresult" type="nbresult" id="null" x="842" y="694" w="190" h="32"/>
+<zone name="searchfilter" type="searchfilter" id="null" x="1072" y="1136" w="750" h="410"/>
+<zone name="filterresult" type="filterresult" id="1" x="1072" y="721" w="750" h="410"/>
+
+
+<!-- RESULTS -->
+
+<zone name="results" type="results" id="1" x="368" y="640" w="470" h="110"/>
+<zone name="refine" type="refine" id="null" x="1364" y="114" w="420" h="44"/>
+<zone name="related" type="related" id="null" x="10" y="1820" w="750" h="44"/>
+
+<zone name="refinelist" type="g" id="1" x="368" y="185" w="750" h="296"/>
+<zone name="selectedkw" type="selectedkw" id="null" x="10" y="180" w="282" h="54"/>
+
+<zone name="logo_up" type="logo_up" id="null" x="1704" y="212.5" w="160" h="104"/>
+<zone name="logo_focus" type="logo_focus" id="null" x="1704" y="393.5" w="160" h="104"/>
+<zone name="logo_down" type="logo_down" id="null" x="1704" y="574.5" w="160" h="104"/>
+<zone name="separator" type="separator" id="null" x="295" y="180" w="570" h="2"/>
+<zone name="upsrc" type="upsrc" id="null" x="1120" y="176" w="180" h="22"/>
+<zone name="focussrc" type="focussrc" id="null" x="1120" y="357" w="180" h="22"/>
+<zone name="downsrc" type="downsrc" id="null" x="1120" y="538" w="180" h="22"/>
+
+<zone name="ac_u" type="ac_u" id="null" x="1378" y="174" w="322" h="181"/>
+<zone name="ac" type="ac" id="null" x="1378" y="355" w="322" h="181"/>
+<zone name="ac_d" type="ac_d" id="null" x="1378" y="536" w="322" h="181"/>
+
+<zone name="presults_f_u" type="presults_f_u" id="null" x="1868" y="1030" w="180" h="260"/>
+<zone name="presults_f" type="presults_f" id="null" x="1868" y="1290" w="180" h="260"/>
+<zone name="presults_f_d" type="presults_f_d" id="null" x="1868" y="1550" w="180" h="260"/>
+
+<zone name="l_buffer" type="l_buffer" id="null" x="368" y="1018" w="670" h="50"/>
+<zone name="l_01" type="l_01" id="null" x="368" y="1122" w="670" h="50"/>
+<zone name="l_02" type="l_02" id="null" x="368" y="1226" w="670" h="50"/>
+<zone name="l_03" type="l_03" id="null" x="368" y="1280" w="670" h="50"/>
+<zone name="l_04" type="l_04" id="null" x="368" y="1334" w="670" h="50"/>
+<zone name="l_05" type="l_05" id="null" x="368" y="1388" w="670" h="50"/>
+<zone name="l_06" type="l_06" id="null" x="368" y="1442" w="670" h="50"/>
+<zone name="l_07" type="l_07" id="null" x="368" y="1496" w="670" h="50"/>
+
+<zone name="test" type="results" id="2" x="0" y="0" w="0" h="0"/>
+
+<!-- RELATED -->
+<zone name="relatedband" type="relatedband" id="null" x="558" y="1550" w="1260" h="260"/>
+<zone name="relatedinfo" type="relatedinfo" id="null" x="1364" y="0" w="470" h="110"/>
+
+<zone name="w1" type="w" id="1" x="548" y="754" w="180" h="260"/>
+<zone name="w2" type="w" id="2" x="728" y="754" w="180" h="260"/>
+<zone name="wl" type="w" id="2" x="368" y="754" w="180" h="260"/>
+<zone name="wr" type="w" id="2" x="728" y="754" w="180" h="260"/>
+
+<zone name="w_0" type="poster" id="null" x="558" y="1550" w="180" h="260"/> <!--Mapped to r1-->
+<zone name="w_1" type="poster" id="null" x="738" y="1550" w="180" h="260"/> <!--Mapped to r2-->
+<zone name="w_2" type="poster" id="null" x="918" y="1550" w="180" h="260"/> <!--Mapped to r3-->
+<zone name="w_3" type="poster" id="null" x="1098" y="1550" w="180" h="260"/> <!--Mapped to r4-->
+<zone name="w_4" type="poster" id="null" x="1278" y="1550" w="180" h="260"/> <!--Mapped to r5-->
+<zone name="w_5" type="poster" id="null" x="1458" y="1550" w="180" h="260"/> <!--Mapped to r6-->
+<zone name="w_6" type="poster" id="null" x="1638" y="1550" w="180" h="260"/> <!--Mapped to r7-->
+
+<zone name="w_buffer" type="w_buffer" id="null" x="368" y="1550" w="180" h="260"/>
+<zone name="offStage" type="offStage" id="null" x="-1000" y="-1000" w="180" h="260"/>
+
+<!-- MANUAL RECORDING -->
+<zone name="ManualRecListTitle" type="ManualRecListTitle" id="null" x="490" y="260" w="530" h="70"/>
+
+<!-- Recording Confirmation -->
+<zone name="record_confirm_logo" type="record_confirm_logo" id="null" x="1844" y="0" w="160" h="104"/>
+
+<!-- NEW zones STOP -->
+
+<!-- static zones -->
+<zone name="SrchHorizonBar" type="SrchHorizonBar" id="null" x="0" y="157" w="1280" h="14"/>
+<zone name="SrchTitle" type="SrchTitle" id="null" x="90" y="1845" w="300" h="70"/>

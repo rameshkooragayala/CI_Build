@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	<contentTypes>
+		<contentType name="default" level="x2y1" stepRL="100" stepUD="100" stepOB="800"></contentType>
+	</contentTypes>
+	<animations>
+	
+		<animation name="p1-p2-acc-l" map="x2y1-x2y1-acc-l" ></animation>
+		<animation name="p1-p2-lin-l" map="x2y1-x2y1-lin-l" ></animation>
+		<animation name="p1-p2-dec-l" map="x2y1-x2y1-dec-l" ></animation>
+		<animation name="p1-p2-acc-r" map="x2y1-x2y1-acc-r" ></animation>
+		<animation name="p1-p2-lin-r" map="x2y1-x2y1-lin-r" ></animation>
+		<animation name="p1-p2-dec-r" map="x2y1-x2y1-dec-r" ></animation>
+		
+	</animations>
+</sceneConfig>

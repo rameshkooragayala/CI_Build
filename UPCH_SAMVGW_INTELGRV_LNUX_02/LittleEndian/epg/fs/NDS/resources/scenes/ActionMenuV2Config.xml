@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	<contentTypes>
+		<contentType name="default" level="xyAM" stepRL="100" stepUD="100" stepOB="800"></contentType>
+		<contentType name="0" 		level="xyAM" stepRL="100" stepUD="100" stepOB="800"></contentType>
+		<contentType name="1" 		level="xyAM" stepRL="100" stepUD="100" stepOB="800"></contentType>
+		<contentType name="2" 		level="xyAM" stepRL="100" stepUD="100" stepOB="800"></contentType>
+        <contentType name="3" 		level="xyAM" stepRL="100" stepUD="100" stepOB="800"></contentType>
+	</contentTypes>
+	<animations>
+		<animation name="list-u" 		map="xyAM-xyAM" ></animation>
+		<animation name="list-d" 		map="xyAM-xyAM" ></animation>
+		<animation name="list-1-u" 		map="xyAM-xyAM" ></animation>
+		<animation name="list-1-d" 		map="xyAM-xyAM" ></animation>
+	</animations>
+</sceneConfig>

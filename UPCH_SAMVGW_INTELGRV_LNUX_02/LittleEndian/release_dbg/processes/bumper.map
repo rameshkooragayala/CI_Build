@@ -1,0 +1,512 @@
+Archive member included because of file (symbol)
+
+/local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+                              /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o (__libc_csu_init)
+
+Discarded input sections
+
+ .note.ABI-tag  0x00000000       0x20 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rodata        0x00000000        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .data          0x00000000        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .bss           0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .note.GNU-stack
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .text          0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crti.o
+ .data          0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crti.o
+ .bss           0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crti.o
+ .note.GNU-stack
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crti.o
+ .data          0x00000000        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ .note.GNU-stack
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ .text          0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .data          0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .bss           0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .text.init_application
+                0x00000000       0x25 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .note.GNU-stack
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .group         0x00000000        0x8 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+ .data          0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+ .bss           0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+ .data          0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+ .bss           0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+ .note.GNU-stack
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+ .text          0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crtn.o
+ .data          0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crtn.o
+ .bss           0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crtn.o
+ .note.GNU-stack
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crti.o
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+START GROUP
+LOAD /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libm.so
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libpthread.so
+START GROUP
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/lib/libpthread.so.0
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libpthread_nonshared.a
+END GROUP
+START GROUP
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/lib/libpthread.so.0
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libpthread_nonshared.a
+END GROUP
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libdl.so
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/librt.so
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/i686-cm-linux/lib/libstdc++.a
+END GROUP
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/libgcc.a
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/../../../../i686-cm-linux/lib/libgcc_s.so
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc.so
+START GROUP
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/lib/libc.so.6
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/lib/ld-linux.so.2
+END GROUP
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/libgcc.a
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/../../../../i686-cm-linux/lib/libgcc_s.so
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+LOAD /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crtn.o
+                0x08048000                PROVIDE (__executable_start, 0x8048000)
+                0x080480f4                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp         0x080480f4       0x13
+ *(.interp)
+ .interp        0x080480f4       0x13 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x08048108       0xb8
+ *(.hash)
+ .hash          0x08048108       0xb8 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x080481c0      0x1b0
+ *(.dynsym)
+ .dynsym        0x080481c0      0x1b0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+
+.dynstr         0x08048370      0x1a6
+ *(.dynstr)
+ .dynstr        0x08048370      0x1a6 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+
+.gnu.version    0x08048516       0x36
+ *(.gnu.version)
+ .gnu.version   0x08048516       0x36 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+
+.gnu.version_d  0x0804854c        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+
+.gnu.version_r  0x0804854c       0x50
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0804854c       0x50 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+
+.rel.dyn        0x0804859c        0x8
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rel.text.findChar
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rel.text.init_application
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rel.text.destory_application
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rel.text.addEntry
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rel.text.readInputFile
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rel.text.checkThreadName
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rel.text.dumpNotUsed
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rel.text.processList
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .rel.text.main
+                0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x0804859c        0x8 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ *(.rel.ifunc)
+
+.rel.plt        0x080485a4       0xc0
+ *(.rel.plt)
+ .rel.plt       0x080485a4       0xc0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+                0x08048664                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+                0x08048664                PROVIDE (__rel_iplt_end, .)
+
+.init           0x08048664       0x30
+ *(.init)
+ .init          0x08048664       0x22 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crti.o
+                0x08048664                _init
+ .init          0x08048686        0x5 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ .init          0x0804868b        0x5 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+ .init          0x08048690        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crtn.o
+
+.plt            0x08048694      0x190
+ *(.plt)
+ .plt           0x08048694      0x190 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+                0x080486b4                __printf_chk@@GLIBC_2.3.4
+                0x080486c4                strncpy@@GLIBC_2.0
+                0x080486d4                fgets@@GLIBC_2.0
+                0x080486e4                sched_setscheduler@@GLIBC_2.0
+                0x080486f4                __libc_start_main@@GLIBC_2.0
+                0x08048704                __memcpy_chk@@GLIBC_2.3.4
+                0x08048714                perror@@GLIBC_2.0
+                0x08048724                __strcat_chk@@GLIBC_2.3.4
+                0x08048734                readdir@@GLIBC_2.0
+                0x08048744                free@@GLIBC_2.0
+                0x08048754                opendir@@GLIBC_2.0
+                0x08048764                fclose@@GLIBC_2.1
+                0x08048774                fopen@@GLIBC_2.1
+                0x08048784                strcpy@@GLIBC_2.0
+                0x08048794                atoi@@GLIBC_2.0
+                0x080487a4                strcasecmp@@GLIBC_2.0
+                0x080487b4                closedir@@GLIBC_2.0
+                0x080487c4                malloc@@GLIBC_2.0
+                0x080487d4                __stack_chk_fail@@GLIBC_2.4
+                0x080487e4                __memset_chk@@GLIBC_2.3.4
+                0x080487f4                strspn@@GLIBC_2.0
+                0x08048804                sscanf@@GLIBC_2.0
+                0x08048814                strncmp@@GLIBC_2.0
+ *(.iplt)
+ .iplt          0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+
+.text           0x08048830      0xa3b
+ *(.text.unlikely .text.*_unlikely)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x08048830       0x24 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+                0x08048830                _start
+ *fill*         0x08048854        0xc 90909090
+ .text          0x08048860       0x84 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ .text.findChar
+                0x080488e4       0x4a /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .text.destory_application
+                0x0804892e       0x4f /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+                0x0804892e                destory_application
+ .text.addEntry
+                0x0804897d      0x228 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+                0x0804897d                addEntry
+ .text.readInputFile
+                0x08048ba5       0xa9 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+                0x08048ba5                readInputFile
+ .text.checkThreadName
+                0x08048c4e       0x96 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+                0x08048c4e                checkThreadName
+ .text.dumpNotUsed
+                0x08048ce4       0x8e /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+                0x08048ce4                dumpNotUsed
+ .text.processList
+                0x08048d72      0x39d /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+                0x08048d72                processList
+ .text.main     0x0804910f       0xb0 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+                0x0804910f                main
+ *fill*         0x080491bf        0x1 90909090
+ .text          0x080491c0       0x75 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+                0x080491c0                __libc_csu_init
+                0x08049230                __libc_csu_fini
+ .text.__i686.get_pc_thunk.bx
+                0x08049235        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+                0x08049235                __i686.get_pc_thunk.bx
+ *fill*         0x08049239        0x7 90909090
+ .text          0x08049240       0x2b /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+ *(.gnu.warning)
+
+.fini           0x0804926c       0x1c
+ *(.fini)
+ .fini          0x0804926c       0x13 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crti.o
+                0x0804926c                _fini
+ .fini          0x0804927f        0x5 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ .fini          0x08049284        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crtn.o
+                0x08049288                PROVIDE (__etext, .)
+                0x08049288                PROVIDE (_etext, .)
+                0x08049288                PROVIDE (etext, .)
+
+.rodata         0x08049288      0x27c
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x08049288        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+                0x08049288                _IO_stdin_used
+ .rodata.str1.1
+                0x0804928c      0x278 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+                                0x27a (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x08049504        0x4
+ *(.eh_frame)
+ .eh_frame      0x08049504        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+                0x08049508                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0804a508                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0804a508        0x0
+                0x0804a508                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0804a508                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0804a508        0x0
+                0x0804a508                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x0804a508                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0804a508        0x0
+                0x0804a508                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x0804a508                PROVIDE (__fini_array_end, .)
+
+.ctors          0x0804a508        0x8
+ *crtbegin.o(.ctors)
+ .ctors         0x0804a508        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x0804a50c        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+
+.dtors          0x0804a510        0x8
+ *crtbegin.o(.dtors)
+ .dtors         0x0804a510        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0804a514        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+                0x0804a514                __DTOR_END__
+
+.jcr            0x0804a518        0x4
+ *(.jcr)
+ .jcr           0x0804a518        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ .jcr           0x0804a518        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0804a51c       0xf8
+ *(.dynamic)
+ .dynamic       0x0804a51c       0xf8 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+                0x0804a51c                _DYNAMIC
+
+.got            0x0804a614        0x4
+ *(.got)
+ .got           0x0804a614        0x4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ *(.igot)
+                0x0804a618                . = (. DATA_SEGMENT_RELRO_END 0xc)
+
+.got.plt        0x0804a618       0x6c
+ *(.got.plt)
+ .got.plt       0x0804a618       0x6c /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+                0x0804a618                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+
+.data           0x0804a684        0x4
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.firstOne.3581
+                0x0804a684        0x4 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+
+.data1
+ *(.data1)
+                0x0804a688                _edata = .
+                0x0804a688                PROVIDE (edata, .)
+                0x0804a688                __bss_start = .
+
+.bss            0x0804a688       0x10
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0804a688        0x8 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ .bss.programName
+                0x0804a690        0x4 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .bss.nbEntries.3521
+                0x0804a694        0x4 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ *(COMMON)
+                0x0804a698                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0804a698                . = ALIGN (0x4)
+                0x0804a698                . = ALIGN (0x4)
+                0x0804a698                _end = .
+                0x0804a698                PROVIDE (end, .)
+                0x0804a698                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x34
+ *(.comment)
+ .comment       0x00000000       0x34 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+                                 0x35 (size before relaxing)
+ .comment       0x00000000       0x35 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crti.o
+ .comment       0x00000000       0x35 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtbegin.o
+ .comment       0x00000000       0x35 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .comment       0x00000000       0x35 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+ .comment       0x00000000       0x35 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/SYSTEM_BIN_2/i686_gcc_x86_linux_01/root/bin/../lib/gcc/i686-cm-linux/4.5.1/crtend.o
+ .comment       0x00000000       0x35 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xa0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .debug_aranges
+                0x00000020       0x60 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .debug_aranges
+                0x00000080       0x20 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_pubnames
+                0x00000000       0xfa
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x25 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .debug_pubnames
+                0x00000025       0x9b /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .debug_pubnames
+                0x000000c0       0x3a /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_info     0x00000000     0x1020
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x102 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .debug_info    0x00000102      0xdea /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .debug_info    0x00000eec      0x134 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_abbrev   0x00000000      0x483
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x56 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .debug_abbrev  0x00000056      0x357 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .debug_abbrev  0x000003ad       0xd6 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_line     0x00000000      0x69b
+ *(.debug_line)
+ .debug_line    0x00000000       0x82 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .debug_line    0x00000082      0x565 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .debug_line    0x000005e7       0xb4 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_frame    0x00000000      0x250
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x1e0 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .debug_frame   0x000001e0       0x70 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_str      0x00000000      0x54d
+ *(.debug_str)
+ .debug_str     0x00000000       0x9f /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+                                 0xdf (size before relaxing)
+ .debug_str     0x0000009f      0x455 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+                                0x51a (size before relaxing)
+ .debug_str     0x000004f4       0x59 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+                                 0xc5 (size before relaxing)
+
+.debug_loc      0x00000000      0xbe5
+ *(.debug_loc)
+ .debug_loc     0x00000000      0xb56 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .debug_loc     0x00000b56       0x8f /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+                0x00000000       0xe1
+ *(.debug_pubtypes)
+ .debug_pubtypes
+                0x00000000       0x12 /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/crt1.o
+ .debug_pubtypes
+                0x00000012       0xb2 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+ .debug_pubtypes
+                0x000000c4       0x1d /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/compiler/i686_gcc_x86_linux_01/root/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_ranges   0x00000000      0x118
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x118 /local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper.o
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/bumper elf32-i386)

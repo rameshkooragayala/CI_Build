@@ -1,0 +1,5 @@
+D:\Oct05\IEX_TESTS\src\bin\IEX.Tests.Engine.dll
+D:\Oct05\IEX_TESTS\src\bin\IEX.Tests.Engine.pdb
+D:\Oct05\IEX_TESTS\src\IEX.Tests.Engine\obj\Debug\IEX.Tests.Engine.csprojResolveAssemblyReference.cache
+D:\Oct05\IEX_TESTS\src\IEX.Tests.Engine\obj\Debug\IEX.Tests.Engine.dll
+D:\Oct05\IEX_TESTS\src\IEX.Tests.Engine\obj\Debug\IEX.Tests.Engine.pdb

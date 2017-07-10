@@ -1,0 +1,212 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF.TN
+</name>
+</assembly>
+<members>
+<member name="P:IEX.ElementaryActions.EPG.SF.TN.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.TN.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.TN.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.FutureRecordings.Navigate">
+	<summary>
+   Navigating To Planner
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Guide.NavigateToRecordEvent(System.Boolean)">
+	<summary>
+   Navigating To RECORD On Action Bar From Guide By Pressing RED/SELECT
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = True : If True Pressing RED Else Pressing Select For Future Events</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Guide.NavigateToChannel(System.String,System.Boolean)">
+	<summary>
+   Tunning To Channel On Guide
+ </summary>
+	<param name="ChannelNumber">The Requested Channel To Tune To</param>
+	<param name="VerifyFas">Optional Default = True : If True Verify ChannelSurf FAS Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.TrickModes.RaiseTrickMode">
+	<summary>
+   Raising Trickmode By Pressing PAUSE From the LIVE screen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.TrickModes.SetSpeed(System.Double)">
+	<summary>
+  Sets Speed On Trickmode
+ </summary>
+	<param name="Speed">Required Speed Can Be : 1 For Play, 0 For Pause,0.5,2,6,12,30 Or -0.5,-2,-6,-12,-30</param>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>313 - SetTrickModeSpeedFailure</para>
+		<para>328 - INIFailure</para>
+		<para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.TrickModes.VerifySpeedChanged(System.String,System.Double,System.Int32)">
+	<summary>
+   Sending Verifying Speed Change FAS Milestones
+ </summary>
+	<param name="IR">IR To Send</param>
+	<param name="Speed">Speed Of Requirement Trickmode</param>
+	<param name="Timeout"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.TrickModes.StopPlayEvent(System.Boolean)">
+	<summary>
+   Stopping Played Event By Navigating To Stop On TrickMode
+ </summary>
+	<param name="IsReviewBuffer">If True Trickmode Is In Review Buffer Else In Playback</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>343 - StopPlayEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Mount.WaitForPrompt(System.Boolean)">
+	<summary>
+    Waiting For Pormpt
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Mount.GetMountCommand(System.Boolean)">
+	<summary>
+   Gets The Mount Command And Adding Values Needed To Mount
+ </summary>
+	<param name="IsFormat">If True Adds FORMAT Else Adds NOCLEAN</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Mount.WaitForFirstScreen">
+	<summary>
+   Waiting For First Screen To Appear On EPG
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Mount.SendMountCommand(System.Boolean,System.String,System.Boolean)">
+	<summary>
+   Sends Mount Command To Telnet
+ </summary>
+	<param name="MountCommand">The Mount Command To Send</param>
+	<param name="IsSerial">If True Sends The Command Through Serial Else Through Telnet</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Banner.Navigate(System.Boolean)">
+	<summary>
+   Navigating To Action Bar
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Banner.PreRecordEvent(System.Boolean)">
+	<summary>
+   Preparing Recording Event From Action Bar - Navigating To Confirm Record Without Confirming The Record
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para></para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Banner.StopRecording">
+	<summary>
+   Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>348 - StopRecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.Menu.Navigate">
+	<summary>
+    Navigating To Menu By Pressing Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.ChannelBar.Navigate">
+	<summary>
+   Navigating To Channel List By Pressing BACK_UP
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.ArchiveRecordings.Navigate">
+	<summary>
+   Navigating To Archive Recording
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.ArchiveRecordings.StopRecordingEvent">
+	<summary>
+   Stopping Recording From Archive
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>347 - SelectEventFailure</para>
+		<para>328 - INIFailure</para>
+		<para>348 - StopRecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.ArchiveRecordings.DeleteEvent(System.Boolean)">
+	<summary>
+   Deleting Event From Archive
+ </summary>
+	<param name="InReviewBuffer">Optional Parameter Default = False : If True Search Different Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>328 - INIFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.ArchiveRecordings.VerifyStateAfterPlayback">
+	<summary>
+ For verifying the state after playback
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.ArchiveRecordings.VerifySorting(System.Boolean)">
+	<summary>
+   Verifying Sorting ByA-Z Or ByDate
+ </summary>
+	<param name="ByTime">If True Verifyies Sorting By Time Else By Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.ArchiveRecordings.TraverseToFirstEvent">
+	<summary>
+ Traversing to first event in Archive
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.ArchiveRecordings.LockEvent">
+	<summary>
+   Lock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>359 - LockUnlockFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TN.ArchiveRecordings.UnlockEvent">
+	<summary>
+   Unlock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>359 - LockUnlockFailure</para>
+	</remarks>
+</member>
+</members>
+</doc>

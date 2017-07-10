@@ -1,0 +1,29 @@
+"ui_resources";"1.0"
+# version: 2.0.4
+"object_id";"text[eng]:label";"text[ger]:label";"text[tur]:label";"file:icon"
+"rating/DVB/0";"FSK 0";"FSK 0";"FSK 0";
+"rating/DVB/1";"FSK 0";"FSK 0";"FSK 0";
+"rating/DVB/2";"FSK 0";"FSK 0";"FSK 0";
+"rating/DVB/3";"FSK 6";"FSK 6";"FSK 6";"icon/6.png"
+"rating/DVB/4";"FSK 6";"FSK 6";"FSK 6";"icon/6.png"
+"rating/DVB/5";"FSK 6";"FSK 6";"FSK 6";"icon/6.png"
+"rating/DVB/6";"FSK 6";"FSK 6";"FSK 6";"icon/6.png"
+"rating/DVB/7";"FSK 6";"FSK 6";"FSK 6";"icon/6.png"
+"rating/DVB/8";"FSK 6";"FSK 6";"FSK 6";"icon/6.png"
+"rating/DVB/9";"FSK 12";"FSK 12";"FSK 12";"icon/12.png"
+"rating/DVB/10";"FSK 12";"FSK 12";"FSK 12";"icon/12.png"
+"rating/DVB/11";"FSK 12";"FSK 12";"FSK 12";"icon/12.png"
+"rating/DVB/12";"FSK 12";"FSK 12";"FSK 12";"icon/12.png"
+"rating/DVB/13";"FSK 16";"FSK 16";"FSK 16";"icon/16.png"
+"rating/DVB/14";"FSK 16";"FSK 16";"FSK 16";"icon/16.png"
+"rating/DVB/15";"FSK 18";"FSK 18";"FSK 18";"icon/18.png"
+"rating_threshold/DVB/3";"FSK 6";"FSK 6";"FSK 6";"icon/6.png"
+"rating_threshold/DVB/9";"FSK 12";"FSK 12";"FSK 12";"icon/12.png"
+"rating_threshold/DVB/13";"FSK 16";"FSK 16";"FSK 16";"icon/16.png"
+"rating_threshold/DVB/15";"FSK 18";"FSK 18";"FSK 18";"icon/18.png"
+"rating_threshold/DVB/255";"UNLOCK ALL";"ALLE ENTSPERREN";"BÜTÜN KÍLÍTLERI AÇ";
+"PIN/master";"DEVICE PIN";"GERÄTE-PIN";"CİHAZ ŞİFRESİ";
+"PIN/viewing";"YOUTH PROTECTION PIN";"JUGENDSCHUTZ-PIN";"GENÇLİK KORUMA ŞİFRESİ";
+"PIN/adult";"ADULT PIN";"EROTIK-PIN";"EROTİK ŞİFRESİ";
+"PIN/validity_rule/4_digits";"The PIN shall be a 4 digits number.";"Drücken Sie auf WEITER und geben Sie anschließend eine neue 4-stellige PIN ein.";"Şifre 4 haneli olmalıdır.";
+"PIN/validity_rule/4_digits_2_different";"The PIN shall be a 4 digits number with at least 2 different digits.";"Drücken Sie auf WEITER und geben Sie anschließend eine neue 4-stellige PIN mit mindestens 2 verschiedenen Ziffern ein.";"Şifre 4 haneli ve en az iki farklı rakama sahip olmalıdır.";

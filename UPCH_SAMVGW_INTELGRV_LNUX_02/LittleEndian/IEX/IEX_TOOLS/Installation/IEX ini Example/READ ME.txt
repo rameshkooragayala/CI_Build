@@ -1,0 +1,2 @@
+This IEX.ini is an example of how the ini should look like.This specific file is for IEX 1 so do not copy it.
+THIS FILE IS JUST FOR COMPARE WITH YOURS.

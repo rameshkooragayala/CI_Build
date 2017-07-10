@@ -1,0 +1,10 @@
+D:\Oct05\IEX_TESTS\src\bin\MultiRunner.exe.config
+D:\Oct05\IEX_TESTS\src\bin\MultiRunner.exe
+D:\Oct05\IEX_TESTS\src\bin\MultiRunner.pdb
+D:\Oct05\IEX_TESTS\src\MultiRunner\obj\x86\Debug\MultiRunner.csprojResolveAssemblyReference.cache
+D:\Oct05\IEX_TESTS\src\MultiRunner\obj\x86\Debug\MultiRunner.MultiRunner.resources
+D:\Oct05\IEX_TESTS\src\MultiRunner\obj\x86\Debug\MultiRunner.Properties.Resources.resources
+D:\Oct05\IEX_TESTS\src\MultiRunner\obj\x86\Debug\MultiRunner.TestSetForm.resources
+D:\Oct05\IEX_TESTS\src\MultiRunner\obj\x86\Debug\MultiRunner.csproj.GenerateResource.Cache
+D:\Oct05\IEX_TESTS\src\MultiRunner\obj\x86\Debug\MultiRunner.exe
+D:\Oct05\IEX_TESTS\src\MultiRunner\obj\x86\Debug\MultiRunner.pdb

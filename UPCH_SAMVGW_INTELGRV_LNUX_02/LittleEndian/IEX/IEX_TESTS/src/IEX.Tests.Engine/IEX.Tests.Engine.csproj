@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{684506F1-5DAD-4A3C-AB08-C34B241AF8D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IEX.Tests.Engine</RootNamespace>
+    <AssemblyName>IEX.Tests.Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AMS.Profile">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\AMS.Profile.dll</HintPath>
+    </Reference>
+    <Reference Include="IEX.ElementaryActions">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEX.ElementaryActions.dll</HintPath>
+    </Reference>
+    <Reference Include="IEX.IEXecuter.ExecutionEngine">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEX.IEXecuter.ExecutionEngine.exe</HintPath>
+    </Reference>
+    <Reference Include="IEX.Utilities">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEX.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="IEXGateway, Version=4.8.20.8, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\..\..\..\..\..\..\Program Files\IEX\IEXGateway.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="XmlInputParser.cs" />
+    <Compile Include="ReflectionsAttributes\CreateStructureAttribute.cs" />
+    <Compile Include="ReflectionsAttributes\PostExecuteAttribute.cs" />
+    <Compile Include="ReflectionsAttributes\PreExecuteAttribute.cs" />
+    <Compile Include="ReflectionsAttributes\StepAttribute.cs" />
+    <Compile Include="ReflectionsAttributes\TestAttribute.cs" />
+    <Compile Include="ExceptionsTypes.cs" />
+    <Compile Include="ExecutionStatus.cs" />
+    <Compile Include="TestsScheduler.cs" />
+    <Compile Include="_Platform.cs" />
+    <Compile Include="_Step.cs" />
+    <Compile Include="_Test.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.Functionality\IEX.ElementaryActions.Functionality.vbproj">
+      <Project>{C4CE3A3C-D1BC-4CAD-9661-616658CBEABB}</Project>
+      <Name>IEX.ElementaryActions.Functionality</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DotNetProxy</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:DotNetProxy.Proxy" -->
+        <member name="M:DotNetProxy.Proxy.#ctor">
+            <summary>
+            Creates a new Proxy.
+            </summary>
+        </member>
+        <member name="M:DotNetProxy.Proxy.LoadFile(System.String)">
+            <summary>
+            Loads the given assembly including all the dependencies.
+            </summary>
+            <param name="assemblyPath">The full path of the .Net assemblly</param>
+            <remarks>Once the file has been loaded. </remarks>
+            <example>
+            <code>
+            JSCript:
+            
+            // create the proxy
+            var proxy = new ActiveXObject("DotNetProxy.Proxy");
+            
+            // load the dll
+            proxy.LoadFile(" [ full path to the dot net dll ] ");
+            
+            
+            VSCript:
+            
+            ' create the proxy
+            Dim proxy
+            set proxy = new ActiveXObject("DotNetProxy.Proxy")
+            
+            ' load the dll
+            proxy.LoadFile " [ full path to the dot net dll ] "
+            </code>
+            </example>
+        </member>
+        <member name="M:DotNetProxy.Proxy.GetClass(System.String)">
+            <summary>
+            Instantiates an instance of the given class name and returns it.
+            </summary>
+            <param name="fullClassName">The full class name of the requested object. </param>
+            <returns>An instance of the requested class</returns>
+            <remarks>
+            <list type="bullet">
+            <item>When the instance is requested from a scripting environment, a CCW is created by the runtime.
+            Therefore the object can be accessed is if it was registered for COM interoperablity</item>
+            <item>The class name must contain all the namespaces in which the class resides.
+            For example, the full class name of class C1 in namespace N1 is N1.C1</item>
+            </list></remarks>
+            <example>
+            <code>
+            
+            JSCript:
+            
+            // create the proxy
+            var proxy = new ActiveXObject("DotNetProxy.Proxy");
+            
+            // load the dll
+            proxy.LoadFile(" [ full path to the dot net dll ] ");
+            
+            // create instances of classes
+            var class1 = proxy.GetClass(" [ class name including namespaces ]");
+            var class2 = proxy.GetClass(" [ class name including namespaces ]");
+            
+            
+            // invoke method or properties.
+            class1.method1();
+            class2.property1 = true;
+            
+            
+            VSCript:
+            
+            ' create the proxy
+            Dim proxy
+            set proxy = new ActiveXObject("DotNetProxy.Proxy")
+            
+            ' load the dll
+            proxy.LoadFile " [ full path to the dot net dll ] "
+            
+            ' create instances of classes
+            Dim class1, class2
+            set class1 = proxy.GetClass(" [ class name including namespaces ]")
+            set class2 = proxy.GetClass(" [ class name including namespaces ]")
+            
+            ' invoke method or properties.
+            class1.method1
+            class2.property1 = true
+            </code>
+            </example>
+        </member>
+        <member name="M:DotNetProxy.Proxy.GetContainer">
+            <summary>
+            Creates a new empty container which can be used for passing multiple parameter.
+            </summary>
+            <remarks> Passing arrays from an unmanged to managed code, and vice versa, requires data transformation. 
+            Using an <see cref="T:System.Collections.ArrayList"/> object to hold the array items, overcomes this problem.
+            The container can be used in the following senarios:
+            <list type="bullet">\
+            <item>When passing parameters to a constructor in the case a class is initialized using the 
+            GetClassBeArgs method of the Proxy class</item>
+            <item>When passing parameters to a method of an instantiated .Net class</item>
+            </list>
+            </remarks>
+            <returns>A new empty <see cref="T:System.Collections.ArrayList"/> Container.</returns>
+        </member>
+        <member name="M:DotNetProxy.Proxy.GetClassByArgs(System.String,System.Collections.ArrayList)">
+            <summary>
+            Instantiates and returns an instance of the given class name, 
+            using the contructor that accepts the given 
+            arguments (in the same order as they appear in the contructor).
+            </summary>
+            <param name="fullClassName">The full class name of the requested object. </param>
+            <param name="argsList">An <see cref="T:System.Collections.ArrayList"/> container of the arguments that are passed to the 
+            constructor. The arguments must match in type and order the arguments list of the contructor</param>
+            <returns>An instance of the requested class</returns>
+            <remarks>
+            <list type="bullet">
+            <item>When the instance is requested from a scripting environment, a CCW is created by the runtime.
+            Therefore the object can be accessed is if it was registered for COM interoperablity</item>
+            <item>The class name must contain all the namespaces in which the class resides.
+            For example, the full class name of class C1 in namespace N1 is N1.C1</item>
+            </list></remarks>
+            <example>
+            <code>
+            JSCript:
+            
+            // create the proxy
+            var proxy = new ActiveXObject("DotNetProxy.Proxy");
+            
+            // load the dll
+            proxy.LoadFile(" [ full path to the dot net dll ] ");
+            
+            // create instances of a class using a special constructor.
+            var args = proxy.GetContainer();
+            args,Add(arg1);
+            args.Add(arg2);
+            var class = proxy.GetClassByArgs(" [ class name including namespaces ]", args);
+            
+            // invoke method or properties.
+            class.method1();
+            class.property1 = true;
+            
+            VSCript:
+            
+            ' create the proxy
+            Dim proxy
+            set proxy = new ActiveXObject("DotNetProxy.Proxy")
+            
+            ' load the dll
+            proxy.LoadFile " [ full path to the dot net dll ] "
+            
+            ' create instances of a class using a special constructor.
+            Dim class
+            var args = proxy.GetContainer();
+            args,Add(arg1);
+            args.Add(arg2);
+            set class = proxy.GetClass(" [ class name including namespaces ], args")
+            
+            ' invoke method or properties.
+            class.method1
+            class.property1 = true
+            </code>
+            </example>
+        </member>
+        <member name="M:DotNetProxy.Proxy.ShowError(System.Exception)">
+            <summary>
+            Recursively displays the error messages.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetProxy.Proxy.Dispose">
+            <summary>
+            Release assembly including all the dependencies and clean object from the garbage collection. 
+            </summary>
+        </member>
+        <member name="P:DotNetProxy.Proxy.ShowErrors">
+            <summary>
+            Defines whether a detailed error descipriton will be displayed in case the proxy fails to load
+            an assembly or class.
+            </summary>
+        </member>
+    </members>
+</doc>

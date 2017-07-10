@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	<contentTypes>
+		<contentType name="default" 	level="x1y1" 			stepRL="300" stepUD="100" stepOB="800"></contentType>	
+		<contentType name="now" 		level="x1y1" 			stepRL="300" stepUD="100" stepOB="800"></contentType>	
+		<contentType name="next" 		level="x1y1" 			stepRL="300" stepUD="100" stepOB="800"></contentType>	
+		<contentType name="ChannelList" level="xyChannelList" 	stepRL="300" stepUD="100" stepOB="800"></contentType>	
+		<contentType name="DCA" 		level="xyDCA" 			stepRL="300" stepUD="100" stepOB="800"></contentType>	
+		<contentType name="showcase" 	level="x1y1" 			stepRL="300" stepUD="100" stepOB="800"></contentType>	
+		<contentType name="widgets" 	level="x1y1" 			stepRL="300" stepUD="100" stepOB="800"></contentType>	
+		<contentType name="w" 			level="x1y1" 			stepRL="300" stepUD="100" stepOB="800"></contentType>	
+		<contentType name="p" 			level="x1y1" 			stepRL="300" stepUD="100" stepOB="800"></contentType>	
+
+	</contentTypes>
+	
+	<animations>
+		<animation name="bg" 						map="x1y1-x1y1-bg" ></animation>
+		<animation name="nobg" 						map="x1y1-x1y1-nobg" ></animation>
+		<animation name="p1-now-o" 						map="x1y1-x1y1-nobg" ></animation>
+		<animation name="p1-now-bg" 					map="x1y1-x1y1-bg" ></animation>
+		<animation name="p1-next-bg" 					map="x1y1-x1y1-bg" ></animation>
+		<animation name="p1-now-nobg" 					map="x1y1-x1y1-nobg" ></animation>
+		<animation name="p1-next-nobg" 					map="x1y1-x1y1-nobg" ></animation>
+		<animation name="s1-showcase-bg" 						map="x1y1-x1y1-bg" ></animation>
+		<animation name="s1-showcase-nobg" 						map="x1y1-x1y1-nobg" ></animation>
+		<animation name="w1-widgets-bg" 						map="x1y1-x1y1-bg" ></animation>
+		<animation name="w1-widgets-nobg" 						map="x1y1-x1y1-nobg" ></animation>	
+		<animation name="related1-w-bg" 					map="x1y1-x1y1-bg" ></animation>
+		<animation name="related1-bg" 					map="x1y1-x1y1-bg" ></animation>
+		<animation name="related1-nobg" 					map="x1y1-x1y1-nobg" ></animation>	
+		<animation name="related1-p-bg" 					map="x1y1-x1y1-bg" ></animation>
+		<animation name="related1-p-nobg" 					map="x1y1-x1y1-nobg" ></animation>	
+		<animation name="related1-w-bg" 					map="x1y1-x1y1-bg" ></animation>
+		<animation name="related1-w-nobg" 					map="x1y1-x1y1-nobg" ></animation>	
+		<animation name="list-ChannelList-bg" 				map="xyChannelList-xyChannelList-bg" ></animation>
+		<animation name="list-ChannelList-nobg" 				map="xyChannelList-xyChannelList-nobg" ></animation>	
+		<animation name="dca-DCA-bg" 					map="xyDCA-xyDCA-bg" ></animation>
+		<animation name="dca-DCA-nobg" 					map="xyDCA-xyDCA-nobg" ></animation>	
+		<animation name="p1-dca-now-DCA-o" 				map="x1y1-xyDCA" ></animation>
+		<animation name="p1-dca-next-DCA-o" 			map="x1y1-xyDCA" ></animation>
+		<animation name="s1-dca-showcase-DCA-o" 					map="x1y1-xyDCA" ></animation>
+		<animation name="w1-dca-widgets-DCA-o" 					map="x1y1-xyDCA" ></animation>	
+		<animation name="related1-dca-p-DCA-o" 			map="x1y1-xyDCA" ></animation>	
+		<animation name="related1-dca-w-DCA-o" 			map="x1y1-xyDCA" ></animation>	
+		
+		<animation name="p1-list-now-ChannelList-o" 	map="x1y1-xyChannelList" ></animation>
+        <animation name="list-p1-ChannelList-now-o" 	map="xyChannelList-x1y1" ></animation>
+		<animation name="list-p1-ChannelList-now-b" 	map="xyChannelList-x1y1" ></animation>
+		<animation name="p1-list-next-ChannelList-o" 	map="x1y1-xyChannelList" ></animation>
+		<animation name="list-p1-ChannelList-next-b" 	map="xyChannelList-x1y1" ></animation>
+		<animation name="s1-list-showcase-ChannelList-o" 		map="x1y1-xyChannelList" ></animation>
+		<animation name="list-s1-ChannelList-showcase-b" 		map="xyChannelList-x1y1" ></animation>
+		<animation name="w1-list-widgets-ChannelList-o" 		map="x1y1-xyChannelList" ></animation>
+		<animation name="list-w1-ChannelList-widgets-b" 		map="xyChannelList-x1y1" ></animation>
+		<animation name="related1-list-p-ChannelList-o" 	map="x1y1-xyChannelList" ></animation>
+		<animation name="list-related1-ChannelList-p-b" 	map="xyChannelList-x1y1" ></animation>		
+		<animation name="related1-list-w-ChannelList-o" 	map="x1y1-xyChannelList" ></animation>
+		<animation name="list-related1-ChannelList-w-b" 	map="xyChannelList-x1y1" ></animation>		
+
+		<animation name="list-ChannelList-nom-u" 		map="NoneAsExpected" ></animation>
+		<animation name="list-ChannelList-acc-u" 		map="NoneAsExpected" ></animation>
+		<animation name="list-ChannelList-dec-u" 		map="NoneAsExpected" ></animation>
+		<animation name="list-ChannelList-nom-d" 		map="NoneAsExpected" ></animation>
+		<animation name="list-ChannelList-acc-d" 		map="NoneAsExpected" ></animation>
+		<animation name="list-ChannelList-dec-d" 		map="NoneAsExpected" ></animation>				
+	</animations>
+
+</sceneConfig>

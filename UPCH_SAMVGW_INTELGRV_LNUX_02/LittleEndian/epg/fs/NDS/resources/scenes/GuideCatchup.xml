@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<u:scene xmlns:u="scene_desc">
+  	<markers>
+	    <marker name="00"	position="0.0"></marker>
+	    <marker name="01"	position="1.0"></marker>
+		<marker name="02"	position="2.0"></marker>
+		<marker name="03"	position="3.0"></marker>
+		<marker name="04"	position="4.0"></marker>
+		<marker name="05"	position="5.0"></marker>
+		<marker name="06"	position="6.0"></marker>
+		<marker name="07"	position="7.0"></marker>
+		<marker name="08"	position="8.0"></marker>
+		<marker name="09"	position="9.0"></marker>
+		<marker name="10"	position="10.0"></marker>
+		<marker name="11"	position="11.0"></marker>
+		<marker name="12"	position="12.0"></marker>
+		<marker name="13"	position="13.0"></marker>
+		<marker name="14"	position="14.0"></marker>
+		<marker name="15"	position="15.0"></marker>
+		<marker name="16"	position="16.0"></marker>
+		<marker name="17"	position="17.0"></marker>
+		<marker name="18"	position="18.0"></marker>
+		<marker name="19"	position="19.0"></marker>
+		<marker name="20"	position="20.0"></marker>
+		<marker name="21"	position="21.0"></marker>
+		<marker name="22"	position="22.0"></marker>
+		<marker name="23"	position="23.0"></marker>
+		<marker name="24"	position="24.0"></marker>
+		<marker name="25"	position="25.0"></marker>
+		<marker name="26"	position="26.0"></marker>
+		<marker name="27"	position="27.0"></marker>
+		<marker name="28"	position="28.0"></marker>
+		<marker name="29"	position="29.0"></marker>
+		<marker name="30"	position="30.0"></marker>
+		<marker name="31"	position="31.0"></marker>
+		<marker name="32"	position="32.0"></marker>
+		<marker name="33"	position="33.0"></marker>
+		<marker name="34"	position="34.0"></marker>
+		<marker name="35"	position="35.0"></marker>
+		<marker name="36"	position="36.0"></marker>
+		<marker name="37"	position="37.0"></marker>
+		<marker name="38"	position="38.0"></marker>
+		<marker name="39"	position="39.0"></marker>
+		<marker name="40"	position="40.0"></marker>
+		<marker name="41"	position="41.0"></marker>
+		<marker name="42"	position="42.0"></marker>
+		<marker name="43"	position="43.0"></marker>
+		<marker name="44"	position="44.0"></marker>
+		<marker name="45"	position="45.0"></marker>
+		<marker name="46"	position="46.0"></marker>
+		<marker name="47"	position="47.0"></marker>
+		<marker name="48"	position="48.0"></marker>
+		<marker name="49"	position="49.0"></marker>
+		<marker name="50"	position="50.0"></marker>
+		<marker name="51"	position="51.0"></marker>
+		<marker name="52"	position="52.0"></marker>
+		<marker name="53"	position="53.0"></marker>
+		<marker name="54"	position="54.0"></marker>
+		<marker name="55"	position="55.0"></marker>
+		<marker name="56"	position="56.0"></marker>
+		<marker name="57"	position="57.0"></marker>
+		<marker name="58"	position="58.0"></marker>
+		<marker name="59"	position="59.0"></marker>
+		<marker name="60"	position="60.0"></marker>
+		<marker name="61"	position="61.0"></marker>
+		<marker name="62"	position="62.0"></marker>
+		<marker name="63"	position="63.0"></marker>
+		<marker name="64"	position="64.0"></marker>
+		<marker name="65"	position="65.0"></marker>
+		<marker name="66"	position="66.0"></marker>
+		<marker name="67"	position="67.0"></marker>
+		<marker name="68"	position="68.0"></marker>
+		<marker name="69"	position="69.0"></marker>
+		<marker name="70"	position="70.0"></marker>
+		<marker name="71"	position="71.0"></marker>
+		<marker name="72"	position="72.0"></marker>
+		<marker name="73"	position="73.0"></marker>
+		<marker name="74"	position="74.0"></marker>
+		<marker name="75"	position="75.0"></marker>
+		<marker name="76"	position="76.0"></marker>
+		<marker name="77"	position="77.0"></marker>
+		<marker name="78"	position="78.0"></marker>
+		<marker name="79"	position="79.0"></marker>
+		<marker name="80"	position="80.0"></marker>
+		<marker name="81"	position="81.0"></marker>
+		<marker name="82"	position="82.0"></marker>
+		<marker name="83"	position="83.0"></marker>
+		<marker name="84"	position="84.0"></marker>
+		<marker name="85"	position="85.0"></marker>
+		<marker name="86"	position="86.0"></marker>
+		<marker name="87"	position="87.0"></marker>
+		<marker name="88"	position="88.0"></marker>
+		<marker name="89"	position="89.0"></marker>
+		<marker name="90"	position="90.0"></marker>
+	</markers>
+	<animations>
+	
+		<animation name="allV-acc-gridBF-gridBF-0-u"   	begin_marker="40"     end_marker="41"   start_pos_marker="40"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-lin-gridBF-gridBF-0-u"   	begin_marker="42"     end_marker="43"   start_pos_marker="42"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-dec-gridBF-gridBF-0-u"   	begin_marker="44"     end_marker="45"   start_pos_marker="44"  speed="1" loop="false" reverse="false"></animation>
+
+		<animation name="allV-acc-gridBF-gridBF-0-d"   	begin_marker="48"     end_marker="49"   start_pos_marker="48"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-lin-gridBF-gridBF-0-d"   	begin_marker="50"     end_marker="51"   start_pos_marker="50"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-dec-gridBF-gridBF-0-d"   	begin_marker="52"     end_marker="53"   start_pos_marker="52"  speed="1" loop="false" reverse="false"></animation>			
+		
+		<animation name="allV-acc-gridBF-gridBF-1-u"   	begin_marker="70"     end_marker="71"   start_pos_marker="70"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-lin-gridBF-gridBF-1-u"   	begin_marker="72"     end_marker="73"   start_pos_marker="72"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-dec-gridBF-gridBF-1-u"   	begin_marker="74"     end_marker="75"   start_pos_marker="74"  speed="1" loop="false" reverse="false"></animation>
+
+		<animation name="allV-acc-gridBF-gridBF-1-d"   	begin_marker="76"     end_marker="77"   start_pos_marker="76"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-lin-gridBF-gridBF-1-d"   	begin_marker="78"     end_marker="79"   start_pos_marker="78"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-dec-gridBF-gridBF-1-d"   	begin_marker="80"     end_marker="81"   start_pos_marker="80"  speed="1" loop="false" reverse="false"></animation>			
+			
+		
+		
+		<animation name="intro-f1-gridBF-1-o"   		begin_marker="00"     end_marker="01"   start_pos_marker="00"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="intro-f1-gridBF-0-o"   		begin_marker="30"     end_marker="31"   start_pos_marker="30"  speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="intro-f1-gridBF-1-b"   		begin_marker="04"     end_marker="05"   start_pos_marker="04"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="intro-f1-gridBF-0-b"   		begin_marker="56"    end_marker="57"  start_pos_marker="56" speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="intro-f1-gridLF-1-o"   		begin_marker="36"    end_marker="37"  start_pos_marker="36" speed="1" loop="false" reverse="false"></animation>
+		<animation name="intro-f1-gridLF-0-o"   		begin_marker="34"    end_marker="35"  start_pos_marker="34" speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="intro-f1-gridLF-0-b"   		begin_marker="62"     end_marker="63"   start_pos_marker="62"  speed="1" loop="false" reverse="false"></animation>
+	
+		
+		
+		<animation name="outro-f1-gridBF-1-b"   		begin_marker="06"     end_marker="07"   start_pos_marker="06"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="outro-f1-gridBF-0-b"   		begin_marker="54"     end_marker="55"   start_pos_marker="54"  speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="outro-f1-gridBF-1-o"   		begin_marker="02"     end_marker="03"   start_pos_marker="02"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="outro-f1-gridBF-0-o"   		begin_marker="32"     end_marker="33"   start_pos_marker="32"  speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="outro-v1-gridBF-1-o"   		begin_marker="26"     end_marker="27"   start_pos_marker="26"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="outro-v1-gridBF-1-b"   		begin_marker="28"     end_marker="29"   start_pos_marker="28"  speed="1" loop="false" reverse="false"></animation>
+		
+		
+		<animation name="allV-gridBF-gridBF-1-u"   		begin_marker="08"     end_marker="09"   start_pos_marker="08"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-gridBF-gridBF-0-u"   		begin_marker="38"     end_marker="39"   start_pos_marker="38" speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="allV-gridBF-gridBF-1-d"   		begin_marker="10"     end_marker="11"   start_pos_marker="10"  speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-gridBF-gridBF-0-d"   		begin_marker="46"     end_marker="47"   start_pos_marker="46" speed="1" loop="false" reverse="false"></animation>
+		
+
+		<animation name="allV-nom-gridBF-gridBF-1-u"   	begin_marker="08"     end_marker="09"   start_pos_marker="08" speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-nom-gridBF-gridBF-0-u"   	begin_marker="38"     end_marker="39"   start_pos_marker="38" speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="allV-nom-gridBF-gridBF-1-d"  	begin_marker="10"     end_marker="11"   start_pos_marker="10" speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-nom-gridBF-gridBF-0-d"   	begin_marker="46"     end_marker="47"   start_pos_marker="46" speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="allV-gridLF-gridBF-1-u"  		begin_marker="24"     end_marker="25"   start_pos_marker="24" speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-gridLF-gridBF-0-u"  		begin_marker="64"     end_marker="65"   start_pos_marker="64" speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="allV-gridLF-gridBF-1-d"  		begin_marker="68"     end_marker="69"   start_pos_marker="68" speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-gridLF-gridBF-0-d"  		begin_marker="66"     end_marker="67"   start_pos_marker="66" speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="allV-nom-gridLF-gridBF-1-u"  	begin_marker="24"     end_marker="25"   start_pos_marker="24" speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-nom-gridLF-gridBF-0-u"  	begin_marker="64"     end_marker="65"   start_pos_marker="64" speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="allV-nom-gridLF-gridBF-1-d"  	begin_marker="68"     end_marker="69"   start_pos_marker="68" speed="1" loop="false" reverse="false"></animation>
+		<animation name="allV-nom-gridLF-gridBF-0-d"  	begin_marker="66"     end_marker="67"   start_pos_marker="66" speed="1" loop="false" reverse="false"></animation>
+		
+		
+		<animation name="w1-w2-gridBF-gridLF-1"   		begin_marker="12"     end_marker="13"   start_pos_marker="12" speed="1" loop="false" reverse="false"></animation>
+		<animation name="w1-w2-gridBF-gridLF-0"   		begin_marker="58"     end_marker="59"   start_pos_marker="58" speed="1" loop="false" reverse="false"></animation>
+		
+		<animation name="w1-w2-gridLF-gridBF-1"   		begin_marker="14"     end_marker="15"   start_pos_marker="14" speed="1" loop="false" reverse="false"></animation>
+		<animation name="w1-w2-gridLF-gridBF-0"   		begin_marker="60"     end_marker="61"   start_pos_marker="60" speed="1" loop="false" reverse="false"></animation>
+		
+	</animations>
+</u:scene>

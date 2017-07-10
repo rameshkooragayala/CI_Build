@@ -1,0 +1,7 @@
+[NumOfFiles]
+Num="3"
+
+[Files]
+FILE.0="T1_try.dat"
+FILE.1="T3_try.dat"
+FILE.2="T2_try.dat"

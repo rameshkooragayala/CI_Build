@@ -1,0 +1,819 @@
+array (
+  'jobid' => '824550273',
+  'skip' => '0',
+  'statusid' => '1',
+  'projectid' => '796210872',
+  'tag' => 'fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602',
+  'viewname' => 'MANIFESTS.upc.master',
+  'baseline' => 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS',
+  'lastjobid' => '824550273',
+  'job_finish_age' => '0',
+  'depjobid' => '817919160',
+  'found_parent_project' => '0',
+  'action' => 'build',
+  'slow' => '0',
+  'viewdir' => 'MANIFESTS.upc.master',
+  'disk_cleanup_strategyid' => '1',
+  'plugin' => 'fusion',
+  'platform_title' => 'upgw-sam0602',
+)
+
+
+INFO: 2017-06-16 18:14:32 Running php 00_log_worker_stats.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:32 Running php 10_keep_prevoius_failures.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+Checks if previous failures of jobid 824550273 exists...
+sql: SELECT test_failures_id,runcount,test_failure_reasons_id
+           FROM t_job 
+           INNER JOIN t_test_failures USING (jobid)
+           WHERE jobid=824550273 ORDER BY test_failures_id DESC;
+No update needed in DB.
+      INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:32 Running php 40_mha_testimport.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+Not a MHA view/build
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:32 Running php 50_iex_results_parse.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:32 Running php 51_iex_test_results.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:32 Running php 89_evo_testimport.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+Not a BAT view/build
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:32 Running php 90_run_dependant_jobs.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
++INFO: 824550273 Passed - inserting dependant jobs (if any)
++UPDATESQL: UPDATE t_project SET dependok=1 WHERE dependid=796210872 and manualrun=0
++UPDATESQL: UPDATE t_project SET inqueue=1,active=1 WHERE dependid=796210872 and manualrun=0 and visible=1
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536192, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551899, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551899, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536208, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551900, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551900, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806535980, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551901, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551901, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536128, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551902, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551902, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536372, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551903, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551903, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536036, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551904, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551904, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536508, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551905, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551905, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536028, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551906, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551906, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536080, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551907, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551907, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536168, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551908, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551908, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536084, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551909, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551909, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536368, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551910, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551910, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806535988, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551911, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551911, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536408, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551912, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551912, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536008, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551913, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551913, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806535896, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551914, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551914, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806535952, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551915, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551915, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536252, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551916, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551916, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536160, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551917, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551917, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536336, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551918, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551918, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536356, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551919, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551919, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536280, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551920, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551920, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536176, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551921, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551921, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536104, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551922, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551922, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536344, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551923, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551923, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536400, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551924, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551924, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536320, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551925, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551925, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536384, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551926, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551926, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536360, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551927, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551927, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536180, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551928, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551928, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536236, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551929, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551929, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536060, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551930, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551930, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806535920, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551931, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551931, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536156, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551932, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551932, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806535996, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551933, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551933, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536048, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551934, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551934, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536308, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551935, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551935, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536136, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551936, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551936, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536204, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551937, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551937, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536476, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551938, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551938, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211059, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551939, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210568, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551940, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210889, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551941, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210538, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551942, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210414, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551943, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210754, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551944, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211053, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551945, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211123, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551946, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210905, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551947, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210724, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551948, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210748, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551949, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210450, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551950, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210836, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551951, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210526, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551952, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211089, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551953, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210808, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551954, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210997, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551955, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210678, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551956, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211095, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551957, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210694, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551958, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210967, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551959, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210822, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551960, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210943, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551961, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210664, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551962, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210762, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551963, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210850, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551964, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210927, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551965, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210488, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551966, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210710, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551967, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210792, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551968, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210480, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551969, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211109, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551970, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210913, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551971, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210600, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551972, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210628, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551973, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210428, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551974, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211083, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551975, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210959, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551976, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210622, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551977, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210776, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551978, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210584, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551979, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211075, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551980, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210650, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551981, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211067, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551982, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210400, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551983, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796211045, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551984, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210842, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551985, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210518, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551986, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210614, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551987, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210532, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551988, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536496, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551989, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551989, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 806536004, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 810014260,824550269
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551990, 824550269, 810014260 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550269
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551990, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
++INSERTSQL: INSERT INTO t_job (projectid, workerid, statusid, baseline, debug) VALUES ( 796210935, 0, 3, 'upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS', 0 )
+DEPINFO: 796210872,824550273
++INSERTSQL: INSERT INTO t_job_dep_map (jobid, depend_jobid, depend_projectid) VALUES ( 824551991, 824550273, 796210872 )
+                                    ON DUPLICATE KEY UPDATE depend_jobid=824550273
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:42 Running php 95_adjust_priorities.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+Adjust priority of projectid=806536004 to 18
+Adjust priority of projectid=806536496 to 18
+Adjust priority of projectid=806536192 to 18
+Adjust priority of projectid=806536036 to 30
+Adjust priority of projectid=806536508 to 30
+Adjust priority of projectid=806536208 to 30
+Adjust priority of projectid=806535980 to 30
+Adjust priority of projectid=806536372 to 30
+Adjust priority of projectid=806536128 to 30
+Adjust priority of projectid=806536280 to 31
+Adjust priority of projectid=806536408 to 31
+Adjust priority of projectid=806536008 to 31
+Adjust priority of projectid=806536160 to 31
+Adjust priority of projectid=806536320 to 31
+Adjust priority of projectid=806536028 to 31
+Adjust priority of projectid=806536168 to 31
+Adjust priority of projectid=806536336 to 31
+Adjust priority of projectid=806536176 to 31
+Adjust priority of projectid=806536344 to 31
+Adjust priority of projectid=806536180 to 31
+Adjust priority of projectid=806535896 to 31
+Adjust priority of projectid=806536356 to 31
+Adjust priority of projectid=806536060 to 31
+Adjust priority of projectid=806535920 to 31
+Adjust priority of projectid=806536360 to 31
+Adjust priority of projectid=806536080 to 31
+Adjust priority of projectid=806535952 to 31
+Adjust priority of projectid=806536368 to 31
+Adjust priority of projectid=806536084 to 31
+Adjust priority of projectid=806536104 to 31
+Adjust priority of projectid=806536236 to 31
+Adjust priority of projectid=806535988 to 31
+Adjust priority of projectid=806536384 to 31
+Adjust priority of projectid=806536252 to 31
+Adjust priority of projectid=806536400 to 31
+Adjust priority of projectid=796210935 to 32
+Adjust priority of projectid=806536156 to 32
+Adjust priority of projectid=806536308 to 32
+Adjust priority of projectid=806536476 to 32
+Adjust priority of projectid=806536048 to 32
+Adjust priority of projectid=806536204 to 32
+Adjust priority of projectid=806535996 to 32
+Adjust priority of projectid=806536136 to 32
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:44 Running php check_group_complete.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:44 Running php check_parent_project.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:44 Running php copy_ini.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:44 Running php count_project_reruns.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Count reruns of project: fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 for latest baseline
+INFO: Counted 1 reruns of project: fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 for baseline upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS
+		INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:44 Running php klocwork_scan.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:44 Running php mempool.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:45 Running php memusage.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:45 Running php proc_sys_leak_info.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:45 Running php push_test_results.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:45 Running php rerun-pass-to-fail.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:45 Running php send_walled_garden_email.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+PHP Warning:  explode(): Empty delimiter in /local2/jobserver/views/CI_TOOLS_CORE/vobs/CI_TOOLS/JOBSERVER/scripts/postprocess/send_walled_garden_email.php on line 27
+PHP Notice:  Undefined variable: body in /local2/jobserver/views/CI_TOOLS_CORE/vobs/CI_TOOLS/JOBSERVER/scripts/postprocess/send_walled_garden_email.php on line 35
+Sending mail to: 
+No recipient addresses found in header
+Mail sent.
+
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:45 Running php stack_profiling_check.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:45 Running php update_mem_mw.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:45 Running php z_analyse_build_failures.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:45 Running php 01_memory_stats_parse_build.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+  01_memory_stats_parse_build.php version 1.0 called with parameters :-
+  JOBSERVER_DIR = /home/crusecon/jobserver/
+  JOBID = 824550273
+  JOBACTION = build
+  TEST_DIR = /home/crusecon/jobserver//builds/824550273
+  RESULT_DIR = /home/crusecon/jobserver//results/82455/824550273
+  VIEW_DIR = /home/crusecon/jobserver//views/MANIFESTS.upc.master
+  BUILD_DIR = /home/crusecon/jobserver//builds/817919160
+  PROJECT_TAG = fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602
+  BASELINE = upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS
+  PLATFORM = upgw-sam0602
+  STATUSID = 1
+  build equals "build" so processing continues . . .
+  Found view script for job, so we continue unabated . . .
+  01_memory_stats_parse_build.php not processing No data for job in t_memstat_projectid_map so no processing required for job id 824550273
+  End of script 01_memory_stats_parse_build.php
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php 02_memory_stats_parse_test.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+  02_memory_stats_parse_test.php version 4.0 called with parameters :-
+  JOBSERVER_DIR = /home/crusecon/jobserver/
+  JOBID = 824550273
+  JOBACTION = build
+  TEST_DIR = /home/crusecon/jobserver//builds/824550273
+  RESULT_DIR = /home/crusecon/jobserver//results/82455/824550273
+  VIEW_DIR = /home/crusecon/jobserver//views/MANIFESTS.upc.master
+  BUILD_DIR = /home/crusecon/jobserver//builds/817919160
+  PROJECT_TAG = fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602
+  BASELINE = upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS
+  PLATFORM = upgw-sam0602
+  STATUSID = 1
+  02_memory_stats_parse_test.php not processing build does not equal "test" so no processing required for job id 824550273
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php 03_gcov_parse_test.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+03_gcov_parse_test.php version 1.1 called with parameters :   JOBSERVER_DIR = /home/crusecon/jobserver/,   JOBID = 824550273,   JOBACTION = build,   TEST_DIR = /home/crusecon/jobserver//builds/824550273,   RESULT_DIR = /home/crusecon/jobserver//results/82455/824550273,   VIEW_DIR = /home/crusecon/jobserver//views/MANIFESTS.upc.master,   BUILD_DIR = /home/crusecon/jobserver//builds/817919160,   PROJECT_TAG = fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602,   BASELINE = upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS,   PLATFORM = upgw-sam0602,   STATUSID = 1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php 99_count_few.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php 99_runlevel_analysis.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+Results directory /home/crusecon/jobserver//results/82455/824550273 does not exist
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php check_promotion_criteria.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+Array
+(
+    [0] => check_promotion_criteria.php
+    [1] => /home/crusecon/jobserver/
+    [2] => 824550273
+    [3] => build
+    [4] => /home/crusecon/jobserver//builds/824550273
+    [5] => /home/crusecon/jobserver//results/82455/824550273
+    [6] => /home/crusecon/jobserver//views/MANIFESTS.upc.master
+    [7] => /home/crusecon/jobserver//builds/817919160
+    [8] => fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602
+    [9] => upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS
+    [10] => upgw-sam0602
+    [11] => 1
+)
+
+Query: 
+SELECT
+  t_job.baseline AS baseline,
+  t_baseline.baselineid AS baselineid,
+  t_view.name AS view_name,
+  t_view.viewid AS viewid,
+  t_view.parent_viewid AS parent_viewid,
+  t_componentdefinition.middleware_id AS middleware_id,
+  actionid,
+  nameid,
+  platformid,
+  t_project_promotion_plugin.promotion_plugin AS plugin,
+  runcount
+FROM t_job
+  JOIN t_project USING (projectid)
+  JOIN t_view USING (viewid)
+  LEFT JOIN t_componentdefinition USING (componentdefinitionid)
+  JOIN t_baseline ON (t_baseline.baseline=t_job.baseline)
+  LEFT JOIN t_project_promotion pp USING (projectid)
+  LEFT JOIN t_project_promotion_plugin USING (project_promotion_pluginid)
+WHERE jobid=824550273
+
+Query: SELECT registry_strval FROM t_registry WHERE registry_path='component_wp_view_regexp'
+Mode = ignore
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php fatf_lcov_upload.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+fatf_lcov_upload.php version 1.1 called with parameters :   JOBSERVER_DIR = /home/crusecon/jobserver/,   JOBID = 824550273,   JOBACTION = build,   TEST_DIR = /home/crusecon/jobserver//builds/824550273,   RESULT_DIR = /home/crusecon/jobserver//results/82455/824550273,   VIEW_DIR = /home/crusecon/jobserver//views/MANIFESTS.upc.master,   BUILD_DIR = /home/crusecon/jobserver//builds/817919160,   PROJECT_TAG = fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602,   BASELINE = upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS,   PLATFORM = upgw-sam0602,   STATUSID = 1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php fusion_profile_monitoring.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+  fusion_profile_monitoring.php version 2.0 called with parameters :-
+  JOBSERVER_DIR = /home/crusecon/jobserver/
+  JOBID = 824550273
+  JOBACTION = build
+  TEST_DIR = /home/crusecon/jobserver//builds/824550273
+  RESULT_DIR = /home/crusecon/jobserver//results/82455/824550273
+  VIEW_DIR = /home/crusecon/jobserver//views/MANIFESTS.upc.master
+  BUILD_DIR = /home/crusecon/jobserver//builds/817919160
+  PROJECT_TAG = fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602
+  BASELINE = upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS
+  PLATFORM = upgw-sam0602
+  STATUSID = 1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php iex_parse_performance_data.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php import_skit_stats.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running php log_parser.php /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running ./80_prune_fusion_builds.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running ./99_walrus_notify.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+/home/ci-fusion/jobserver/ 719918480 build /home/ci-fusion/jobserver//builds/719918480 /home/ci-fusion/jobserver//results/71991/719918480 /home/ci-fusion/jobserver//views/walrus_test_WALRUS_VIEW /home/ci-fusion/jobserver//builds/0 walrus__walrus_test__fusion2__INTEGRATION__APEX_MAIN__CANAL_D_SI_GATEWAY_MILESTONES__build__CANALD-KAON7356-01 walrus_test-1359136362 CANALD-KAON7356-01 1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:46 Running ./check-job-result.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+ls: cannot access /home/crusecon/jobserver//results/82455/824550273/target_run_log*.txt: No such file or directory
+ls: cannot access /home/crusecon/jobserver//results/82455/824550273/output_log*.txt: No such file or directory
+ls: cannot access /home/crusecon/jobserver//results/82455/824550273/serial_boot_log*.txt: No such file or directory
+ls: cannot access /home/crusecon/jobserver//results/82455/824550273/serial_log*.txt: No such file or directory
+ls: cannot access /home/crusecon/jobserver//results/82455/824550273/ci-environment-check*.txt: No such file or directory
+check-job-result.sh: No errors were found
+/local2/jobserver/views/CI_TOOLS_CORE/vobs/CI_TOOLS/JOBSERVER/scripts/postprocess
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./chmod_builds.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./chmod_results.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+chmod: cannot access `/home/crusecon/jobserver//results/82455/824550273': No such file or directory
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./do_gdb_backtrace.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./extract_binary_log.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./import_healthcheck.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./send_emailalert.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Checking if jobid: 824550273 was restarted
+INFO: Checking if there are any entries in t_emailalert for jobid: 824550273
+PHP Notice:  Undefined variable: tag in /local2/jobserver/views/CI_TOOLS_CORE/vobs/CI_TOOLS/JOBSERVER/scripts/postprocess/email_alerts/send_emailalert.php on line 123
+PHP Notice:  Undefined variable: statsemail in /local2/jobserver/views/CI_TOOLS_CORE/vobs/CI_TOOLS/JOBSERVER/scripts/postprocess/email_alerts/send_emailalert.php on line 173
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./z_analyse_failures.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./check_emm_gen.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+#### STARTING check_emm_gen ####
+ls: cannot access /home/crusecon/jobserver//results/82455/824550273/serial_log*.txt: No such file or directory
+#### DONE check_emm_gen ####
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./compress_results.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+gzip: /home/crusecon/jobserver//results/82455/824550273/*.db: No such file or directory
+INFO: Script completed successfully
+
+INFO: 2017-06-16 18:14:48 Running ./monitor_smartcards.sh /home/crusecon/jobserver/ 824550273 build /home/crusecon/jobserver//builds/824550273 /home/crusecon/jobserver//results/82455/824550273 /home/crusecon/jobserver//views/MANIFESTS.upc.master /home/crusecon/jobserver//builds/817919160 fusion2____MANIFESTS.upc.master__release_dbg_WPE__build__upgw-sam0602 upc/master/172.5.6@git:gpk-apl-grt7/MANIFESTS upgw-sam0602 1 >> /home/crusecon/jobserver//builds/824550273/ci-postprocess-47-1497629672 2>&1
+INFO: Script completed successfully

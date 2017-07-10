@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone name="w1" type="w" id="1" x="285" y="316" w="222" h="148"/>
+<zone name="w2" type="w" id="2" x="0" y="316" w="222" h="148"/>
+<zone name="wl" type="w" id="2" x="62.95" y="316" w="222" h="148"/>
+<zone name="wr" type="w" id="2" x="507" y="316" w="222" h="148"/>
+<zone name="g1" type="g" id="1" x="11" y="935" w="552" h="150"/>
+<zone name="g2" type="g" id="2" x="573" y="935" w="552" h="150"/>
+<zone name="search" type="search" id="null" x="14" y="1092" w="1280" h="70"/>
+
+<zone name="w_0" type="poster" id="null" x="0" y="0" w="222" h="148"/>
+<zone name="w_1" type="poster" id="null" x="236" y="0" w="222" h="148"/>
+<zone name="w_2" type="poster" id="null" x="472" y="0" w="222" h="148"/>
+<zone name="w_3" type="poster" id="null" x="708" y="0" w="222" h="148"/>
+<zone name="w_4" type="poster" id="null" x="944" y="0" w="222" h="148"/>
+<zone name="w_5" type="poster" id="null" x="1180" y="0" w="222" h="148"/>
+<zone name="w_6" type="poster" id="null" x="0" y="158" w="222" h="148"/>
+<zone name="w_7" type="poster" id="null" x="236" y="158" w="222" h="148"/>
+<zone name="w_8" type="poster" id="null" x="472" y="158" w="222" h="148"/>
+<zone name="w_9" type="poster" id="null" x="708" y="158" w="222" h="148"/>
+<zone name="w_10" type="poster" id="null" x="944" y="158" w="222" h="148"/>
+<zone name="w_11" type="poster" id="null" x="1180" y="158" w="222" h="148"/>
+
+<!-- static zones-->
+<zone name="photoHorizon" type="photoHorizon" id="null" x="174" y="918" w="1280" h="4"/>

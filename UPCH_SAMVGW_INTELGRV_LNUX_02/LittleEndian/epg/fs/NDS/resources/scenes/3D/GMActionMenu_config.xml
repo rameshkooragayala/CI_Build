@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone name="g1" type="g" id="1" x="657.95" y="5" w="622.05" h="720"/>
+<zone name="g2" type="g" id="2" x="1307.95" y="5" w="630" h="720"/>
+<!-- static zones -->
+<zone name="prgInfo" type="prgInfo" id="null" x="0" y="5" w="628" h="720"/>
+<zone name="verticalBar" type="verticalBar" id="null" x="623" y="0" w="24" h="720"/>
+<zone name="notif_title" type="notif_title" id="null" x="0" y="5" w="652" h="720"/>
+<zone name="notifMsg" type="notifMsg" id="null" x="660" y="320" w="603" h="134"/>
+<zone name="FutureLogoHolder" type="FutureLogoHolder" id="null" x="0" y="1480" w="160" h="104"/>
+<zone name="eventNameTxt" type="eventNameTxt" id="null" x="0" y="1480" w="160" h="104"/>

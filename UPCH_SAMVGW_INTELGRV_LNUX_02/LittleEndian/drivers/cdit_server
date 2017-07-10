@@ -1,0 +1,39 @@
+#! /usr/bin/python
+
+import socket
+import sys
+import re
+import os
+
+host = ""
+port = int(os.getenv("CDIT_SERVER_PORT","5555"))
+addr = (host, port)
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.bind(addr)
+
+print
+output_to_file = 0
+
+if 2 == len(sys.argv):
+    f = open(sys.argv[1],'w')
+    output_to_file = 1 
+    print " output to file", sys.argv[1]
+
+print
+print " Don't forget to set CDIT_SERVER on the STB... "
+export_str = " # export CDIT_SERVER="+socket.gethostbyname(socket.gethostname()) + "\n # export CDIT_SERVER_PORT=" + str(port)
+print export_str
+print
+
+
+try:
+    while(1):
+       data, addr = sock.recvfrom(4096)
+       if 1 == output_to_file:
+           f.write(re.sub(r'\x1B[[0-9;]*m',r'',data))
+       sys.stdout.write(data)
+except:
+    if 1 == output_to_file:
+        f.close()
+    sock.close()

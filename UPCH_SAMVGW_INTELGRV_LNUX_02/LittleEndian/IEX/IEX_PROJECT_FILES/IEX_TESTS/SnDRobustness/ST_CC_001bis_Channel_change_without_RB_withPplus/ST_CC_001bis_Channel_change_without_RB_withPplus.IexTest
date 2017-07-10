@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="yes"?>
+<TestPropertiesDataSet xmlns="http://tempuri.org/TestPropertiesDataSet.xsd">
+  <Options>
+    <NumberOfGateways>1</NumberOfGateways>
+  </Options>
+</TestPropertiesDataSet>

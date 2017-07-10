@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenest>
+	<scene name="DEFAULT_VALUES" initEntry="350"  minEntry="300" maxEntry="350" intoOut="300"/>
+	<scene name="MAIN_GMSCENE" preLoad="true" useFilter="false"/>
+	<scene name="CHANNEL_BAR_GMSCENE" preLoad="true" useFilter="false"/>
+	<scene name="FIRSTINST_SCRN_GMSCENE" isTransient="false" useFilter="false"/>
+	<scene name="DEFAULT_GMSCENE"/>
+	<scene name="GUIDE_GMSCENE" preLoad="true"  initEntry="450"  maxEntry="500"/>
+	<scene name="GUIDE_CATCHUP_GMSCENE" preLoad="true"  initEntry="450"  maxEntry="500"/>
+	<scene name="ACTIONMENU_GMSCENE" preLoad="true" />	
+	<scene name="ACTIONMENU_V2_GMSCENE" preLoad="true"/>
+	<scene name="UPC_ACTIONMENU_GMSCENE" preLoad="true"/>
+	<scene name="LIBRARYWALL_GMSCENE" initEntry="450"/>
+	<scene name="SETTINGS_GMSCENE" preLoad="true"/>
+	<scene name="SEARCH_GMSCENE" preLoad="true" />
+	<scene name="LIBRARY_HOME_GMSCENE"/>
+	<scene name="LIBRARY_MUSIC_GMSCENE" preLoad="true" />
+	<scene name="LIBRARY_PHOTO_GMSCENE" preLoad="true" />
+	<scene name="STORE_HOME_GMSCENE" preLoad="true"  useSubFolder="true" initEntry="450"/>
+	<scene name="STORE_CATEGORIES_GMSCENE" initEntry="650"/>
+	<scene name="UPC_POSTERVIEW_GMSCENE" preLoad="true" />
+	<scene name="UPC_LISTVIEW_GMSCENE" preLoad="true" />
+	<scene name="UPC_PROVIDER_VIEW_GMSCENE" preLoad="true" />
+	
+	<!-- use sceneProfile if scene is specific to profile --> 
+	<!-- sceneProfile value must be the int, -1 means specific to all three or else use CapabilitiesTable.DEVICE_TYPE_* constant value -->
+	<scene name="STORE_CAT_GMSCENE" preLoad="true" initEntry="450" sceneProfile="-1"/>
+	<scene name="STOREWALL_GMSCENE" preLoad="true" initEntry="450"/>
+	<scene name="LIBRARY_MUSIC_FR2_GMSCENE" preLoad="true" initEntry="450"/>
+	<scene name="KEYBOARD_GMSCENE" preLoad="true" />
+	<scene name="LISTSVIEW_GMSCENE" preLoad="true" />
+	
+</scenest>

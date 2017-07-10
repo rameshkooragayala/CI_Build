@@ -1,0 +1,11 @@
+/local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/mw_starter_process.o: \
+ mw_starter_process.c \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/common_middleware/pwm/src/mw_starter/mw_starter.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_control_and_diagnostics/sysinit/src/mw_common/sysinit_mw_common.h \
+ common_services.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/diag/inc/diag_log.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/diag/inc/diag_common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemcommon/inc/system_common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemconfig/inc/systemconfig.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemconfig/inc/systemconfig_common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/inc/nds/xstd.h

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="iso-8859-1"?><DF NM="PAIT_PARAM_TABLE">
+<DB NM="PAIT">
+<VR NM="pait_version" VL="13"/>
+<VT NM="application_type_descr">
+<IT NM="application_type_descr_1">
+<VR NM="type" VL="3"/>
+<VT NM="application_descr">
+<IT NM="application_descr_1">
+<GP NM="mhp_id_descr">
+<VR NM="org_id" VL="25"/>
+<VR NM="app_id" VL="1"/>
+</GP>
+<GP NM="default_application_signaling_descr">
+<VR NM="service_bound_flag" VL="yes"/>
+<VR NM="visibility" VL="3"/>
+<VR NM="priority" VL="5"/>
+<VR NM="presence_flag" VL="yes"/>
+</GP>
+<GP NM="application_editorial_descr">
+<VT NM="application_name_descr">
+<IT NM="application_name_descr_1">
+<VR NM="iso_language" VL="eng"/>
+<VR NM="application_name" VL="test_key"/>
+</IT>
+</VT>
+</GP>
+<GP NM="application_technical_data_descr">
+<VR NM="application_profile_descr" VL="0"/>
+<VR NM="application_logical_ref_descr" VL="dtv-a:app_Premiere"/>
+<GP NM="html_application_technical_descr">
+<VR NM="initial_path" VL="/NDS/resources/test_key.swf"/>
+<GP NM="html_application_boundary_descr">
+<VT NM="html_application_boundary_item">
+</VT>
+</GP>
+</GP>
+<GP NM="application_transport_descriptor">
+<VT NM="application_transport_descr">
+</VT>
+</GP>
+</GP>
+</IT>
+<IT NM="application_descr_2">
+<GP NM="mhp_id_descr">
+<VR NM="org_id" VL="25"/>
+<VR NM="app_id" VL="2"/>
+</GP>
+<GP NM="default_application_signaling_descr">
+<VR NM="service_bound_flag" VL="yes"/>
+<VR NM="visibility" VL="3"/>
+<VR NM="priority" VL="5"/>
+<VR NM="presence_flag" VL="yes"/>
+</GP>
+<GP NM="application_editorial_descr">
+<VT NM="application_name_descr">
+<IT NM="application_name_descr_1">
+<VR NM="iso_language" VL="eng"/>
+<VR NM="application_name" VL="test_thingy"/>
+</IT>
+</VT>
+</GP>
+<GP NM="application_technical_data_descr">
+<VR NM="application_profile_descr" VL="0"/>
+<VR NM="application_logical_ref_descr" VL="dtv-a:app_test_thingy"/>
+<GP NM="html_application_technical_descr">
+<VR NM="initial_path" VL="/NDS/resources/test_thingy.swf"/>
+<GP NM="html_application_boundary_descr">
+<VT NM="html_application_boundary_item">
+</VT>
+</GP>
+</GP>
+<GP NM="application_transport_descriptor">
+<VT NM="application_transport_descr">
+</VT>
+</GP>
+</GP>
+</IT>
+<IT NM="application_descr_3">
+<GP NM="mhp_id_descr">
+<VR NM="org_id" VL="25"/>
+<VR NM="app_id" VL="3"/>
+</GP>
+<GP NM="default_application_signaling_descr">
+<VR NM="service_bound_flag" VL="yes"/>
+<VR NM="visibility" VL="3"/>
+<VR NM="priority" VL="5"/>
+<VR NM="presence_flag" VL="yes"/>
+</GP>
+<GP NM="application_editorial_descr">
+<VT NM="application_name_descr">
+<IT NM="application_name_descr_1">
+<VR NM="iso_language" VL="eng"/>
+<VR NM="application_name" VL="test_alpha_shutup"/>
+</IT>
+</VT>
+</GP>
+<GP NM="application_technical_data_descr">
+<VR NM="application_profile_descr" VL="0"/>
+<VR NM="application_logical_ref_descr" VL="dtv-a:test_alpha_shutup"/>
+<GP NM="html_application_technical_descr">
+<VR NM="initial_path" VL="/NDS/resources/test_alpha_shutup.swf"/>
+<GP NM="html_application_boundary_descr">
+<VT NM="html_application_boundary_item">
+</VT>
+</GP>
+</GP>
+<GP NM="application_transport_descriptor">
+<VT NM="application_transport_descr">
+</VT>
+</GP>
+</GP>
+</IT>
+</VT>
+</IT>
+</VT>
+</DB>
+</DF>

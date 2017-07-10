@@ -1,0 +1,69 @@
+<html>
+  <object name="my_user_api" type="application/x-jsuserapi-plugin"></object>
+  <head>
+  	<style type="text/css">
+			a {
+				font-family: PremiereStrategic;
+				color: white;
+				font-size: 24px;
+				text-decoration: none;	
+			}
+			
+			a:focus {
+				font-family: PremiereStrategic;
+				color: #f0f0f0;
+				font-size: 24px;
+				text-decoration: none;
+			}
+		</style>
+	<script>
+  	 var b_surf = my_user_api.getDisplay().getBackgroundSurface();
+ 	   var v_surf = my_user_api.getDisplay().getVideoSurface(); 
+	   var v_conf=v_surf.getConfiguration();
+	   var b_conf=b_surf.getConfiguration();
+	   
+	   function destroy() {
+        my_user_api.getSelf().stop();
+     }
+	   function gotoIpSetupPage(){
+	     my_user_api.getIPNetworkInterface("default").gotoIPSetupPage();
+     }
+     function init() {	
+     		document.addEventListener('keypress', getKey, false);
+		b_surf.displayImageFile("/NDS/resources/bck_common.m2v");
+		b_conf.setVisible(true);
+		v_conf.setVisible(false);
+		v_surf.setConfiguration(v_conf.id);
+      	b_surf.setConfiguration(b_conf.id);
+  		//focus0();
+		document.getElementById("beenden").focus();
+  		}
+    	
+	  	function getKey(e) 
+      {
+        if (e.which == 700)	
+        {
+          javascript:back();
+        }
+      }
+
+	
+  	</script>
+  </head>
+  <body width="720px" onload="init();">
+
+    <div style="position: absolute;  left:360px; top:128px; width:280px; height:32px; background-color:#D0D0D0">
+      <div style="font-family:Swis721 Cn BT; font-size:26px; padding:0px 0px 0px 10px;">
+        IP-Konfiguration
+      </div>
+    </div>
+    <div style="position: absolute; left:360px; top:160px; width:280px; height:225px; background-color:CCA5A5A5;">
+      <div style="font-family:Swis721 Cn BT; font-size:21px; padding:10px 5px 0px 10px;">
+        Hinweis 405 – Interaktiver Dienst nicht verf&uuml;gbar. Bitte  rufen Sie den Premiere Kundenservice an.
+	</div>
+    </div>
+    <div  id="b0" style="position: absolute; left:360px; top:384px; width:280px; height:32px; font-family:PremiereStrategic; font-size:24px; background-color:#B00030">
+      <a id="beenden" href="#" style="padding-left:10px; line-height:32px" onclick="javascript:destroy();">Beenden</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_ConflictStatus</name>
+      <dataType>string</dataType>
+      <allowedValueList>
+        <allowedValue>RESOLVED</allowedValue>
+        <allowedValue>UNRESOLVED</allowedValue>
+        <allowedValue>DOES_NOT_EXIST</allowedValue>
+      </allowedValueList>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_ActionList</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_Bool</name>
+      <dataType>boolean</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_Session</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>X_NDS_LastConflictChange</name>
+      <dataType>string</dataType>
+      <defaultValue></defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_ConflictQueryType</name>
+      <dataType>string</dataType>
+      <allowedValueList>
+        <allowedValue>TUNER_BOOKING_RESOLUTION</allowedValue>
+        <allowedValue>TUNER_BOOKING_CONFLICTING</allowedValue>
+      </allowedValueList>
+    </stateVariable>

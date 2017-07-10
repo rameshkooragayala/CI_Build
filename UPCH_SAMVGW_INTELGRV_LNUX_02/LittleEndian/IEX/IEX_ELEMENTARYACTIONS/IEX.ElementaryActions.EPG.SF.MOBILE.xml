@@ -1,0 +1,343 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF.MOBILE
+</name>
+</assembly>
+<members>
+<member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Utils.GetTextsFromDictionary">
+	<summary>
+   Getting All EPG Texts From Dictionary
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Utils.Tap(System.String,System.String,System.Boolean,System.Int32)">
+	<summary>
+   Tap Requested Area
+ </summary>
+	<param name="Item">The Key To Send</param>
+	<param name="VerifyAnimation">Optional Parameter Default True : If True Verifying Animation End After IR</param>
+	<param name="WaitAfterTap">Optional Parameter Default 1000 : Wait After Sending</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Utils.EnterPin(System.String)">
+	<summary>
+   Entering PIN
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Utils.ReturnToLiveViewing(System.Boolean)">
+	<summary>
+   Return To Live Viewing
+ </summary>
+	<param name="CheckForVideo">Optional Parameter FALSE.If TRUE Checks For Video</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>334 - VideoNotPresent</para>
+		<para>349 - ReturnToLiveFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Utils.VerifyState(System.String,System.Int32,System.Int32)">
+	<summary>
+   Waiting For Given State To Arrive Until Timeout And Delaying After Found
+ </summary>
+	<param name="State">Requested State</param>
+	<param name="TimeOutInSec">Optional Parameter Default = 15 : Time Out In Seconds</param>
+	<param name="Delay">Optional Parameter Default = 0 : How Much Seconds To Delay </param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Utils.ParseEPGTime(System.String,System.String@)">
+	<summary>
+   Parsing EPG Time From EPG
+ </summary>
+	<param name="DateTime">EPG Date Time</param>
+	<param name="ReturnedTime">ByRef The Returned Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Utils.ParseEventTime(System.String@,System.String,System.Boolean)">
+	<summary>
+   Parsing Event Time From Returned EPG Time
+ </summary>
+	<param name="ReturnedTime">The Returned Time After Parsing</param>
+	<param name="TimeString">Time String From EPG</param>
+	<param name="IsStartTime">If True Returnes Start Time Else Returns End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Utils.VerifyLiveReached">
+	<summary>
+   Verifies Live Reached
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.MOBILE.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.MOBILE.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.MOBILE.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ArchiveRecordings.Navigate">
+	<summary>
+   Navigating To Archive Recording
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ArchiveRecordings.isEmpty">
+	<summary>
+   Checks If Archive Has No Events
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.FutureRecordings.Navigate">
+	<summary>
+   Navigating To Planner
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.FutureRecordings.isEmpty">
+	<summary>
+   Checks If Planner Has No Events
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ChannelBar.Navigate">
+	<summary>
+   Navigating To Channel List
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ChannelBar.IsChannelBar">
+	<summary>
+   Checking If Channel Bar Is Already On Screen
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ChannelBar.SurfChannelUp(System.String,System.Boolean)">
+	<summary>
+    Surfing Up On Channel List
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ChannelBar.SurfChannelDown(System.String,System.Boolean)">
+	<summary>
+    Surfing Down On Channel List
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ChannelBar.DoTune">
+	<summary>
+   Tunning To Channel From Channel Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ChannelBar.GetChannelNumber(System.String@)">
+	<summary>
+   Getting Channel Number From Channel Bar
+ </summary>
+	<param name="ChannelNumber">ByRef The Returned Channel Number</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ChannelBar.PreRecordEvent">
+	<summary>
+   Preparing Recording Event From Channel Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>323 - VerifyStateFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.ChannelBar.VerifyChannelNumber(System.String)">
+	<summary>
+   Verifies Channel Number
+ </summary>
+	<param name="ChannelNumber">The Channel Number To Verify</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Favorites.Navigate">
+	<summary>
+   Navigating To Favorites Settings
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Favorites.SetChannelList(System.Collections.Generic.List{System.String},System.Boolean)">
+	<summary>
+   Setting A List Of Channel Names To Favorite/Non-Favorite
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Live.IsLive">
+	<summary>
+   Checks For Live OSD When Returning From Trick Mode
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Live.VerifyChannelNumber(System.String)">
+	<summary>
+   Verifies Channel Number
+ </summary>
+	<param name="ChannelNumber">The Channel Number To Verify</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Live.TuningToChannel(System.String,System.String,System.Boolean)">
+	<summary>
+   Tunning To Channel
+ </summary>
+	<param name="ChannelNumber">The Channel To Tune To</param>
+	<param name="Type">Can Be : "" For Regular Channel Surf,"Predicted" For Channel Surf With Predicted,"Not Predicted" For Channel Surf With Not Predicted</param>
+	<param name="WithSubtitles">If True Tune To Channel With Subtitles</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Menu.Navigate">
+	<summary>
+    Navigating To Menu By Pressing Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Menu.NavigateToTV">
+	<summary>
+    Navigating To TV On Main Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Menu.IsTV">
+	<summary>
+   Checks If TV Is On The Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Menu.IsMenuButtonOnScreen">
+	<summary>
+   Checking If Menu Button Is On Screen
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Menu.IsMenu">
+	<summary>
+   Checks If The Menu Is On The Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Banner.Navigate(System.Boolean)">
+	<summary>
+   Navigating To Action Bar
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Banner.IsActionBar">
+	<summary>
+   Checking If Action Bar Is Already On Screen
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Banner.GetEventTimeLeft(System.Int32@)">
+	<summary>
+   Getting Event Time Left To End
+ </summary>
+	<param name="TimeLeft">Returnes The Time Left Until End Of Event In Minutes</param>
+	<remarks>
+ Possible Error Codes:
+ <para>337 - ParseEventTimeFailure</para>
+		<para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Banner.GetEventStartTime(System.String@)">
+	<summary>
+    Getting Event Start Time From Action Bar
+ </summary>
+	<param name="StartTime">Returns Start Time From Action Bar</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Banner.GetEventEndTime(System.String@)">
+	<summary>
+   Getting Event End Time From Action Bar
+ </summary>
+	<param name="EndTime">Returns End Time From Action Bar</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Banner.GetEventName(System.String@)">
+	<summary>
+    Getting Event Name From Action Bar
+ </summary>
+	<param name="EventName">Returns EventName From Action Bar</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Banner.CancelBooking(System.Boolean,System.Boolean)">
+	<summary>
+     Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Settings.NavigateToParentalControlLockUnlock">
+	<summary>
+   Navigating To Parental Control Lock/Unlock Channels Settings
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Settings.LockChannel(System.String)">
+	<summary>
+   Locking Channel In Parental Control Lock/Unlock Channels
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>357 - LockUnlockChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MOBILE.Settings.UnLockChannel(System.String)">
+	<summary>
+   UnLocking Channel In Parental Control Lock/Unlock Channels
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+		<para>328 - INIFailure</para>
+		<para>357 - LockUnlockChannelFailure</para>
+	</remarks>
+</member>
+</members>
+</doc>

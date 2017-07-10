@@ -1,0 +1,15 @@
+    <action>
+      <name>X_NDS_GetActualDuration</name>
+      <argumentList>
+        <argument>
+          <name>ObjectID</name>
+          <direction>in</direction>
+          <relatedStateVariable>A_ARG_TYPE_ObjectID</relatedStateVariable>
+        </argument>
+        <argument>
+          <name>Duration</name>
+          <direction>out</direction>
+          <relatedStateVariable>X_NDS_A_ARG_TYPE_Duration</relatedStateVariable>
+        </argument>
+      </argumentList>
+    </action>

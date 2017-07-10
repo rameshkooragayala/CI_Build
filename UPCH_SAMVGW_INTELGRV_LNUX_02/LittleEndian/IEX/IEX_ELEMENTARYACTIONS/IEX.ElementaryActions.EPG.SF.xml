@@ -1,0 +1,3409 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF
+</name>
+</assembly>
+<members>
+<member name="M:IEX.ElementaryActions.EPG.SF.PlannerBase.SelectEvent(System.String,System.Boolean)">
+	<summary>
+   Selecting Event From Planner/Archive And Verifies Playback Action Bar Event Name
+ </summary>
+	<param name="EventName">Optional Parameter Default = "" : Only For Logging Purpose</param>
+	<remarks>
+ Possible Error Codes:
+ <para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.PlannerBase.VerifyPlaybackEnded(System.Int32)">
+	<summary>
+   Verifying Playback Ended By Event Duration In Seconds
+ </summary>
+	<param name="EventDurationInSeconds">Event Duration In Seconds</param>
+	<remarks>
+ Possible Error Codes:
+ <para>320 - VerifyEofBofFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.PlannerBase.ResolveAdultEventName">
+	<summary>
+   Resolves Adult Event Name In Archive Or Planner By Selecting It And Enter PIN Code
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.PlannerBase.NavigateToFailedEventScreen">
+	<summary>
+ Navigates to Failed Recorded Screen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.PlannerBase.VerifyErrorInfo(System.String,System.String)">
+	<summary>
+ Verifies the Recording Error Information
+ </summary>
+	<param name="RecordIcon">Recording Icon Present</param>
+	<param name="ErrDescription">Recording Error Description</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.PlannerBase.NextFailedEvent(System.Int32,System.Boolean)">
+	<summary>
+    Moving To Next Failed Event X Times
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : X Events To Move On Planner</param>
+	<param name="VerifyByDetails">Optional Parameter Default = False : If True Comparing Detail Key Too</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.PlannerBase.FindFailedRecordedEvent(System.String,System.String,System.String,System.String)">
+	<summary>
+   Finding Requested Failed Event
+ </summary>
+	<param name="EventName">The Name Of The Event</param>
+	<param name="EventDate">The Event Converted Date</param>
+	<param name="StartTime">The Event Start Time</param>
+	<param name="EndTime">The Event End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.PlannerBase.VerifySeriesEvent">
+	<summary>
+ Verifies whether the event is series event
+ </summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.PlannerBase.ExpandSeries">
+	<summary>
+ Expand the series event to show the events within the series booking/recording
+ </summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.XML.InitXPath(System.String)">
+	<summary>
+   Inits XPath For Parsing Of iex.xml
+ </summary>
+	<param name="fullPathToIexXml">Full File Path To iex.xml</param>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.XML.EvaluateStrXPathExpression(System.String)">
+	<summary>
+   Evaluates XPath Expression Based On iex.xml File
+ </summary>
+	<param name="strXPathExpression">String XPath Expression</param>
+	<returns>String</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.XML.GetFullPathToDictionaryFromIexXml(System.String)">
+	<summary>
+   Retrieves Full Path To Dictionary From iex.xml
+ </summary>
+	<param name="fullPathToIexXml">Full Path To iex.xml File</param>
+	<returns>String</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.XML.GetSerialBaudRateFromIexXml(System.String)">
+	<summary>
+   Retrieves Serial Baud Rate From iex.xml
+ </summary>
+	<param name="fullPathToIexXml">Full Path To iex.xml File</param>
+	<returns>String</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.XML.LoadDictionary">
+	<summary>
+   Loads EPG Dictionary
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.XML.LoadXml(System.String)">
+	<summary>
+   Loads EPG Dictionary To EA Dictionary Structure
+ </summary>
+	<param name="sFile">File Path Of EPG Dictionary</param>
+	<returns></returns>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.Navigate(System.Boolean,System.Boolean)">
+	<summary>
+   Navigating To Manual Recording
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.NavigateFromPlanner">
+	<summary>
+   Navigating To Manual Recording From Planner
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.NavigateToChannel(System.Boolean)">
+	<summary>
+   Navigating To CHANNELS On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.NavigateToDate(System.Boolean)">
+	<summary>
+   Navigating To DATE On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.NavigateToStartTime(System.Boolean)">
+	<summary>
+   Navigating To START TIME On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.NavigateToEndTime(System.Boolean)">
+	<summary>
+   Navigating To END TIME On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.NavigateToFrequency(System.Boolean)">
+	<summary>
+   Navigating To FREQUENCY On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.NavigateToRecord(System.Boolean)">
+	<summary>
+   Navigating To RECORD After Entering All Fields On Manual Recording
+ </summary>
+	<param name="IsFromCurrent">For UPC: If True Means Manual Recording From Banner Or Modify Manual Else False</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.NextChannel(System.Int32)">
+	<summary>
+   Moving To Next Channel On The Channels List X Times
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : X Events To Move On Channels List</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.NextDate(System.Int32)">
+	<summary>
+    Moving To Next Date On The Date List X Times
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : X Dates To Move On Date List</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.TypeStartTime(System.String)">
+	<summary>
+   Typing Start Time On Manual Recording Start Time Field
+ </summary>
+	<param name="StartTime">The Requested Start Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.TypeEndTime(System.String)">
+	<summary>
+   Typing End Time On Manual Recording End Time Field
+ </summary>
+	<param name="EndTime">The Requested End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.GetSelectedChannelName(System.String@)">
+	<summary>
+   Getting Selected Channel Name From Manual Recording Menu
+ </summary>
+	<param name="ChannelName">Returns The Selected Channel Name</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.GetSelectedDate(System.String@)">
+	<summary>
+   Getting Selected Date From Manual Recording Menu
+ </summary>
+	<param name="tDate">Returns The Selected Date</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.GetEventStartTime(System.String@)">
+	<summary>
+   Getting Selected Start Time From Manual Recording Menu
+ </summary>
+	<param name="StartTime">Returns The Selected Start Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.GetEventEndTime(System.String@)">
+	<summary>
+    Getting Selected End Time From Manual Recording Menu
+ </summary>
+	<param name="EndTime">Returns The Selected End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.GetFrequency(System.String@)">
+	<summary>
+   Getting Selected Frequency From Manual Recording Menu
+ </summary>
+	<param name="Frequency">Returns The Selected Frequency</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.SetChannel(System.String)">
+	<summary>
+   Setting Channel In Channels List
+ </summary>
+	<param name="ChannelName">Requested Channel Name To Set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.SetChannel(System.Int32)">
+	<summary>
+   Setting Channel In Channels List By Doing DCA
+ </summary>
+	<param name="Channel">Requested Channel To Set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.SetDate(System.String,System.Boolean)">
+	<summary>
+   Setting Date In Date List
+ </summary>
+	<param name="tDate">Requested Date To Set</param>
+	<param name="DefaultValue">If True Only For Logging Purposes Writes Default Value</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.SetStartTime(System.String)">
+	<summary>
+   Setting Start Time In Start Time Field
+ </summary>
+	<param name="StartTime">Requested Start Time To Set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.SetEndTime(System.String)">
+	<summary>
+   Setting End Time In End Time Field
+ </summary>
+	<param name="EndTime">Requested End Time To Set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.SetFrequency(System.String)">
+	<summary>
+   Setting Frequency In Frequency List
+ </summary>
+	<param name="Frequency">Requested Frequency To Set : One Time,Daily,Weekday,Weekly,Saturday-Sun</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.VerifyStartTime(System.String)">
+	<summary>
+   Verifying Start Time Is The Requested On Manual Recording Menu
+ </summary>
+	<param name="StartTime">Requested Start Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.VerifyEndTime(System.String)">
+	<summary>
+   Verifying End Time Is The Requested On Manual Recording Menu
+ </summary>
+	<param name="EndTime">Requested End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.SaveAndEnd(System.Boolean,System.Boolean)">
+	<summary>
+   Booking Manual Recording After All Parameters Were Entered
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = False : If True Verifies Current Booking Milestones Else Future Booking Milestones</param>
+	<param name="isModify">Optional Parameter Default = False :For UPC: True means Modify Manual Else False</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>339 - RecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.VerifySaveAndEndFinished(System.Boolean)">
+	<summary>
+   Verifying After Manual Recording Booked : If Current Verifies Action Bar Is Not On Screen Else Verifies Got Back To Planner Menu
+ </summary>
+	<param name="IsFromCurrent">If True Means Manual Recording From Banner Else From Planner</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.SetManualRecordingParams(System.String,System.String,System.String,System.Int32,System.String,System.String,System.Boolean,System.Boolean)">
+	<summary>
+   Setting manual Recording Parameters
+ </summary>
+	<param name="recDate">Date to be Set</param>
+	<param name="recStartTime"> Recording Start Time to be set</param>
+	<param name="recChannelName">Channel Name to be set</param>
+	<param name="recChannelNum">Channel Number to be set</param>
+	<param name="recEndTime">Recording End Time to be set</param>
+	<param name="frequency">Frequency to be set</param>
+	<param name="isModify">Optional Parameter Default = False :If True Means modify existing recording, else New Recording </param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.SetSchedule(System.String,System.String,System.Boolean)">
+	<summary>
+ Set the start time and end time of manual recording
+ </summary>
+	<param name="recStartTime">The recording start time</param>
+	<param name="recEndTime">The recording end time</param>
+	<param name="isModify">True if Modify required</param>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.GetOccurences(System.String,System.Int32,System.Int32@)">
+	<summary>
+ Getting expected number of occurences for the given frequency
+ </summary>
+	<param name="frequency">Frequency of Manual Recording</param>
+	<param name="daysDelay">Delay in days for the Record Start</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ManualRecording.GetOccurenceList(System.String,System.Collections.Generic.List{System.String}@)">
+	<summary>
+ Getting the expected list of occurence dates for given Event
+ </summary>
+	<param name="eventKeyName">Key for the booked event</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.IsLive">
+	<summary>
+   Checks For Live OSD When Returning From Trick Mode
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifyChannelNumber(System.String)">
+	<summary>
+   Verifies Channel Number
+ </summary>
+	<param name="ChannelNumber">The Channel Number To Verify</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.GetEpgDate(System.String@)">
+	<summary>
+   Getting EPG Date From Screen
+ </summary>
+	<param name="EPG_Date">Returned EPG Date</param>
+	<remarks>
+ Possible Error Codes:
+ <para>310 - GetEpgDateFailure</para>
+		<para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.GetEpgTime(System.String@)">
+	<summary>
+   Getting EPG Time From Screen
+ </summary>
+	<param name="EPG_Time">Returned EPG Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>309 - GetEpgTimeFailure</para>
+		<para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.SurfChannelUp(System.String,System.Boolean)">
+	<summary>
+    Surfing Up On Live
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.SurfChannelDown(System.String,System.Boolean)">
+	<summary>
+    Surfing Down On Live
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.GetSurfKey(System.Boolean)">
+	<summary>
+ Get the channel surf key    
+ </summary>
+	<param name="surfUp">Optional. The surf direction.</param>
+	<returns>The surf key from the project configuration or the default value from the code</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.GetChannelSurfTimeout">
+	<summary>
+ Get the channel surf timeout required
+ </summary>
+	<returns>Timeout in milliseconds as integer</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.GetChannelNumber(System.String@)">
+	<summary>
+   Getting Channel Number From Live
+ </summary>
+	<param name="ChannelNumber">ByRef The Returned Channel Number</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.SetSurfChannelVerification(System.String)">
+	<summary>
+   Sets Surf Channel Verifications
+ </summary>
+	<param name="Type">Can Be : "" For Regular Channel Surf,"Predicted" For Channel Surf With Predicted,"Not Predicted" For Channel Surf With Not Predicted</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifySurfChannelDefault">
+	<summary>
+   Verifies Channel Surf Default Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifySurfChannelIgnore">
+	<summary>
+   Verifies Channel Surf Ignore Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifySurfChannelPredicted">
+	<summary>
+   Verifies Channel Surf Predicted Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifySurfChannelNotPredicted">
+	<summary>
+   Verifies Channel Surf Not Predicated Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.SetSubtitlesVerification">
+	<summary>
+   Setting Tune To Channel With Subtitles Verification
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.SetTuneToChannelVerification(System.String)">
+	<summary>
+    Setting Tune To Channel Verifications
+ </summary>
+	<param name="Type">Can Be : "" For Regular Channel Surf,"Predicted" For Channel Surf With Predicted,"Not Predicted"</param>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifyTuneToChannelPredicted">
+	<summary>
+   Verifies Tune To Channel Predicted
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifyTuneToChannelNotPredicted">
+	<summary>
+   Verifies Tune To Channel Not Predicted
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifyTuneToChannelSubtitles">
+	<summary>
+    Verifies Tune To Channel With Subtitles
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifyTuneToRadioChannel">
+	<summary>
+    Verifies Tune To Radio Channel
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifyTuneToChannel(System.String)">
+	<summary>
+ Verifying Tune to Channel
+ </summary>
+	<param name="Type">The channel tune type</param>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.TuningToChannel(System.String,System.String,System.Boolean)">
+	<summary>
+   Tunning To Channel
+ </summary>
+	<param name="ChannelNumber">The Channel To Tune To</param>
+	<param name="Type">Can Be : "" For Regular Channel Surf,"Predicted" For Channel Surf With Predicted,"Not Predicted" For Channel Surf With Not Predicted</param>
+	<param name="WithSubtitles">If True Tune To Channel With Subtitles</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Live.VerifyRadioStateReached">
+	<summary>
+   Verifying the State in Radio Service
+ </summary>
+	<remarks> 
+ All the Projects Except VOO the Active State on Radio Service is LIVE
+ </remarks>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.RMS.RmsLoginValidation(OpenQA.Selenium.Firefox.FirefoxDriver)">
+	<summary>
+ Login To Panorama page 
+ </summary>
+	<param name="driver"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.RMS.EnterCpeId(OpenQA.Selenium.Firefox.FirefoxDriver,System.String)">
+	<summary>
+ Enters CpeId
+ </summary>
+	<param name="driver"></param>
+	<param name="cpeId"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.RMS.SelectTab(OpenQA.Selenium.Firefox.FirefoxDriver,System.String,EnumFindElementBy)">
+	<summary>
+ Performs Selection of Browser Tabs
+ </summary>
+	<param name="driver"></param>
+	<param name="BrowserTabControlId"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.RMS.QuickActionSelect(OpenQA.Selenium.Firefox.FirefoxDriver,System.String,System.String)">
+	<summary>
+ Performing qucick Action Functionalities
+ </summary>
+	<param name="driver"></param>
+	<param name="QuickActionControlId"></param>
+	<param name="QuickActionConfirmId"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.RMS.GetParameterValues(OpenQA.Selenium.Firefox.FirefoxDriver,System.String)">
+	<summary>
+ Fetch the Parameter Values From The panorama page
+ </summary>
+	<param name="driver"></param>
+	<param name="paramId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.RMS.SetParameterValues(OpenQA.Selenium.Firefox.FirefoxDriver,System.String,System.String,System.String,System.String)">
+	<summary>
+ Fetch the Parameter Values From The panorama page
+ </summary>
+	<param name="driver"></param>
+	<param name="setParameterPath"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.Navigate">
+	<summary>
+   Navigating To Channel List By Pressing BACK_UP
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.NextEvent(System.Boolean)">
+	<summary>
+   Moving To Next Event On Channel List 
+ </summary>
+	<param name="SelectEvent">Optional Parameter Default = True : If True Pressing Select To Select The Event</param>
+	<remarks>
+ Possible Error Codes:
+ <para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.SetSurfChannelVerification(System.String)">
+	<summary>
+   Sets Surf Channel Verifications
+ </summary>
+	<param name="Type">Can Be : "" For Regular Channel Surf,"Predicted" For Channel Surf With Predicted,"Not Predicted" For Channel Surf With Not Predicted</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.VerifySurfChannel(System.String)">
+	<summary>
+   Verifies Channel Surf Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.VerifySurfChannelIgnore">
+	<summary>
+   Verifies Channel Surf Ignore Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.VerifySurfChannelPredicted">
+	<summary>
+   Verifies Channel Surf Predicted Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.VerifySurfChannelNotPredicted">
+	<summary>
+   Verifies Channel Surf Not Predicated Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.SurfChannelUp(System.String,System.Boolean)">
+	<summary>
+    Surfing Up On Channel List
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.SurfChannelDown(System.String,System.Boolean)">
+	<summary>
+    Surfing Down On Channel List
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.GetChannelSurfKey(System.Boolean)">
+	<summary>
+ Get the channel surf key    
+ </summary>
+	<param name="surfUp">Optional. The surf direction.</param>
+	<returns>The surf key from the project configuration or the default value from the code</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.GetChannelSurfTimeout">
+	<summary>
+ Get the channel surf timeout required
+ </summary>
+	<returns>Timeout in milliseconds as integer</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.SelectEvent">
+	<summary>
+   Selecting Event On Channel List By Pressing SELECT
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.UnlockEvent">
+	<summary>
+   Unlocking Event From Channel Bar
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.DoTune">
+	<summary>
+   Tunning To Channel From Channel Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.GetEventName(System.String@,System.Boolean)">
+	<summary>
+   Getting Event Name From Channel Bar
+ </summary>
+	<param name="EventName">Returned EventName</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.GetChannelNumber(System.String@)">
+	<summary>
+   Getting Channel Number From Channel Bar
+ </summary>
+	<param name="ChannelNumber">ByRef The Returned Channel Number</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.GetEventTimeLeft(System.Int32@,System.Boolean)">
+	<summary>
+   Getting Event Time Left To End
+ </summary>
+	<param name="TimeLeft">Returnes The Time Left Until End Of Event In Minutes</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelBar.GetEventEndTime(System.String@,System.Boolean)">
+	<summary>
+   Getting Event End Time From Channel Bar
+ </summary>
+	<param name="EndTime">Returns End Time From Channel Bar</param>
+	<param name="IsNext">If True Returns The Next Event End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.Navigate">
+	<summary>
+    Navigating To Menu By Pressing Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.IsMenu">
+	<summary>
+   Checks If The Menu Is On The Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.GetMenuChannelName(System.String@)">
+	<summary>
+  Gets Channel Name From MENU
+ </summary>
+	<param name="ChannelName">Byref Returns The Channel Name</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.GetChannelNumber(System.String@)">
+	<summary>
+   Gets Channel Number From EPG Milestones Only When Activating The MENU
+ </summary>
+	<param name="ChannelNumber">The Returned Channel Number</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.SelectToConflict">
+	<summary>
+   Pressing SELECT And Waiting For Conflict Menu To Appear
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>344 - ConflictFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.SetSettingsMenuAction(System.String)">
+	<summary>
+   Sets Settings Menu Item 
+ </summary>
+	<param name="Action">Requested Action</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.SetActionBarSubAction(System.String)">
+	<summary>
+   Sets Action Bar Sub Menu Action
+ </summary>
+	<param name="Action">Requested Action</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.IsLibraryNoContent">
+	<summary>
+   Checks If Library No Content Menu Is On Screen
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.SetManualRecordingDate(System.String)">
+	<summary>
+   Sets Manual Recording Date On Date List
+ </summary>
+	<param name="tDate">Requested Date</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.SetManualRecordingChannel(System.String)">
+	<summary>
+  Sets Manual Recording Channel On Channels List
+ </summary>
+	<param name="Channel">Requested Channel</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.SetConflictAction(System.String)">
+	<summary>
+   Sets Action On Conflict Menu
+ </summary>
+	<param name="Action">Requested Action</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.SetLanguage(System.String)">
+	<summary>
+   Sets Language On EPG
+ </summary>
+	<param name="Language">Requested Language</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.SetCountry(System.String)">
+	<summary>
+   Sets Country On EPG
+ </summary>
+	<param name="Country">Requested Country</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Menu.SetConfirmationMenu(System.String)">
+	<summary>
+   Sets Action On Confirmation Menu
+ </summary>
+	<param name="Action">Requested Action</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.Navigate">
+	<summary>
+   Navigating To Settings From Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToStartGuardTime">
+	<summary>
+   Navigating To Start Guard Time Setting
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToEndGuardTime">
+	<summary>
+   Navigating To End Guard Time Setting
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToSetting(System.String)">
+	<summary>
+   Navigating To Specific Setting On Settings List
+ </summary>
+	<param name="Setting"></param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.SetSetting(System.String,System.String)">
+	<summary>
+   Sets Setting On Settings List
+ </summary>
+	<param name="Setting">Requested Setting</param>
+	<param name="VerifyState">Requested State To Verify After Select</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.SetSubtitles(System.Boolean,System.String)">
+	<summary>
+   Navigates And Sets Subtitles Setting
+ </summary>
+	<param name="IsOn">If True Set Subtitle Setting To On Else Set It To Off</param>
+	<param name="LanguageToSet">Which Language To Set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.SetAudioLanguage(System.String)">
+	<summary>
+   Navigates to settings and set prefered audio language 
+ </summary>
+	<param name="language">language to set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEPGInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.VerifySetting(System.String)">
+	<summary>
+   Verifies Setting On Settings List
+ </summary>
+	<param name="Setting"></param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.GetSettingsValueFromDictionary(System.String,System.String)">
+	<summary>
+   Get The Setting Value From Dictionary By EnumValue
+ </summary>
+	<param name="DictionaryKey">The Dictionary Key</param>
+	<param name="EnumValue">The Requested Value</param>
+	<returns>The Dictionary Value For The Requested Value</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToChannel(System.String)">
+	<summary>
+   Navigate To Channel In Lock/Unlock Channels
+ </summary>
+	<param name="ChannelName">The Channel Name Requested</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToChannel(System.Int32)">
+	<summary>
+   Navigate To Channel In Lock/Unlock Channels
+ </summary>
+	<param name="ChannelNumber">The Channel Number Requested</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToSkipInterval(System.Boolean)">
+	<summary>
+   Navigating To Skip Forward/Backward Interval
+ </summary>
+	<param name="IsForward">If True Set Skip Forward Else Set Skip Backward</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.SetReminderNotifications(System.Boolean)">
+	<summary>
+   Setting Reminder Notification To ON/OFF
+ </summary>
+	<param name="IsOn">If True Set Reminder Notification To ON Else To OFF</param>
+	<remarks>
+ Possible Error Codes:
+ <para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToParentalControlAgeLimit">
+	<summary>
+   Navigating To Parental Control Lock Programmes By Age Rating Settings
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToParentalControlLockUnlock">
+	<summary>
+   Navigating To Parental Control Lock/Unlock Channels Settings
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToPurchaseProtection">
+	<summary>
+   Navigating To Purchase protection in Settings
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToBannerDisplay">
+	<summary>
+   Navigating To Banner Display Timeout
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToSeriesRecording">
+	<summary>
+   Navigating To Series Recording Setting
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToMenuLanguage">
+	<summary>
+   Navigating To Menu Language Setting
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.LockChannel(System.String)">
+	<summary>
+   Locking Channel In Parental Control Lock/Unlock Channels
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>357 - LockUnlockChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.UnLockChannel(System.String)">
+	<summary>
+   UnLocking Channel In Parental Control Lock/Unlock Channels
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+		<para>328 - INIFailure</para>
+		<para>357 - LockUnlockChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.SelectRestrictedSetting(System.String)">
+	<summary>
+   Navigating And Selecting Restricted Setting And Verify PIN Screen 
+ </summary>
+	<param name="Setting">The Restricted Setting To Select</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.NavigateToTvGuideBackgroundSettings">
+	<summary>
+   Navigating To TV Guide Background Settings From Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.SetTvGuideBackgroundAsSolid">
+	<summary>
+   Sets TV Guide Background As Solid
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.SetTvGuideBackgroundAsTransparent">
+	<summary>
+   Sets TV Guide Background As Transparent
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.SetMenuLanguage(System.String)">
+	<summary>
+   Navigating And Selecting EPG language as specified 
+ </summary>
+	<param name="Language">The EPG Language To Set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.GetGuardTimeEpgString(System.String)">
+	<summary>
+ Get the Guard Time EPG string
+ </summary>
+	<param name="guardTimeValue">The string value of Guard time</param>
+	<returns>The Guard Time EPG String</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Settings.HandlePowerModeSettingsException(System.String,System.String)">
+	<summary>
+ Handle PowerMode Settings Exception
+ </summary>
+	<param name="key">The string value to select or cancel</param>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.Navigate">
+	<summary>
+   Navigating To Favorites Settings
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.RemoveAllFavourites">
+	<summary>
+  Remove all the channel from favoritelist
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.UnsetChannelFromFavorite">
+	<summary>
+   Trying To Change Channel Favorite Status And Then Verify If Unset Otherwise Change It Again And Verify Done
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.SetChannelListAsFavorites(System.Collections.Generic.List{System.String})">
+	<summary>
+   Trying To Set A List Of Channel Names To Favorites
+ </summary>
+	<remarks>
+ Possible Error Codes: 
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.UnsetChannelListFromFavorites(System.Collections.Generic.List{System.String})">
+	<summary>
+   Trying To Unset A List Of Channel Names From Favorites
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.SetChannelListAsFavorites(System.Collections.Generic.List{System.Int32})">
+	<summary>
+   Trying To Set A List Of Channel Numbers To Favorites
+ </summary>
+	<remarks>
+ Possible Error Codes: 
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.UnsetChannelListFromFavorites(System.Collections.Generic.List{System.Int32})">
+	<summary>
+   Trying To Unset A List Of Channel Names From Favorites
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.ConfirmFavoritesListNumber(System.Collections.Generic.List{System.String},System.Boolean)">
+	<summary>
+   Confirming Current List Of Favorites
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.ConfirmFavoritesListName(System.Collections.Generic.List{System.String},System.Boolean)">
+	<summary>
+   Confirming Current List Of Favorites
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.SetFavoriteFromAction">
+	<summary>
+   Set Favorite from Action bar/Guide
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.UnsetFavoriteFromAction">
+	<summary>
+   UnSet Favorite from Action bar/Guide
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.SetChannelList(System.Collections.Generic.List{System.String},System.Boolean)">
+	<summary>
+   Setting A List Of Channel Names To Favorite/Non-Favorite
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.SetChannelList(System.Collections.Generic.List{System.Int32},System.Boolean)">
+	<summary>
+   Setting A List Of Channel Numbers To Favorite/Non-Favorite
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.RemoveAllFavChannel">
+	<summary>
+   Ensuring Channel Has Expected Milestone Value
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.IsFavorite">
+	<summary>
+   Checks If Channel Is Favorite
+ </summary>
+	<returns>Boolean</returns>
+ ''' <remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Favorites.NavigateToConfirmationInFavorites">
+	<summary>
+   Navigating From Favorite List Of Channels To Confirmation
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.Navigate">
+	<summary>
+   Navigating To Guide
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.NavigateToGuideSingleChannel">
+	<summary>
+   Navigating To Guide Single Channel
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.NavigateToGuideAdjustTimeline(System.String)">
+	<summary>
+   Navigating To Guide Adjust Timeline
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.SelectEvent(System.Boolean)">
+	<summary>
+   Selecting Event From Guide By Pressing Select
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.SelectCurrentEvent(System.String)">
+	<summary>
+   Selecting Current Event From Guide And Checking Tunning Fas Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.IsGuide">
+	<summary>
+    Checks If The EPG Is On Guide Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.IsGuideSingleChannel">
+	<summary>
+    Checks If The EPG Is On Guide Single Channel Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.IsGuideAdjustTimeline">
+	<summary>
+    Checks If The EPG Is On Guide Single Channel Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.NavigateToChannel(System.String,System.Boolean)">
+	<summary>
+   Tunning To Channel On Guide
+ </summary>
+	<param name="ChannelNumber">The Requested Channel To Tune To</param>
+	<param name="VerifyFas">Optional Default = True : If True Verify ChannelSurf FAS Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.TypeKeys(System.String,System.Boolean)">
+	<summary>
+   Typing Channel Number Keys And Checking Channel Surf Milestones
+ </summary>
+	<param name="ChannelNumber">The Requested Channel To Type</param>
+	<param name="VerifyFas">Optional Default = True : If True Verify ChannelSurf FAS Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.NavigateToRecordEvent(System.Boolean)">
+	<summary>
+   Navigating To RECORD On Action Bar From Guide By Pressing RED/SELECT
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = True : If True Pressing RED Else Pressing Select For Future Events</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.SetEventReminder">
+	<summary>
+   Setting Reminder From Guide
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>311 - SetEventReminderFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.RecordEvent(System.Boolean,System.Boolean)">
+	<summary>
+   Recording Current Or Future Event From Guide
+ </summary>
+	<param name="IsCurrent">If True Recording Current Event Else Recording Future Event</param>
+	<param name="IsConflict">If True Not Finishing The Record But Checks For Conflict</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>339 - RecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.GetSelectedEventName(System.String@)">
+	<summary>
+   Getting EventName From Guide
+ </summary>
+	<param name="EventName">Returns Selected EventName From Guide</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.GetSelectedEventTime(System.String@)">
+	<summary>
+    Gets Selected Event Time
+ </summary>
+	<param name="EventTime">ByRef Event Time As String</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.GetEventTimeLeftToStart(System.String@)">
+	<summary>
+   Getting Event Time Left Before Start
+ </summary>
+	<param name="TimeLeft">Returnes The Time Left Until Start Of Event In Minutes</param>
+	<remarks>
+ Possible Error Codes:
+ <para>306 - GetEventInfoFailure</para>
+		<para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.GetEventStartTime(System.String@)">
+	<summary>
+    Getting Event Start Time From Guide
+ </summary>
+	<param name="StartTime">Returns Start Time From Guide</param>
+	<remarks>
+ Possible Error Codes:
+ <para>306 - GetEventInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.GetEventDate(System.String@)">
+	<summary>
+    Getting Event Date From Guide
+ </summary>
+	<param name="EventDate">Returns Event Date From Guide</param>
+	<remarks>
+ Possible Error Codes:
+ <para>306 - GetEventInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.GetSelectedChannelNumber(System.String@)">
+	<summary>
+   Getting Selected Channel Number
+ </summary>
+	<param name="channelNumber">ByRef Channel Number</param>
+	<remarks>
+ Possible Error Codes:
+ <para>306 - GetEventInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.VerifySelectedEventChannel(System.String)">
+	<summary>
+ Verifies the selected service in Guide
+ </summary>
+	<param name="channelNum"> The channel number to be verified</param>
+	<remarks>
+ Possible Error Codes:
+ <para>306 - GetEventInfoFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.FindEventByTime(System.String)">
+	<summary>
+   Finds Event By Time On Guide
+ </summary>
+	<param name="EventTime">The Time Of The Event To Find</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>346 - FindEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.FindEventByStartTime(System.String,System.Boolean,System.Int32,System.Int32)">
+	<summary>
+   Finds Event By Start Time On Guide
+ </summary>
+	<param name="EventStartTime">The Time Of The Event To Find</param>
+	<param name="IsExactTime">Optional Parameter Default = True,If True Finds Exact Time Else Find The First Greater Than Start Time Event</param>
+	<param name="DaysDelay">Optional Parameter Default = 0,Search For By The Event StartTime With Days Delay</param>
+	<param name="MaxLookup">Optional Parameter Default = 18,Maximum Movement On The Guide</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>346 - FindEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.FindEventByName(System.String)">
+	<summary>
+   Finding Requested Event Name On Guide On Selected Channel
+ </summary>
+	<param name="EventName">Requested Event Name To Find</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.PreviousEvent(System.Int32)">
+	<summary>
+   Moving To Previous Event X Times
+ </summary>
+	<param name="NumOfPresses">Optional Parameter Default = 1 : X Events To Move On Guide</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.NextEvent(System.Int32)">
+	<summary>
+   Moving To Next Event X Times
+ </summary>
+	<param name="NumOfPresses">Optional Parameter Default = 1 : X Events To Move On Guide</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.MoveChannelUpDown(System.Boolean)">
+	<summary>
+   Moving UP/DOWN On Guide
+ </summary>
+	<param name="IsUp">If True Moves UP Else Moves Down</param>
+	<remarks>
+ Possible Error Codes:
+ <para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.SurfChannelUp(System.String)">
+	<summary>
+   Surfing Up On Guide
+ </summary>
+	<param name="Type">Can Be : "" For Surf Channel Up With PIP (UPC), "WithoutPIP" For Surf Channel Up Without PIP</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.SurfChannelDown(System.String)">
+	<summary>
+   Surfing Down On Guide
+ </summary>
+	<param name="Type">Can Be : "" For Surf Channel Down With PIP (UPC), "WithoutPIP" For Surf Channel Down Without PIP</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.SurfChannelLeft(System.String)">
+	<summary>
+   Surfing Left On Guide (Single Channel)
+ </summary>
+	<param name="Type">Can Be : "" For Surf Channel Left With PIP (UPC), "WithoutPIP" For Surf Channel Left Without PIP</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.SurfChannelRight(System.String)">
+	<summary>
+   Surfing Right On Guide (Single Channel)
+ </summary>
+	<param name="Type">Can Be : "" For Surf Channel Right With PIP (UPC), "WithoutPIP" For Surf Channel Right Without PIP</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.GetMilestoneToValidate(System.String)">
+	<summary>
+ Get the milestone to be validated for particular surfing type
+ </summary>
+	<param name="type">Surfing type in String</param>
+	<returns>The milestone to be validated</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.GetSurfKey(System.String@)">
+	<summary>
+ Get the channel surf key    
+ </summary>
+	<param name="surfDirection">The surf direction as string</param>
+	<returns>The surf key from the project configuration or the default value from the code</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Guide.GetChannelSurfTimeout">
+	<summary>
+ Get the channel surf timeout required
+ </summary>
+	<returns>Timeout in milliseconds as integer</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.Navigate">
+	<summary>
+   Navigating To Archive Recording
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.SelectEvent(System.String)">
+	<summary>
+   Selecting Event From Archive By Pressing Select
+ </summary>
+	<param name="EventName">Optional Parameter Default = "" : If EventName Is Empty Select The First Event Else The Requested One</param>
+	<remarks>
+ Possible Error Codes:
+ <para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.PressSelect">
+	<summary>
+   Pressing Select On Archive
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.isArchive">
+	<summary>
+   Checks If The EPG Is On Archive Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.VerifyArchive">
+	<summary>
+   Verify Planner State Is On Screen
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.VerifyMyLibrary">
+	<summary>
+   Verify My Library State Is On Screen
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.isEmpty">
+	<summary>
+   Checks If Archive Has No Events
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.VerifyArchiveEmpty">
+	<summary>
+   Checks That Archive Is Empty
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.GetAdultEventName(System.String@)">
+	<summary>
+   Get Adult Event Name After Entering PIN
+ </summary>
+	<param name="EventName">ByRef The Returned EventName</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.GetSelectedEventTime(System.String@)">
+	<summary>
+   Gets The Selected Event Time From Archive
+ </summary>
+	<param name="EventTime">Returns The Selected Event Time</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.FindEvent(System.String,System.String,System.String,System.String)">
+	<summary>
+   Finding Requested Event On Archive
+ </summary>
+	<param name="EventName">The Name Of The Event</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.GetSelectedEventName(System.String@)">
+	<summary>
+   Gets The Selected Event Name From Archive
+ </summary>
+	<param name="EventName">Returns The Selected Event Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.GetSelectedEventDetails(System.String@)">
+	<summary>
+   Gets The Selected Event Date From Planner
+ </summary>
+	<param name="EventDate">Returns The Selected Event Date</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.DeleteEvent(System.Boolean)">
+	<summary>
+   Deleting Event From Archive
+ </summary>
+	<param name="InReviewBuffer">Optional Parameter Default = False : If True Search Different Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>328 - INIFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.DeleteAllEvents(System.Boolean)">
+	<summary>
+   Deleting All Events From Archive
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.NavigateBeforeDelete(System.Boolean)">
+	<summary>
+   Navigate to archive before deleting
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.LockEvent">
+	<summary>
+   Lock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>359 - LockUnlockFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.UnlockEvent">
+	<summary>
+   Unlock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>359 - LockUnlockFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.StopRecordingEvent">
+	<summary>
+   Stopping Recording From Archive
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>347 - SelectEventFailure</para>
+		<para>328 - INIFailure</para>
+		<para>348 - StopRecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.NextUpEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Up In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.NextEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Right In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.PreviousEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Left In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.NextDownEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Down In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.PlayEvent(System.Boolean,System.Boolean)">
+	<summary>
+   Playback The Event From Archive
+ </summary>
+	<param name="FromBeginning">Optional Parameter Default = True : If True Plays From Beginning Else Plays From Last Viewed</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>340 - PlayEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.VerifySorting(System.Boolean)">
+	<summary>
+   Verifying Sorting ByA-Z Or ByDate
+ </summary>
+	<param name="ByTime">If True Verifyies Sorting By Time Else By Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.VerifyStateAfterPlayback">
+	<summary>
+ For verifying the state after Playback
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ArchiveRecordings.GetEventDetails(IEX.ElementaryActions.EPG.EpgEvent@)">
+	<summary>
+ Get Event Details from EPG
+ </summary>
+	<param name="_event"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.Navigate">
+	<summary>
+   Navigating To Planner
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.SelectEvent(System.String,System.Boolean)">
+	<summary>
+   Selecting Event From Planner By Pressing Select
+ </summary>
+	<param name="EventName">Optional Parameter Default = "" : If EventName Is Empty Select The First Event Else The Requested One</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.isPlanner">
+	<summary>
+    Checks If The EPG Is On Planner Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.VerifyPlanner">
+	<summary>
+   Verify Planner State Is On Screen
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.VerifyMyLibrary">
+	<summary>
+   Verify My Library State Is On Screen
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.isEmpty">
+	<summary>
+   Checking If Planner Is Empty
+ </summary>
+	<returns>True If Empty False Is Not</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.VerifyPlannerEmpty">
+	<summary>
+   Checks If Planner Has No Events
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.GetAdultEventName(System.String@)">
+	<summary>
+   Get Adult Event Name After Entering PIN
+ </summary>
+	<param name="EventName">ByRef The Returned EventName</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.GetSelectedEventTime(System.String@)">
+	<summary>
+   Gets The Selected Event Time From Planner
+ </summary>
+	<param name="EventTime">Returns The Selected Event Time</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.GetSelectedEventDetails(System.String@)">
+	<summary>
+   Gets The Selected Event Date From Planner
+ </summary>
+	<param name="EventDate">Returns The Selected Event Date</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.NextEvent(System.Int32,System.Boolean)">
+	<summary>
+    Moving To Next Event In Planner X Times
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : X Events To Move On Planner</param>
+	<param name="VerifyByDetails">Optional Parameter Default = False : If True Comparing Detail Key Too</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.FindEvent(System.String,System.String,System.String,System.String)">
+	<summary>
+   Finding Requested Event On Planner
+ </summary>
+	<param name="EventName">The Name Of The Event</param>
+	<param name="EventDate">The Event Converted Date</param>
+	<param name="StartTime">The Event Start Time</param>
+	<param name="EndTime">The Event End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.GetSelectedEventName(System.String@)">
+	<summary>
+   Get Selected EventName From Planner
+ </summary>
+	<param name="EventName">Returns The Selected Event Name</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.DeleteEvent(System.Boolean)">
+	<summary>
+   Deleting Event From Planner
+ </summary>
+	<param name="InReviewBuffer">Optional Parameter Default = False : If True Search Different Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.ModifyEvent">
+	<summary>
+   Navigating To Modify Event From Planner
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>359 - ModifyEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.LockEvent">
+	<summary>
+   Lock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>359 - LockUnlockFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.UnLockEvent">
+	<summary>
+   UnLock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>359 - LockUnlockFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.CancelEvent(System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Canceling Event From Planner
+ </summary>
+	<param name="shouldSucceed">Optional Parameter Default = True : Just For The Comment Trying/Cancel</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.CancelAllEvents">
+	<summary>
+   Canceling All Events From Planner By Deleting All Events DELETE ALL
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.VerifyRecurring(System.String)">
+	<summary>
+   Verifying Event Recurring Events On Planner By Name,Date,StartTime And EndTime
+ </summary>
+	<param name="EventKeyName">The Key Of The Event</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.VerifySorting(System.Boolean)">
+	<summary>
+   Verifying Sorting ByA-Z Or ByDate
+ </summary>
+	<param name="ByTime">If True Verifyies Sorting By Time Else By Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.FutureRecordings.VerifyStateAfterDelete">
+	<summary>
+ Verifies the State reached after Deleting the Event
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Mount.WaitForClientToLoad">
+	<summary>
+   Wait For Client To Load By Verifying DebugTextInitialize Milestones
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Mount.WaitForFirstScreen">
+	<summary>
+   Waiting For First Screen To Appear On EPG
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Mount.HandlePinScreens">
+	<summary>
+   Handling New PIN Screens (N/R By Default So No Implementation Below)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Mount.HandleFirstScreens(System.Boolean)">
+	<summary>
+   Handles All The Screens Before LIVE/MENU Arrive
+ </summary>
+	<param name="_IsGw">If True Handles GW First Screens Else The Client</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Mount.TuneToDefaultChannel(System.String)">
+	<summary>
+ Tune to a default channel after Mount. If not handled to tune from this method, it should return false else true.
+ </summary>
+	<param name="ChNumber">Channel Number of the service where it needs to tune to</param>
+	<returns>Boolean</returns>
+	<remarks>As it is handle to tune to channel in Functionality.MountGW.vb, so returning False here</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.Navigate">
+	<summary>
+   Navigates To VOD Search Screen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.NavigateToEventName(System.String)">
+	<summary>
+   Navigating To Event Name On VOD Search
+ </summary>
+	<param name="EventName">The Request Event Name</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.VerifyEventName(System.String)">
+	<summary>
+    Verifying Event Name On VOD
+ </summary>
+	<param name="EventName">The Event Name To Verify</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.NextAsset(System.Int32)">
+	<summary>
+   Moving To Next Asset X Times
+ </summary>
+	<param name="NumOfPresses">Optional Parameter Default = 1 : X Events To Move On VOD</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.NextCategory">
+	<summary>
+   Moving To next category
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetSelectedEventName(System.String@)">
+	<summary>
+   Gets The Selected Event Name From VOD
+ </summary>
+	<param name="EventName">Returns The Selected Event Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.NavigateToCatchUp">
+	<summary>
+   Navigate to CatchUp menu
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.Play(System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Play an asset
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>340 - PlayEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.PlayTrailer(System.Boolean)">
+	<summary>
+   Play trailer
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>340 - PlayEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.Buy(System.Boolean,System.Boolean)">
+	<summary>
+   Buy an asset
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>340 - PlayEventFailure</para>
+		<returns>True if succeeded, False otherwise</returns>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.StopPlayback">
+	<summary>
+   Stop a playback
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>343 - StopPlayEventFailure</para>
+		<para></para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.Subscribe">
+	<summary>
+   Subscribe a SVOD asset
+ </summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.NavigateToPurchasedAssets">
+	<summary>
+   Navigate to purchased assets in My Library
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.NextPurchasedAsset">
+	<summary>
+   Highlight next purchased item in My Library
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.NextSeason">
+	<summary>
+   Highlight next season
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.NextEpisode">
+	<summary>
+   Highlight next episode
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetPrice">
+	<summary>
+   Return price of the asset currently selected
+ </summary>
+	<returns>price of the asset currently selected, -1 in case of error</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetRentalDuration">
+	<summary>
+   Return the rental duration (in minute) of the asset currently selected
+ </summary>
+	<returns>rental duration (in minute) of the asset currently selected, 0 in case the asset is free, -1 in case of error</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetRemainingRentalDuration">
+	<summary>
+   Return the remaining rental duration (in minute) of the asset currently selected
+ </summary>
+	<returns>remaining rental duration (in minute) of the asset currently selected, -1 in case of error</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetGenre">
+	<summary>
+   Return the genre of the asset currently selected
+ </summary>
+	<returns>Genre of the asset currently selected, Nothing if the displayed string is not formatted as expected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetSynopsis">
+	<summary>
+   Return the synopsis of the asset currently selected
+ </summary>
+	<returns>Synopsis of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetDuration">
+	<summary>
+   Return the duration (in minute) of the asset currently selected
+ </summary>
+	<returns>Duration (in minute) of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetTitle">
+	<summary>
+   Return the title of the asset currently selected
+ </summary>
+	<returns>Title of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetBroadcastDateTime">
+	<summary>
+   Return the broadcast date and time of the catchup asset currently selected
+ </summary>
+	<returns>Title of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetSubscriptionStatus">
+	<summary>
+   Return the subscription status of the asset currently selected
+ </summary>
+	<returns>Subscription status of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetRentalStatus">
+	<summary>
+   Return the rental status of the asset currently selected
+ </summary>
+	<returns>rental status of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetDirector">
+	<summary>
+   Return the director information of the current selected asset. Extended information page must be displayed. 
+ </summary>
+	<returns>Director info of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetCast">
+	<summary>
+   Return the cast information of the current selected asset. Extended information page must be displayed. 
+ </summary>
+	<returns>Cast info of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetYearOfProduction">
+	<summary>
+   Return the year of production information of the current selected asset. Extended information page must be displayed. 
+ </summary>
+	<returns>Year of production of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetAssetStarRating">
+	<summary>
+   Return the star rating information of the current selected asset. Extended information page must be displayed. 
+ </summary>
+	<returns>Star rating of the asset currently selected</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.GetCurrentClassification">
+	<summary>
+   Return the current classification. 
+ </summary>
+	<returns>Current classification</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.DoSelect">
+	<summary>
+   Press SELECT
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.SelectPurchasedAsset(System.String)">
+	<summary>
+   Select an asset in the list of purchased assets in My Library
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOD.DisplayExtendedInfo">
+	<summary>
+   Select extended info of the asset currently selected (current state must be 'ASSET DETAILS' page)
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.Navigate(System.Boolean)">
+	<summary>
+   Navigating To Action Bar
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.IsActionBar">
+	<summary>
+   Checking If Action Bar Is Already On Screen
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.GetEventTimeLeft(System.Int32@)">
+	<summary>
+   Getting Event Time Left To End
+ </summary>
+	<param name="TimeLeft">Returnes The Time Left Until End Of Event In Minutes</param>
+	<remarks>
+ Possible Error Codes:
+ <para>337 - ParseEventTimeFailure</para>
+		<para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.GetEventTimePassed(System.Int32@)">
+	<summary>
+  Getting Event Time from Start
+ </summary>
+	<param name="TimePassed">Returnes The Time From Beginning Of Event In Minutes</param>
+	<remarks>
+ Possible Error Codes:
+ <para>337 - ParseEventTimeFailure</para>
+		<para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.GetChannelNumber(System.String@)">
+	<summary>
+   Getting Channel Number From Action Bar
+ </summary>
+	<param name="ChannelNumber">ByRef The Returned Channel Number</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.PreRecordEvent(System.Boolean)">
+	<summary>
+   Preparing Recording Event From Action Bar - Navigating To Confirm Record Without Confirming The Record
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>323 - VerifyStateFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.SetReminder">
+	<summary>
+    Setting Event Reminder From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>311 - SetEventReminderFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.SetSubtitlesLanguage(System.String,System.String)">
+	<summary>
+    Sets Subtitles Language On Action Bar
+ </summary>
+	<param name="Language">Language Of Subtitles To Select</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.RecordEvent(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+     Recording Event From Banner
+ </summary>
+	<param name="IsCurrent">Pressing Select On Confirm Record And If True Searching Current Event Milestones Else Searching Future Event Milestones</param>
+	<param name="IsResuming">Pressing Select On Confirm Record And If True Searching Resume Recording Milestones Else Not Searching For Resume Milestones</param>
+	<param name="IsConflict">Pressing Select On Confirm Record And Expects Conflict Screen</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>339 - RecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.PauseEvent">
+	<summary>
+   Pausing Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.StopRecording">
+	<summary>
+   Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>348 - StopRecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.CancelBooking(System.Boolean,System.Boolean)">
+	<summary>
+     Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.GetEventName(System.String@)">
+	<summary>
+    Getting Event Name From Action Bar
+ </summary>
+	<param name="EventName">Returns EventName From Action Bar</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.GetEventStartTime(System.String@)">
+	<summary>
+    Getting Event Start Time From Action Bar
+ </summary>
+	<param name="StartTime">Returns Start Time From Action Bar</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.GetEventEndTime(System.String@)">
+	<summary>
+   Getting Event End Time From Action Bar
+ </summary>
+	<param name="ReturnedEndTime">Returns End Time From Action Bar</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.VerifyEventName(System.String)">
+	<summary>
+    Verifying Event Name Is On Action Bar
+ </summary>
+	<param name="EventName">Event Name To Verify</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.RemoveEventKeep">
+	<summary>
+   Removing Event Keep From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>312 - SetEventKeepFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.SetEventKeep">
+	<summary>
+   Setting Event Keep From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>312 - SetEventKeepFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.SelectItem">
+	<summary>
+  Pressing Select On Banner
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.SetAudioTrack(System.String)">
+	<summary>
+   Settings Audio Track On Banner
+ </summary>
+	<param name="AudioTrack">Requested Audio Track</param>
+	<remarks>
+ Possible Error Codes:
+ <para>317 - SetAudioTrackFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.CancelReminder">
+	<summary>
+     Cancelling Reminder From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>368 - CancelReminderFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.RentPpvEvent(System.Boolean)">
+	<summary>
+   Renting Current Or Future PPV Event With Purchase Confirmation
+ </summary>
+	<param name="IsCurrent">If True Renting Current Event Else Renting Future Event</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>369 - RentPPVEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.NavigateToEventInfo">
+	<summary>
+ Navigates to Info Screen in Action Bar
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Banner.RefreshEITOnActionBar">
+	<summary>
+ Refres EIT Details in Action Bar
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelLineup.Navigate">
+	<summary>
+   Navigating To Channel Lineup
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelLineup.IsChannelLineUp">
+	<summary>
+    Checks If The EPG Is On Channel Lineup
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelLineup.SurfChannelDown">
+	<summary>
+   Surfing Down On Channel Lineup
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelLineup.SurfChannelUp">
+	<summary>
+   Surfing Up On Channel Lineup
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelLineup.GetSurfKey(System.Boolean)">
+	<summary>
+ Get the channel surf key    
+ </summary>
+	<param name="surfUp">Optional. The surf direction.</param>
+	<returns>The surf key from the project configuration or the default value from the code</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelLineup.GetChannelSurfTimeout">
+	<summary>
+ Get the channel surf timeout required
+ </summary>
+	<returns>Timeout in milliseconds as integer</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.ChannelLineup.SelectChannel">
+	<summary>
+   Select Channel From Channel Line-up
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OTA.create_carousel_bat_ForVesion276(System.String,System.Int32)">
+	<summary>
+   'Create carouselsooo_276_au3.au3 File
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OTA.CreatCarousalFor275(System.String,System.String)">
+	<summary>
+   Creat Carousal function For 275
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OTA.CreatCarousalFor276(System.String,System.String)">
+	<summary>
+    Create Carousal function For 276
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MediaCentre.Navigate(System.Boolean,System.String)">
+	<summary>
+ Navigates To Library/My Devices Screen
+ </summary>
+	<param name="_fromDeviceNavigator">Optional Parameter Default = True, else navigate directly to Music/Pictures Navigator</param>
+	<param name="ContentType">Optional Parameter Default = "" - ContentType for direct Navigation</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MediaCentre.NavigateToContent(MediaContent)">
+	<summary>
+ Navigates To the specified content in My devices
+ </summary>
+	<param name="content">Media Content object</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MediaCentre.PlayAudioContent(MediaContent)">
+	<summary>
+ Playback Audio Content
+ </summary>
+	<param name="content">Media Content Object</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MediaCentre.PlayVideoContent(MediaContent)">
+	<summary>
+ Playback Video Content
+ </summary>
+	<param name="content">Media Content Object</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MediaCentre.PlayPictureContent(MediaContent,EnumMCPlayMode,System.String)">
+	<summary>
+ Playback Picture content
+ </summary>
+	<param name="content"> Media Content Object</param>
+	<param name="PlayMode">Content Playback Mode : PLAY,SLIDESHOW</param>
+	<param name="PlaybackSetting">Content Playback Setting : Slideshow Setting</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.MediaCentre.SetSlideshowSettings(System.String)">
+	<summary>
+ Setting Slideshow Interval
+ </summary>
+	<param name="SlideshowSetting">Slideshow Interval Setting</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OSD_Reminder.IsReminder">
+	<summary>
+   Checks If Reminder Is On Screen
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OSD_Reminder.AcceptReminder">
+	<summary>
+   Pressing SELECT To Accept Reminder
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OSD_Reminder.RejectReminder">
+	<summary>
+    Pressing BACK_UP To Reject Reminder
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OSD_Reminder.VerifyReminderDismissed">
+	<summary>
+   Verifies The Reminder Dismissed
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>354 - ReminderFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OSD_Reminder.VerifyReminderAppeared">
+	<summary>
+   Verifies The Reminder Appeared
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>354 - ReminderFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OSD_Reminder.VerifyEventName(System.String)">
+	<summary>
+   Verifies The Event Name On Reminder
+ </summary>
+	<param name="EventName">The Requested Event Name To Verify</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.OSD_Reminder.TuneValidationOnReminder(System.String,System.String)">
+	<summary>
+   Verifies The Channel Tuned after No Action taken during Reminder Notification
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetVideoCords(System.Boolean)">
+	<summary>
+   Gets Value From Build Dictionary
+ </summary>
+	<param name="isFull">True if full area is to be checked, false if partial area to be checked</param>
+	<returns>String</returns>
+	<remarks>
+   Following values are to be added to your project configuration file unless the default value is ok -
+   [LIVE]
+   FULL_VIDEO_CORDS_FOR_PAL
+   FULL_VIDEO_CORDS_FOR_NTSC
+   PARTIAL_VIDEO_CORDS_FOR_PAL
+   PARTIAL_VIDEO_CORDS_FOR_NTSC
+ </remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetValueFromDictionary(System.String)">
+	<summary>
+   Gets Value From Build Dictionary
+ </summary>
+	<param name="Key">The Key Of The Value Requested</param>
+	<returns>String</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetValueFromEnvironment(System.String)">
+	<summary>
+   Gets Value From Environment.ini
+ </summary>
+	<param name="Key">The Key Of The Value Requested</param>
+	<returns>String</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetValueFromMilestones(System.String)">
+	<summary>
+   Gets Value From Milestones.ini
+ </summary>
+	<param name="Key">The Key Of The Value Requested</param>
+	<returns>String</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetValueFromProject(System.String,System.String)">
+	<summary>
+   Gets Value From Project.ini
+ </summary>
+	<param name="Key">The Key Of The Value Requested</param>
+	<returns>String</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetValueFromBrowser(System.String,System.String)">
+	<summary>
+     Gets Value From Browser.ini
+ </summary>
+	<param name="Key">The Key Of The Value Requested</param>
+	<returns>String</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.PreRecordRECkey(System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Recording Event From different screens(Action Bar, Live, Guide and Channel Bar) using Hot key (REC key)
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>323 - VerifyStateFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.StopRecordingSTOPkey(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Recording Event From different screens(Action Bar, Live, Guide and Channel Bar) using Hot key (REC key)
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>323 - VerifyStateFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.IsSTBCrash">
+	<summary>
+   Checking If STB Crashed By Pressing Menu And BACK_UP And Checking Correct Behaviour
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.Standby(System.Boolean)">
+	<summary>
+   Entering/Existing Standby
+ </summary>
+	<param name="IsOn">If True Existing Else Entering</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>358 - StandByFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.STBReady">
+	<summary>
+   Checking Review Buffer Max Depth Milestones To See If STB Ready After Standby
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>363 - STBReadyFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.ExitToLive">
+	<summary>
+   Exit To Live By Pressing BACK_UP 1 Time And Verify Nothing Is On The Screen
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.ReturnToPlaybackViewing(System.Boolean)">
+	<summary>
+   Return To Playback Viewing
+ </summary>
+	<param name="CheckForVideo">Optional Parameter FALSE.If TRUE Checks For Video</param>
+	<remarks>
+ Possible Error Codes:
+ <para>334 - VideoNotPresent</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.ReturnToLiveViewing(System.Boolean)">
+	<summary>
+   Return To Live Viewing
+ </summary>
+	<param name="CheckForVideo">Optional Parameter FALSE.If TRUE Checks For Video</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>334 - VideoNotPresent</para>
+		<para>349 - ReturnToLiveFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.TypeManualRecordingKeys(System.String)">
+	<summary>
+   Convert And Enter Any String To IEX Keys On Manual Recording
+ </summary>
+	<param name="StringToType">The String To Enter</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetTextsFromDictionary">
+	<summary>
+   Getting All EPG Texts From Dictionary
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetMilestonesFromIni">
+	<summary>
+   Getting All Milestones From Milestones.ini
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetEnvironmentIni">
+	<summary>
+   Getting All Values From Environment.ini
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.SendIR(System.String,System.Int32)">
+	<summary>
+   Sends IR Key
+ </summary>
+	<param name="IRKey">The Key To Send</param>
+	<param name="WaitAfterIR">Optional Parameter Default 2000 : Wait After Sending</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.SendChannelAsIRSequence(System.String,System.Int32,System.String)">
+	<summary>
+   Sends Channel As IR Sequence
+ </summary>
+	<param name="ChannelNumber">The Channel Number</param>
+	<param name="MsBetweenSending">Miliseconds To Wait Between IR</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.TypeKeys(System.String,System.Int32)">
+	<summary>
+   Entering Keys On Screens Like PIN
+ </summary>
+	<param name="StringToType">The Keys To Enter</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.EnterPin(System.String)">
+	<summary>
+   Entering PIN
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.TranslateLanguage(System.String,System.Boolean)">
+	<summary>
+   Translate Languages
+ </summary>
+	<param name="Language">Language To Translate</param>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.InsertEventToCollection(System.String,System.String,System.String,System.String,System.String,System.String,System.Int64,System.Int64,System.String,System.String,System.Int32,System.String,System.Boolean,System.Boolean)">
+	<summary>
+    Insert Event To Events Collection
+ </summary>
+	<param name="EventKeyName">The Key Of The Event</param>
+	<param name="EventName">Event Name</param>
+	<param name="EventSource">Event Source</param>
+	<param name="StartTime">Start Time</param>
+	<param name="EndTime">End Time</param>
+	<param name="Channel">Channel Number</param>
+	<param name="Duration">Event Duration</param>
+	<param name="tDate">Event Date</param>
+	<param name="Frequency">Event Frequency</param>
+	<param name="EventRecurrence">Event Recurrence Number</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.EPG_Milestones_NavigateByName(System.String)">
+	<summary>
+   Navigates With IEX Core Named Navigation
+ </summary>
+	<param name="Name">Named Navigation Criteria</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.EPG_Milestones_Navigate(System.String)">
+	<summary>
+   Navigates With IEX Core Navigation To The Desired PATH
+ </summary>
+	<param name="Path">Navigation Criteria</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.EPG_Milestones_SelectMenuItem(System.String)">
+	<summary>
+   Select Menu Item With IEX Core Command To The Desired PATH
+ </summary>
+	<param name="Item">Item Criteria</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.BeginWaitForDebugMessages(System.String,System.Int32)">
+	<summary>
+    Beginning Waiting For Debug Messages With Timeout
+ </summary>
+	<param name="Messages">Message Or Messages With , Delimiter</param>
+	<param name="Timeout">Timeout In Seconds</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.EndWaitForDebugMessages(System.String,System.Collections.ArrayList@)">
+	<summary>
+    End Waiting For Debug Messages With Timeout
+ </summary>
+	<param name="Messages">Message Or Messages With , Delimiter</param>
+	<param name="ActualLines">ByRef Actual Lines Returned In Debug</param>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.VerifyFas(System.String,System.String,System.Int32,System.Boolean)">
+	<summary>
+   Verifying FAS Milestones
+ </summary>
+	<param name="IR">IR To Send</param>
+	<param name="Messages">FAS Messages In FAS Milestones</param>
+	<param name="Timeout">Timeout In Seconds</param>
+	<param name="IsOrdered">If True Verify Messages In Order</param>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.ClearEPGInfo">
+	<summary>
+   Clears IEX EPG Info
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.VerifyDebugMessage(System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+    Sends IR And Verifies Key Or Value Or Both With Timeout And Delay After
+ </summary>
+	<param name="Key">The EPGInfo Key</param>
+	<param name="Value">The EPGInfo Value</param>
+	<param name="TimeoutInSec">Time Out In Seconds</param>
+	<param name="Delay">Delay In Seconds</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetEpgInfo(System.String,System.String@,System.Boolean)">
+	<summary>
+   Gets A Value From EPG Info Dictionary
+ </summary>
+	<param name="Key">Key Of The Value</param>
+	<param name="Value">ByRef The Returned Value</param>
+	<param name="CalledFromVerify">If True Disregards Empty Values</param>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.ParseEPGTime(System.String,System.String@)">
+	<summary>
+   Parsing EPG Time From EPG
+ </summary>
+	<param name="DateTime">EPG Date Time</param>
+	<param name="ReturnedTime">ByRef The Returned Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.ParseEPGDate(System.String,System.String@)">
+	<summary>
+   Parsing EPG Date From EPG
+ </summary>
+	<param name="DateTime">EPG Date Time</param>
+	<param name="ReturnedDate">ByRef The Returned Date</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.ParseEventTime(System.String@,System.String,System.Boolean)">
+	<summary>
+   Parsing Event Time From Returned EPG Time
+ </summary>
+	<param name="ReturnedTime">The Returned Time After Parsing</param>
+	<param name="TimeString">Time String From EPG</param>
+	<param name="IsStartTime">If True Returnes Start Time Else Returns End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetActiveState(System.String@)">
+	<summary>
+   Getting Active State From EPG By The State Machine
+ </summary>
+	<param name="State">ByRef The Returned State</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.VerifyState(System.String,System.Int32,System.Int32)">
+	<summary>
+   Waiting For Given State To Arrive Until Timeout And Delaying After Found
+ </summary>
+	<param name="State">Requested State</param>
+	<param name="TimeOutInSec">Optional Parameter Default = 15 : Time Out In Seconds</param>
+	<param name="Delay">Optional Parameter Default = 0 : How Much Seconds To Delay </param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.VerifyLiveReached">
+	<summary>
+   Verifies Live Reached
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.FindEventInPCAT(System.String@,IEX.ElementaryActions.EPG.SF.EnumTables,System.String,System.String,System.String)">
+	<summary>
+   Finds Event In PCAT
+ </summary>
+	<param name="PCATEvID">ByRef The Returned PCATEvID</param>
+	<param name="Table">EnumTables Can Be RECORDINGS Or BOOKINGS</param>
+	<param name="EventName">The Event Name To Look For</param>
+	<param name="EvDateStart">The Event Start Time For Manual Recording Events</param>
+	<param name="EvDuration">The Event Duration For Manual Recording Events</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.VerifyEventInfo(System.String,IEX.ElementaryActions.EPG.SF.EnumTables,System.String,System.String,System.String@)">
+	<summary>
+   Verifi
+ </summary>
+	<param name="PCATEvID">The ID Found Earlier In FindInPCAT Function</param>
+	<param name="Table">EnumTables Can Be RECORDINGS Or BOOKINGS</param>
+	<param name="Field">The Verification Field</param>
+	<param name="EventInfo">The Verification Field To Verify</param>
+	<param name="ActualStatus">ByRef The Actual Info Found</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetEventInfo(System.String,IEX.ElementaryActions.EPG.SF.EnumTables,System.String,System.String@)">
+	<summary>
+    PCAT Get Event Info By PCATEvID  
+ </summary>
+	<param name="PCATEvID">The ID Found Earlier In FindInPCAT Function</param>
+	<param name="Table">EnumTables Can Be RECORDINGS Or BOOKINGS</param>
+	<param name="Field">The Searched Field</param>
+	<param name="Status">The Field Value</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.IsPCATValid(System.String@)">
+	<summary>
+   Checking If PCAT Is Valid
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetEpgDateFormat">
+	<summary>
+   Try Retrieving EPG Date Format From Project.ini Otherwise Default Value From Code
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetDateFormatForEventDictionary">
+	<summary>
+   Try Retrieving Date Format For Event Dictionary From Project.ini Otherwise Default Value From Code
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetEpgTimeDelimiter">
+	<summary>
+ Get the EPG Time delimiter from the project.ini otherwise we get default value from code
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetEpgDateFormatDefaultValue">
+	<summary>
+   Retrieving EPG Date Format Default Value
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetDateFormatForEventDicDefaultValue">
+	<summary>
+   Retrieving Date Format For Event Dictionary Default Value
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetEpgTimeDelimiterDefaultValue">
+	<summary>
+ Retrieving default value of Time delimiter
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.FormatEventTime(System.String,System.String)">
+	<summary>
+    Formatting the Event Time Based On Start Time And End Time  
+ </summary>
+	<param name="sStartTime">The Start Time As String</param>
+	<param name="sEndTime">The End Time As String</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetEventTimeSeparator">
+	<summary>
+    Retrieving The Event Time Separator To Be Inserted Between Start Time And End Time  
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetBasePathOfIexNumber(System.Int16)">
+	<summary>
+    Retrieving Base Path Based On IEX Server Number
+ </summary>
+	<param name="iexServerNumber">IEX Server Number</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetFullPathToIexIniFile(System.Int16)">
+	<summary>
+    Retrieving Full Path To iex.ini File
+ </summary>
+	<param name="iexServerNumber">IEX Server Number</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetFullPathToIexXmlFile(System.Int16)">
+	<summary>
+    Retrieving Full Path To iex.xml File
+ </summary>
+	<param name="iexServerNumber">IEX Server Number</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetBaudRateFromConfigFile(System.Int16)">
+	<summary>
+    Retrieving Baud Rate From Config File (iex.xml If Existing, Otherwise From iex.ini)
+ </summary>
+	<param name="iexServerNumber">IEX Server Number</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetGuardTimeFromFriendlyName(System.String,System.Boolean)">
+	<summary>
+ Get the guard time Integer from friendly name passed
+ </summary>
+	<param name="friendlyName">The guard time friendly name from state machine as String</param>
+	<param name="isSGT">The Guard Time Type As String</param>
+	<returns>The Guard Time as Integer</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetMinScrollsBetweenServices(System.Int32,System.Int32,System.Int32,System.Boolean@)">
+	<summary>
+ Get the minimum number of scrolls between two services based on their positions and the total number of services present in the stream
+ </summary>
+	<param name="baseChPos">The base channel position from which the scrolls have to be calculated</param>
+	<param name="targetChPos">The target channel position to which the scrolls have to be calculated</param>
+	<param name="totalCh">Total number of services present in the stream</param>
+	<returns>The direction of scroll as Boolean. True is returned if forward scroll is required, false is returned if backward scroll is required</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.StateMachine.GetStateMachinePath">
+	<summary>
+ Get State Machine Path (currently hardcoded)
+ </summary>
+	<returns>The state machine Path as String</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.StateMachine.GetState(System.String)">
+	<summary>
+ Get the state object from the state machine
+ </summary>
+	<param name="stateName">The name of the state</param>
+	<returns>The state object with all its information</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.StateMachine.GetNavigationPath(System.String)">
+	<summary>
+ Get Navigation Path from Named Navigation
+ </summary>
+	<param name="namedNavigation">The named navigation as string</param>
+	<returns>Complete Navigation path as string</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.StateMachine.GetDictionaryValueForItem(EpgState,System.String)">
+	<summary>
+ Get dictionary value for a particular item
+ </summary>
+	<param name="state">The state in which item is present</param>
+	<param name="itemName">The item name whose dictionary value is needed</param>
+	<returns>The dictionary value as string</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.StateMachine.LoadXMLFile(System.String)">
+	<summary>
+ Load an XML File as XDocument object
+ </summary>
+	<param name="xmlFilePath">The path of the XML File as string</param>
+	<returns>The XDocument</returns>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.StreamSync(System.String)">
+	<summary>
+  Stream sync utility
+ </summary>
+	<param name="EPGTime">The Current time from EPG</param>
+	<remarks>
+ Possible Error Codes:
+ <para></para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetValueFromTestIni(System.String,System.String)">
+	<summary>
+   Gets Value From Test.ini
+ </summary>
+	<param name="Key">The Key Of The Value Requested</param>
+	<returns>String</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.HighlightOption(EpgState,System.Collections.Generic.Dictionary{EnumEpgKeys,System.String})">
+	<summary>
+ Confluence Flow Diagram Link : http://confluence.fr.nds.com/display/FC/Flow+Diagram+for+the+HighlightOption+Iterator
+ Highlight on one option in the list based on the criterion in the dictionary
+ </summary>
+	<param name="stateInWhichOptionIsPresent">State in which option is present</param>
+	<param name="dictionary">Dictionary having the key-value pair of the options to be set</param>
+	<returns>The Guard Time as Integer</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.ParseMileStoneTimeFromLogArray(System.Collections.ArrayList)">
+	<summary>
+ Function takes multiple strings in array 
+ Call another Function Parse Milestone Time 
+ Store time values in a list of interger
+ </summary>
+	<param name="logArray"></param>
+	<returns>List of Integers</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.ParseMileStoneTime(System.String)">
+	<summary>
+ Function Takes String 
+ Checks String's Time Stamp 
+ Parse and Calculates Time in Micro Seconds
+ </summary>
+	<param name="SelectionItem"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.CreateandWritePerformanceResultXML(Performance)">
+	<summary>
+  Creating and Writing data in XML file at a particular location
+ </summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.SetPersonalizedRecommendationActivation(System.String)">
+	<summary>
+   sets and Unsets the PersonalizedRecommendationActivation Flag
+ </summary>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.NavigateToCustomerCareFAQ(System.String)">
+	<summary>
+   Navigates To Customer Care FAQ
+ </summary>
+	<returns>String</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.VerifyHDDIndicator(System.Boolean)">
+</member><member name="M:IEX.ElementaryActions.EPG.SF.Utils.GetHDDUsagePercentage(System.Boolean)">
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.RaiseTrickMode">
+	<summary>
+   Raising Trickmode By Pressing SELECT
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.VerifyEofBof(System.Int64,System.Double,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Verifying EOF/BOF
+ </summary>
+	<param name="Duration">Duration Of The Event Or Review Buffer</param>
+	<param name="Speed">Speed Of Trickmode</param>
+	<param name="IsReviewBuffer">If True Checkes Review Buffer EOF/BOF</param>
+	<param name="IsReviewBufferFull">If True Review Buffer Is Full</param>
+	<param name="EOF">If True Verifies EOF Else BOF</param>
+	<remarks>
+ Possible Error Codes:
+ <para>320 - VerifyEofBofFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.SetSpeed(System.Double)">
+	<summary>
+   Sets Speed On Trickmode
+ </summary>
+	<param name="Speed">Required Speed Can Be : 1 For Play, 0 For Pause,0.5,2,6,12,30 Or -0.5,-2,-6,-12,-30</param>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>313 - SetTrickModeSpeedFailure</para>
+		<para>328 - INIFailure</para>
+		<para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.VerifySpeedChanged(System.String,System.Double,System.Int32)">
+	<summary>
+   Sending Verifying Speed Change FAS Milestones
+ </summary>
+	<param name="IR">IR To Send</param>
+	<param name="Speed">Speed Of Requirement Trickmode</param>
+	<param name="Timeout"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.StopPlayEvent(System.Boolean)">
+	<summary>
+   Stopping Played Event By Navigating To Stop On TrickMode
+ </summary>
+	<param name="IsReviewBuffer">If True Trickmode Is In Review Buffer Else In Playback</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>343 - StopPlayEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.SetSkip(System.Boolean,System.Boolean,System.String,System.Int32)">
+	<param name="IsForward"> Madatory direction of skip.True if Forward else False. No default value</param>
+	<param name="PlaybackContext">Mandatory.whether RB or Playback</param>
+	<param name="NumOfSkipPoints">Number Of Skip Point To Press</param>
+	<param name="SkipDurationSetting">Current setting value for skip. Default value will be fetched from project ini,this includes the value"Last Event Boundary"</param>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>313 - SetTrickModeSpeedFailure</para>
+		<para>318 - SetSkipFailure</para>
+		<para>328 - INIFailure</para>
+		<para>332 - NoValidParameters</para>
+	</remarks>*/
+
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.GetCurrentPlaybackDuration(System.Int32@)">
+	<summary>
+   Gets The Current Playback Duration From Milestones
+ </summary>
+	<param name="pbDurationSec">Returns The Duration In Seconds</param>
+	<remarks>
+ Possible Error Codes:
+ <para>307 - GetStreamInfoFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.GetStreamPosition(System.Int32@)">
+	<summary>
+   Gets The Current Stream Postion From FAS (IEX_AFL_FAS_getStreamPosition:)
+ </summary>
+	<param name="Position">Returned Position</param>
+	<remarks>
+ Possible Error Codes:
+ <para>307 - GetStreamInfoFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.GetCurrentPosition(System.String@)">
+	<summary>
+   Gets The Current Trickmode Position
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.TrickModes.DoSkip(System.Boolean,System.Boolean,System.Boolean,System.String,System.Int32)">
+	<summary>
+ This function performs the skip operation
+ </summary>
+	<param name="PlaybackContext">PLAYBACK or RB</param>
+	<param name="isForward">forward(True) or backward(False)</param>
+	<param name="VerifyEofBof">to check EOF or BOF(True/False)</param>
+	<param name="SkipDurationSetting">Skip duration setting to be checked</param>
+	<param name="NumOfSkipPoints">Number of skip operation to be performed</param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

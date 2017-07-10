@@ -1,0 +1,91 @@
+{
+    "version":4,
+	"ngi_initialise":{
+		"NGI_STATUS": "NGI_STATUS_OK" 
+	},
+	"ngi_connect":{
+		"NGI_STATUS":"NGI_STATUS_OK" 
+	},
+	"ngi_terminate":{
+		"NGI_STATUS": "NGI_STATUS_OK"
+	},
+	"ngi_disconnect":{
+		"NGI_STATUS":"NGI_STATUS_OK"
+	},
+	"ngi_get_num_devices":{
+		"NGI_STATUS":"NGI_STATUS_OK" ,
+		"Value":{
+				"nbDev":2
+		}
+	},
+	"ngi_get_device" :{
+		"NGI_STATUS":"NGI_STATUS_OK" ,
+		"Value":{
+				"devs":[
+							{	"idx":1,
+								"dev":12345
+							},
+							{	"idx":2,
+								"dev":67890
+                            }
+				]
+		}
+	},
+	"ngi_get_device_num_services":{
+		"NGI_STATUS":	"NGI_STATUS_OK" ,
+		"Value":{
+			"nbServs":[
+						   {
+							"dev":12345,
+							"nbServ":2
+						   },
+                           {
+                            "dev":67890,
+                            "nbServ":3
+                           }
+                           
+				]
+		}
+	},
+	"ngi_get_device_services": {
+		"NGI_STATUS": "NGI_STATUS_OK" ,
+		"Value":{
+				"services":[
+							{
+								"dev":12345,
+								"services":[
+											"NGI_SERVICE_CABLE_LINK_CONFIG",
+											"NGI_SERVICE_WAN_IP_CONNECTION"
+								]	
+							},
+                            {
+                                "dev":67890,
+                                "services":[
+											"NGI_SERVICE_CABLE_LINK_CONFIG",
+											"NGI_SERVICE_WAN_IP_CONNECTION",
+                                            "NGI_SERVICE_WAN_IPV6_FIREWALL"
+                                ]
+                            }
+				]
+		}
+	},
+	"ngi_get_service_version":{
+		"NGI_STATUS":	"NGI_STATUS_OK",
+		"Value":{
+				"versions" :[
+							{"service":"NGI_SERVICE_DEVICE_INFO",
+							  "version": 1
+							},
+							{"service": "NGI_SERVICE_CABLE_LINK_CONFIG",
+							  "version": 1
+							},
+							{"service": "NGI_SERVICE_WAN_IP_CONNECTION",
+							  "version": 1
+							},
+							{"service": "NGI_SERVICE_WAN_IPV6_FIREWALL",
+							  "version": 1
+							}
+				]
+		}
+	}
+}

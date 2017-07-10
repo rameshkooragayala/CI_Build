@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FF7DDA3-8849-485F-BF75-11686C204F37}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LightSanity</RootNamespace>
+    <AssemblyName>LightSanity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IEX.ElementaryActions">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEX.ElementaryActions.dll</HintPath>
+    </Reference>
+    <Reference Include="IEXGateway">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEXGateway.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LightSanity_017.cs" />
+    <Compile Include="LightSanity_260.cs" />
+    <Compile Include="LightSanity_240.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LightSanity_240_U.cs" />
+    <Compile Include="LightSanity_002.cs" />
+    <Compile Include="LightSanity_003.cs" />
+    <Compile Include="LightSanity_004.cs" />
+    <Compile Include="LightSanity_005.cs" />
+    <Compile Include="LightSanity_006.cs" />
+    <Compile Include="LightSanity_007.cs" />
+    <Compile Include="LightSanity_009.cs" />
+    <Compile Include="LightSanity_010.cs" />
+    <Compile Include="LightSanity_013.cs" />
+    <Compile Include="LightSanity_014.cs" />
+    <Compile Include="LightSanity_016.cs" />
+    <Compile Include="LightSanity_011.cs" />
+    <Compile Include="LightSanity_012.cs" />
+    <Compile Include="LightSanity_102.cs" />
+    <Compile Include="LightSanity_110.cs" />
+    <Compile Include="LightSanity_160.cs" />
+    <Compile Include="LightSanity_170.cs" />
+    <Compile Include="LightSanity_200.cs" />
+    <Compile Include="LightSanity_203.cs" />
+    <Compile Include="LightSanity_250.cs" />
+    <Compile Include="LightSanity_280.cs" />
+    <Compile Include="LightSanity_290.cs" />
+    <Compile Include="LightSanity_370.cs" />
+    <Compile Include="LightSanity_409.cs" />
+    <Compile Include="LightSanity_802.cs" />
+    <Compile Include="Mount.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.IPC\IEX.ElementaryActions.EPG.SF.IPC.vbproj">
+      <Project>{E67E07EB-0665-49DC-8B32-34713FC1F6E5}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.IPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.ISTB\IEX.ElementaryActions.EPG.SF.ISTB.vbproj">
+      <Project>{8942B191-72C3-4E6B-B1BB-1368EEF50446}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.ISTB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.UPC\IEX.ElementaryActions.EPG.SF.UPC.vbproj">
+      <Project>{0E93D8AB-7FA2-4F55-9ED1-EAE98DCF2A51}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.UPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF\IEX.ElementaryActions.EPG.SF.vbproj">
+      <Project>{413AEE4B-C5B2-44F1-A3A2-41EB3307CE58}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG\IEX.ElementaryActions.EPG.vbproj">
+      <Project>{D0A8EBF2-C5FC-4D53-9DF4-C85103097963}</Project>
+      <Name>IEX.ElementaryActions.EPG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.Functionality\IEX.ElementaryActions.Functionality.vbproj">
+      <Project>{C4CE3A3C-D1BC-4CAD-9661-616658CBEABB}</Project>
+      <Name>IEX.ElementaryActions.Functionality</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_TESTS\src\IEX.Tests.Engine\IEX.Tests.Engine.csproj">
+      <Project>{684506F1-5DAD-4A3C-AB08-C34B241AF8D7}</Project>
+      <Name>IEX.Tests.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_TESTS\src\IEX.Tests.Utils\IEX.Tests.Utils.csproj">
+      <Project>{592D4503-6C86-46A3-BA03-7DA412D01D02}</Project>
+      <Name>IEX.Tests.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- common zones -->
+<zone name="clock" type="clock" id="null" x="1086" y="1962" w="107" h="90"/>
+<zone name="notification" type="notification" id="null" x="0" y="1932" w="1192.65" h="95"/>
+<zone name="dca" type="dca" id="null" x="1450" y="1978" w="140" h="60"/>
+<zone name="title" type="title" id="null" x="90" y="1969" w="300" h="80"/>
+<zone name="crumbtrail" type="crumbtrail" id="null" x="90" y="1968" w="300" h="80"/>
+<zone name="reminderLogo" type="logo" id="null" x="1284.5" y="1944" w="160" h="104"/>
+<zone name="rowCount" type="rowCount" id="null" x="490" y="1968" w="200" h="80"/>
+<zone name="operatorLogo" type="operatorLogo" id="null" x="985" y="1964" w="68" h="44"/>

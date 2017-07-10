@@ -1,0 +1,6 @@
+reboot 2;
+timeout 30;
+retry 60;
+request subnet-mask,broadcast-address,routers,domain-name-servers,vendor-encapsulated-options,dhcp-lease-time;
+require subnet-mask,routers,domain-name-servers,vendor-encapsulated-options;
+default dhcp-lease-time 180;

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone name="s1" type="s" id="1" x="0" y="0" w="940" h="260"/>
+<zone name="s2" type="s" id="2" x="950" y="0" w="940" h="260"/>
+<zone name="s3" type="s" id="3" x="0" y="540" w="560" h="260"/>
+<zone name="s4" type="s" id="4" x="0" y="270" w="940" h="260"/>
+<zone name="s5" type="s" id="5" x="570" y="540" w="560" h="260"/>
+<zone name="s6" type="s" id="6" x="1140" y="540" w="560" h="260"/>
+<zone name="s7" type="s" id="7" x="950" y="270" w="940" h="260"/>
+<zone name="s8" type="s" id="8" x="0" y="810" w="560" h="260"/>
+<zone name="s9" type="s" id="9" x="570" y="810" w="560" h="260"/>
+<zone name="s10"type="s" id="10" x="1140" y="810" w="560" h="260"/>
+<zone name="s11"type="s" id="11" x="0" y="1080" w="560" h="260"/>
+<zone name="s12"type="s" id="12" x="570" y="1080" w="1340" h="260"/>
+<zone name="s13"type="s" id="13" x="570" y="1350" w="780" h="260"/>
+
+<zone name="search" type="search" id="3" x="10" y="1634" w="552" h="35"/>
+
+<zone name="g1" type="g" id="1" x="1380" y="1350" w="552" h="150"/>
+<zone name="g2" type="g" id="2" x="1380" y="1510" w="552" h="150"/>
+
+
+
+<!-- static zones -->
+<zone name="sc1_0" type="sc" id="1" x="0" 	y="0" w="180" h="260"/>
+<zone name="sc1_1" type="sc" id="2" x="190" y="0" w="180" h="260"/>
+<zone name="sc1_2" type="sc" id="3" x="380" y="0" w="180" h="260"/>
+<zone name="sc1_3" type="sc" id="4" x="570" y="0" w="180" h="260"/>
+<zone name="sc1_4" type="sc" id="5" x="760" y="0" w="180" h="260"/>
+
+<zone name="sc2_0" type="sc" id="1" x="0" 	y="0" w="180" h="260"/>
+<zone name="sc2_1" type="sc" id="2" x="190"  y="0" w="180" h="260"/>
+<zone name="sc2_2" type="sc" id="3" x="380" 	y="0" w="180" h="260"/>
+<zone name="sc2_3" type="sc" id="4" x="570"  y="0" w="180" h="260"/>
+<zone name="sc2_4" type="sc" id="5" x="760" y="0" w="180" h="260"/>
+
+<zone name="sc3_0" type="sc" id="1" x="0"   y="0" w="180" h="260"/>
+<zone name="sc3_1" type="sc" id="2" x="190" y="0" w="180" h="260"/>
+<zone name="sc3_2" type="sc" id="3" x="380" y="0" w="180" h="260"/>
+
+<zone name="sc4_0" type="sc" id="1" x="0"  y="0" w="180" h="260"/>
+<zone name="sc4_1" type="sc" id="2" x="190" y="0" w="180" h="260"/>
+<zone name="sc4_2" type="sc" id="3" x="380" y="0" w="180" h="260"/>
+<zone name="sc4_3" type="sc" id="4" x="570" y="0" w="180" h="260"/>
+<zone name="sc4_4" type="sc" id="5" x="760" y="0" w="180" h="260"/>
+
+<zone name="sc5_0" type="sc" id="1" x="0"  	y="0" w="180" h="260"/>
+<zone name="sc5_1" type="sc" id="2" x="190"	y="0" w="180" h="260"/>
+<zone name="sc5_2" type="sc" id="3" x="380" 	y="0" w="180" h="260"/>
+
+<zone name="sc6_0" type="sc" id="1" x="0" 	y="0" w="180" h="260"/>
+<zone name="sc6_1" type="sc" id="2" x="190"	y="0" w="180" h="260"/>
+<zone name="sc6_2" type="sc" id="3" x="380"	y="0" w="180" h="260"/>
+
+<zone name="sc7_0" type="sc" id="1" x="0"   y="0" w="180" h="260"/>
+<zone name="sc7_1" type="sc" id="2" x="190" y="0" w="180" h="260"/>
+<zone name="sc7_2" type="sc" id="3" x="380" y="0" w="180" h="260"/>
+<zone name="sc7_3" type="sc" id="4" x="570" y="0" w="180" h="260"/>
+<zone name="sc7_4" type="sc" id="5" x="760" y="0" w="180" h="260"/>
+
+<zone name="sc8_0" type="sc" id="1" x="0" 	y="0" w="180" h="260"/>
+<zone name="sc8_1" type="sc" id="2" x="190"	y="0" w="180" h="260"/>
+<zone name="sc8_2" type="sc" id="3" x="380"	y="0" w="180" h="260"/>
+
+<zone name="sc9_0" type="sc" id="1"x="0"   y="0" w="180" h="260"/>
+<zone name="sc9_1" type="sc" id="2"x="190" y="0" w="180" h="260"/>
+<zone name="sc9_2" type="sc" id="3"x="380" y="0" w="180" h="260"/>
+
+<zone name="sc10_0" type="sc" id="1" x="0"  y="0" w="180" h="260"/>
+<zone name="sc10_1" type="sc" id="2" x="190" y="0" w="180" h="260"/>
+<zone name="sc10_2" type="sc" id="3" x="380" y="0" w="180" h="260"/>
+
+<zone name="sc11_0" type="sc" id="1" x="0" y="0"  w="180" h="260"/>
+<zone name="sc11_1" type="sc" id="2" x="190" y="0"  w="180" h="260"/>
+<zone name="sc11_2" type="sc" id="3" x="380" y="0" w="180" h="260"/>
+
+<zone name="sc12_0" type="sc" id="1" x="0" y="0"  w="260" h="260"/>
+<zone name="sc12_1" type="sc" id="2" x="270" y="0"  w="260" h="260"/>
+<zone name="sc12_2" type="sc" id="3" x="540" y="0" w="260" h="260"/>
+<zone name="sc12_3" type="sc" id="4" x="810" y="0"  w="260" h="260"/>
+<zone name="sc12_4" type="sc" id="5" x="1080" y="0" w="260" h="260"/>
+
+<zone name="sc13_0" type="sc" id="1" x="0" y="0"  w="260" h="260"/>
+<zone name="sc13_1" type="sc" id="2" x="270" y="0"  w="260" h="260"/>
+<zone name="sc13_2" type="sc" id="3" x="540" y="0" w="260" h="260"/>
+
+<zone name="s1t" type="sc" id="null" x="10" y="1718" w="204" h="26"/>
+<zone name="s2t" type="sc" id="null" x="224" y="1718" w="204" h="26"/>
+<zone name="s3t" type="sc" id="null" x="438" y="1718" w="204" h="26"/>
+
+<zone name="s4t" type="sc" id="null" x="10" y="1754" w="204" h="26"/>
+<zone name="s5t" type="sc" id="null" x="224" y="1754" w="204" h="26"/>
+<zone name="s6t" type="sc" id="null" x="438" y="1754" w="204" h="26"/>
+
+<zone name="s7t" type="sc" id="null" x="652" y="1718" w="204" h="26"/>
+<zone name="s8t" type="sc" id="null" x="866" y="1718" w="204" h="26"/>
+<zone name="s9t" type="sc" id="null" x="1080" y="1718" w="204" h="26"/>
+
+<zone name="s10t" type="sc" id="null" x="652" y="1754" w="204" h="26"/>
+<zone name="s11t" type="sc" id="null" x="866" y="1754" w="204" h="26"/>
+<zone name="s12t" type="sc" id="null" x="1080" y="1754" w="204" h="26"/>
+<zone name="s13t" type="sc" id="null" x="1294" y="1754" w="204" h="26"/>
+
+<zone name="search" type="search" id="null" x="10" y="1634" w="552" h="35"/>
+
+<!-- static zones -->
+<zone name="focusDetails" type="null" id="null" x="1380" y="1350" w="552" h="150"/>
+
+<zone name="focus" type="null" id="null" x="10" y="1620" w="552" h="4"/>
+
+<zone name="focusDetailsHome" type="null" id="null" x="1380" y="1350" w="552" h="150"/>

@@ -1,0 +1,10 @@
+    <action>
+      <name>X_NDS_WriteEMM</name>
+      <argumentList>
+        <argument>
+          <name>EMM</name>
+          <direction>in</direction>
+          <relatedStateVariable>X_NDS_A_ARG_TYPE_EMM</relatedStateVariable>
+        </argument>
+      </argumentList>
+    </action>

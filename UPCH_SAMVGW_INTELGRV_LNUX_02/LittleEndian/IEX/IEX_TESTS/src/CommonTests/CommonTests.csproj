@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{911778A7-FAE9-469D-9866-5356A578E36F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonTests</RootNamespace>
+    <AssemblyName>CommonTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IEX.ElementaryActions">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEX.ElementaryActions.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="IEXGateway, Version=4.8.20.8, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\IEXGateway.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\..\..\IEX_ELEMENTARYACTIONS\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="07_LPW\LPW_SettingPowerModes.cs" />
+    <Compile Include="07_LPW\LPW_1000_SetAutomaticStandBy.cs" />
+    <Compile Include="07_LPW\LPW_1040_SettingInactivityPeriod.cs" />
+    <Compile Include="07_LPW\LPW_1055_DefaultStandby.cs" />
+    <Compile Include="07_LPW\LPW_VerifyMode.cs" />
+    <Compile Include="07_LPW\LPW_Verification_LockedService.cs" />
+    <Compile Include="07_LPW\LPW_0912_Verify_AudioSettingRetainsAfterStandBy.cs" />
+    <Compile Include="07_LPW\LPW_WarningPopUp.cs" />
+    <Compile Include="07_LPW\LPW_1020_AutomaticStandbyModeOFF.cs" />
+    <Compile Include="07_LPW\LPW_1030_AutomaticStandbyNightMode.cs" />
+    <Compile Include="07_LPW\UC_STB_0010_LPW_WithOnGoingRecording.cs" />
+    <Compile Include="07_LPW\UC_STB_LPW_ScheduledRecording.cs" />
+    <Compile Include="07_LPW\UC_STB_0110_NavigationFromStandbyToPowerOnDuringUT.cs" />
+    <Compile Include="07_LPW\UC_STB_0120_NavigationFromStandbyToPowerOnDuringDelay.cs" />
+    <Compile Include="07_LPW\UC_STB_0210_Navigation_PowerCut_During_HotStandbyWithRecording.cs" />
+    <Compile Include="07_LPW\LPW_SwitchFromPowerOffToStandBy.cs" />
+    <Compile Include="09_STC\STC_0022_LastViewed.cs" />
+    <Compile Include="09_STC\STC_3004_FactoryReset_StartChannel_a.cs" />
+    <Compile Include="10_FAR\FAR_0000_Reset_Settings.cs" />
+    <Compile Include="10_FAR\FAR_0020_OngoingRecord_Conflict.cs" />
+    <Compile Include="10_FAR\FAR_0040_RetainingMPIN_Factory reset.cs" />
+    <Compile Include="10_FAR\FAR_0076_Retain_Usersettings.cs" />
+    <Compile Include="10_FAR\FAR_0120_NotKeep_RecordContent.cs" />
+    <Compile Include="10_FAR\FAR_0100_RecBookingLossNotification.cs" />
+    <Compile Include="10_FAR\FAR_0130_Keep_RecordContent.cs" />
+    <Compile Include="11_SET\11.11_PVR\11.12 SET_SKIP\SET_PLB_Skip_intervals.cs" />
+    <Compile Include="11_SET\11.11_PVR\11.12 SET_SKIP\SET_PLB_Skip_values.cs" />
+    <Compile Include="11_SET\11.15_SET_SUBT\SET_SubtitleDefLanguage.cs" />
+    <Compile Include="11_SET\11.15_SET_SUBT\SET_Subtitle_DefaultDisable_PLB.cs" />
+    <Compile Include="11_SET\11.15_SET_SUBT\SET_Subtitle_Enable_PLB.cs" />
+	<Compile Include="11_SET\11.11_PVR\11.11.02_DELETE_ALL\SET_DELPVR_0003_Delete_All_Recordings_OngoingREC_Playback_FT146.cs" />
+	<Compile Include="11_SET\11.11_PVR\11.11.02_DELETE_ALL\SET_DELPVR_0002_Delete_All_Recordings_FT146.cs" />
+    <Compile Include="11_SET\SET_SGT_EGT.cs" />
+    <Compile Include="11_SET\SET_0510_SGT.cs" />
+    <Compile Include="11_SET\SET_0510_SGT_0min.cs" />
+    <Compile Include="11_SET\SET_0510_SGT_15min.cs" />
+    <Compile Include="11_SET\SET_0510_SGT_1min.cs" />
+    <Compile Include="11_SET\SET_0510_SGT_2min.cs" />
+    <Compile Include="11_SET\SET_0510_SGT_30min.cs" />
+    <Compile Include="11_SET\SET_0510_SGT_5min.cs" />
+    <Compile Include="11_SET\SET_0511_SGT_Auto.cs" />
+    <Compile Include="11_SET\SET_0530_EGT.cs" />
+    <Compile Include="11_SET\SET_0530_EGT_0min.cs" />
+    <Compile Include="11_SET\SET_0530_EGT_15min.cs" />
+    <Compile Include="11_SET\SET_0530_EGT_1min.cs" />
+    <Compile Include="11_SET\SET_0530_EGT_2min.cs" />
+    <Compile Include="11_SET\SET_0530_EGT_30min.cs" />
+    <Compile Include="11_SET\SET_0530_EGT_5min.cs" />
+    <Compile Include="11_SET\SET_0531_EGT_Auto.cs" />
+	<Compile Include="11_SET\SET_PER\SET_PER_1600_UI_MenuLanguage.cs" />
+	<Compile Include="11_SET\SET_LIVE\SET_LIVE_0001_SCART_VideoType_Timeout.cs" />
+    <Compile Include="11_SET\11.11_PVR\11.11.03_DSK\DSK_0500_DSM_DefaultMode.cs" />
+    <Compile Include="11_SET\11.11_PVR\11.11.05_TIMER\TIMER_0300_ConfigureReminderSetting.cs" />
+    <Compile Include="11_SET\11.11_PVR\11.11.05_TIMER\TIMER_0301_ReminderSettingDefault.cs" />
+    <Compile Include="11_SET\11.15_SET_SUBT\SET_SUBT_Live_DifferentLanguage.cs" />
+    <Compile Include="11_SET\11.15_SET_SUBT\SET_Subtitle_DefaultDisableEnable.cs" />
+    <Compile Include="11_SET\PC\PC_0020_ChannelLock_PPContent.cs" />
+    <Compile Include="16_LIVE\LIVE_0300_Zapping_UpDown.cs" />
+    <Compile Include="16_LIVE\LIVE_0301_Zapping_Radio.cs" />
+    <Compile Include="16_LIVE\LIVE_0302_Zapping_LockedChannel.cs" />
+    <Compile Include="16_LIVE\LIVE_0303_Zapping_ScrambledRadio.cs" />
+    <Compile Include="16_LIVE\LIVE_0310_EventChange_ResetSettings.cs" />
+    <Compile Include="16_LIVE\LIVE_0501_DCA.cs" />
+    <Compile Include="16_LIVE\LIVE_0502_DCA_NotExists.cs" />
+    <Compile Include="16_LIVE\LIVE_0901_FZ_Up.cs" />
+    <Compile Include="16_LIVE\LIVE_0902_FZ_Down.cs" />
+    <Compile Include="16_LIVE\LIVE_0903_FZ_Standby.cs" />
+    <Compile Include="16_LIVE\LIVE_0904_FZ_Radio.cs" />
+    <Compile Include="16_LIVE\LIVE_0905_FZ_EPG.cs" />
+    <Compile Include="16_LIVE\LIVE_0906_FZ_PLB.cs" />
+    <Compile Include="16_LIVE\LIVE_0907_FZ_RB.cs" />
+    <Compile Include="16_LIVE\LIVE_0910_FZ_UnPredicted.cs" />
+    <Compile Include="16_LIVE\LIVE_0920_PiP_ChannelBar.cs" />
+    <Compile Include="16_LIVE\LIVE_0921_PiP_Guide.cs" />
+    <Compile Include="16_LIVE\LIVE_0922_PiP_MainScreenGuide.cs" />
+    <Compile Include="16_LIVE\LIVE_0924_PiP_MainScreenChannelList.cs" />
+    <Compile Include="16_LIVE\LIVE_0926_PiP_Standby.cs" />
+	<Compile Include="16_LIVE\FT148_0161_ReminderNotification_ZappingToNonFavorites.cs" />
+	<Compile Include="16_LIVE\LIVE_0900_FastZapping_Predicted_Favourite.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0104_TimeBased_NoConflict.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0203_Reminder_EventBooked.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0204_Reminder_ReminderBooked.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0205_SingleRecording.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0803_Modify_TimeBaseRecording.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0804_Modify_TimeBaseToTimeBaseRecurring.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0805_Modify_EventBaseToTimeBaseRecording.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0806_Modify_EventBaseToTimeBaseRecurring.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0807_Modify_EventBaseToTimeBaseWeekly.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0808_Modify_TimeBaseRecurring.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0809_Modify_TimeBaseToTimeBaseWeekly.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0810_Modify_TimeBaseWeeklyToTimeBaseRecurring.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0811_Modify_TimeBaseWeekly.cs" />
+    <Compile Include="17_PVR\02_REC\REC_0233_EventBased_MaxScrambledRecordings.cs" />
+    <Compile Include="17_PVR\02_REC\REC_EventBased_SingleRecording.cs" />
+    <Compile Include="17_PVR\02_REC\REC_0204_EventBased_InterruptionByUser.cs" />
+    <Compile Include="17_PVR\02_REC\REC_0090_SGT_Inclusion.cs" />
+    <Compile Include="17_PVR\02_REC\REC_CurrentEvent_DuringEGT_AfterEGT_FromRB.cs" />
+    <Compile Include="17_PVR\02_REC\REC_0091_CurrentEvent_DuringBody_FromTB.cs" />
+    <Compile Include="17_PVR\02_REC\REC_0101_PastEvent_Including_RB_TimeBased.cs" />
+    <Compile Include="17_PVR\02_REC\REC_0011_Support_Of_TimeBasedRecordings.cs" />
+    <Compile Include="17_PVR\02_REC\REC_STBMode_Standby.cs" />
+    <Compile Include="17_PVR\02_REC\REC_EventBased_Interruption_SignalLoss_Resume.cs" />
+    <Compile Include="17_PVR\02_REC\REC_EventBased_Interruption_PowerFailure_Resume.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0010_SaveSDEvent.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0011_SaveHDEvent.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0030_EnterTimeShiftImmediately.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0040_MaxDepthSD.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0041_MaxDepthHD.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0051_TrimmingAfterFull.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0060_EnterTimeShiftByRewind.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0062_TimeShiftModeNearToLive.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0070_ReviewBufferSize.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0080_BackToLiveFromRB.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0100_RB_AppendingAfterCC.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0110_DiscardRBContentLessThan60secs.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0125_SavePlayingEventFromRB.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0130_RB_StoppedonNonLIveTVviewing.cs" />
+    <Compile Include="17_PVR\03_RB\RB_0140_RB_DestroyedOnGoingToStby.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0001_Source_Completed.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0100_StartPosition_PlaybackOptions.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0250_AudioMute_Pause.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0251_AudioMute_Pause_RB.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0310_AudioHistory_LastChoiceRemembered.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0311_AudioHistory_DeletedDuring_StopPB.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0312_AudioHistory_PB_RB_HistorySeparate.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0320_AudioHistory_MaxSize.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0400_EndofEventReached.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0401_EndofEventReachedFF.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0410_BeginingofEventReached.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_0420_ExitByZap.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_PlayPauseStop.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_RB_TM.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_TM.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_SubtitleSelctionRB.cs" />
+    <Compile Include="17_PVR\04_PLB\PLB_AudioSubtitleSelection.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0600_Keep_DefaultEventFromBanner.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0601_Keep_DefaultEventFromGuide.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0200_EventBased_CurrentFromBanner.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0201_EventBased_CurrentFromGuide.cs" />
+	<Compile Include="17_PVR\01_BOOK\BOOK_0201_Radio_EventBased_CurrentFromGuide.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0202_EventBased_FutureFromBanner.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0203_EventBased_FutureFromGuide.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0100_TimeBased_FromLive.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0101_TimeBased_FromPlanner.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0102_TimeBased_ReoccurringFromLive.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0103_TimeBased_ReoccurringFromPlanner.cs" />
+	<Compile Include="17_PVR\01_BOOK\BOOK_0103_TimeBased_Weekdays_ReoccurringFromPlanner.cs" />
+	<Compile Include="17_PVR\01_BOOK\BOOK_0103_TimeBased_Weekend_ReoccurringFromPlanner.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0002_UnauthorizedBooking.cs" />
+    <Compile Include="17_PVR\01_BOOK\BOOK_0001_Radio.cs" />
+    <Compile Include="17_PVR\05_PVRERR\PVERR-0030-Event Status-Partial-middle-lost.cs" />
+    <Compile Include="17_PVR\05_PVRERR\PVERR-0030-Event Status-Partial-more-2min-lost.cs" />
+    <Compile Include="17_PVR\05_PVRERR\PVERR-0074-Recording not allowed.cs" />
+    <Compile Include="17_PVR\05_PVRERR\PVERR-0075-Restarted by user.cs" />
+    <Compile Include="17_PVR\05_PVRERR\PVERR-0077-Reasons - Signal loss.cs" />
+    <Compile Include="17_PVR\05_PVRERR\PVERR-0079-Reason- PowerFailure.cs" />
+    <Compile Include="17_PVR\05_PVRERR\PVERR_0082_Resume_Reboot.cs" />
+    <Compile Include="17_PVR\05_PVRERR\PVERR_0202_Fully_Recorded_less_Than_2min_MissingEnd.cs" />
+    <Compile Include="17_PVR\05_PVRERR\PVERR_0202_Fully_Recorded_less_Than_2min_MissingStart.cs" />
+    <Compile Include="18_RES\01_EPG\EPG_0701_ChannelBar_ProgrammeInfo.cs" />
+    <Compile Include="18_RES\01_EPG\EPG_0703_NoEIT.cs" />
+    <Compile Include="18_RES\01_EPG\EPG_0704_NoEIT_RB.cs" />
+    <Compile Include="18_RES\01_EPG\EPG_0800_FastChannelList_Access.cs" />
+    <Compile Include="18_RES\01_EPG\EPG_0810_FastChannelList_DCA.cs" />
+    <Compile Include="18_RES\02_MENU\MENU_0904_DefaultFocus.cs" />
+    <Compile Include="18_RES\02_MENU\MENU_0905_AssociatedPIP.cs" />
+    <Compile Include="18_RES\02_MENU\MENU_0908_Timeout.cs" />
+    <Compile Include="18_RES\02_MENU\MENU_0909_OnDemand_Standby.cs" />
+    <Compile Include="18_RES\02_MENU\MENU_3912_MainMenu_Live.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_0501_DefaultFocus_LiveAndRB.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_0504_ChannelLineup.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_0507_BrowseTheChannelList.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_0562_AlternateTitleAdultContent.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_0571_BrowseWhileLiveViewing.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_0572_ChannelBarInformation_live.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_0574_InformationOnFutureProgram.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_0575_ChannelBarInfo_LockedProgram.cs" />
+	<Compile Include="18_RES\03_CHBAR\CHBAR_0577_ChannelBarInformation_Next.cs" />
+	<Compile Include="18_RES\03_CHBAR\CHBAR_0576_ChannelBarInformation_Now.cs" />
+	<Compile Include="18_RES\03_CHBAR\CHBAR_0705_presenting_programme_information.cs" />
+	<Compile Include="18_RES\03_CHBAR\CHBAR_0570_CompleteChannelbarDisplay.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_2388_RealTitleForAdultContent.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_2368_AdultEvent_Live.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_2369_Adult_FutureEvent.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_2450_04_PiP_BadSignal.cs" />
+    <Compile Include="18_RES\03_CHBAR\CHBAR_2450_02_PiPLive_ParentalRating.cs" />
+	<Compile Include="18_RES\03_CHBAR\CHBAR_2450_03_PiPLive_ChannelLocked.cs" />
+	<Compile Include="18_RES\03_CHBAR\CHBAR_3363_Channelbarinformation_NEXTevent.cs"/>
+	<Compile Include="18_RES\03_CHBAR\CHBAR_3362_Channelbarinformation_on_NOW.cs"/>
+    <Compile Include="18_RES\04_ACTION\ACTION_0001_ChannelLogo_Playback.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0002_ChannelName_Playback.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0010_ThumbnailSynopsis_Info.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0014_Simple_Program_Info.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0016_ThumbnailsSynopsis_Future.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0101_ProgramInfoLive.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0007_FutureProgramInfo.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0042_ThumbnailsSynopsis_HEAvailable.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0042_ThumbnailsSynopsis_HEUnavailable.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0109_AudioChange_Live.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0110_AudioChange_RB.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0005_ChannelInfo_FutureProgram.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0004_ChannelInfo_LiveViewing.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0012_ThumbnailsSynopsis_Current.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0003_ChannelLogo_RB.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0013_Simple_Program_Info_Not_Available.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0201_ProgramInfo_RB.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0011_ThumbnailsSynopsis_RB.cs" />
+    <Compile Include="18_RES\04_ACTION\ACTION_0126_NoRecordPermission.cs" />
+	<Compile Include="18_RES\04_ACTION\EPG_0213_ActionMenu_RB_Change_DVB_Subtitle.cs" />
+	<Compile Include="18_RES\04_ACTION\EPG_PLB_3810_ActionmenuInfo_Playback.cs" />
+	<Compile Include="18_RES\04_ACTION\EPG_3680_ActionmenuInfo_FutureandRB.cs" />
+	<Compile Include="18_RES\04_ACTION\EPG_PLB_0011_ActionMenuSimpleProgramInfo.cs" />
+    <Compile Include="18_RES\05_BANNER\BANNER_0500_PlaybackBannerTimeout_RB.cs" />
+    <Compile Include="18_RES\05_BANNER\BANNER_0510_PlaybackBannerTimeout_Playback.cs" />
+    <Compile Include="18_RES\05_BANNER\BANNER_1211_MultipleEvents.cs" />
+    <Compile Include="18_RES\05_BANNER\BANNER_1217_SimpleProgramInfo.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_1501_AllChannels.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_1502_Program_Grid_By_Genre.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_1503_Program_Grid_View_As_One_Channel.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_1504_AdjustTimeline_OverlayVideo.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_1511_SystemMessage.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_1545_Title_For_Adult_Content.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_1550_NoEITForAdultContent.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_2130_EITForAdultContent.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_2132_NoInformation_CurrentProgram.cs" />
+	<Compile Include="18_RES\08_GRID\GRID_1500_programme_grid_access.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_1518_Prgm_Grid_PiP_Guide_Browse_Curr_Evt.cs" />
+	<Compile Include="18_RES\08_GRID\GRID_1527_Prgm_Grid_missing_prgm_information.cs" />
+	<Compile Include="18_RES\08_GRID\GRID_1508_ViewUserSettings.cs" />
+	<Compile Include="18_RES\08_GRID\GRID_1526_PrgmGrid_Channel_Prgm_Info_HDPVR.cs" />
+    <Compile Include="18_RES\08_GRID\GRID_1534_Grid_Cyclic_channel_list.cs" />
+	<Compile Include="18_RES\08_GRID\GRID_2011_2036_Pgrm_Grid_All_Single_Ch.cs" />
+    <Compile Include="18_RES\09_TIMER\TIMER_0002_OverlappingReminder.cs" />
+    <Compile Include="18_RES\09_TIMER\TIMER_0010_SingleReminder_Live.cs" />
+    <Compile Include="18_RES\09_TIMER\TIMER_0013_ReminderNotification_NoAction.cs" />
+    <Compile Include="18_RES\09_TIMER\TIMER_0030_CancelReminder.cs" />
+    <Compile Include="18_RES\09_TIMER\TIMER_ReminderNotification_ReviewBuffer_PlayBack.cs" />
+	<Compile Include="18_RES\09_TIMER\TIMER_0014_SingleReminder_EPG.cs" />
+	<Compile Include="18_RES\09_TIMER\TIMER_0020_Multiple_ReminderNotification_Order.cs" />
+	<Compile Include="18_RES\09_TIMER\TIMER_0032_Loss_ReminderNotification_FactoryReset.cs" />
+    <Compile Include="18_RES\10_PVREPG\PVREPG_0879_StopKey_Live.cs" />
+    <Compile Include="18_RES\10_PVREPG\PVREPG_StopKey.cs" />
+    <Compile Include="18_RES\10_PVREPG\PVREPG_RECKey.cs" />
+    <Compile Include="18_RES\10_PVREPG\PVREPG_0880_StopKey_ChannelBar.cs" />
+	<Compile Include="18_RES\10_PVREPG\PVREPG_0803_RECkey_stopCurrent_MR.cs" />
+	<Compile Include="18_RES\10_PVREPG\PVREPG_0812_stop_Future_MR.cs" />
+	<Compile Include="18_RES\10_PVREPG\PVREPG_RECkey_Rmd_Future.cs" />
+	<Compile Include="18_RES\10_PVREPG\PVREPG_0813_RecStopKey_Future_Series.cs" />
+	<Compile Include="18_RES\10_PVREPG\PVREPG_0833_RECkey_Past_Channel_Bar.cs" />
+	<Compile Include="18_RES\10_PVREPG\PVREPG_0872_Curr_evt_not_record.cs" />
+	<Compile Include="18_RES\10_PVREPG\PVREPG_0851_RECkey_Future_ActMenu.cs" />
+	<Compile Include="18_RES\10_PVREPG\PVREPG_0883_Cancel_Record_Series.cs" />
+    <Compile Include="18_RES\12_STORE\STORE_0200_Navigation_Display.cs" />
+    <Compile Include="18_RES\12_STORE\STORE_0201_Navigation_Browsing.cs" />
+    <Compile Include="18_RES\12_STORE\STORE_0210_Navigation_Adult.cs" />
+    <Compile Include="18_RES\12_STORE\STORE_0211_Navigation_AdultDismiss.cs" />
+    <Compile Include="18_RES\12_STORE\STORE_0240_Navigation_Background_Image.cs" />
+    <Compile Include="18_RES\12_STORE\STORE_0252_Adult_Classification_User_Entitled_Navigation_Play.cs" />
+    <Compile Include="18_RES\15_SCRSAV\SCRSAV_1204_OnRadioChannel.cs" />
+	<Compile Include="18_RES\15_SCRSAV\SCRSAV_1203_Exit_Screen_Saver.cs"/>
+    <Compile Include="19_LIB\LIB_0010_Book_ModifyKeepStatus_EventBasedRecording.cs" />
+    <Compile Include="19_LIB\LIB_0015_Book_ModifyAttributes_TimeBasedRecording.cs" />
+    <Compile Include="19_LIB\LIB_0020_Book_TimeBasedRecording_Verify_NameInList.cs" />
+    <Compile Include="19_LIB\LIB_0021_Book_EventBased_To_TimeBasedRecording.cs" />
+    <Compile Include="19_LIB\LIB_0027_Book_ModifyKeep_PastRecording.cs" />
+    <Compile Include="19_LIB\LIB_0029_Book_CancelTimeBaseReccuring.cs" />
+    <Compile Include="19_LIB\LIB_0030_Book_ModifyKeepStatus.cs" />
+    <Compile Include="19_LIB\LIB_0034_Book_ModifyLockStatus.cs" />
+    <Compile Include="19_LIB\LIB_0041_Book_Delete_Ongoing_CompletedRecording.cs" />
+    <Compile Include="19_LIB\LIB_0043_Book_RefreshVideoRecordingList.cs" />
+    <Compile Include="19_LIB\LIB_0052_Book_DeleteAllInRecordingsListKeepFlag.cs" />
+    <Compile Include="19_LIB\LIB_0058_Book_VideoRecordingList.cs" />
+    <Compile Include="19_LIB\LIB_1200_Nav_InfoRecordings.cs" />
+    <Compile Include="19_LIB\LIB_1203_Nav_NoContent.cs" />
+    <Compile Include="19_LIB\LIB_1220_Nav_Subcategories.cs" />
+    <Compile Include="19_LIB\LIB_1230_Nav_Search.cs" />
+    <Compile Include="19_LIB\LIB_0002_Book_RefreshPlannerList.cs" />
+    <Compile Include="19_LIB\LIB_0008_Book_CancelEventBased.cs" />
+    <Compile Include="19_LIB\LIB_0013_Book_CancelTimeBased.cs" />
+    <Compile Include="19_LIB\LIB_0016_Book_DeleteAll.cs" />
+    <Compile Include="19_LIB\LIB_0031_Book_DeletePastRec.cs" />
+    <Compile Include="19_LIB\LIB_0051_Book_DeleteAllInRecordingsList.cs" />
+    <Compile Include="19_LIB\LIB_2111_Nav_AdultSessionPIN.cs" />
+    <Compile Include="19_LIB\LIB_BOOK_SeriesCancelCompleteCurrent.cs" />
+	<Compile Include="19_LIB\LIB_1002_Termination_AdultSessionOpened.cs" />
+	<Compile Include="19_LIB\LIB_1000_ValidPIN_Library_AdultSession.cs" />
+	<Compile Include="19_LIB\LIB_1004_AdultSession_Terminates_StartingPlayback.cs" />
+	<Compile Include="19_LIB\LIB_1324_NumberOfAssets_RecordedAssets.cs" />
+    <Compile Include="19_RESGUIDE\STORE_0101_Acess_Channel_Bar.cs" />
+    <Compile Include="22_VOD\VOD_0010_Access_Through_VOD_Catalogue.cs" />
+    <Compile Include="22_VOD\VOD_0020_Access_Through_Live_Channel.cs" />
+    <Compile Include="22_VOD\VOD_0030_Access_Through_Video_Library_Bought_Products.cs" />
+    <Compile Include="22_VOD\VOD_0051_Asset_Playback.cs" />
+    <Compile Include="22_VOD\VOD_0052_Trailer_Playback.cs" />
+    <Compile Include="22_VOD\VOD_0053_Asset_playback_with_PP_content.cs" />
+    <Compile Include="22_VOD\VOD_0140_Asset_Basic_Information.cs" />
+	<Compile Include="22_VOD\VOD_0146_Asset_Information_SVOD.cs" />
+    <Compile Include="22_VOD\VOD_Asset_Pricing_Information.cs" />
+    <Compile Include="22_VOD\VOD_0210_Asset_Extended_Information.cs" />
+    <Compile Include="22_VOD\VOD_0305_Playback_Waiting_Notifications.cs" />
+    <Compile Include="22_VOD\VOD_0343_VOD_Playback_Stop.cs" />
+    <Compile Include="22_VOD\VOD_0372_PP_VOD_Adult_Session_Stop_Playback.cs" />
+    <Compile Include="22_VOD\VOD_Playback_TrickModes.cs" />
+    <Compile Include="22_VOD\VOD_0351_VOD_Playback_Reach_Begining.cs" />
+    <Compile Include="22_VOD\VOD_0367_playback_action_DVBsubtitle.cs" />
+    <Compile Include="22_VOD\VOD_0366_playback_action_menu_audio_stream_available.cs" />
+    <Compile Include="22_VOD\VOD_0300_ Playback_initialisations.cs" />
+    <Compile Include="22_VOD\VOD_0340_VOD_playback_play_speed.cs" />
+    <Compile Include="22_VOD\VOD_0341_VOD_Playback_Pause.cs" />
+    <Compile Include="22_VOD\VOD_0352_VOD_Playback_Reach_End_Of_Asset.cs" />
+    <Compile Include="22_VOD\VOD_0358_Automatic_resume.cs" />
+    <Compile Include="22_VOD\VOD_0368_VOD_playback_action_teletext_subtitle.cs" />
+    <Compile Include="22_VOD\VOD_0370_PP_VOD_Stop_Playback.cs" />
+    <Compile Include="22_VOD\VOD_0371_PP_VOD_Playback_Ends.cs" />
+	<Compile Include="27_USC\CustomerCare_Horizon_Account_Assistant.cs" />
+	<Compile Include="28_DIAGNOSTICS\DIAG_0110_CPE_DiagnosticsRefresh.cs" />
+	<Compile Include="30_AMS\AMS_0001_Live_Viewing.cs" />
+	<Compile Include="30_AMS\AMS_0002_SurfEvent.cs" />
+	<Compile Include="30_AMS\AMS_0003_StreamEvent.cs" />
+	<Compile Include="30_AMS\AMS_0202_PowerUp.cs" />
+    <Compile Include="30_AMS\AMS_0297_Programme_BookingEvent.cs" />
+	<Compile Include="30_AMS\AMS_0298_TimeBased_Booking_Event.cs" />
+	<Compile Include="30_AMS\AMS_RB_PlayBackEvent.cs" />
+	<Compile Include="30_AMS\AMS_Recording_PlayBackEvent.cs" />
+	<Compile Include="30_AMS\AMS_0205_CallbackFailure.cs" />
+	<Compile Include="30_AMS\AMS_End_Of_PlayBack.cs" />
+	<Compile Include="30_AMS\AMS_0413_BookingRecording_SL.cs" />
+	<Compile Include="30_AMS\AMS_0415_BookingRecurring_TimeBased.cs" />
+	<Compile Include="30_AMS\AMS_0508_Playback_MinChangeSpeed.cs" />
+	<Compile Include="30_AMS\AMS_0509_RBPlayback_MinChangeSpeed.cs" />
+	<Compile Include="30_AMS\AMS_0403_RecordingSegments.cs" />
+	<Compile Include="30_AMS\AMS_0110_Guide_ByGenre.cs" />
+	<Compile Include="30_AMS\AMS_MLT_ActioMenu_Next_NoInfo.cs" />
+	<Compile Include="30_AMS\AMS_MLT_PersistentRB.cs" />
+	<Compile Include="30_AMS\AMS_0116_MLT_ActionMenu_PLB_RecList.cs" />
+	<Compile Include="30_AMS\AMS_0105_MLT_CHbar_PIP.cs" />
+	<Compile Include="30_AMS\AMS_0101_MLT_Guide.cs" />
+	<Compile Include="30_AMS\AMS_0107_MLT_CHAN_BAR_UNSUBSCRIBED.cs" />
+	<Compile Include="30_AMS\AMS_Search_Keyword_Refine.cs" />
+	<Compile Include="30_AMS\AMS_0123_MLT_ActionMenu_Suggested.cs" />
+	<Compile Include="30_AMS\AMS_0002_No_SurfEvent.cs" />
+	<Compile Include="30_AMS\AMS_0002_RB_SurfEvent.cs" />
+	<Compile Include="30_AMS\AMS_0240_SignalLoss_Event.cs" />
+	<Compile Include="30_AMS\AMS_IMI_REMINDER.cs" />
+	<Compile Include="30_AMS\AMS_NON_IMI_REMINDER.cs" />
+    <Compile Include="38_CRUMBTRAIL\CRUMB_0001_EPGScreens_NoCrum.cs" />
+    <Compile Include="38_CRUMBTRAIL\CRUMB_0005_CrumbdisplayFormat.cs" />
+    <Compile Include="38_CRUMBTRAIL\CRUMB_EPGScreen.cs" />
+    <Compile Include="38_CRUMBTRAIL\CRUMB_0012_Playback.cs" />
+    <Compile Include="38_CRUMBTRAIL\CRUMB_0009_Profile.cs" />
+    <Compile Include="38_CRUMBTRAIL\CRUMB_0003_Search.cs" />
+	<Compile Include="Fitnesse\Fitnesse.cs" />
+	<Compile Include="Fitnesse\Fitnesse_Format.cs" />
+    <Compile Include="FT173\FT173_001_Day_SKIP_in_GRID.cs" />
+	<Compile Include="FT173\FT173_006_Dayskip_less_than_15_days_EIT.cs" />
+	<Compile Include="FT173\FT173_007_DaySkip_In_Specific_Condition.cs" />
+	<Compile Include="FT173\FT173_013_Event_Nav_Available_Timeline.cs" />
+    <Compile Include="FT172\FT172_0003_Favourite_services_re_ordering.cs" />
+    <Compile Include="FT172\FT172_0001_favourites_services_numbering.cs" />
+    <Compile Include="FT172\FT172_0008_FastChannelList_RegularMode.cs" />
+    <Compile Include="FT172\FT172_0004_Remove_service_favourite_list.cs" />
+    <Compile Include="FT172\FT172_0005_DCA_to_Fav_and_Non_fav_services_fav_mode.cs" />
+    <Compile Include="FT172\FT172_0007_DCA_in_fast_channel_list_fav_mode.cs" />
+    <Compile Include="FT172\FT172_0002_Adding_new_services_to_favourites_list.cs" />
+	<Compile Include="FT172\FT172_0009_LiveViewing_FutureEvent.cs" />
+	<Compile Include="FT172\FT172_0013_Event_Info.cs" />
+	<Compile Include="FT172\FT172_0012_Record_Playback_banner.cs" />
+	<Compile Include="FT172\FT172_0014_Event_Info_Grid.cs" />
+    <Compile Include="FT191\FT191_001_Verify_Usage_Indicatorcs.cs" />
+<Compile Include="FT191\FT191_VerifyHDDIndicator_Standby_Reboot.cs" />
+    <Compile Include="FT191\FT191_Verify_HDDIndicator_AfterSCRSVR_Timeout.cs" />
+<Compile Include="FT191\FT191_Verify_HDDIndicator_Ongoing_Delete_Recording.cs" />
+	<Compile Include="FT239\FT239_001_Menu_Order.cs" />
+    <Compile Include="Performance\EPGPerformance.cs" />
+    <Compile Include="FT172\FT172_0015_DCA_in_Guide_fav_mode.cs" />
+    <Compile Include="Performance\DCAPerformance.cs" />
+    <Compile Include="FT172\FT172_0016_DCA_in_Guide_regular_mode.cs" />
+    <Compile Include="FT172\FT172_0010_RB_Playback.cs" />
+	<Compile Include="FT181\FT181_REV_GRID_ChannelSurf_Past.cs" />
+	<Compile Include="FT181\FT181_REV_GRID_Skip.cs" />
+	<Compile Include="FT256\FT256_001_Favourites.cs" />
+	<Compile Include="FT256\FT256_0002_Favourite.cs" />
+    <Compile Include="OTA\Sanity_DNL_PowerOn.cs" />
+    <Compile Include="OTA\Sanity_DNL_Standby.cs" />
+    <Compile Include="OTA\Sanity_DNL_Recording.cs" />
+    <Compile Include="OTA\Sanity_2016_DNL_Forced_FirstInst_N_on_N.cs" />
+	<Compile Include="OverNight\ON_MP_ParalellBooking.cs" />
+	<Compile Include="OverNight\ON_MP_OverlapRecordings.cs" />
+	<Compile Include="OverNight\ON_PeriodicMP.cs" />
+	<Compile Include="OverNight\ON_ParalellBooking_EventBased.cs" />
+	<Compile Include="OverNight\ON_AlternateRec_LivePause.cs" />
+	<Compile Include="MP\UPT_0401_Maintenance_Phase_triggering.cs" />
+	<Compile Include="MP\UPT_0402_SwitchingCPEduringMaintenance.cs" />
+    <Compile Include="Performance\StandBytoLive.cs" />
+    <Compile Include="Performance\TM_PausePlaybackPerformance.cs" />
+    <Compile Include="Performance\TM_ResumePlaybackPerformance.cs" />
+    <Compile Include="Performance\TM_StartPlaybackPerformance.cs" />
+    <Compile Include="Performance\TM_StoptPlaybackPerformance.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+	<Compile Include="RMS\EpgSettings_MenuTimeOut.cs"/>
+    <Compile Include="RMS\Epgsettings_MenuLanguage.cs"/>
+    <Compile Include="RMS\RMS_0001_GetParameteValues.cs" />
+	<Compile Include="RMS\RMS_0002_GetParameterFromVersionFile.cs" />
+	<Compile Include="RMS\RMS_0002_GetParameterFromhdparmFile.cs"/>
+	<Compile Include="RMS\RMS_0003_localevalues.cs"/>
+    <Compile Include="RMS\RMS_0005_Reboot.cs"/>
+	<Compile Include="RMS\RMS_0006_SetGaurdTimes.cs"/>
+	<Compile Include="RMS\RMS_0007_LAN_parameters.cs"/>
+	<Compile Include="RMS\RMS_0008_LAN_reboot.cs"/>
+    <Compile Include="RMS\RMS_0009_SetSeriesBooking.cs"/>
+	<Compile Include="RMS\RMS_0011_SetSubtitleValues.cs"/>
+	<Compile Include="RMS\RMS_0012_SetVideoSettings.cs"/>
+	<Compile Include="RMS\RMS_0603_PvrSettingsDiskmgmt.cs"/>
+	<Compile Include="RMS\RMS_0015_SetAutostandby.cs"/>
+	<Compile Include="RMS\RMS_0014_SetStandbysettings.cs"/>
+	<Compile Include="RMS\RMS_0020_SCARTFormatSettings.cs"/>
+	<Compile Include="RMS\RMS_0021_MngmtSrvrGetParams.cs"/>
+	<Compile Include="RMS\RMS_0022_PVR_Get_Rec_StatusValues.cs"/>
+	<Compile Include="RMS\RMS_0023_AudioParam_Settings.cs"/>
+	<Compile Include="RMS\RMS_ScartAvControl_Get_Set.cs"/>
+	<Compile Include="RMS\RMS_024_HDMIParams_Get_Set.cs"/>
+	<Compile Include="RMS\RMS_0025_EDIDINFO.cs"/>
+	<Compile Include="RMS\RMS_0026_SPDIF_delay.cs"/>
+	<Compile Include="RMS\RMS_0026_Digital_output[SPDIF].cs"/>
+	<Compile Include="RMS\RMS_PurchaseProtection_GET_SET.cs"/>
+	<Compile Include="RMS\RMS_0027_EpgVersion_Luminosity_Get.cs"/>
+	<Compile Include="RMS\RMS_0029_ParentalControlLevel_Get_Set.cs"/>
+	<Compile Include="RMS\RMS_0030_Signal_Strength_quality.cs"/>
+	<Compile Include="RMS\RMS_RFTuner_Status.cs"/>
+	<Compile Include="RMS\RMS_TrickModeSettings_GET_SET.cs"/>
+	<Compile Include="FullSanity\FullSanity_2201.cs"/>
+	<Compile Include="FullSanity\FullSanity_0502.cs"/>
+	<Compile Include="FullSanity\Fullsanity_1302.cs"/>
+	<Compile Include="FullSanity\FullSanity_0406.cs"/>
+	<Compile Include="FullSanity\FullSanity_0406_FAR.cs"/>
+	<Compile Include="FullSanity\FullSanity_0411.cs"/>
+	<Compile Include="FullSanity\FullSanity_1801.cs"/>
+	<Compile Include="FullSanity\FullSanity_0209_LIVE_FAV.cs"/>
+	<Compile Include="FullSanity\FullSanity_0806.cs"/>
+	<Compile Include="FullSanity\FullSanity_0408.cs" />
+	<Compile Include="FullSanity\FullSanity_0601.cs" />
+	<Compile Include="FullSanity\FullSanity_2009.cs" />
+	<Compile Include="FullSanity\FullSanity_2010.cs" />
+	<Compile Include="FullSanity\FullSanity_2004.cs" />
+	<Compile Include="FullSanity\FullSanity_0206.cs"/>
+	<Compile Include="FullSanity\FullSanity_0207.cs"/>
+	<Compile Include="FullSanity\FullSanity_0100.cs"/>
+	<Compile Include="FullSanity\FullSanity_0102.cs"/>
+	<Compile Include="FullSanity\FullSanity_0103.cs"/>
+	<Compile Include="FullSanity\FullSanity_0201.cs"/>
+	<Compile Include="FullSanity\FullSanity_0202.cs"/>
+	<Compile Include="FullSanity\FullSanity_0203.cs"/>
+	<Compile Include="FullSanity\FullSanity_0204.cs"/>
+	<Compile Include="FullSanity\FullSanity_0205.cs"/>
+	<Compile Include="FullSanity\FullSanity_0208.cs"/>
+	<Compile Include="FullSanity\FullSanity_0280.cs"/>
+	<Compile Include="FullSanity\FullSanity_0304.cs"/>
+	<Compile Include="FullSanity\FullSanity_0370.cs"/>
+	<Compile Include="FullSanity\FullSanity_0402.cs"/>
+	<Compile Include="FullSanity\FullSanity_0403.cs"/>
+	<Compile Include="FullSanity\FullSanity_0405.cs"/>
+	<Compile Include="FullSanity\FullSanity_0407.cs"/>
+	<Compile Include="FullSanity\FullSanity_0409.cs"/>
+	<Compile Include="FullSanity\FullSanity_0410.cs"/>
+	<Compile Include="FullSanity\FullSanity_0501.cs"/>
+	<Compile Include="FullSanity\FullSanity_0504.cs"/>
+	<Compile Include="FullSanity\FullSanity_0505.cs"/>
+	<Compile Include="FullSanity\FullSanity_0602.cs"/>
+	<Compile Include="FullSanity\FullSanity_0603.cs"/>
+	<Compile Include="FullSanity\FullSanity_0604a.cs"/>
+	<Compile Include="FullSanity\FullSanity_0604b.cs"/>
+	<Compile Include="FullSanity\FullSanity_0605.cs"/>
+	<Compile Include="FullSanity\FullSanity_0701a.cs"/>
+	<Compile Include="FullSanity\FullSanity_0701b.cs"/>
+	<Compile Include="FullSanity\FullSanity_0702.cs"/>
+	<Compile Include="FullSanity\FullSanity_0703.cs"/>
+	<Compile Include="FullSanity\FullSanity_0704.cs"/>
+	<Compile Include="FullSanity\FullSanity_0705.cs"/>
+	<Compile Include="FullSanity\FullSanity_0802.cs"/>
+	<Compile Include="FullSanity\FullSanity_0803.cs"/>
+	<Compile Include="FullSanity\FullSanity_0804.cs"/>
+	<Compile Include="FullSanity\FullSanity_0805.cs"/>
+	<Compile Include="FullSanity\FullSanity_0901.cs"/>
+    <Compile Include="FullSanity\FullSanity_0902.cs"/>
+	<Compile Include="FullSanity\FullSanity_0903.cs"/>
+	<Compile Include="FullSanity\FullSanity_0904.cs"/>
+	<Compile Include="FullSanity\FullSanity_0905.cs"/>
+	<Compile Include="FullSanity\FullSanity_0906.cs"/>
+	<Compile Include="FullSanity\FullSanity_1001.cs"/>
+	<Compile Include="FullSanity\FullSanity_1201.cs"/>
+	<Compile Include="FullSanity\FullSanity_1202.cs"/>
+	<Compile Include="FullSanity\FullSanity_1203.cs"/>
+	<Compile Include="FullSanity\FullSanity_1301.cs"/>
+	<Compile Include="FullSanity\FullSanity_1501.cs"/>
+	<Compile Include="FullSanity\FullSanity_1502.cs"/>
+	<Compile Include="FullSanity\FullSanity_1503.cs"/>
+	<Compile Include="FullSanity\FullSanity_1504.cs"/>
+	<Compile Include="FullSanity\FullSanity_1601.cs"/>
+	<Compile Include="FullSanity\FullSanity_1701.cs"/>
+	<Compile Include="FullSanity\FullSanity_1702.cs"/>
+	<Compile Include="FullSanity\FullSanity_2001.cs"/>
+	<Compile Include="FullSanity\FullSanity_2002.cs"/>
+	<Compile Include="FullSanity\FullSanity_2003.cs"/>
+	<Compile Include="FullSanity\FullSanity_2005.cs"/>
+	<Compile Include="FullSanity\FullSanity_2006.cs"/>
+	<Compile Include="FullSanity\FullSanity_2007.cs"/>
+	<Compile Include="FullSanity\FullSanity_2008.cs"/>
+	<Compile Include="FullSanity\FullSanity_SUBT.cs"/>
+	<Compile Include="FullSanity\Robustness_Eco_Mode.cs"/>
+	<Compile Include="FullSanity\Robustness_InOutStandby_001.cs"/>
+	<Compile Include="FullSanity\Robustness_TuneViaTVGuide.cs"/>
+	<Compile Include="FullSanity\Robustness_Zapping_001.cs"/>
+    <Compile Include="Robustness\Robustness_ChannelPlus.cs" />
+    <Compile Include="Robustness\Robustness_LockChannels.cs" />
+    <Compile Include="Robustness\SearchOnFilter.cs" />
+    <Compile Include="Robustness\SearchPerforma.cs" />
+	<Compile Include="Robustness\SearchDiffOptions.cs" />
+    <Compile Include="Stability\ADayInLife_Stage_1.cs" />
+    <Compile Include="Stability\ADayInLife_Stage_2.cs" />
+    <Compile Include="Stability\ChannelSurfStability.cs" />
+    <Compile Include="Stability\TimeSpanChannelSurfStability.cs"/>
+	<Compile Include="Migration\MigrationTest.cs"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\FailuresHandler\FailuresHandler.vbproj">
+      <Project>{763ABA2D-D93A-4527-AF42-74EFA511F378}</Project>
+      <Name>FailuresHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.CDIGITAL\IEX.ElementaryActions.EPG.SF.CDIGITAL.vbproj">
+      <Project>{23707326-EA34-4B44-8819-5C99DD056E24}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.CDIGITAL</Name>
+    </ProjectReference>
+	<ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.CISCOREFRESH\IEX.ElementaryActions.EPG.SF.CISCOREFRESH.vbproj">
+      <Project>{0A6FF36F-3714-4234-80CB-B383742B582A}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.CISCOREFRESH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.COGECO\IEX.ElementaryActions.EPG.SF.COGECO.vbproj">
+      <Project>{E4C5B131-7E37-4CCF-BD4C-207B2968006F}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.COGECO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.GET\IEX.ElementaryActions.EPG.SF.GET.vbproj">
+      <Project>{07B08BA5-54F0-4699-8A12-83EC552C0273}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.GET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.IPC\IEX.ElementaryActions.EPG.SF.IPC.vbproj">
+      <Project>{E67E07EB-0665-49DC-8B32-34713FC1F6E5}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.IPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.ISTB\IEX.ElementaryActions.EPG.SF.ISTB.vbproj">
+      <Project>{8942B191-72C3-4E6B-B1BB-1368EEF50446}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.ISTB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.TN\IEX.ElementaryActions.EPG.SF.TN.vbproj">
+      <Project>{88580152-54E6-466B-A5E4-E4A20914A12B}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.TN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.UPC\IEX.ElementaryActions.EPG.SF.UPC.vbproj">
+      <Project>{0E93D8AB-7FA2-4F55-9ED1-EAE98DCF2A51}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.UPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.VGW\IEX.ElementaryActions.EPG.SF.VGW.vbproj">
+      <Project>{FA526D6A-D31F-4819-BA9E-5618D1136A11}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.VGW</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF.VOO\IEX.ElementaryActions.EPG.SF.VOO.vbproj">
+      <Project>{B6C9BEFC-1347-44CC-BA68-DA6E04AF28B4}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF.VOO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG.SF\IEX.ElementaryActions.EPG.SF.vbproj">
+      <Project>{413AEE4B-C5B2-44F1-A3A2-41EB3307CE58}</Project>
+      <Name>IEX.ElementaryActions.EPG.SF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.EPG\IEX.ElementaryActions.EPG.vbproj">
+      <Project>{D0A8EBF2-C5FC-4D53-9DF4-C85103097963}</Project>
+      <Name>IEX.ElementaryActions.EPG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.FunctionalityCS\IEX.ElementaryActions.FunctionalityCS.csproj">
+      <Project>{12537191-089B-480F-917C-8DC86B79E7D4}</Project>
+      <Name>IEX.ElementaryActions.FunctionalityCS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\IEX.ElementaryActions.Functionality\IEX.ElementaryActions.Functionality.vbproj">
+      <Project>{C4CE3A3C-D1BC-4CAD-9661-616658CBEABB}</Project>
+      <Name>IEX.ElementaryActions.Functionality</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IEX_SRC_FILES\Library\Library.csproj">
+      <Project>{801343B6-B685-45F5-BBA1-A4C75215563D}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IEX.Tests.Engine\IEX.Tests.Engine.csproj">
+      <Project>{684506F1-5DAD-4A3C-AB08-C34B241AF8D7}</Project>
+      <Name>IEX.Tests.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IEX.Tests.Utils\IEX.Tests.Utils.csproj">
+      <Project>{592D4503-6C86-46A3-BA03-7DA412D01D02}</Project>
+      <Name>IEX.Tests.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="18_RES\06_MOS\" />
+    <Folder Include="18_RES\07_SRCH\" />
+    <Folder Include="18_RES\11_LIB\" />
+    <Folder Include="18_RES\13_RCMD\" />
+    <Folder Include="18_RES\14_HELP\" />
+    <Folder Include="FullSanity\" />
+    <Folder Include="LightSanity\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG
+</name>
+</assembly>
+<members>
+<member name="M:IEX.ElementaryActions.EPG.Utils.Hex2Dec(System.String,System.String@)">
+	<summary>
+ The function converts Hex string to Decimal.
+ </summary>
+	<param name="hex">Hex string to be converted</param>
+	<param name="dec">conversion of the given arguments</param>
+	<returns>Decimal representation  of the hex arguments</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.Utils.Dec2Hex(System.String,System.String@)">
+	<summary>
+ Convert Decimal number to Hex
+ </summary>
+	<param name="Dec">Decimal number to convert</param>
+	<param name="hex">ByRef param, Hex number to return</param>
+	<returns>IEXResult</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.Utils.IncreaseTimeByParam(System.String,System.String,System.Int32,System.String@)">
+	<summary>
+ Increases a given string represents time with the given factor
+ </summary>
+	<param name="baseTime">Should be in format "XX:YY"</param>
+	<param name="timePart">Can be either: "h" - for hours, or "n" - for minutes</param>
+	<param name="factor">baseTime + factor * field = newTime</param>
+	<param name="result">new time according to the calculation above</param>
+	<returns>result in the format "XX:YY"</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

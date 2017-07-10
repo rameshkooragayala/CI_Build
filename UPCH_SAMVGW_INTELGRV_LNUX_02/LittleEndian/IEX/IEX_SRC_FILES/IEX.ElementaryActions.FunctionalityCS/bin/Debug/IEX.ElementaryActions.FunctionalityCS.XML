@@ -1,0 +1,609 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IEX.ElementaryActions.FunctionalityCS</name>
+    </assembly>
+    <members>
+        <member name="T:EAImplementation.SetPurchaseProtection">
+            <summary>
+            Active/deactivate prurchase protection in settings
+            </summary>
+        </member>
+        <member name="M:EAImplementation.SetPurchaseProtection.#ctor(System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Activate/deactivate purchase protection in settings
+            </summary>
+            <param name="enable">enable if true, disable if false</param>
+            <remarks>
+            Possible Error Codes:
+            <para>322 - VerificationFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.SetPurchaseProtection.Execute">
+            <summary>
+            Activate/deactivate the purchase protection in settings
+            </summary>
+        </member>
+        <member name="T:EAImplementation.VerifyAssetDetails">
+            <summary>
+            Verify asset details page
+            </summary>
+        </member>
+        <member name="M:EAImplementation.VerifyAssetDetails.#ctor(VODAsset,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Verify asset details page
+            </summary>
+            <remarks>
+            Possible Error Codes:
+            <para>322 - VerificationFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.VerifyAssetDetails.Execute">
+            <summary>
+            Verify asset details page
+            </summary>
+        </member>
+        <member name="T:EAImplementation.SetPreferredAudioLanguage">
+            <summary>
+            Set audio prefered language
+            </summary>
+        </member>
+        <member name="M:EAImplementation.SetPreferredAudioLanguage.#ctor(IEX.ElementaryActions.Functionality.EnumLanguage,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Set audio prefered language
+            </summary>
+            <param name="enable">language to set</param>
+            <remarks>
+            Possible Error Codes:
+            <para>301 - DictionaryFailure</para> 
+            <para>302 - EmptyEPGInfoFailure</para> 
+            <para>304 - IRVerificationFailure</para> 
+            <para>314 - SetSettingsFailure</para> 
+            <para>332 - NoValidParameters</para> 	
+            <para>334 - VideoNotPresent</para> 
+            <para>349 - ReturnToLiveFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.SetPreferredAudioLanguage.Execute">
+            <summary>
+            Set audio prefered language
+            </summary>
+        </member>
+        <member name="T:EAImplementation.GetCurrentAudioLanguage">
+            <summary>
+             Get current audio language from action menu
+            </summary>
+        </member>
+        <member name="M:EAImplementation.GetCurrentAudioLanguage.#ctor(IEX.ElementaryActions.Functionality.Manager)">
+            <param name="manager">the manager</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.GetCurrentAudioLanguage.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.SetAutoStandBy">
+            <param name="pManager">Manager</param>
+            <param name="valueToSet">valueToSet</param>
+            <summary>
+            Sets the power usage optios based on value to set
+            </summary>
+        </member>
+        <member name="M:EAImplementation.SetAutoStandBy.#ctor(System.String,IEX.ElementaryActions.Functionality.Manager)">
+            <remarks>
+            Possible Error Codes:
+            <para>300 - NavigationFailure</para> 
+            <para>301 - DictionaryFailure</para> 
+            <para>302 - EmptyEpgInfoFailure</para> 
+            <para>304 - IRVerificationFailure</para> 
+            <para>349 - ReturnToLiveFailure</para> 
+            <para>350 - ParsingFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.SetAutoStandBy.Execute">
+            <summary>
+             EA Execution
+             Set Auto Standby navigates to AUTO STANDBY and sets it either to AUTOMATIC/OFF/NIGHT TIME
+            </summary>
+        </member>
+        <member name="M:RMSEAImplementation.RMSLoginAndEnterBoxid.Execute">
+            <summary>
+            EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.SubscribeAsset">
+            <summary>
+            Navigate to a VOD asset and subscribe it
+            </summary>
+        </member>
+        <member name="M:EAImplementation.SubscribeAsset.#ctor(VODAsset,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Navigate to a VOD asset and subscribe it
+            </summary>
+            <param name="vodAsset">VODAsset object</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.SubscribeAsset.Execute">
+            <summary>
+            Navigate to a VOD asset and subscribe it
+            </summary>
+        </member>
+        <member name="T:EAImplementation.PlayTrailer">
+            <summary>
+            Navigate to a VOD asset and play the trailer
+            </summary>
+        </member>
+        <member name="M:EAImplementation.PlayTrailer.#ctor(VODAsset,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Navigate to a VOD asset and play the trailer
+            </summary>
+            <param name="vodAsset">VODAsset object</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.PlayTrailer.Execute">
+            <summary>
+            Navigate to a VOD asset and play the trailer
+            </summary>
+        </member>
+        <member name="T:EAImplementation.GetRBDepthInSec">
+            <summary>
+             Parses the RB depth milestones and calculate the RB depth
+            </summary>
+        </member>
+        <member name="M:EAImplementation.GetRBDepthInSec.#ctor(System.String,IEX.ElementaryActions.Functionality.Manager)">
+            <param name="timeStampMarginLine">RB depth milestone to be parsed</param>
+            <param name="pManager">The Returned RBdepth in mins </param>
+            <remarks>
+            Possible Error Codes:
+            <para>350 - ParsingFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.GetRBDepthInSec.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.FlushRB">
+            <summary>
+             Parses the RB depth milestones and calculate the RB depth
+            </summary>
+        </member>
+        <member name="M:EAImplementation.FlushRB.#ctor(System.Double,IEX.ElementaryActions.Functionality.Manager)">
+            <param name="waitInStby">time to wait in standby in secs</param>
+            <param name="manager">the manager</param>
+            <remarks>
+            Possible Error Codes:
+            <para>304 - IRVerificationFailure</para> 
+            <para>322 - VerificationFailure</para> 
+            <para>332 - NoValidParameters</para> 
+            <para>350 - ParsingFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.FlushRB.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.NavigateAndHighlight">
+            <summary>
+            Modifications of the options available in the Action Bar screen.
+            </summary>
+        </member>
+        <member name="M:IEX.ElementaryActions.FunctionalityCS.EAs.RMS.RMSLoginAndQuickActions.Execute">
+            <summary>
+            EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.GetAudioType">
+            <summary>
+             Return the audio type
+            </summary>
+        </member>
+        <member name="M:EAImplementation.GetAudioType.#ctor(System.Object,System.Int32,IEX.ElementaryActions.Functionality.Manager)">
+            <param name="stream">Service or VODAsset object</param>
+            <param name="audioLanguageIndex">index of the audio language</param>
+            <param name="manager">the manager</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.GetAudioType.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.VerifyRecordErrorInfo">
+             Information about the verify failed event.
+            
+             @author Avinoba
+             @date 09-Oct-13
+        </member>
+        <member name="M:EAImplementation.VerifyRecordErrorInfo.#ctor(System.String,IEX.ElementaryActions.Functionality.EnumRecordErr,System.String,System.String,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Verified the Record Error Information for Failed and Partial recording
+            </summary>
+            <param name="EventKeyName">The Key of the Event</param>
+            <param name="RecordError">The type of Record</param>
+            <param name="StartGuardTime">Optional Parameter. Default="". search for the start time with the SGT if not empty</param>
+            <param name="EndGuardTime">Optional Parameter. Default="". search for the end time with the EGT if not empty</param>
+            <param name="VerifyInPCAT">Verifies in PCAT</param>
+            <param name="pManager">Manager</param>
+        </member>
+        <member name="M:EAImplementation.VerifyRecordErrorInfo.Execute">
+            <summary>
+              EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.ModifyManualRecording">
+            <summary>
+              Modify Manual Recording From Planner
+            </summary>
+        </member>
+        <member name="M:EAImplementation.ModifyManualRecording.#ctor(System.String,System.String,System.String,System.String,System.Int32,IEX.ElementaryActions.Functionality.EnumFrequency,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <param name="EventKeyName">Key Of The Event</param>
+            <param name="StartTime">Channel Name</param>
+            <param name="EndTime">Channel Number If Entered Doing DCA</param>
+            <param name="ChannelName">Optional Parameter Default = "" : The Channel Name</param>
+            <param name="Days">Optional Parameter Default = 0 : Adds Days From Current Date</param>
+            <param name="Frequency">Optional Parameter Default = ONE_TIME</param>
+            <param name="pManager">Manager</param>
+            <remarks>
+            Possible Error Codes:
+            <para>300 - NavigationFailure</para> 
+            <para>301 - DictionaryFailure</para> 
+            <para>302 - EmptyEpgInfoFailure</para> 
+            <para>304 - IRVerificationFailure</para> 
+            <para>305 - PCATFailure</para> 
+            <para>309 - GetEpgTimeFailure</para>    
+            <para>310 - GetEpgDateFailure</para>    
+            <para>322 - VerificationFailure</para> 
+            <para>328 - INIFailure</para>  
+            <para>330 - TelnetFailure</para> 
+            <para>331 - CopyFileFailure</para> 
+            <para>332 - NoValidParameters</para> 
+            <para>334 - VideoNotPresent</para>  
+            <para>339 - RecordEventFailure</para>  
+            <para>349 - ReturnToLiveFailure</para> 
+            <para>350 - ParsingFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.ModifyManualRecording.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.GetCurrentSubtitleLanguage">
+            <summary>
+             Get current subtitle language from action menu
+            </summary>
+        </member>
+        <member name="M:EAImplementation.GetCurrentSubtitleLanguage.#ctor(IEX.ElementaryActions.Functionality.Manager)">
+            <param name="manager">the manager</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.GetCurrentSubtitleLanguage.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.SetNightTime">
+            <param name="pManager">Manager</param>
+            <param name="startTime">Start Time to set</param>
+            <param name="endTime">End Time to set</param>
+            <summary>
+            Sets start and end time by navigating to DEFINE AUTO STANDBY TIME.
+            </summary>
+        </member>
+        <member name="M:EAImplementation.SetNightTime.#ctor(System.String,System.String,IEX.ElementaryActions.Functionality.Manager)">
+            <remarks>
+            Possible Error Codes:
+            <para>300 - NavigationFailure</para> 
+            <para>301 - DictionaryFailure</para> 
+            <para>302 - EmptyEPGInfoFailure</para> 
+            <para>304 - IRVerificationFailure</para> 
+            <para>349 - ReturnToLiveFailure</para> 
+            <para>350 - ParsingFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.SetNightTime.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.BuyAsset">
+            <summary>
+            Navigate to a VOD asset and buy it
+            </summary>
+        </member>
+        <member name="M:EAImplementation.BuyAsset.#ctor(VODAsset,System.Boolean,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Navigate to a VOD asset and buy it
+            </summary>
+            <param name="vodAsset">VODAsset object</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.BuyAsset.Execute">
+            <summary>
+            Navigate to a VOD asset and buy it
+            </summary>
+        </member>
+        <member name="T:EAImplementation.SetPowerMode">
+            <param name="pManager">Manager</param>
+            <param name="valueToSet">Power Mode Paramter to be set</param>
+            <param name="warningMessageAvailable">warningMessage value to select/cancel low powermodes</param>
+            <summary>
+            Sets the power usage options based on value to set
+            </summary>
+        </member>
+        <member name="M:EAImplementation.SetPowerMode.#ctor(System.String,System.String,IEX.ElementaryActions.Functionality.Manager)">
+            <remarks>
+            Possible Error Codes:
+            <para>300 - NavigationFailure</para> 
+            <para>301 - DictionaryFailure</para> 
+            <para>302 - EmptyEpgInfoFailure</para> 
+            <para>304 - IRVerificationFailure</para> 
+            <para>349 - ReturnToLiveFailure</para> 
+            <para>350 - ParsingFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.SetPowerMode.Execute">
+            <summary>
+             EA Execution
+             Set Power Mode navigates to STANDBY POWER USAGE and set to any available mode based on value passed.
+             Also handles warning messages if available
+            </summary>
+        </member>
+        <member name="T:EAImplementation.ChangePinCode">
+            <summary>
+            Change pin code from settings
+            </summary>
+        </member>
+        <member name="M:EAImplementation.ChangePinCode.#ctor(System.String,System.String,IEX.ElementaryActions.Functionality.Manager)">
+            <param name="OldPin">Change Pin Code - Old Pin</param>
+            <param name="NewPin">Change Pin Code - New Pin</param>
+            <param name="pManager">Manager</param>
+        </member>
+        <member name="M:EAImplementation.ChangePinCode.Execute">
+            <summary>
+            EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.PlayAsset">
+            <summary>
+            Navigate to a VOD asset and play it
+            </summary>
+        </member>
+        <member name="M:EAImplementation.PlayAsset.#ctor(VODAsset,System.Boolean,System.Boolean,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Navigate to a VOD asset and play it
+            </summary>
+            <param name="vodAsset">VODAsset object</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.PlayAsset.Execute">
+            <summary>
+            Navigate to a VOD asset and play it
+            </summary>
+        </member>
+        <member name="T:EAImplementation.VerifyAMSTags">
+            <summary>
+             Verifies the AMS tags of different events
+            </summary>
+        </member>
+        <member name="M:EAImplementation.VerifyAMSTags.#ctor(IEX.ElementaryActions.Functionality.EnumAMSEvent,IEX.ElementaryActions.Functionality.Service,System.String,System.Double,System.String,IEX.ElementaryActions.Functionality.Manager)">
+            <param name="AMSEvent">Contains the tags the different AMS Events like Stanby in , out, Playback etc</param>
+            <param name="service">Servic object</param>
+            <param name="IsRBPlayback">Whether we are in Recording playback:False or RB playback:True</param>
+            <param name="Speed">For Example : 1 For Play, 0 For Pause,0.5,2,6,12,30</param>
+            <param name="manager">the manager</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.VerifyAMSTags.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="M:EAImplementation.OtaDownloadOption.Execute">
+            <summary>
+            EA Execution
+            </summary>
+        </member>
+        <member name="M:EAImplementation.OtaDownload.Execute">
+            <summary>
+            EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.StopAssetPlayback">
+            <summary>
+            Stop asset playback
+            </summary>
+        </member>
+        <member name="M:EAImplementation.StopAssetPlayback.#ctor(IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Stop asset playback
+            </summary>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.StopAssetPlayback.Execute">
+            <summary>
+            Stop asset playback
+            </summary>
+        </member>
+        <member name="T:EAImplementation.Skip">
+            <summary>
+            Setting Skip Points On TrickMode
+            </summary>
+        </member>
+        <member name="M:EAImplementation.Skip.#ctor(System.Boolean,System.Boolean,IEX.ElementaryActions.Functionality.EnumVideoSkip,System.Int32,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Performs skip operation and does verification
+            </summary>
+            <param name="direction">Madatory direction of skip.True if Forward else False. No default value</param>
+            <param name="PlaybackContext">Mandatory-PLAYBACK or RB-Playback is true/RB is false </param>
+            <param name="SkipDurationSetting">Enumvideoskip equivalent to required value </param>
+            <param name="NumOfSkipPoints">[optional parameter]-For BOOKMARK-Num of recordings,if not specified BOFEOF check will be true </param>
+            <param name="pManager"></param>
+            <remarks>
+            Possible Error Codes:
+            <para>303 - FasVerificationFailure</para> 
+            <para>304 - IRVerificationFailure</para> 
+            <para>313 - SetTrickModeSpeedFailure</para> 
+            <para>318 - SetSkipFailure</para> 
+            <para>328 - INIFailure</para> 
+            <para>332 - NoValidParameters</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.Skip.Execute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EAImplementation.DeleteFailedRecordedEvent">
+            <summary>
+            Deletes the Failed Recorded Event
+            </summary>
+        </member>
+        <member name="M:EAImplementation.DeleteFailedRecordedEvent.#ctor(System.String,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <param name="EventKeyName">Key of the Event</param>
+            <param name="VerifyDeleteInPCAT">Optional Parameter Dafault=true. Verifies Event has deleted</param>
+            <param name="pManager">manager</param>
+        </member>
+        <member name="M:EAImplementation.DeleteFailedRecordedEvent.Execute">
+            <summary>
+              EA Execute
+            </summary>
+        </member>
+        <member name="T:EAImplementation.SelectPurchasedAsset">
+            <summary>
+            Select an asset in the list of purchased assets
+            </summary>
+            <remarks>
+            Possible Error Codes:
+            <para>346 - FindEventFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.SelectPurchasedAsset.#ctor(VODAsset,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Select an asset in the list of purchased assets
+            </summary>
+            <param name="vodAsset">VODAsset object</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.SelectPurchasedAsset.Execute">
+            <summary>
+            Select an asset in the list of purchased assets
+            </summary>
+        </member>
+        <member name="T:EAImplementation.ActivateAutoStandByAfterTime">
+            <param name="pManager">Manager</param>
+            <param name="valueToSet">time period to set</param>
+            <summary>
+            Set Auto Stand Time navigates to ACTIVE STANDBY AFTER and set to specific time after which the box moves to standby at IDLE situations
+            </summary>
+        </member>
+        <member name="M:EAImplementation.ActivateAutoStandByAfterTime.#ctor(System.String,IEX.ElementaryActions.Functionality.Manager)">
+            <remarks>
+            Possible Error Codes:
+            <para>300 - NavigationFailure</para> 
+            <para>301 - DictionaryFailure</para> 
+            <para>302 - EmptyEpgInfoFailure</para> 
+            <para>304 - IRVerificationFailure</para> 
+            <para>349 - ReturnToLiveFailure</para> 
+            <para>350 - ParsingFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.ActivateAutoStandByAfterTime.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.VerifyPowerMode">
+            <param name="powerMode">Mode to set</param>
+            <param name="jobpresent">Checks for recordings present/scheduled</param>
+            <param name="startTime">Record start time</param>
+            <param name="endTime">Record end time</param>
+            <param name="CurrEPGTime">Current EPG Time</param>
+            <summary>
+            Verifies the set power mode option
+            </summary>
+        </member>
+        <member name="M:EAImplementation.VerifyPowerMode.#ctor(System.String,System.Boolean,System.String,System.String,System.String,System.Boolean,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <remarks>
+            Possible Error Codes:
+            <para>300 - NavigationFailure</para> 
+            <para>301 - DictionaryFailure</para> 
+            <para>302 - EmptyEpgInfoFailure</para> 
+            <para>304 - IRVerificationFailure</para> 
+            <para>349 - ReturnToLiveFailure</para> 
+            <para>350 - ParsingFailure</para> 
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.VerifyPowerMode.Execute">
+            <summary>
+             EA Execution
+             Verify Power Mode sets the power mode and verifies the power mode is set accordingly
+            </summary>
+        </member>
+        <member name="T:EAImplementation.GetSubtitleLanguage">
+            <summary>
+             Return the audio type
+            </summary>
+        </member>
+        <member name="M:EAImplementation.GetSubtitleLanguage.#ctor(System.Object,System.Int32,IEX.ElementaryActions.Functionality.Manager)">
+            <param name="stream">Service or VODAsset object</param>
+            <param name="subtitleLanguageIndex">index of the subtitle language</param>
+            <param name="manager">the manager</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.GetSubtitleLanguage.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.GetAudioLanguage">
+            <summary>
+             Return the audio type
+            </summary>
+        </member>
+        <member name="M:EAImplementation.GetAudioLanguage.#ctor(System.Object,System.Int32,IEX.ElementaryActions.Functionality.Manager)">
+            <param name="stream">Service or VODAsset object</param>
+            <param name="audioLanguageIndex">index of the audio language</param>
+            <param name="manager">the manager</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.GetAudioLanguage.Execute">
+            <summary>
+             EA Execution
+            </summary>
+        </member>
+        <member name="T:EAImplementation.NavigateToVODAsset">
+            <summary>
+            Navigate to a VOD asset and select it
+            </summary>
+        </member>
+        <member name="M:EAImplementation.NavigateToVODAsset.#ctor(VODAsset,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+            <summary>
+            Navigate to a VOD asset and select it
+            </summary>
+            <param name="vodAsset">VODAsset object</param>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="M:EAImplementation.NavigateToVODAsset.Execute">
+            <summary>
+            Navigate to a VOD asset and select it
+            </summary>
+        </member>
+    </members>
+</doc>

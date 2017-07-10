@@ -1,0 +1,339 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.Functionality.MOBILE
+</name>
+</assembly>
+<members>
+<member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SetUnsetFavoriteChannelNameList.#ctor(System.String,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="ChannelNameList">Requested Channel Name(s) - If Several Channel Names Then Use Comma As Separator</param>
+	<param name="SetAsFavorite">True to Set favorite(s), False to Unset favorite(s)</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+		<para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SetUnsetFavoriteChannelNameList">
+	<summary>
+   Setting/Unsetting 1 Or More Channel(s) As/From Favorite
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SetBannerDisplayTime.#ctor(IEX.ElementaryActions.Functionality.EnumChannelBarTimeout,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="DisplayInSec">Banner Display In Seconds : 5 , 7 or 10</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+		<para>334 - VideoNotPresent</para>
+		<para>349 - ReturnToLiveFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SetBannerDisplayTime">
+	<summary>
+   Sets Banner Display Time On Stb Settings
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.ChannelSurf.#ctor(IEX.ElementaryActions.Functionality.EnumSurfIn,System.String,System.Boolean,System.Int32,IEX.ElementaryActions.Functionality.EnumPredicted,System.Boolean,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="SurfIn">Can Be : Live, Guide Or ChannelBar</param>
+	<param name="ChannelNumber">Optional Parameter Default = "" : Channel Number</param>
+	<param name="IsNext">Optional Parameter Default = True : If True Surfs To Next Channel Else To Previous</param>
+	<param name="NumberOfPresses">Optional Parameter Default = 1 : Number Of Channels To Surf Up OR Down</param>
+	<param name="IsPredicted">Optional Parameter Default = Ignore : If The Next Or Previous Channel Is Predicted</param>
+	<param name="DoTune">Optional Parameter Default = False : If True Tune To Surfed Channel</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>349 - ReturnToLiveFailure</para>
+		<para>334 - VideoNotPresent</para>
+		<para>328 - INIFailure</para>
+		<para>351 - SurfingFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+		<para>328 - INIFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.ChannelSurf">
+	<summary>
+   Surfs Channel Up Down On Live,Guide,ChannelBar And Channel Lineup And Tune
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.TuneToChannel.#ctor(System.String,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="ChannelNumber">The Channel Number</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>334 - VideoNotPresent</para>
+		<para>349 - ReturnToLiveFailure</para>
+		<para>351 - SurfingFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.TuneToChannel">
+	<summary>
+   Tune To Channel
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SetLockChannel.#ctor(System.String,System.Int32,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="ChannelName">Requested Channel Name</param>
+	<param name="ChannelNumber">Requested Channel Number</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>357 - LockUnlockChannelFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SetLockChannel">
+	<summary>
+   Locking Channel From Parental Control
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.CancelBookingFromPlanner.#ctor(System.String,System.Int32,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="EventKeyName">Key Of The Event</param>
+	<param name="OccurrenceNumber">The Occurrence To Cancel From 1 To 14</param>
+	<param name="VerifyCancelInPCAT">Optional Parameter Default = True : If True Verifies Event Cancelled In PCAT</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>305 - PCATFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>328 - INIFailure</para>
+		<para>330 - TelnetFailure</para>
+		<para>332 - NoValidParameters</para>
+		<para>331 - CopyFileFailure</para>
+		<para>338 - EventNotExistsFailure</para>
+		<para>342 - CancelEventFailure</para>
+		<para>345 - DeleteEventFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.CancelBookingFromPlanner">
+	<summary>
+   Cancel Booking From Planner Screen
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SignIn.#ctor(IEX.ElementaryActions.Functionality.Manager)">
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>328 - INIFailure</para>
+		<para>332 - NoValidParameters</para>
+		<para>338 - EventNotExistsFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SignIn">
+	<summary>
+   Verify Event On Planner Screen
+ </summary>
+</member><member name="P:IEX.ElementaryActions.Functionality.MOBILE.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.Functionality.MOBILE.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.BookFutureEventFromBanner.#ctor(System.String,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="EventKeyName">Key Of The Event</param>
+	<param name="NumOfPresses">Optional Parameter Default = -1 : Number Of Left Presses From Current</param>
+	<param name="MinTimeBeforeEvStart">Optional Parameter Default = 1 : Minimum Time Right For The Event To Start ( EXAMPLE : For Guard Time )</param>
+	<param name="VerifyBookingInPCAT">Optional Parameter Default = True : If True Verify Is Booked In PCAT</param>
+	<param name="ReturnToLive">Optional Parameter Default = True : If True Return To Live</param>
+	<param name="IsConflict">Optional Parameter Default = False : If True Verify Conflict Appeared Before Recording Is Confirmed</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>305 - PCATFailure</para>
+		<para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+		<para>330 - TelnetFailure</para>
+		<para>331 - CopyFileFailure</para>
+		<para>332 - NoValidParameters</para>
+		<para>334 - VideoNotPresent</para>
+		<para>337 - ParseEventTimeFailure</para>
+		<para>338 - EventNotExistsFailure</para>
+		<para>339 - RecordEventFailure</para>
+		<para>344 - ConflictFailure</para>
+		<para>347 - SelectEventFailure</para>
+		<para>349 - ReturnToLiveFailure</para>
+		<para>350 - ParsingFailure </para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.BookFutureEventFromBanner">
+	<summary>
+    Booking Future Event From Action Bar 
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.Manager.DUMMY_MOBILE(System.String,System.Boolean)">
+	<summary>
+    Dummy function to test the EA
+ </summary>
+	<returns>IEXGateway._IEXResult</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.Manager.TuneToChannelFromMenu(System.String)">
+	<summary>
+   Tunning To Channel From TV.Live
+ </summary>
+	<param name="ChannelName">The Channel Name To Tune To</param>
+	<returns>IEXGateway._IEXResult</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.Manager.SignIn">
+	<summary>
+   Performs Fisrt Install Of Canal D Application On IPAD
+ </summary>
+	<returns>IEXGateway._IEXResult</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.TuneToChannelFromMenu.#ctor(System.String,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="ChannelName">ChannelName</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>334 - VideoNotPresent</para>
+		<para>349 - ReturnToLiveFailure</para>
+		<para>351 - SurfingFailure</para>
+		<para>355 - TuneToChannelFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.TuneToChannelFromMenu">
+	<summary>
+   Tune To Channel
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.VerifyEventInArchive.#ctor(System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="EventKeyName">Key Of The Event</param>
+	<param name="Navigate">Optional Parameter Default = True : If True Navigates To Archive</param>
+	<param name="SupposedToFindEvent">Optional Parameter Default = True : If True Tries To Find Event On Archive Else Tries Not To Find It</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>332 - NoValidParameters</para>
+		<para>338 - EventNotExistsFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.VerifyEventInArchive">
+	<summary>
+   Verify Event On Archive Screen
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.RecordCurrentEventFromBanner.#ctor(System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="EventKeyName">Key Of The Event</param>
+	<param name="MinTimeBeforeEvEnd">Optional Parameter Default = -1 : Minutes Required Until End Of Event</param>
+	<param name="IsResuming">Optional Parameter Default = False : If True Checks Resume Recording Milestones</param>
+	<param name="VerifyIsRecordingInPCAT">Optional Parameter Default = True : If True Verify Is Recording In PCAT</param>
+	<param name="IsConflict">Optional Parameter Default = False : If True Verify Conflict Appeared Before Recording Is Confirmed</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>305 - PCATFailure</para>
+		<para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+		<para>330 - TelnetFailure</para>
+		<para>331 - CopyFileFailure</para>
+		<para>332 - NoValidParameters</para>
+		<para>334 - VideoNotPresent</para>
+		<para>337 - ParseEventTimeFailure</para>
+		<para>339 - RecordEventFailure</para>
+		<para>344 - ConflictFailure</para>
+		<para>349 - ReturnToLiveFailure</para>
+		<para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.RecordCurrentEventFromBanner">
+	<summary>
+   Recording Current Event From Action Bar
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.VerifyEventInPlanner.#ctor(System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="EventKeyName">Key Of The Event</param>
+	<param name="Navigate">Optional Parameter Default = True : If True Navigates To Planner</param>
+	<param name="SupposedToFindEvent">Optional Parameter Default = True : If True Tries To Find Event On Planner Else Tries Not To Find It</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>328 - INIFailure</para>
+		<para>332 - NoValidParameters</para>
+		<para>338 - EventNotExistsFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.VerifyEventInPlanner">
+	<summary>
+   Verify Event On Planner Screen
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SetUnlockChannel.#ctor(System.String,System.Int32,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="ChannelName">Requested Channel Name</param>
+	<param name="ChannelNumber">Requested Channel Number</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+		<para>328 - INIFailure</para>
+		<para>357 - LockUnlockChannelFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.SetUnlockChannel">
+	<summary>
+   UnLocking Channel From Parental Control
+ </summary>
+</member><member name="M:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.CancelBookingFromBanner.#ctor(System.String,System.Boolean,IEX.ElementaryActions.Functionality.Manager)">
+	<param name="EventKeyName">Key Of The Event</param>
+	<param name="VerifyCancelInPCAT">Optional Parameter Default = True : If True Verifies Event Cancelled In PCAT</param>
+	<param name="pManager">Manager</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>305 - PCATFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>330 - TelnetFailure</para>
+		<para>331 - CopyFileFailure</para>
+		<para>332 - NoValidParameters</para>
+		<para>334 - VideoNotPresent</para>
+		<para>338 - EventNotExistsFailure</para>
+		<para>342 - CancelEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+		<para>349 - ReturnToLiveFailure</para>
+	</remarks>
+</member><member name="T:IEX.ElementaryActions.Functionality.MOBILE.EAImplementation.CancelBookingFromBanner">
+	<summary>
+   Cancel Future Event Booking
+ </summary>
+</member>
+</members>
+</doc>

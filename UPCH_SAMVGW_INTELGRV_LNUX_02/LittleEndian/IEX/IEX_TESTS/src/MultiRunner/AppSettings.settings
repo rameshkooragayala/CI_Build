@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MultiRunner" GeneratedClassName="AppSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestSetList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CommonTests,LightSanity,FullSanity,HealthCheck,Robustness,STP</Value>
+    </Setting>
+    <Setting Name="logFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Not Set</Value>
+    </Setting>
+    <Setting Name="TestSet" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LightSanity</Value>
+    </Setting>
+    <Setting Name="DebugMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="GatewayAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1 1</Value>
+    </Setting>
+    <Setting Name="Client1Address" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Client2Address" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Client3Address" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Client4Address" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

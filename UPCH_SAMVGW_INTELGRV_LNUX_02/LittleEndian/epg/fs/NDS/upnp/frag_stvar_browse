@@ -1,0 +1,30 @@
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_Session</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_ListID</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_Origin</name>
+      <dataType>string</dataType>
+      <allowedValueList>
+        <allowedValue>INITIAL</allowedValue>
+        <allowedValue>CURRENT</allowedValue>
+        <allowedValue>FINAL</allowedValue>
+      </allowedValueList>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_Offset</name>
+      <dataType>i4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_CursorState</name>
+      <dataType>string</dataType>
+      <allowedValueList>
+        <allowedValue>BEFORE_INITIAL</allowedValue>
+        <allowedValue>OK</allowedValue>
+        <allowedValue>AFTER_FINAL</allowedValue>
+      </allowedValueList>
+    </stateVariable>

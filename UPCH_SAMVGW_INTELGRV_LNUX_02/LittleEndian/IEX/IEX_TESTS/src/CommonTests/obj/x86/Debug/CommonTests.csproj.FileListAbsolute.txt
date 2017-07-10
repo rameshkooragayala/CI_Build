@@ -1,0 +1,6 @@
+D:\Oct05\IEX_TESTS\src\bin\CommonTests.exe.config
+D:\Oct05\IEX_TESTS\src\bin\CommonTests.exe
+D:\Oct05\IEX_TESTS\src\bin\CommonTests.pdb
+D:\Oct05\IEX_TESTS\src\CommonTests\obj\x86\Debug\CommonTests.csprojResolveAssemblyReference.cache
+D:\Oct05\IEX_TESTS\src\CommonTests\obj\x86\Debug\CommonTests.exe
+D:\Oct05\IEX_TESTS\src\CommonTests\obj\x86\Debug\CommonTests.pdb

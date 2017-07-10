@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<u:scene xmlns:u="scene_desc">
+  <markers>
+    <marker name="intro"	position="0.0"></marker>
+    <marker name="P-01"		position="1.0"></marker> 
+ </markers>
+
+  <animations>
+    <animation name="mainIntro"     			begin_marker="intro"    end_marker="P-01"    start_pos_marker="intro"   speed="1" loop="false" reverse="false"></animation>
+  </animations>
+
+</u:scene>

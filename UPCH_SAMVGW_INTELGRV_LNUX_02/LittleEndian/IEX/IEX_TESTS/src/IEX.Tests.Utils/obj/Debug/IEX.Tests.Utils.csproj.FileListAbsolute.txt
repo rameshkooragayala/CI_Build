@@ -1,0 +1,5 @@
+D:\Oct05\IEX_TESTS\src\bin\IEX.Tests.Utils.dll
+D:\Oct05\IEX_TESTS\src\bin\IEX.Tests.Utils.pdb
+D:\Oct05\IEX_TESTS\src\IEX.Tests.Utils\obj\Debug\IEX.Tests.Utils.csprojResolveAssemblyReference.cache
+D:\Oct05\IEX_TESTS\src\IEX.Tests.Utils\obj\Debug\IEX.Tests.Utils.dll
+D:\Oct05\IEX_TESTS\src\IEX.Tests.Utils\obj\Debug\IEX.Tests.Utils.pdb

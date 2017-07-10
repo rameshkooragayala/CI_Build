@@ -1,0 +1,1427 @@
+<?xml version="1.0"?>
+<!-- Stream Configuration file (Content.xml)
+
+Project - <ENTER YOUR PROJECT NAME HERE>
+
+Description - Contains the details of the stream and its various contents (such as services,PDL assets,VOD content,
+Mediashare etc.) as seen by the CI for its Automation perspective.
+
+!!! BEFORE YOU ADD ANY NEW ATTRIBUTES TO THIS FILE,PLEASE CHECK WHETHER IT IS ALREADY PRESENT !!!
+
+Convention of naming attributes and its values -
+1. Attributes should be named in PascalCase as follows - ThisIsHowYouDoIt
+2. Values of attributes are in String and also should be named in PascalCase as above.
+Example of a common attribute and value -
+	<IsDefault>True</IsDefault>
+3. Some attributes can also be a collection. These attributes can be represented as follows -
+Eg - <SubtitleLanguage>
+		<SubtitleLanguage></SubtitleLanguage>
+		<SubtitleLanguage></SubtitleLanguage>
+	</SubtitleLanguage>	
+4. Any attribute added to the content element MUST BE ADDED TO ALL content elements!!!
+5. Any attribute added to the content element MUST ALSO BE ADDED as a string member of the particular content class!!
+Eg- If you add "SomeAttribute" to this file under Service , you need to update Service.vb 
+(under IEX.ElementaryActions.Functionality/Objects) with this -
+	Public String SomeAttribute
+6. API used to fetch content from this file is case-sensitive, hence please make sure you follow convention across. Refer GetContent
+EA documentation for more details.
+7. Please follow the correct XML syntax (closing tags properly,.etc) so that we have a well-formed XML. AN IMPROPER ENTRY WILL BLOCK API USAGE!!!
+-->
+<StreamConfiguration projectName="Sample">
+    <Services Total="34">
+		<Service serialNumber="1"> <!-- Increment this value for each service -->
+			<LCN>720</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>21</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 1</Name> <!-- Service Name -->
+			<ServiceId>301</ServiceId>		<!-- Service ID-->
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<AudioEncoding>MPEG1</AudioEncoding>
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>21</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType>Dvb</SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>ENGLISH</string>
+				<string>OFF</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage></AudioLanguage>
+			</AudioLanguage>
+			
+			<!--
+			.
+			Add new attributes here and make sure you add it to all services
+			.
+			-->
+		</Service>
+		
+		<Service serialNumber="2"> 
+			<LCN>721</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>22</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 2</Name> <!-- Service Name -->
+			<ServiceId>302</ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<PositionOnList>22</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+		
+		<Service serialNumber="3"> 
+			<LCN>722</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>23</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 3</Name> <!-- Service Name -->
+			<ServiceId>303</ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>23</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>3</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<string>ENGLISH-STEREO</string><!-- Names Audio languages available on the service -->
+				<string>DEUTSCH-DOLBY DIGITAL</string>
+				<string>ENGLISH-DOLBY DIGITAL</string>				
+			</AudioLanguage>
+		</Service>
+		
+		<Service serialNumber="4"> 
+			<LCN>723</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>24</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 4</Name> <!-- Service Name -->
+			<ServiceId>304</ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>True</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG4</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>24</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo>101</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>2</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage>ENGLISH-DOLBY DIGITAL</AudioLanguage>
+			</AudioLanguage>
+		</Service>
+
+		<Service serialNumber="5"> 
+			<LCN>724</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>25</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 5</Name> <!-- Service Name -->
+			<ServiceId>305</ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG4</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<PositionOnList>25</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo>BBC One</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+
+		<Service serialNumber="6"> 
+			<LCN>734</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>34</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 6</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>High</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>34</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo>ZDF</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+		
+		<Service serialNumber="7"> 
+			<LCN>726</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>26</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 7</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>60</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>False</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>26</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo>premiere</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+
+
+		<Service serialNumber="8"> 
+			<LCN>727</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>27</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 8</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>False</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration></IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration></EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration></IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>27</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo>JimJam3D</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+
+		<Service serialNumber="9"> 
+			<LCN>728</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>28</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 9</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>False</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration></IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration></EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration></IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>28</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo>AXN</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+	
+	
+		<Service serialNumber="10"> 
+			<LCN>729</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>29</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 10</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>False</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>29</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo>atv_avrupa</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+	
+	
+		<Service serialNumber="11"> 
+			<LCN>730</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>30</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 11</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>False</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>False</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration></EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration></IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>30</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+
+
+		<Service serialNumber="12"> 
+			<LCN>731</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>31</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 12</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>False</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration></IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration></EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration></IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>31</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo>BBC One</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+	
+	
+		<Service serialNumber="13"> 
+			<LCN>732</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>32</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Radio 2</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Radio</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>32</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo>Ajax</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+
+
+		<Service serialNumber="14"> 
+			<LCN>733</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>33</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Radio 3</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Radio</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>33</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>25</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <ChannelLogo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages></NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+		<Service serialNumber="15"> 
+			<LCN>625</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>15</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Program_625</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<PositionOnList>15</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>5</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType>Teletext</SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>DANSK</string> <!-- Names Subtitle languages available on the service -->
+				<string>SUOMI</string>
+				<string>SVENSKA</string>
+				<string>NORSK</string>
+				<string>OFF</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+			<Service serialNumber="16"> <!-- Increment this value for each service -->
+			<LCN>601</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>1</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Program_601</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>True</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>1</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo></HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages></NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage></AudioLanguage>
+			</AudioLanguage>
+		</Service>
+		
+		<Service serialNumber="17"> 
+			<LCN>625</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide></PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 2</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>True</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<PositionOnList>14</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>5</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType>Teletext</SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>DANSK</string> <!-- Names Subtitle languages available on the service -->
+				<string>SUOMI</string>
+				<string>SVENSKA</string>
+				<string>NORSK</string>
+				<string>OFF</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+			
+	
+		<Service serialNumber="18"> 
+			<LCN>602</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>5</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Program_602</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>False</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>False</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Scrambled</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG4</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<PositionOnList>5</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>True</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo>arte_hd</ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages></NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string></string> <!-- Names Subtitle languages available on the service -->
+				<string></string>
+				<string></string>
+				<string></string>
+				<string></string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>	
+
+
+		    <Service serialNumber="19"> 
+			<LCN>621</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>11</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Program_621</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>False</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Scrambled</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>11</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages></NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string></string> <!-- Names Subtitle languages available on the service -->
+				<string></string>
+				<string></string>
+				<string></string>
+				<string></string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+		
+
+		    <Service serialNumber="20"> 
+			<LCN>622</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>12</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Program_622</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>False</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>False</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Scrambled</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<PositionOnList>12</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages></NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string></string> <!-- Names Subtitle languages available on the service -->
+				<string></string>
+				<string></string>
+				<string></string>
+				<string></string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+		
+		    <Service serialNumber="21"> 
+			<LCN>629</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>19</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Program_629</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>False</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Scrambled</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG4</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>19</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages></NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string></string> <!-- Names Subtitle languages available on the service -->
+				<string></string>
+				<string></string>
+				<string></string>
+				<string></string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+	</Services>	
+
+		    <Service serialNumber="22"> 
+			<LCN>610</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>10</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Program_610</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>False</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Scrambled</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<PositionOnList>10</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages></NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string></string> <!-- Names Subtitle languages available on the service -->
+				<string></string>
+				<string></string>
+				<string></string>
+				<string></string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+			</AudioLanguage>
+		</Service>
+				<Service serialNumber="23"> <!-- Increment this value for each service -->
+			<LCN>2</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>21</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 1</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<AudioEncoding>MPEG1</AudioEncoding>
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>21</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType>Dvb</SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>ENGLISH</string>
+				<string>OFF</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage></AudioLanguage>
+			</AudioLanguage>
+			
+			<!--
+			.
+			Add new attributes here and make sure you add it to all services
+			.
+			-->
+		</Service>
+			<Service serialNumber="24"> <!-- Increment this value for each service -->
+			<LCN>606</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>21</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Clear Channel 1</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>False</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<AudioEncoding>MPEG1</AudioEncoding>
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>21</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo>False</HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>False</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>False</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType>Dvb</SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>ENGLISH</string>
+				<string>OFF</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage></AudioLanguage>
+			</AudioLanguage>
+			
+			<!--
+			.
+			Add new attributes here and make sure you add it to all services
+			.
+			-->
+		</Service>
+		
+		<Service serialNumber="25"> <!-- Increment this value for each service -->
+			<LCN>608</LCN> <!-- Logical Channel NUmber - the number you use for DCA -->
+			<PositionOnGuide>8</PositionOnGuide> <!-- Listing postion on Guide =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->			
+			<Name>Program_608</Name> <!-- Service Name -->
+			<ServiceId></ServiceId>
+			<Type>Video</Type> <!-- Video | Radio | Interactive -->
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->			
+			<IsDefault>False</IsDefault> <!-- True for the Default tuned service -->
+			<IsSeries>True</IsSeries>
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->
+			<IsViewable>True</IsViewable> <!-- True - if service is viewable | False if not -->
+			<IsEITAvailable>True</IsEITAvailable>  <!-- True if service hasEvent info | False if not-->
+			<IsConstantEventDuration>True</IsConstantEventDuration> <!-- True if all events in the service have constant duration. If true <EventDuration> will hold the constant duration -->
+			<EventDuration>10</EventDuration> <!-- Valid only if <IsConstantEventDuration> is True -->
+			<IsMinEventDuration>True</IsMinEventDuration>
+			<Encryption>Clear</Encryption> <!-- Clear | Scrambled -->
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<PositionOnList>1</PositionOnList> <!-- Listing postion on Channel List =1 for Default service. Then on +1 further down. =NA if service is not listed on Guide -->
+			<HasChannelLogo></HasChannelLogo> <!-- True if Service has a Logo. <Logo> holds the Logo name -->
+			<ChannelLogo></ChannelLogo> <!-- Valid only if <HasChannelLogo> is True -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages></NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<SubtitleLanguage></SubtitleLanguage> <!-- Names Subtitle languages available on the service -->
+				<SubtitleLanguage></SubtitleLanguage>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>1</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage></AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage></AudioLanguage>
+			</AudioLanguage>
+		</Service>
+		
+	<VODAssets>		
+		
+		<VODAsset serialNumber="1"> 
+			<Title>Sanity Shrek</Title> 			
+			<Name>TVOD 2</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:SANITY SHREK</NamedNavigation>
+			<Trailer>True</Trailer>
+			<AssetDuration>10</AssetDuration>
+			<RentalDuration>60</RentalDuration>		
+			<VideoFormat>4:3</VideoFormat>		
+			<Price>0.99</Price>	
+			<Genre>Drama</Genre>
+			<Synopsis>Asset Sanity Shrek - Summary long - Video Source: Shrek - aud ENG DEU.ts\rMPEG Video at 2 816 Kbps, 704</Synopsis>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>MPEG2</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>SD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType>Dvb</SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>SVENSKA</string> <!-- Names Subtitle languages available on the service -->
+				<string>NORSK</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>2</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<string>ENGLISH-STEREO</string> <!-- Names Audio languages available on the service -->
+				<string>DEUTSCH-STEREO</string>
+			</AudioLanguage>
+		</VODAsset>
+		
+		<VODAsset serialNumber="2"> 
+			<Title>Sanity Sintel HD</Title> 			
+			<Name>TVOD 3</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:Sanity Sintel HD</NamedNavigation>
+			<Trailer>True</Trailer>
+			<AssetDuration>14</AssetDuration>
+			<RentalDuration>60</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>0.99</Price>	
+			<Genre>DRAMA</Genre>
+			<Synopsis>Asset Sanity Sintel HD - Summary long - Video Source: Sintel (HD - Sub x2).ts\rAVC at 11.4 Mbps, 1920 x</Synopsis>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>SWEDISH</string> <!-- Names Subtitle languages available on the service -->
+				<string>NORSK</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>2</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage>DEUTSH-STEREO</AudioLanguage>
+			</AudioLanguage>
+		</VODAsset>
+		
+		<VODAsset serialNumber="3"> 
+			<Title>DigitalView_CatchUp</Title> 			
+			<Name>TVOD 4</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:CATCHUP_TVOD</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>1</AssetDuration>
+			<RentalDuration>120</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>2</Price>	
+			<Genre>News</Genre>
+			<Synopsis>CatchUpTV asset ingested manually TVOD</Synopsis>
+			<IsCatchUp>True</IsCatchUp>
+			<CatchupService>3</CatchupService>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>SWEDISH</string> <!-- Names Subtitle languages available on the service -->
+				<string>NORSK</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>2</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage>DEUTSH-STEREO</AudioLanguage>
+			</AudioLanguage>
+		</VODAsset>
+		
+		<VODAsset serialNumber="4"> 
+			<Title>Naruto</Title> 			
+			<Name>SVOD 2</Name> 
+			<Type>SVOD</Type> 		
+			<NamedNavigation>STATE:STORE_SVOD_NARUTO</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>2</AssetDuration>
+			<RentalDuration>0</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>999</Price>	
+			<Genre>Adventure</Genre>
+			<Synopsis>Summary long Naruto</Synopsis>
+			<IsCatchUp>False</IsCatchUp>
+			<CatchupService></CatchupService>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<NoOfAudioLanguages>0</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+		</VODAsset>	
+
+		<VODAsset serialNumber="4"> 
+			<Title>shrek with subtitles ENG et NLD</Title> 			
+			<Name>SVOD 3</Name> 
+			<Type>SVOD</Type> 		
+			<NamedNavigation>STATE:STORE_SVOD_shrek</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>10</AssetDuration>
+			<RentalDuration>0</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>0</Price>	
+			<Genre>Sci-fi</Genre>
+			<Synopsis>Duration: 00:10:00.45, start: 12.204478, bitrate: 3367 kb/s Program 1 Stream #0.0[0x111]: Video: mpeg2</Synopsis>
+			<IsCatchUp>False</IsCatchUp>
+			<CatchupService></CatchupService>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<NoOfAudioLanguages>0</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+		</VODAsset>		
+		
+		<VODAsset serialNumber="4"> 
+			<Title>WeekInReview_CatchUp</Title> 			
+			<Name>SVOD 1</Name> 
+			<Type>SVOD</Type> 		
+			<NamedNavigation>STATE:CATCHUP_SVOD</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>1</AssetDuration>
+			<RentalDuration>0</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>0</Price>	
+			<Genre>News</Genre>
+			<Synopsis>CatchUpTV asset ingested manually TVOD</Synopsis>
+			<IsCatchUp>True</IsCatchUp>
+			<CatchupService>1</CatchupService>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>SWEDISH</string> <!-- Names Subtitle languages available on the service -->
+				<string>NORSK</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>2</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage>DEUTSH-STEREO</AudioLanguage>
+			</AudioLanguage>
+		</VODAsset>	
+
+		<VODAsset serialNumber="5"> 
+			<Title>CalifS02E01</Title> 			
+			<Name>TVOD 6</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:STORE_EPISODE</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>2</AssetDuration>
+			<RentalDuration>1440</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>2.99</Price>	
+			<Genre>NEWS MAGAZINE</Genre>
+			<Synopsis>Summary long CalifS02E01</Synopsis>
+			<IsCatchUp>False</IsCatchUp>
+			<IsEpisode>True</IsEpisode>
+			<Series>Californication</Series>
+			<Season>Season 1</Season>
+			<Episode></Episode>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>SWEDISH</string> <!-- Names Subtitle languages available on the service -->
+				<string>NORSK</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>2</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage>DEUTSH-STEREO</AudioLanguage>
+			</AudioLanguage>
+		</VODAsset>		
+		
+		<VODAsset serialNumber="6"> 
+			<Title>TVOD Rating 6</Title> 			
+			<Name>TVOD 7</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:TVOD Rating 6</NamedNavigation>
+			<Trailer>True</Trailer>
+			<AssetDuration>0</AssetDuration>
+			<RentalDuration>180</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>0.99</Price>	
+			<Genre>DRAMA</Genre>
+			<Synopsis>Asset TVOD Rating 6 - Summary long - Video Source: SyncTest.ts\rMPEG Video at 3 306 Kbps, 720 x 576 (1.</Synopsis>
+			<AgeRating>9</AgeRating>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<NoOfAudioLanguages>0</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+		</VODAsset>	
+		
+		<VODAsset serialNumber="7"> 
+			<Title>TVOD Rating 12</Title> 			
+			<Name>TVOD 8</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:TVOD Rating 12</NamedNavigation>
+			<Trailer>True</Trailer>
+			<AssetDuration>0</AssetDuration>
+			<RentalDuration>180</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>0.99</Price>	
+			<Genre>DRAMA</Genre>
+			<Synopsis>Asset TVOD Rating 12 - Summary long - Video Source: SyncTest.ts\rMPEG Video at 3 306 Kbps, 720 x 576 (1</Synopsis>
+			<AgeRating>16</AgeRating>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<NoOfAudioLanguages>0</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+		</VODAsset>	
+		
+		<VODAsset serialNumber="8"> 
+			<Title>TVOD Rating 15</Title> 			
+			<Name>TVOD 8</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:TVOD Rating 15</NamedNavigation>
+			<Trailer>True</Trailer>
+			<AssetDuration>0</AssetDuration>
+			<RentalDuration>180</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>0.99</Price>	
+			<Genre>DRAMA</Genre>
+			<Synopsis>Asset TVOD Rating 15 - Summary long - Video Source: SyncTest.ts\rMPEG Video at 3 306 Kbps, 720 x 576 (1</Synopsis>
+			<AgeRating>18</AgeRating>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<NoOfAudioLanguages>0</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+		</VODAsset>	
+		<VODAsset serialNumber="14"> 
+			<Title>JonahHex_with_preview</Title> 			
+			<Name>TVOD x</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:JonahHex_with_preview</NamedNavigation>
+			<Trailer>True</Trailer>
+			<AssetDuration>2</AssetDuration>
+			<RentalDuration>2</RentalDuration>		
+			<VideoFormat>4:3</VideoFormat>		
+			<Price>2.99</Price>	
+			<Genre>Adult</Genre>
+			<Synopsis>Summary long Adult_asset_with_preview</Synopsis>
+		</VODAsset>		
+		
+		<VODAsset serialNumber="9"> 
+			<Title>Infideles</Title> 			
+			<Name>TVOD 9</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:xxx</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>2</AssetDuration>
+			<RentalDuration>90</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>5</Price>	
+			<Genre>Adult</Genre>
+			<Synopsis></Synopsis>
+			<AgeRating></AgeRating>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>0</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<NoOfAudioLanguages>0</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+		</VODAsset>	
+		
+		<VODAsset serialNumber="10"> 
+			<Title>Babel</Title> 			
+			<Name>TVOD 5</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:Babel</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>2</AssetDuration>
+			<RentalDuration>5</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>2.99</Price>	
+			<Genre>ADVENTURE</Genre>
+			<Synopsis>Summary long Babel</Synopsis>
+
+			<ParentalRating>Low</ParentalRating> <!-- High | Mid | Low | Na  -->	
+			<IsRecordable>True</IsRecordable> <!-- True - if service is recordable | False if not -->			
+			<Encoding>H264</Encoding> <!-- Mpeg2 | Mpeg4 | H264 -->
+			<Resolution>HD</Resolution> <!-- HD | SD -->
+			<HasThumbnail>True</HasThumbnail> <!-- True if Service has event logos -->
+			<HasSynopsis>True</HasSynopsis> <!-- True if Service has events with synopsis -->
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType></SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>SWEDISH</string> <!-- Names Subtitle languages available on the service -->
+				<string>NORSK</string>
+			</SubtitleLanguage>
+			<NoOfAudioLanguages>2</NoOfAudioLanguages> <!-- Number of Audios supported in the service. Zero if not present -->
+			<AudioLanguage> <!-- Valid only if <NoOfAudioLanguages> is not equal to zero -->
+				<AudioLanguage>ENGLISH-STEREO</AudioLanguage> <!-- Names Audio languages available on the service -->
+				<AudioLanguage>DEUTSH-STEREO</AudioLanguage>
+			</AudioLanguage>
+		</VODAsset>
+		
+		<VODAsset serialNumber="11"> 
+			<Title>Dr. No</Title> 			
+			<Name>TVOD 6</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:Dr. No</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>2</AssetDuration>
+			<RentalDuration>30</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>3.99</Price>	
+			<Genre>ACTION</Genre>
+			<Synopsis>Asset Dr. No - Summary long - Video Source: Dogma_Trailer.ts\rMPEG Video at 3 371 Kbps, 704 x 576 (1.33</Synopsis>
+			<Director> Terence Young</Director>
+			<Cast> Ursula Andress ,  Sean Connery</Cast>
+			<YearOfProduction>1962</YearOfProduction>			
+			<StarRating>3</StarRating>
+		</VODAsset>
+		
+		<VODAsset serialNumber="12"> 
+			<Title>Goldfinger</Title> 			
+			<Name>TVOD 7</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:Goldfinger</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>2</AssetDuration>
+			<RentalDuration>2880</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>3.99</Price>	
+			<Genre>ACTION</Genre>
+			<Synopsis>Asset Goldfinger - Summary long - Video Source: Dogma_Trailer.ts\rMPEG Video at 3 371 Kbps, 704 x 576 (</Synopsis>
+		</VODAsset>
+		
+		<VODAsset serialNumber="13"> 
+			<Title>From Russia with Love</Title> 			
+			<Name>TVOD 8</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:From Russia with Love</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>7</AssetDuration>
+			<RentalDuration>520</RentalDuration>		
+			<VideoFormat>16:9</VideoFormat>		
+			<Price>3.99</Price>	
+			<Genre>ACTION</Genre>
+			<Synopsis>Asset From Russia with Love - Summary long - Video Source: Another Day trailler.ts\rMPEG Video at 3 371</Synopsis>
+		</VODAsset>
+		
+		<VODAsset serialNumber="14"> 
+			<Title>BangMilf</Title> 			
+			<Name>TVOD 9</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:BangMilf</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>2</AssetDuration>
+			<RentalDuration>30</RentalDuration>		
+			<VideoFormat>4:3</VideoFormat>		
+			<Price>5.50</Price>	
+			<Genre>Adult</Genre>
+			<Synopsis>Sum Long</Synopsis>
+		</VODAsset>		
+		
+		
+		<VODAsset serialNumber="18"> 
+			<Title>Ocean11</Title> 			
+			<Name>SVOD x</Name> 
+			<Type>SVOD</Type> 		
+			<NamedNavigation>STATE:Ocean11</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>2</AssetDuration>
+			<RentalDuration>0</RentalDuration>		
+			<VideoFormat>4:3</VideoFormat>		
+			<Price>0</Price>	
+			<Genre>ADVENTURE</Genre>
+			<Synopsis>Summary long Ocean11</Synopsis>
+		</VODAsset>	
+		
+		<VODAsset serialNumber="15"> 
+			<Title>4_au_2_ttx</Title> 			
+			<Name>TVOD 10</Name> 
+			<Type>TVOD</Type> 		
+			<NamedNavigation>STATE:4_au_2_ttx</NamedNavigation>
+			<Trailer>False</Trailer>
+			<AssetDuration>30</AssetDuration>
+			<RentalDuration>1440</RentalDuration>		
+			<VideoFormat>4:3</VideoFormat>		
+			<Price>5.50</Price>	
+			<Genre>ROMANCE</Genre>
+			<Synopsis>Summary long 4_au_2_ttx - Parental control Test</Synopsis>
+			<NoOfSubtitleLanguages>2</NoOfSubtitleLanguages> <!-- Number of Subtitles supported in the service. Zero if not present -->
+			<SubtitleType>Teletext</SubtitleType>
+			<SubtitleLanguage> <!-- Valid only if <NoOfSubtitleLanguages> is not equal to zero -->
+				<string>FRAN?AIS</string> <!-- Names Subtitle languages available on the service -->
+				<string>FRAN?AIS-SUBTITLES FOR HARD OF HEARING</string>
+			</SubtitleLanguage>
+		</VODAsset>
+		
+		<VODAsset serialNumber="30"> 
+                                   <Title>The Walking Dead - S01 E02</Title>                                   
+                                   <Name>TVOD 15</Name> 
+                                   <Type>TVOD</Type>                      
+                                   <NamedNavigation>STATE:The Walking Dead - S01 E02</NamedNavigation>
+                                   <Trailer>False</Trailer>
+                                   <AssetDuration>2</AssetDuration>
+                                   <RentalDuration>180</RentalDuration>                              
+                                   <Price>1.99</Price> 
+                                   <Genre>NEWS MAGAZINE</Genre>
+                                   <Synopsis></Synopsis>
+                                   <IsCatchUp>False</IsCatchUp>
+                                   <IsEpisode>True</IsEpisode>
+                                   <Series>The Walking Dead - Season 1</Series>
+                                   <Season></Season>
+                                   <Episode></Episode>
+                       </VODAsset> 
+
+		
+		
+		
+	</VODAssets>
+</StreamConfiguration>

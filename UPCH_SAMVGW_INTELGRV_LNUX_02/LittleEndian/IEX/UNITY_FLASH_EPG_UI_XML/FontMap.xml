@@ -1,0 +1,32 @@
+<!--
+*****************************************************************************
+LANGUAGE		EPG_FONT	EPG_FONT_SIZE	ACTUAL_FONT		ACTUAL_FONT_SIZE
+
+ENG				FONT1			20				FONT1			19
+ENG				FONT2			25				FONT2			23
+ENG				FONT3			20				FONT3			20
+
+FRE				FONT1			20				F_FONT1			20
+FRE				FONT2			25				F_FONT2			25
+FRE				FONT3			20				FONT3			20
+*****************************************************************************
+-->
+<fontMap>
+	<language id="EN">
+		<font epgFont="UPCInterstateREGULAR" epgFontSize="60" actualFont="UPCInterstateREGULAR" actualFontSize="60"/>
+		<font epgFont="UPCInterstateBOLD" epgFontSize="59" actualFont="UPCInterstateBOLD" actualFontSize="59"/>
+		<font epgFont="UPCInterstateEXTLIG" epgFontSize="70" actualFont="UPCInterstateEXTLIG" actualFontSize="70"/>
+	</language>
+	
+	<language id="DE">
+		<font epgFont="UPCInterstateREGULAR" epgFontSize="60" actualFont="UPCInterstateREGULAR" actualFontSize="60"/>
+		<font epgFont="UPCInterstateBOLD" epgFontSize="59" actualFont="UPCInterstateBOLD" actualFontSize="59"/>
+		<font epgFont="UPCInterstateEXTLIG" epgFontSize="70" actualFont="UPCInterstateEXTLIG" actualFontSize="70"/>
+	</language>	
+	
+	<language id="ES">
+		<font epgFont="UPCInterstateREGULAR" epgFontSize="60" actualFont="UPCInterstateREGULAR" actualFontSize="60"/>
+		<font epgFont="UPCInterstateBOLD" epgFontSize="59" actualFont="UPCInterstateBOLD" actualFontSize="59"/>
+		<font epgFont="UPCInterstateEXTLIG" epgFontSize="70" actualFont="UPCInterstateEXTLIG" actualFontSize="70"/>
+	</language>
+</fontMap>

@@ -1,0 +1,690 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF.VOO
+</name>
+</assembly>
+<members>
+<member name="P:IEX.ElementaryActions.EPG.SF.VOO.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.VOO.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.VOO.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.PlannerBase.NavigateToFailedEventScreen">
+	<summary>
+ Navigating to Failed Recorded Event
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ArchiveRecordings.isEmpty">
+	<summary>
+   Checks If Archive Has No Events
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ArchiveRecordings.VerifyArchiveEmpty">
+	<summary>
+   Checks That Archive Is Empty
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ArchiveRecordings.GetSelectedEventName(System.String@)">
+	<summary>
+   Gets The Selected Event Name From Archive
+ </summary>
+	<param name="EventName">Returns The Selected Event Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ArchiveRecordings.NextEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Down In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ArchiveRecordings.Navigate">
+	<summary>
+   Navigating To Archive Recording
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ArchiveRecordings.LockEvent">
+	<summary>
+   Lock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>359 - LockUnlockFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ArchiveRecordings.VerifySorting(System.Boolean)">
+	<summary>
+   Verifying Sorting ByA-Z Or ByDate
+ </summary>
+	<param name="ByTime">If True Verifyies Sorting By Time Else By Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ArchiveRecordings.VerifyStateAfterPlayback">
+	<summary>
+ For verifying the state after Playback
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Guide.NavigateToRecordEvent(System.Boolean)">
+	<summary>
+   Navigating To RECORD On Action Bar From Guide By Pressing RECORD
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = True : If True Pressing RED Else Pressing Select For Future Events</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Guide.GetSelectedEventTime(System.String@)">
+	<summary>
+    Gets Selected Event Time
+ </summary>
+	<param name="EventTime">ByRef Event Time As String</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Guide.SelectCurrentEvent(System.String)">
+	<summary>
+   Selecting Current Event From Guide And Checking Tunning Fas Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Guide.NextEvent(System.Int32)">
+	<summary>
+   Moving To Next Event X Times
+ </summary>
+	<param name="NumOfPresses">Optional Parameter Default = 1 : X Events To Move On Guide</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Settings.LockChannel(System.String)">
+	<summary>
+   Locking Channel In Parental Control Lock/Unlock Channels
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>357 - LockUnlockChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Settings.UnLockChannel(System.String)">
+	<summary>
+   UnLocking Channel In Parental Control Lock/Unlock Channels
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>314 - SetSettingsFailure</para>
+		<para>328 - INIFailure</para>
+		<para>357 - LockUnlockChannelFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.TrickModes.SetSpeed(System.Double)">
+	<summary>
+   Sets Speed On Trickmode
+ </summary>
+	<param name="Speed">Required Speed Can Be : 1 For Play, 0 For Pause,0.5,2,6,12,30 Or -0.5,-2,-6,-12,-30</param>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>313 - SetTrickModeSpeedFailure</para>
+		<para>328 - INIFailure</para>
+		<para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.TrickModes.VerifyEofBof(System.Int64,System.Double,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Verifying EOF/BOF
+ </summary>
+	<param name="Duration">Duration Of The Event Or Review Buffer</param>
+	<param name="Speed">Speed Of Trickmode</param>
+	<param name="IsReviewBuffer">If True Checkes Review Buffer EOF/BOF</param>
+	<param name="IsReviewBufferFull">If True Review Buffer Is Full</param>
+	<param name="Eof">If True Verifies EOF Else BOF</param>
+	<remarks>
+ Possible Error Codes:
+ <para>320 - VerifyEofBofFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.TrickModes.RaiseTrickMode">
+	<summary>
+   Raising Trickmode By Pressing SELECT
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.GetCurrentEPGVersion(System.Boolean)">
+	<summary>
+    Gets The EPG Version From BuildWinPath
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.GetLogName(System.Boolean)">
+	<summary>
+   Returns The Log Name
+ </summary>
+	<param name="IsSerial">If True Returns Serial Name Else Returns Telnet Name</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.SetBaudRate">
+	<summary>
+   Sets The BAUDRATE Value Of The Debug
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.GetMountCommand(System.Boolean)">
+	<summary>
+   Gets The Mount Command And Adding Values Needed To Mount
+ </summary>
+	<param name="IsFormat">If True Adds FORMAT FORMAT_FLASH FOUR_K</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.GetFlashCommand(System.Boolean,System.Boolean)">
+	<summary>
+   Gets The Flash Command From Environment.ini And Adds GW/Client Support If Needed
+ </summary>
+	<param name="IsGw">If True It's GW</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.CloseLogs">
+	<summary>
+   Closes The Serial And Telnet Logging
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.BurnImage(System.Boolean,System.Boolean)">
+	<summary>
+   Burns The Flash Image To The STB
+ </summary>
+	<param name="IsGw">If True It Is The GW Else The Client</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.BeginLogging(System.Boolean,System.String,System.Int32)">
+	<summary>
+   Begin Serial Or Telnet Logging 
+ </summary>
+	<param name="IsSerial">If True Begin Serial Logging Else Begin Telnet Logging</param>
+	<param name="LogFileName">The Log FileName</param>
+	<param name="LoopNum">The Loop Iteration For Adding It To The Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.RebootSTB(System.Boolean)">
+	<summary>
+   Reboot The STB And Wait If Asked
+ </summary>
+	<param name="WithIPC">If True Waits 10 Seconds Between Turn OFF And ON</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.UpdateSTBVersion(System.String,System.Boolean,System.Boolean)">
+	<summary>
+   Checkes If Burn Needed And Burn
+ </summary>
+	<param name="CurrentVersion">Current Build Version</param>
+	<param name="IsGW">If True Burnning GW Else Burrning Client</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.GetVersionFromSTB">
+	<summary>
+    Get Version From STB
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.InitializeStb(System.String@,System.Boolean)">
+	<summary>
+   Initializing The STB After STB Passed The First Screen
+ </summary>
+	<param name="Msg">Returned Error Message</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.WaitForFirstScreen">
+	<summary>
+   Waiting For First Screen To Appear On EPG
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.WaitForLegalDisclaimer">
+	<summary>
+   Waits For Legal Disclaimer Screen To Appear
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.WaitForStandbyPowerScreen">
+	<summary>
+   Waits For Standby Power Screen To Appear
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.WaitForPrompt(System.Boolean)">
+	<summary>
+    Waiting For Pormpt
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.SendMountCommand(System.Boolean,System.String,System.Boolean)">
+	<summary>
+   Sends Mount Command To Telnet
+ </summary>
+	<param name="MountCommand">The Mount Command To Send</param>
+	<param name="IsSerial">If True Sends The Command Through Serial Else Through Telnet</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.HandlePinScreens">
+	<summary>
+   Handling New PIN Screens (Inserting The PIN Twice)
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Mount.HandleFirstScreens(System.Boolean)">
+	<summary>
+   Handles All The Screens Before LIVE/MENU Arrive
+ </summary>
+	<param name="_IsGw">If True Handles GW First Screens Else The Client</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Utils.GetEventTimeSeparator">
+	<summary>
+    Retrieving The Event Time Separator To Be Inserted Between Start Time And End Time  
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Utils.EnterPin(System.String)">
+	<summary>
+   Entering PIN
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Utils.ReturnToLiveViewing(System.Boolean)">
+	<summary>
+   Return To Live Viewing
+ </summary>
+	<param name="CheckForVideo">Optional Parameter FALSE.If TRUE Checks For Video</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>334 - VideoNotPresent</para>
+		<para>349 - ReturnToLiveFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Utils.SendIR(System.String,System.Int32)">
+	<summary>
+   Sends IR Key
+ </summary>
+	<param name="IRKey">The Key To Send</param>
+	<param name="WaitAfterIR">Optional Parameter Default 2000 : Wait After Sending</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Utils.TranslateLanguage(System.String,System.Boolean)">
+	<summary>
+   Translate Languages
+ </summary>
+	<param name="Language">Language To Translate</param>
+	<returns>Boolean</returns>
+	<remarks>
+ Possible Error Codes:
+ <para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.isPlanner">
+	<summary>
+    Checks If The EPG Is On Planner Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.isEmpty">
+	<summary>
+   Checking If Planner Is Empty
+ </summary>
+	<returns>True If Empty False Is Not</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.VerifyPlannerEmpty">
+	<summary>
+   Checks If Planner Has No Events
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.GetSelectedEventName(System.String@)">
+	<summary>
+   Get Selected EventName From Planner
+ </summary>
+	<param name="EventName">Returns The Selected Event Name</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.VerifyPlanner">
+	<summary>
+   Verify MY RECORDINGS State Is On Screen
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.CancelEvent(System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Canceling Event From Planner
+ </summary>
+	<param name="shouldSucceed">Optional Parameter Default = True : Just For The Comment Trying/Cancel</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.Navigate">
+	<summary>
+   Navigating To Planner
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.NextEvent(System.Int32,System.Boolean)">
+	<summary>
+    Moving To Next Event In Planner X Times
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : X Events To Move On Planner</param>
+	<param name="VerifyByDetails">Optional Parameter Default = False : If True Comparing Detail Key Too</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.LockEvent">
+	<summary>
+   Lock The Event
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>359 - LockUnlockFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.FindEvent(System.String,System.String,System.String,System.String)">
+	<summary>
+   Finding Requested Event On Planner
+ </summary>
+	<param name="EventName">The Name Of The Event</param>
+	<param name="EventDate">The Event Converted Date</param>
+	<param name="StartTime">The Event Start Time</param>
+	<param name="EndTime">The Event End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.VerifyRecurring(System.String)">
+	<summary>
+   Verifying Event Recurring Events On Planner By Name,Date,StartTime And EndTime
+ </summary>
+	<param name="EventKeyName">The Key Of The Event</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.FutureRecordings.NextDownEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Down In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Live.VerifyRadioStateReached">
+	<summary>
+   Verifying the State in Radio Service
+ </summary>
+	<remarks> 
+ In VOO the Active State on Radio Service is Zap Channel Bar
+ </remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Banner.CancelBooking(System.Boolean,System.Boolean)">
+	<summary>
+     Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Banner.StopRecording">
+	<summary>
+   Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>348 - StopRecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Banner.RecordEvent(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+     Recording Event From Banner
+ </summary>
+	<param name="IsCurrent">Pressing Select On Confirm Record And If True Searching Current Event Milestones Else Searching Future Event Milestones</param>
+	<param name="IsResuming">Pressing Select On Confirm Record And If True Searching Resume Recording Milestones Else Not Searching For Resume Milestones</param>
+	<param name="IsConflict">Pressing Select On Confirm Record And Expects Conflict Screen</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>339 - RecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Banner.SetSubtitlesLanguage(System.String,System.String)">
+	<summary>
+    Sets Subtitles Language On Action Bar
+ </summary>
+	<param name="Language">Language Of Subtitles To Select</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Banner.GetEventName(System.String@)">
+	<summary>
+    Getting Event Name From Action Bar
+ </summary>
+	<param name="EventName">Returns EventName From Action Bar</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Banner.RefreshEITOnActionBar">
+	<summary>
+ Refres EIT Details in Action Bar
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Menu.SetManualRecordingDate(System.String)">
+	<summary>
+   Sets Manual Recording Date On Date List
+ </summary>
+	<param name="tDate">Requested Date</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.Menu.SetManualRecordingChannel(System.String)">
+	<summary>
+  Sets Manual Recording Channel On Channels List
+ </summary>
+	<param name="Channel">Requested Channel</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.NavigateToRecord(System.Boolean)">
+	<summary>
+   Navigating To RECORD After Entering All Fields On Manual Recording
+ </summary>
+	<param name="IsFromCurrent">For UPC: If True Means Manual Recording From Banner Or Modify Manual Else False</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.NavigateFromPlanner">
+	<summary>
+   Navigating To Manual Recording From Planner
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.TypeStartTime(System.String)">
+	<summary>
+   Typing Start Time On Manual Recording Start Time Field
+ </summary>
+	<param name="StartTime">The Requested Start Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.TypeEndTime(System.String)">
+	<summary>
+   Typing End Time On Manual Recording End Time Field
+ </summary>
+	<param name="EndTime">The Requested End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.NavigateToStartTime(System.Boolean)">
+	<summary>
+   Navigating To START TIME On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.NavigateToEndTime(System.Boolean)">
+	<summary>
+   Navigating To END TIME On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.SetChannel(System.String)">
+	<summary>
+   Setting Channel In Channels List
+ </summary>
+	<param name="ChannelName">Requested Channel Name To Set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.SetDate(System.String,System.Boolean)">
+	<summary>
+   Setting Date In Date List
+ </summary>
+	<param name="tDate">Requested Date To Set</param>
+	<param name="DefaultValue">If True Only For Logging Purposes Writes Default Value</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.GetSelectedChannelName(System.String@)">
+	<summary>
+   Getting Selected Channel Name From Manual Recording Menu
+ </summary>
+	<param name="ChannelName">Returns The Selected Channel Name</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.SaveAndEnd(System.Boolean,System.Boolean)">
+	<summary>
+   Booking Manual Recording After All Parameters Were Entered
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = False : If True Verifies Current Booking Milestones Else Future Booking Milestones</param>
+	<param name="isModify">Optional Parameter Default = False :For UPC: True means Modify Manual Else False</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>339 - RecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.VerifySaveAndEndFinished(System.Boolean)">
+	<summary>
+   Verifying After Manual Recording Booked : If Current Verifies Action Bar Is Not On Screen Else Verifies Got Back To Planner Menu
+ </summary>
+	<param name="IsFromCurrent">If True Means Manual Recording From Banner Else From Planner</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.Navigate(System.Boolean,System.Boolean)">
+	<summary>
+   Navigating To Manual Recording
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.SetFrequency(System.String)">
+	<summary>
+   Setting Frequency In Frequency List
+ </summary>
+	<param name="Frequency">Requested Frequency To Set : One Time,Daily,Weekday,Weekly,Saturday-Sun</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEPGInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VOO.ManualRecording.GetOccurences(System.String,System.Int32,System.Int32@)">
+	<summary>
+ Getting expected number of occurences for the given frequency
+ </summary>
+	<param name="frequency">Frequency of Manual Recording</param>
+	<param name="daysDelay">Delay in days for the Record Start</param>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member>
+</members>
+</doc>

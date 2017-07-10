@@ -1,0 +1,7 @@
+02FAF3E291435468607857694DF5E45B68851868.pem;AddTrust External CA Root;Metrological uses https://cdn.jsdelivr.net js/css files
+4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5.pem;VeriSign Class 3 Public Primary Certification Authority - G5;Twitter,Yahoo
+5FB7EE0633E259DBAD0C4C9AE6D38F1A61C7DC25.pem;Digicert High Assurance EV Root CA;Facebook,Zattoo
+99A69BE61AFE886B4D2B82007CB854FC317E1539.pem;Entrust.net Secure Server Certification Authority;Digicert intermediate chain for Zattoo,Facebook
+B1BC968BD4F49D622AA89A81F2150152A41D829C.pem;GlobalSign Root CA;Metrological
+DE28F4A4FFE5B92FA3C503D1A349A7F9962A8212.pem;GeoTrust Global CA;Google services
+D23209AD23D314232174E40D7F9D62139786633A.pem;Geotrust requires Equifax Secure Certificate Authority;Metrological and Google Services

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	
+<contentTypes>
+
+	<contentType name="default"    level="AM2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+    <contentType name="LVA"        level="AM2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+    <contentType name="LVB"        level="AM2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+    <contentType name="LVC"        level="FC2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+                                         			
+</contentTypes>
+
+<animations>
+
+	<animation name="listview-LVA-bg"     		           map="AM2-AM2-bg" ></animation>
+	<animation name="listview-LVA-nobg"    		           map="AM2-AM2-nobg" ></animation>
+
+	<animation name="listview-listview-LVA-LVB-d"          map="AM2-AM2-d" ></animation>
+	<animation name="listview-listview-LVB-LVA-u"          map="AM2-AM2-u" ></animation>
+
+	<animation name="listview-LVA-acc-u"                   map="AM2-AM2-u" ></animation>
+	<animation name="listview-LVA-acc-d"                   map="AM2-AM2-d" ></animation>
+	<animation name="listview-LVA-lin-u"                   map="AM2-AM2-u" ></animation>
+	<animation name="listview-LVA-lin-d"                   map="AM2-AM2-d" ></animation>
+	<animation name="listview-LVA-dec-u"                   map="AM2-AM2-u" ></animation>
+	<animation name="listview-LVA-dec-d"                   map="AM2-AM2-d" ></animation>
+	<animation name="listview-LVA-dsb"                     map="AM2-AM2-u" ></animation>
+	<animation name="listview-LVA-enb"                     map="AM2-AM2-d" ></animation>		
+
+	<animation name="listview-LVB-bg"     		           map="AM2-AM2-bg" ></animation>
+	<animation name="listview-LVB-nobg"    		           map="AM2-AM2-nobg" ></animation>
+
+	<animation name="listview-LVB-u"    		           map="AM2-AM2-u" ></animation>
+	<animation name="listview-LVB-d"    		           map="AM2-AM2-d" ></animation>
+
+	<animation name="listview-LVB-acc-u"                   map="AM2-AM2-u" ></animation>
+	<animation name="listview-LVB-acc-d"                   map="AM2-AM2-d" ></animation>
+	<animation name="listview-LVB-lin-u"                   map="AM2-AM2-u" ></animation>
+	<animation name="listview-LVB-lin-d"                   map="AM2-AM2-d" ></animation>
+	<animation name="listview-LVB-dec-u"                   map="AM2-AM2-u" ></animation>
+	<animation name="listview-LVB-dec-d"                   map="AM2-AM2-d" ></animation>
+	<animation name="listview-LVB-dsb"                     map="AM2-AM2-u" ></animation>
+	<animation name="listview-LVB-enb"                     map="AM2-AM2-d" ></animation>	
+
+	<animation name="listview-LVC-bg"     		           map="FC1-FC1-bg" ></animation>
+	<animation name="listview-LVC-nobg"    		           map="FC1-FC1-nobg" ></animation>
+
+	<animation name="listview-LVC-r"    		           map="FC2-FC2-bg" ></animation>
+	<animation name="listview-LVC-l"    		           map="FC2-FC2-nobg" ></animation>
+
+	<animation name="listview-listview-LVC-LVA-o"          map="FC2-AM2-transi-o" ></animation>
+	<animation name="listview-listview-LVA-LVC-b"          map="AM2-FC2-transi-b" ></animation>
+	<animation name="listview-listview-LVA-LVC-u"          map="AM2-FC2-transi-o" ></animation>
+	<animation name="listview-listview-LVC-LVA-d"          map="FC2-AM2-transi-o" ></animation>		
+
+</animations>
+</sceneConfig>

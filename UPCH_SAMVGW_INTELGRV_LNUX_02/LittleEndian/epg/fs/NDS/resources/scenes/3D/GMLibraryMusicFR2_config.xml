@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone name="s2" type="s" id="2" x="0" y="540" w="1900" h="528"/>
+<zone name="s1" type="s" id="1" x="0" y="0" w="1900" h="528"/>
+
+<zone name="p1" type="p" id="1" x="1428" y="270" w="260" h="260"/>
+<zone name="p2" type="p" id="2" x="1370.45" y="540.55" w="260" h="260"/>
+<zone name="pl" type="p" id="2" x="1168" y="270" w="260" h="260"/>
+<zone name="pr" type="p" id="2" x="1688" y="270" w="260" h="260"/>
+
+<zone name="search" type="search" id="null" x="11" y="1429" w="1280" h="70"/>
+<zone name="g1" type="g" id="1" x="11" y="1269" w="552" h="150"/>
+<zone name="g2" type="g" id="2" x="573" y="1269" w="552" h="150"/>
+<zone name="ContentDetails" type="ContentDetails" id="null" x="11" y="1269" w="552" h="200"/>
+<zone name="HorizonBar" type="HorizonBar" id="null" x="10" y="1252" w="552" h="4"/>
+
+<!-- static p zones -->
+<zone name="p_1" type="poster" id="null" x="0" y="0" w="260" h="260"/>
+<zone name="p_2" type="poster" id="null" x="274" y="0" w="260" h="260"/>
+<zone name="p_3" type="poster" id="null" x="548" y="0" w="260" h="260"/>
+<zone name="p_4" type="poster" id="null" x="822" y="0" w="260" h="260"/>
+<zone name="p_5" type="poster" id="null" x="1096" y="0" w="260" h="260"/>
+<zone name="p_6" type="poster" id="null" x="0" y="270" w="260" h="260"/>
+<zone name="p_7" type="poster" id="null" x="274" y="270" w="260" h="260"/>
+<zone name="p_8" type="poster" id="null" x="548" y="270" w="260" h="260"/>
+<zone name="p_9" type="poster" id="null" x="822" y="270" w="260" h="260"/>
+
+<zone name="p_1_d" type="poster" id="null" x="0" y="0" w="260" h="260"/>
+<zone name="p_2_d" type="poster" id="null" x="274" y="0" w="260" h="260"/>
+<zone name="p_3_d" type="poster" id="null" x="548" y="0" w="260" h="260"/>
+<zone name="p_4_d" type="poster" id="null" x="822" y="0" w="260" h="260"/>
+<zone name="p_5_d" type="poster" id="null" x="1096" y="0" w="260" h="260"/>
+<zone name="p_6_d" type="poster" id="null" x="0" y="270" w="260" h="260"/>
+<zone name="p_7_d" type="poster" id="null" x="274" y="270" w="260" h="260"/>
+<zone name="p_8_d" type="poster" id="null" x="548" y="270" w="260" h="260"/>
+<zone name="p_9_d" type="poster" id="null" x="822" y="270" w="260" h="260"/>
+
+<zone name="l_0" type="label" id="null" x="0" y="0" w="180" h="76"/>
+<zone name="l_1" type="label" id="null" x="274" y="0" w="180" h="76"/>
+<zone name="l_2" type="label" id="null" x="548" y="0" w="180" h="76"/>
+<zone name="l_3" type="label" id="null" x="822" y="0" w="180" h="76"/>
+<zone name="l_4" type="label" id="null" x="0" y="-86" w="180" h="76"/>
+<zone name="l_5" type="label" id="null" x="274" y="-86" w="180" h="76"/>
+<zone name="l_6" type="label" id="null" x="548" y="-86" w="180" h="76"/>
+<zone name="l_7" type="label" id="null" x="822" y="-86" w="180" h="76"/>
+<zone name="l_8" type="label" id="null" x="1096" y="-86" w="180" h="76"/>
+
+<!-- static VList x = 0 + 465, y = 1456 - 50(buffer holder) -->
+<zone name="VList" type="VList" id="null" x="465" y="1406" w="1280" h="200"/>
+<zone name="Labels" type="Labels" id="null" x="7" y="1204" w="1410" h="76"/>
+
+<zone name="sortFilter" type="sortFilter" id="null" x="1362" y="0.55" w="686" h="260"/>
+<zone name="optionName" type="optionName" id="null" x="242.75" y="1315.1" w="1280" h="70"/>
+
+<zone name="MusicAlbumPoster" type="MusicAlbumPoster" id="null" x="1428" y="530" w="260" h="260"/>
+<zone name="trackDetails" type="trackDetails" id="null" x="10" y="1831" w="530" h="260"/>
+
+<!-- TRICKMODE-->
+<zone name="t1" type="t1" id="null" x="0" y="0" w="1280" h="151.95"/>
+<zone name="t3" type="t3" id="null" x="0" y="380" w="1280" h="50"/>
+
+<zone name="TMDatas" type="TMDatas" id="null" x="1362" y="826.45" w="686" h="139"/>
+<zone name="t1_logo" type="t1_logo" id="null" x="1705" y="878" w="260" h="260"/>
+<zone name="MusicTMPoster" type="MusicTMPoster" id="null" x="1428" y="270" w="243.5" h="260"/>
+<zone name="t1_servName" type="t1_servName" id="null" x="1428" y="450" w="260" h="260"/>
+<zone name="t1_duration" type="t1_duration" id="null" x="1480" y="495" w="260" h="260"/>
+<zone name="t2_event_Name" type="t2_event_Name" id="null" x="0" y="1414" w="1280" h="200"/>
+<zone name="trickmode" type="trickmode" id="null" x="0" y="1260" w="1280" h="50"/>
+<zone name="t4" type="t4" id="null" x="0" y="4" w="1280" h="4"/>

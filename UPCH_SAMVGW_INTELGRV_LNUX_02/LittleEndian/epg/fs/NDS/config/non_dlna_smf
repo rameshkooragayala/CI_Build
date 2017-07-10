@@ -1,0 +1,11 @@
+# DLNA.ORG_PN values that will be silently supported.
+#
+# These are non standard DLNA profiles output by Twonky, which will be
+# allowed for playback, if the mime type also matches.
+AVI
+MKV
+PV_DIVX_DIV3
+PV_DIVX_DIV4
+PV_DIVX_DIVX
+PV_DIVX_DX50
+WMVHIGH_BASE

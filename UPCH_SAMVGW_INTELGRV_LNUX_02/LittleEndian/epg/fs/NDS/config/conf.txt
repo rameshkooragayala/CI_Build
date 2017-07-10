@@ -1,0 +1,51 @@
+#################################################################################
+#  This is the default configuration file for PPP_Open. First line of each      #
+#  structure indicate the structure name. We need to give the default enum      #
+#  values, not the default enum names. Each line should be ended with a newline #
+#  character. And second line of each structure indicates the number of         #
+#  parameters in that structure.                                                #
+#################################################################################
+
+
+PPPD_TTYConfiguration
+8
+/dev/nds/modem0
+3
+2
+3
+1
+5
+0
+3
+};
+
+PPPD_ChatConfiguration
+2
+/NDS/config/chap_chat.conf
+0
+};
+
+PPPD_UserConfiguration
+4
+pppuser
+AUS
+pppuser123
+0
+};
+
+PPPD_PPPConfiguration
+5
+0
+0
+0
+0
+0
+};
+
+PPPD_IPConfiguration
+3
+1500
+1500
+1
+};
+

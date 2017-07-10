@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	<contentTypes>
+		<contentType name="default" level="x2y2" stepRL="400" stepUD="100" stepOB="800"></contentType>	
+	</contentTypes>
+	<animations>
+		<animation 	name="k2000"	map="x2y2F-k2000">		</animation>
+		<animation 	name="nobg" 	map="x2y2-x2y2-nobg">	</animation>
+	</animations>
+</sceneConfig>

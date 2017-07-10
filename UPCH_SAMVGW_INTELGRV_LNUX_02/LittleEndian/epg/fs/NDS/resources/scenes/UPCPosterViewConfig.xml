@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	
+	<contentTypes>
+		<contentType name="default"    level="FC1"  stepRL="100"  stepUD="100"  stepOB="800"></contentType>
+        <contentType name="FCA"        level="FC1"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+        <contentType name="FCB"        level="FC2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+        <contentType name="FCC"        level="FC1"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+        <contentType name="FCD"        level="AM2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+        <contentType name="FCE"        level="FC2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType> 
+        <contentType name="FCF"        level="AM2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>                                         			
+	</contentTypes>
+
+	<animations>
+
+  		<animation name="showcase-FCA-bg"     		                          map="FC1-FC1-bg" ></animation>
+  		<animation name="showcase-FCA-nobg"    		                          map="FC1-FC1-nobg" ></animation>
+	
+  		<animation name="showcase-FCA-r"     		                            map="FC1-FC1-r" ></animation>
+  		<animation name="showcase-FCA-l"     		                            map="FC1-FC1-l" ></animation>
+
+  		<animation name="showcase-menuList1-FCA-FCB-u"                      map="FC1-FC2-transi-o" ></animation>
+  		<animation name="menuList1-showcase-FCB-FCA-d"                      map="FC2-FC1-transi-o" ></animation>
+  		<animation name="showcase-showcase-FCA-FCC-d"                       map="FC1-FC1-d" ></animation>
+  		<animation name="showcase-showcase-FCC-FCA-u"                       map="FC1-FC1-u" ></animation>
+	
+  		<animation name="menuList1-FCB-0-bg"   		                          map="FC2-FC2-bg" ></animation>
+  		<animation name="menuList1-FCB-0-nobg" 		                          map="FC2-FC2-nobg" ></animation>
+	
+  		<animation name="submenuList1-FCB-0-r"  	                          map="FC2-FC2-r" ></animation>
+  		<animation name="submenuList1-FCB-0-l"  	                          map="FC2-FC2-l" ></animation>
+  		<animation name="submenuList1-FCB-1-r" 		                          map="FC2-FC2-r" ></animation>
+  		<animation name="submenuList1-FCB-1-l" 		                          map="FC2-FC2-l" ></animation>
+  		<animation name="submenuList1-FCB-2-r" 		                          map="FC2-FC2-r" ></animation>
+  		<animation name="submenuList1-FCB-2-l" 		                          map="FC2-FC2-l" ></animation>
+  		<animation name="submenuList1-FCB-3-r"                              map="FC2-FC2-r" ></animation>
+  		<animation name="submenuList1-FCB-3-l"                              map="FC2-FC2-l" ></animation>  	
+	
+  		<animation name="menuList1-submenuList1-FCB-FCB-0-d"                map="FC2-FC2-d" ></animation>
+  		<animation name="submenuList1-menuList1-FCB-FCB-0-u"                map="FC2-FC2-u" ></animation>
+	
+  		<animation name="menuList1-showcase-FCB-FCA-o"                      map="FC2-FC1-transi-o" ></animation>
+  		<animation name="showcase-menuList1-FCA-FCB-b"                      map="FC1-FC2-transi-b" ></animation>  	
+	                     
+  		<animation name="showcase-FCC-bg"      		                          map="FC1-FC1-bg" ></animation>
+  		<animation name="showcase-FCC-nobg"    		                          map="FC1-FC1-nobg" ></animation>
+	                     
+  		<animation name="showcase-FCC-u"         		                        map="FC1-FC1-u" ></animation>
+  		<animation name="showcase-FCC-d"         		                        map="FC1-FC1-d" ></animation>
+  		<animation name="showcase-FCC-r"    		                            map="FC1-FC1-r" ></animation>
+  		<animation name="showcase-FCC-l"    		                            map="FC1-FC1-l" ></animation>
+  		 	  	  	  	   	   	   		  	  	                      
+  		<animation name="showcase-FCD-bg"     		                          map="AM2-AM2-bg" ></animation>
+  		<animation name="showcase-FCD-nobg"    		                          map="AM2-AM2-nobg" ></animation>
+	                     
+  		<animation name="showcase-FCD-r"                                    map="AM2-AM2-r" ></animation>
+  		<animation name="showcase-FCD-l"                                    map="AM2-AM2-l" ></animation>
+	                     
+  		<animation name="showcase-FCE-bg"     		                          map="FC2-FC2-bg" ></animation>
+  		<animation name="showcase-FCE-nobg"    		                          map="FC2-FC2-nobg" ></animation>
+	                     
+  		<animation name="showcase-FCE-r"    		                            map="FC2-FC2-r" ></animation>
+  		<animation name="showcase-FCE-l"                                    map="FC2-FC2-l" ></animation>  	  	
+	                     
+  		<animation name="showcase-FCF-bg"       		                        map="AM2-AM2-bg"  ></animation>
+  		<animation name="showcase-FCF-nobg"      		                        map="AM2-AM2-nobg" ></animation>
+	                     
+  		<animation name="showcase-FCF-r"                                    map="AM2-AM2-r" ></animation>
+  		<animation name="showcase-FCF-l"                                    map="AM2-AM2-l" ></animation>
+	                     
+  		<animation name="showcase-FCF-nom-u"                                map="AM2-AM2-u" ></animation>
+  		<animation name="showcase-FCF-nom-d"                                map="AM2-AM2-d" ></animation>
+  		<animation name="showcase-FCF-acc-u"                                map="AM2-AM2-u" ></animation>
+  		<animation name="showcase-FCF-acc-d"                                map="AM2-AM2-d" ></animation>  	  	
+  		<animation name="showcase-FCF-lin-u"                                map="AM2-AM2-u" ></animation>
+  		<animation name="showcase-FCF-lin-d"                                map="AM2-AM2-d" ></animation>  	
+  		<animation name="showcase-FCF-dec-u"                                map="AM2-AM2-u" ></animation>
+  		<animation name="showcase-FCF-dec-d"                                map="AM2-AM2-d" ></animation>
+  		<animation name="showcase-FCD-acc-u"                                map="AM2-AM2-u" ></animation>
+  		<animation name="showcase-FCD-acc-d"                                map="AM2-AM2-d" ></animation>  	
+  		<animation name="showcase-FCD-dec-u"                                map="AM2-AM2-u" ></animation>
+  		<animation name="showcase-FCD-dec-d"                                map="AM2-AM2-d" ></animation>   	  	  	
+
+      <animation name="showcase-menuList1-FCD-FCE-u"                      map="AM2-FC2-transi-o" ></animation>
+      <animation name="menuList1-showcase-FCE-FCD-d"                      map="FC2-AM2-transi-o" ></animation>	                     
+  		<animation name="showcase-showcase-FCD-FCF-d"                       map="AM2-AM2-d" ></animation>
+  		<animation name="showcase-showcase-FCF-FCD-u"                       map="AM2-AM2-u" ></animation>
+  		<animation name="showcase-showcase-FCA-FCD-o"                       map="FC1-AM2-transi-o" ></animation>
+      <animation name="showcase-showcase-FCD-FCA-o"                       map="AM2-FC1-transi-o" ></animation>      
+  		<animation name="showcase-showcase-FCD-FCA-b"                       map="AM2-FC1-transi-b" ></animation>
+      <animation name="showcase-showcase-FCF-FCA-o"                       map="AM2-FC1-transi-o" ></animation>      
+      <animation name="showcase-showcase-FCF-FCA-b"                       map="AM2-FC1-transi-b" ></animation>
+      <animation name="menuList1-showcase-FCE-FCA-o"                      map="FC2-FC1-transi-o" ></animation>      
+      <animation name="menuList1-showcase-FCE-FCA-b"                      map="FC2-FC1-transi-b" ></animation>
+      <animation name="menuList1-showcase-FCE-FCC-b"                      map="FC2-FC1-transi-b" ></animation>
+      <animation name="menuList1-showcase-FCE-FCD-o"                      map="FC2-AM2-transi-o" ></animation>            
+      <animation name="showcase-showcase-FCD-FCC-b"                       map="AM2-FC1-transi-b" ></animation>
+      <animation name="showcase-showcase-FCF-FCC-b"                       map="AM2-FC1-transi-b" ></animation>             
+
+      <animation name="showcase-showcase-FCC-FCA-b"                       map="FC1-FC1-r" ></animation>
+      <animation name="showcase-showcase-FCA-FCA-b"                       map="FC1-FC1-r" ></animation>
+      <animation name="showcase-showcase-FCC-FCD-o"                       map="FC1-AM2-transi-o" ></animation>
+      <animation name="menuList1-showcase-FCB-FCD-o"                      map="FC2-AM2-transi-o" ></animation>
+      <animation name="showcase-FCA-0-r"                                  map="FC1-FC1-r" ></animation>
+      <animation name="showcase-FCC-0-r"                                  map="FC1-FC1-r" ></animation>
+      <animation name="showcase-FCA-0-l"                                  map="FC1-FC1-l" ></animation>
+      <animation name="showcase-FCC-0-l"                                  map="FC1-FC1-l" ></animation>   
+      <animation name="showcase-FCD-0-r"                                  map="AM2-AM2-r" ></animation>
+      <animation name="showcase-FCE-0-r"                                  map="FC2-FC2-r" ></animation>
+      <animation name="showcase-FCD-0-l"                                  map="AM2-AM2-l" ></animation>
+      <animation name="showcase-FCE-0-l"                                  map="FC2-FC2-l" ></animation>      
+      
+		</animations>
+
+</sceneConfig>

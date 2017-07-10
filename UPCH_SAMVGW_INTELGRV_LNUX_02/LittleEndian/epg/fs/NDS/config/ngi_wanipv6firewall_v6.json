@@ -1,0 +1,50 @@
+{
+    "ngi_wanipv6firewall_get_capabilities":{
+		"NGI_STATUS": "NGI_STATUS_OK",
+		"Value":{
+		"capabilities":[
+						{
+							"dev":67890,
+							"capabilities":{
+								"features":[
+								"NGI_WANIPV6FIREWALL_FEATURE_PROTOCOL_WILDCARD"
+								]
+							}
+						}
+				]
+			}
+		},
+						
+    "ngi_wanipv6firewall_get_enabled":{
+		"NGI_STATUS": "NGI_STATUS_OK", 
+			"Value":{
+			"isEnabled":[
+						{
+							"dev":67890,
+							"isEnabled":1
+						}
+				]
+			}
+		},
+		
+	"ngi_wanipv6firewall_add_pinhole":{
+		"NGI_STATUS": "NGI_STATUS_OK",
+			"Value":{
+			"pinholeID":[
+						{
+							"dev":67890,
+							"pinholeID":12
+						}
+				]
+			}
+		},
+		
+	"ngi_wanipv6firewall_update_pinhole":{
+		"NGI_STATUS": "NGI_STATUS_OK"
+	},	
+	"ngi_wanipv6firewall_del_pinhole":{
+		"NGI_STATUS": "NGI_STATUS_OK" 
+	}
+}
+
+						

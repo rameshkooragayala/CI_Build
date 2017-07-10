@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template>
+  <Server name="ps">
+    <Profiles xmlns="http://nds.com/PersonalizationStore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Profile profileId="0000_0000_0">
+        <NickName>Master</NickName>
+        <Age>
+          <AgeRange>Any</AgeRange>
+        </Age>
+        <Gender>Female</Gender>
+        <ProfileFlags>
+          <ShowEmailNotifications>false</ShowEmailNotifications>
+          <ShowPhoneNotifications>false</ShowPhoneNotifications>
+          <VoiceMailNotificationFlag>false</VoiceMailNotificationFlag>
+          <ReminderNotificationFlag>true</ReminderNotificationFlag>
+          <TargetMessageNotificationFlag>true</TargetMessageNotificationFlag>
+          <AutomaticRecordingsFlag>false</AutomaticRecordingsFlag>
+          <AudioDescriptionFlag>false</AudioDescriptionFlag>
+          <SubtitlesPresentationFlag>true</SubtitlesPresentationFlag>
+          <HardOfHearingSubtitleFlag>true</HardOfHearingSubtitleFlag>
+        </ProfileFlags>
+        <ARRInfo>
+          <MaxRecordings>5</MaxRecordings>
+        </ARRInfo>
+        <ChannelSettings>
+          <ChannelChoice>
+            <LastChannel></LastChannel>
+          </ChannelChoice>
+          <FavoriteChannels>
+            <FavoriteChannel>
+              <SequenceNumber>3</SequenceNumber>
+              <LogicalChannelNumber>11</LogicalChannelNumber>
+              <ChannelId>dvb://1.1.1</ChannelId>
+            </FavoriteChannel>
+            <FavoriteChannel>
+              <SequenceNumber>2</SequenceNumber>
+              <LogicalChannelNumber>22</LogicalChannelNumber>
+              <ChannelId>dvb://2.2.2</ChannelId>
+            </FavoriteChannel>
+          </FavoriteChannels>
+        </ChannelSettings>
+        <ChannelBarTimeout>3</ChannelBarTimeout>
+        <EpgLayout>0</EpgLayout>
+        <LanguageSettings>
+          <AudioLanguagePriorities>
+            <LanguageId>nl</LanguageId>
+          </AudioLanguagePriorities>
+          <SubtitleLanguagePriorities>
+            <LanguageId>nl</LanguageId>
+          </SubtitleLanguagePriorities>
+          <UILanguage>nl</UILanguage>
+        </LanguageSettings>
+        <ProfilePin xsi:nil="true"></ProfilePin>
+        <ShareContent>true</ShareContent>
+        <QuestionnaireAnswers></QuestionnaireAnswers>
+        <VisualElement></VisualElement>
+        <PersonalSkinning>
+          <TransparencyLevel>50</TransparencyLevel>
+        </PersonalSkinning>
+        <Properties>
+          <Property>
+            <PropertyName>WidgetNotificationFlag</PropertyName>
+            <PropertyValue>false</PropertyValue>
+          </Property>
+          <Property>
+            <PropertyName>AuditoryFeedbackFlag</PropertyName>
+            <PropertyValue>false</PropertyValue>
+          </Property>
+          <Property>
+            <PropertyName>AssetViewStore</PropertyName>
+            <PropertyValue>MOSAIC</PropertyValue>
+          </Property>
+          <Property>
+            <PropertyName>AssetViewLibrary</PropertyName>
+            <PropertyValue>LIST</PropertyValue>
+          </Property> 
+          <Property>
+            <PropertyName>WidgetLibrary</PropertyName>
+            <PropertyValue>http://psweb:8080/ps/profiles/CUST1_NL_0/WidgetLibrary</PropertyValue>
+          </Property>
+		  <Property>
+            <PropertyName>SkipFwdDuration</PropertyName>
+            <PropertyValue>30</PropertyValue>
+          </Property>
+		  <Property>
+            <PropertyName>SkipRwdDuration</PropertyName>
+            <PropertyValue>30</PropertyValue>
+          </Property>
+          <PropertyList propertyListId="TvGuideAppearance">
+  					<Property>
+  						<PropertyName>OverlayVideo</PropertyName>
+  						<PropertyValue>true</PropertyValue>
+  					</Property>          
+            <Property>
+              <PropertyName>FullScreenWithMiniTv</PropertyName>
+              <PropertyValue>false</PropertyValue>
+            </Property>
+          </PropertyList>
+        </Properties>
+      </Profile>
+    </Profiles>
+  </Server>
+  <Server name="upm">
+    <Template>
+      <UserProfile>
+        <Node name="UserProfile" mandatory="true">
+          <Attribute name="xmlns" mandatory="true">
+            <Data kind="Text" text="http://nds.com/UPM" mandatory="true"/>
+          </Attribute>
+          <Node name="Preferences" mandatory="true">
+            <Node name="NickName" mandatory="false">
+              <Data kind="Property" type="string" module="ACCOUNT" property="NAME" mandatory="false"/>
+            </Node>
+            <Node name="ChannelLineupFilter" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="CHANNEL_LINEUP_FILTER" mandatory="false">
+                <EnumValue value="1" text="ALL_CHANNELS"/>
+                <EnumValue value="2" text="FAVORITES_ONLY"/>
+                <EnumValue value="3" text="SUBSCRIBED_ONLY"/>
+              </Data>
+            </Node>
+          </Node>
+        </Node>
+      </UserProfile>
+      <FavoriteChannels>
+        <Node name="FavoriteChannels" mandatory="true">
+          <Attribute name="xmlns" mandatory="true">
+            <Data kind="Text" text="http://nds.com/UPM" mandatory="true"/>
+          </Attribute>
+          <ServiceList name="FAV" mandatory="true">
+            <Node name="FavoriteChannel" mandatory="true">
+              <Node name="SequenceNumber" mandatory="true">
+                <Data kind="Service" type="service_id" mandatory="true"/>
+              </Node>
+              <Node name="LogicalChannelNumber" mandatory="true">
+                <Data kind="Service" type="service_id" mandatory="true"/>
+              </Node>
+              <Node name="ChannelId" mandatory="true">
+                <Data kind="Service" type="dvb_address" mandatory="true"/>
+              </Node>
+            </Node>
+          </ServiceList>
+        </Node>
+      </FavoriteChannels>
+    </Template>
+  </Server>
+  <Server name="upm_voo">
+    <Template>
+	  <UserProfile>
+        <Node name="UserProfile" mandatory="true">
+          <Attribute name="xmlns" mandatory="true">
+            <Data kind="Text" text="http://nds.com/UPM" mandatory="true"/>
+          </Attribute>
+          <Node name="Preferences" mandatory="true">
+            <Node name="NickName" mandatory="false">
+              <Data kind="Property" type="string" module="ACCOUNT" property="NAME" mandatory="false"/>
+            </Node>
+			<Node name="HardOfHearingSubtitleFlag" mandatory="false">
+              <Data kind="Property" type="bool" module="UI" property="SUBTITLE_TYPE" mandatory="false"/>
+            </Node>
+            <Node name="ChannelLineupFilter" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="CHANNEL_LINEUP_FILTER" mandatory="false">
+                <EnumValue value="1" text="ALL_CHANNELS"/>
+                <EnumValue value="2" text="FAVORITES_ONLY"/>
+                <EnumValue value="3" text="SUBSCRIBED_ONLY"/>
+              </Data>
+            </Node>
+			<Node name="AudioLanguage" mandatory="false">
+              <Data kind="Property" type="language" module="LANGUAGE" property="AUDIO" mandatory="false"/>
+            </Node>
+			<Node name="AudioDescriptionFlag" mandatory="false">
+              <Data kind="Property" type="bool" module="UI" property="NARRATIVE" mandatory="false"/>
+            </Node>
+			<Node name="SubtitlesPresentationFlag" mandatory="false">
+              <Data kind="Property" type="bool" module="UI" property="SUBTITLE" mandatory="false"/>
+            </Node>
+			<Node name="SubtitleLanguage" mandatory="false">
+              <Data kind="Property" type="language" module="LANGUAGE" property="SUBTITLE" mandatory="false"/>
+            </Node>
+          </Node>
+        </Node>
+      </UserProfile>
+      <FavoriteChannels>
+        <Node name="FavoriteChannels" mandatory="true">
+          <Attribute name="xmlns" mandatory="true">
+            <Data kind="Text" text="http://nds.com/UPM" mandatory="true"/>
+          </Attribute>
+          <ServiceList name="FAV" mandatory="true">
+            <Node name="FavoriteChannel" mandatory="true">
+              <Node name="SequenceNumber" mandatory="true">
+                <Data kind="Service" type="service_id" mandatory="true"/>
+              </Node>
+              <Node name="LogicalChannelNumber" mandatory="true">
+                <Data kind="Service" type="service_id" mandatory="true"/>
+              </Node>
+              <Node name="ChannelId" mandatory="true">
+                <Data kind="Service" type="dvb_address" mandatory="true"/>
+              </Node>
+            </Node>
+          </ServiceList>
+        </Node>
+      </FavoriteChannels>
+    </Template>
+  </Server>
+  <Server name="upm_canald">
+    <Template>
+      <UserProfile>
+        <Node name="UserProfile" mandatory="true">
+          <Attribute name="xmlns" mandatory="false">
+            <Data kind="Text" text="http://nds.com/UPM" mandatory="false"/>
+          </Attribute>
+          <Node name="Preferences" mandatory="true">
+            <Node name="NickName" mandatory="false">
+              <Data kind="Property" type="string" module="ACCOUNT" property="NAME" mandatory="false"/>
+            </Node>
+            <Node name="ChannelLineupFilter" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="CHANNEL_LINEUP_FILTER" mandatory="false">
+                <EnumValue value="1" text="ALL_CHANNELS"/>
+                <EnumValue value="2" text="FAVORITES_ONLY"/>
+                <EnumValue value="3" text="SUBSCRIBED_ONLY"/>
+              </Data>
+            </Node>
+            <Node name="SubtitleLanguage" mandatory="false">
+              <Data kind="Property" type="language" module="LANGUAGE" property="SUBTITLE" mandatory="false"/>
+            </Node>
+            <Node name="EpgLayout" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="EPG_LAYOUT" mandatory="false">
+                <EnumValue value="1" text="EpgLayoutGrid"/>
+                <EnumValue value="2" text="EpgLayoutNewspaper"/>
+              </Data>
+            </Node>
+            <Node name="UserStartChannel" mandatory="false">
+              <Data kind="Property" type="string" module="ACCOUNT" property="USER_LOGIN_CHANNEL" mandatory="false"/>
+            </Node>
+            <Node name="SubtitleLanguage2" mandatory="false">
+              <Data kind="Property" type="language" module="LANGUAGE" property="SUBTITLE_SECONDARY" mandatory="false"/>
+            </Node>
+            <Node name="ChannelStartChoice" mandatory="false">
+              <Data kind="Property" type="enum" module="ACCOUNT" property="LOGIN_CHANNEL" mandatory="false">
+                <EnumValue value="1" text="DefaultChannel"/>
+                <EnumValue value="2" text="LastViewed"/>
+                <EnumValue value="3" text="UserDefined"/>
+              </Data>
+            </Node>
+            <Node name="SubtitlesPresentationFlag" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="SUBTITLE" mandatory="false">
+                <EnumValue value="1" text="false"/>
+                <EnumValue value="2" text="true"/>
+              </Data>
+            </Node>
+            <Node name="HardOfHearingSubtitleFlag" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="SUBTITLE_TYPE" mandatory="false">
+                <EnumValue value="1" text="false"/>
+                <EnumValue value="2" text="true"/>
+              </Data>
+            </Node>
+          </Node>
+          <Node name="FavoriteChannelsUrl" mandatory = "false">
+            <Url event="FavoriteChannels" mandatory="false">
+            </Url>
+          </Node>
+        </Node>
+      </UserProfile>
+      <FavoriteChannels>
+        <Node name="FavoriteChannels" mandatory="true">
+          <Attribute name="xmlns" mandatory="true">
+            <Data kind="Text" text="http://nds.com/UPM" mandatory="true"/>
+          </Attribute>
+          <ServiceList name="FAV" mandatory="true">
+            <Node name="FavoriteChannel" mandatory="true">
+              <Node name="SequenceNumber" mandatory="true">
+                <Data kind="Service" type="service_id" mandatory="true"/>
+              </Node>
+              <Node name="LogicalChannelNumber" mandatory="true">
+                <Data kind="Service" type="service_id" mandatory="true"/>
+              </Node>
+              <Node name="ChannelId" mandatory="true">
+                <Data kind="Service" type="dvb_address" mandatory="true"/>
+              </Node>
+            </Node>
+          </ServiceList>
+        </Node>
+      </FavoriteChannels>
+    </Template>
+  </Server>
+  <Server name="upm_get">
+    <Template>
+      <UserProfile>
+        <Node name="UserProfile" mandatory="true">
+          <Attribute name="xmlns" mandatory="false">
+            <Data kind="Text" text="http://nds.com/UPM" mandatory="true"/>
+          </Attribute>
+          <Node name="Preferences" mandatory="true">
+            <Node name="NickName" mandatory="false">
+              <Data kind="Property" type="string" module="ACCOUNT" property="NAME" mandatory="false"/>
+            </Node>
+            <Node name="ChannelLineupFilter" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="CHANNEL_LINEUP_FILTER" mandatory="false">
+                <EnumValue value="1" text="ALL_CHANNELS"/>
+                <EnumValue value="2" text="FAVORITES_ONLY"/>
+                <EnumValue value="3" text="SUBSCRIBED_ONLY"/>
+              </Data>
+            </Node>
+            <Node name="SubtitleLanguage" mandatory="false">
+              <Data kind="Property" type="language" module="LANGUAGE" property="SUBTITLE" mandatory="false"/>
+            </Node>
+            <Node name="EpgLayout" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="EPG_LAYOUT" mandatory="false">
+                <EnumValue value="1" text="EpgLayoutGrid"/>
+                <EnumValue value="2" text="EpgLayoutNewspaper"/>
+              </Data>
+            </Node>
+            <Node name="SubtitleLanguage2" mandatory="false">
+              <Data kind="Property" type="language" module="LANGUAGE" property="SUBTITLE_SECONDARY" mandatory="false"/>
+            </Node>
+            <Node name="ChannelStartChoice" mandatory="false">
+              <Data kind="Property" type="enum" module="ACCOUNT" property="LOGIN_CHANNEL" mandatory="false">
+                <EnumValue value="1" text="DefaultChannel"/>
+                <EnumValue value="2" text="LastViewed"/>
+                <EnumValue value="3" text="UserDefined"/>
+              </Data>
+            </Node>
+            <Node name="SubtitlesPresentationFlag" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="SUBTITLE" mandatory="false">
+                <EnumValue value="1" text="false"/>
+                <EnumValue value="2" text="true"/>
+              </Data>
+            </Node>
+            <Node name="HardOfHearingSubtitleFlag" mandatory="false">
+              <Data kind="Property" type="enum" module="UI" property="SUBTITLE_TYPE" mandatory="false">
+                <EnumValue value="1" text="false"/>
+                <EnumValue value="2" text="true"/>
+              </Data>
+            </Node>
+          </Node>
+          <Node name="FavoriteChannelsUrl" mandatory = "false">
+            <Url event="FavoriteChannels" mandatory="false">
+            </Url>
+          </Node>
+        </Node>
+      </UserProfile>
+      <FavoriteChannels>
+        <Node name="FavoriteChannels" mandatory="true">
+          <Attribute name="xmlns" mandatory="true">
+            <Data kind="Text" text="http://nds.com/UPM" mandatory="true"/>
+          </Attribute>
+          <ServiceList name="FAV" mandatory="true">
+            <Node name="FavoriteChannel" mandatory="true">
+              <Node name="SequenceNumber" mandatory="true">
+                <Data kind="Service" type="service_id" mandatory="true"/>
+              </Node>
+              <Node name="LogicalChannelNumber" mandatory="true">
+                <Data kind="Service" type="service_id" mandatory="true"/>
+              </Node>
+              <Node name="ChannelId" mandatory="true">
+                <Data kind="Service" type="dvb_address" mandatory="true"/>
+              </Node>
+            </Node>
+          </ServiceList>
+        </Node>
+      </FavoriteChannels>
+    </Template>
+  </Server>
+ </Template>

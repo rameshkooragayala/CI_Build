@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Metrological WB - Controller</title>
+  <script src="/Service/Controller/UI/common.js"></script>
+  <link href="/Service/Controller/UI/style.css" type="text/css" rel="stylesheet">
+  <link href="/Service/Controller/UI/toast.css" type="text/css" rel="stylesheet">
+  <link href="//cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="createMenu()">
+
+<div id="disconnected">
+  <div id="disconnectedBlock">
+    <div id="message">No connection with device</div>
+    <div id="reconnect" class="loading">Attempting to connect</div>
+  </div>
+</div>
+
+<div class="top">
+  <!--header-->
+  <div class="header">
+    <div id="button-left" onclick="showMenu()" class="fa fa-bars left"></div>
+    <div id="button-right" onclick="showKeyboard()" class="fa fa-keyboard-o right"></div>
+    <img src="/Service/Controller/UI/ml.svg" alt="Metrological">
+  </div>
+
+  <!--navigation-->
+  <div id="menu" class="navigation"></div>
+</div>
+
+<div class="wrap">
+    <!--controller-->
+    <div id="content_Controller" class="content grid">
+      <div class="title grid__col grid__col--8-of-8">
+        Plugins
+      </div>
+
+      <div id="controllerPlugins"></div>
+
+      <div class="title grid__col grid__col--8-of-8">
+        Device actions
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        Device
+      </div>
+      <div class="text grid__col grid__col--6-of-8">
+        <button type="button" onclick="harakiri()">Reboot</button>
+      </div>
+    </div>
+
+    <!--device info-->
+    <div id="content_DeviceInfo" class="content grid">
+      <div class="title grid__col grid__col--8-of-8">
+        Device
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        Name
+      </div>
+      <div id="DeviceName" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        S/N
+      </div>
+      <div id="SerialNumber" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        Version
+      </div>
+      <div id="Version" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        MAC
+      </div>
+      <div id="MAC_ID" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        IP
+      </div>
+      <div id="IpAddress" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        Uptime
+      </div>
+      <div id="Uptime" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+
+      <div class="title grid__col grid__col--8-of-8">
+        RAM
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+      Total RAM
+      </div>
+      <div id="TotalRam" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        Used RAM
+      </div>
+      <div id="UsedRam" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        Free RAM
+      </div>
+      <div id="FreeRam" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        Total GPU RAM
+      </div>
+      <div id="TotalGpuRam" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        Used GPU RAM
+      </div>
+      <div id="UsedGpuRam" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        Free GPU RAM
+      </div>
+      <div id="FreeGpuRam" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+
+      <div class="title grid__col grid__col--8-of-8">
+        CPU
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        CPU Load
+      </div>
+      <div id="CpuLoad" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+    </div>
+
+    <!--provisioning-->
+    <div id="content_Provisioning" class="content grid">
+      <div class="title grid__col grid__col--8-of-8">
+        Provisioning status
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        Device
+      </div>
+      <div id="device" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        Provisioned for
+      </div>
+      <div id="provisioning-tokens" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+      <div class="label grid__col grid__col--2-of-8">
+        Status
+      </div>
+      <div id="status" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+
+      <div id="provisionLabel" class="label grid__col grid__col--2-of-8">
+        Provisioning
+      </div>
+      <div class="text grid__col grid__col--6-of-8">
+        <button type="button" id="provisionButton" onclick="tiggerProvisioningRequest()">Request</button>
+      </div>
+    </div>
+
+    <!--remote control-->
+    <div id="content_RemoteControl" class="content grid">
+      <div class="title grid__col grid__col--8-of-8">
+        Device
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        Key
+      </div>
+      <div id="keypress" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+
+      <div id="remoteControl_form"></div>
+    </div>
+
+    <!--tracing-->
+    <div id="content_Tracing" class="content grid">
+      <div class="title grid__col grid__col--8-of-8">
+        Modules
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        <label for="modules">Modules</label>
+      </div>
+      <div class="text grid__col grid__col--6-of-8">
+        <select id="modules" onchange="showTraceCategories(value, 'tracecategories')">
+        </select>
+      </div>
+
+      <div id="tracing_div"></div>
+    </div>
+
+    <!--WebKitBrowser-->
+    <div id="content_WebKitBrowser" class="content grid">
+      <div class="title grid__col grid__col--8-of-8">
+        Presets / URL
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        URL
+      </div>
+      <div id="webkit_current_url" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        <label for="webkit_url">Custom URL</label>
+      </div>
+      <div class="text grid__col grid__col--6-of-8">
+        <input type="text" id="webkit_url" size="20"/><button type="button" onclick="SetNewURL(document.getElementById('webkit_url').value)">Set</button>
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        URL presets
+      </div>
+      <div class="text grid__col grid__col--6-of-8">
+        <select id="linkPresets" onchange="SetNewURL(this.value)"></select>
+      </div>
+
+      <div class="title grid__col grid__col--8-of-8">
+        Performance
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        FPS
+      </div>
+      <div id="webkit_fps" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+
+      <div id="WebKitBrowserMemory" class="memoryInfo"></div>
+      <div id="WebKitBrowserStateInfo"></div>
+
+      <div class="title grid__col grid__col--8-of-8">
+        Tools
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        Web Inspector
+      </div>
+      <div class="text grid__col grid__col--6-of-8">
+        <button type="button" onclick="webInspector()">Inspect</button>
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        Visibility
+      </div>
+      <div class="text grid__col grid__col--6-of-8">
+        <button type="button" id="webkit_hide" onclick="browserState(0)">Hide</button>
+        <button type="button" id="webkit_show" onclick="browserState(1)">Show</button>
+      </div>
+    </div>
+
+    <!--Netflix-->
+    <div id="content_Netflix" class="content grid">
+      <div class="title grid__col grid__col--8-of-8">
+        ESN
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        ID
+      </div>
+      <div id="netflix-esn" class="text grid__col grid__col--6-of-8">
+        -
+      </div>
+
+      <div id="form-netflix">
+        <div id="NetflixMemory" class="memoryInfo"></div>
+        <div id="NetflixStateInfo"></div>
+      </div>
+    </div>
+
+    <!--YouTube-->
+    <div id="content_YouTube" class="content grid">
+      <div id="form-youtube">
+        <div id="YouTubeMemory" class="memoryInfo"></div>
+        <div id="YouTubeStateInfo"></div>
+      </div>
+    </div>
+
+    <!--Snapshot-->
+    <div id="content_Snapshot" class="content grid">
+      <div class="title grid__col grid__col--8-of-8">
+        Create
+      </div>
+
+      <div class="label grid__col grid__col--2-of-8">
+        Snapshot
+      </div>
+      <div class="text grid__col grid__col--6-of-8">
+        <button type="button" onclick="snapshot();">Create</button>
+      </div>
+
+      <div id="myOutput">
+        <img id="snapshotOutput" />
+      </div>
+    </div>
+
+  </div>
+
+  <div id="statusBar">
+    <label>Version</label>
+    <span id="statusBarVersion">-</span>
+
+    <label>Serial</label>
+    <span id="statusBarSerial">-</span>
+
+    <label>Uptime</label>
+    <span id="statusBarUptime">-</span>
+
+    <label>CPU load</label>
+    <span id="statusBarCpuLoad">-</span>
+
+    <label>RAM used</label>
+    <span id="statusBarUsedRam">-</span>
+
+    <label>/</label>
+    <span id="statusBarTotalRam">-</span>
+
+    <label>GPU RAM used</label>
+    <span id="statusBarGpuRamUsed">-</span>
+
+    <label>/</label>
+    <span id="statusBarGpuRamTotal">-</span>
+
+    <label class="statusBarKeyPress" id="keyPressedLabel">Last key send</label>
+    <span class="statusBarKeyPress" id="keyPressed">-</span>
+
+    <span id="pause-button" onclick="pause();">pause</span>
+  </div>
+
+  <!--remote-->
+  <div id="remote">
+    <div id="remote-inner">
+      <div onclick="handleKey(49)" class="button">
+        1
+      </div>
+
+      <div onclick="handleKey(50)" class="button">
+        2
+      </div>
+
+      <div onclick="handleKey(51)" class="button">
+        3
+      </div>
+
+      <div onclick="handleKey(52)" class="button">
+        4
+      </div>
+
+      <div onclick="handleKey(53)" class="button">
+        5
+      </div>
+
+      <div onclick="handleKey(54)" class="button">
+        6
+      </div>
+
+      <div onclick="handleKey(55)" class="button">
+        7
+      </div>
+
+      <div onclick="handleKey(66)" class="button">
+        8
+      </div>
+
+      <div onclick="handleKey(67)" class="button">
+        9
+      </div>
+
+      <div onclick="handleKey(48)" class="button">
+        0
+      </div>
+
+      <div onclick="handleKey(27)" class="button blue">
+        exit
+      </div>
+
+      <div onclick="handleKey(65)" class="button">
+        a
+      </div>
+
+      <div onclick="handleKey(66)" class="button">
+        b
+      </div>
+
+      <div onclick="handleKey(67)" class="button">
+        c
+      </div>
+
+      <div onclick="handleKey(68)" class="button">
+        d
+      </div>
+
+      <div onclick="handleKey(69)" class="button">
+        e
+      </div>
+
+      <div onclick="handleKey(70)" class="button">
+        f
+      </div>
+
+      <div onclick="handleKey(71)" class="button">
+        g
+      </div>
+
+      <div onclick="handleKey(72)" class="button">
+        h
+      </div>
+
+      <div onclick="handleKey(73)" class="button">
+        i
+      </div>
+
+      <div onclick="handleKey(8)" class="button blue double">
+        back
+      </div>
+
+      <div onclick="handleKey(74)" class="button">
+        j
+      </div>
+
+      <div onclick="handleKey(75)" class="button">
+        k
+      </div>
+
+      <div onclick="handleKey(76)" class="button">
+        l
+      </div>
+
+      <div onclick="handleKey(77)" class="button">
+        m
+      </div>
+
+      <div onclick="handleKey(78)" class="button">
+        n
+      </div>
+
+      <div onclick="handleKey(79)" class="button">
+        o
+      </div>
+
+      <div onclick="handleKey(80)" class="button">
+        p
+      </div>
+
+      <div onclick="handleKey(81)" class="button">
+        q
+      </div>
+
+      <div onclick="handleKey(82)" class="button">
+        r
+      </div>
+
+      <div onclick="handleKey(38)" class="button blue">
+        <div class="fa fa-caret-up"></div>
+      </div>
+
+      <div onclick="handleKey(13)" class="button blue">
+        ok
+      </div>
+
+      <div onclick="handleKey(83)" class="button">
+        s
+      </div>
+
+      <div onclick="handleKey(84)" class="button">
+        t
+      </div>
+
+      <div onclick="handleKey(85)" class="button">
+        u
+      </div>
+
+      <div onclick="handleKey(86)" class="button">
+        v
+      </div>
+
+      <div onclick="handleKey(87)" class="button">
+        w
+      </div>
+
+      <div onclick="handleKey(88)" class="button">
+        x
+      </div>
+
+      <div onclick="handleKey(89)" class="button">
+        y
+      </div>
+
+      <div onclick="handleKey(90)" class="button">
+        z
+      </div>
+
+      <div onclick="handleKey(37)" class="button blue">
+        <div class="fa fa-caret-left"></div>
+      </div>
+
+      <div onclick="handleKey(40)" class="button blue">
+        <div class="fa fa-caret-down"></div>
+      </div>
+
+      <div onclick="handleKey(39)" class="button blue">
+        <div class="fa fa-caret-right"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

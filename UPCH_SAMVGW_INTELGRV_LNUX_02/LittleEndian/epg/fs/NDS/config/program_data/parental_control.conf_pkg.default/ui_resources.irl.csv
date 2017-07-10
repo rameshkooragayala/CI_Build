@@ -1,0 +1,28 @@
+"ui_resources";"1.0"
+# version: 2.0.4
+"object_id";"text[eng]:label";"file:icon"
+"rating/DVB/0";"G";"icon/g.png"
+"rating/DVB/1";"PG";"icon/pg.png"
+"rating/DVB/2";"PG";"icon/pg.png"
+"rating/DVB/3";"PG";"icon/pg.png"
+"rating/DVB/4";"PG";"icon/pg.png"
+"rating/DVB/5";"PG";"icon/pg.png"
+"rating/DVB/6";"12";"icon/12.png"
+"rating/DVB/7";"12";"icon/12.png"
+"rating/DVB/8";"12";"icon/12.png"
+"rating/DVB/9";"12";"icon/12.png"
+"rating/DVB/10";"15";"icon/15.png"
+"rating/DVB/11";"15";"icon/15.png"
+"rating/DVB/12";"15";"icon/15.png"
+"rating/DVB/13";"18";"icon/18.png"
+"rating/DVB/14";"18";"icon/18.png"
+"rating/DVB/15";"18";"icon/18.png"
+"rating_threshold/DVB/1";"G";"icon/g.png"
+"rating_threshold/DVB/6";"PG";"icon/pg.png"
+"rating_threshold/DVB/10";"12";"icon/12.png"
+"rating_threshold/DVB/13";"15";"icon/15.png"
+"rating_threshold/DVB/15";"18";"icon/18.png"
+"rating_threshold/DVB/255";"UNLOCK ALL";
+"PIN/master";"MASTER PIN CODE";
+"PIN/validity_rule/4_digits";"The PIN needs to be a 4 digit number.";
+"PIN/validity_rule/4_digits_2_different";"The PIN needs to be a 4 digit number with at least 2 different digits.";

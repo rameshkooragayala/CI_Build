@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="IEX.ElementaryActions.EPG.Interactive">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\Interactive.vb</FileName>
+      <HashCode>EAAAAAAAAABAAAAAAAIAAAAAAAAABABAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.ManualRecording">
+    <Position X="10.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Sections\ManualRecording.vb</FileName>
+      <HashCode>AAEAAACAQAAAIAAAAAIAgAACAAAAhAFAAAAQAAAAAAg=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_utils" />
+    </ShowAsAssociation>
+    <AssociationLine Name="_utils" Type="IEX.ElementaryActions.EPG.Utils">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.285" Y="-0.007" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.Banner">
+    <Position X="2.5" Y="8.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Sections\Banner.vb</FileName>
+      <HashCode>KQCAAAAAAAAoJIIAKEJAQBMAIQAAJABCoAAA4CDAAEA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Utils" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="IEX.ElementaryActions.EPG.Banner.BannerType">
+        <TypeIdentifier>
+          <NewMemberFileName>Sections\Banner.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="_Utils" Type="IEX.ElementaryActions.EPG.Utils" FixedFromPoint="true">
+      <Path>
+        <Point X="5.25" Y="11.699" />
+        <Point X="7" Y="11.699" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.PlannerBase">
+    <Position X="11" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Sections\Recordings\PlannerBase.vb</FileName>
+      <HashCode>CgAICACEkCAYASAgACLAgghAICIIBABAABAQAGCAwAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_utils" />
+    </ShowAsAssociation>
+    <NestedTypes>
+      <Delegate Name="IEX.ElementaryActions.EPG.PlannerBase._degIsEventReminder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Sections\Recordings\PlannerBase.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.ArchiveRecordings">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\Recordings\ArchiveRecordings.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.CurrentRecordings">
+    <Position X="9" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\Recordings\CurrentRecordings.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.FutureRecordings">
+    <Position X="9" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\Recordings\FutureRecordings.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.Guide">
+    <Position X="11" Y="11.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Sections\Guide.vb</FileName>
+      <HashCode>AAAIEEBAEAIBAACAAAIgBJIAAgAAJBJAAAAxoMCAAAQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Utils" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.ParentalRating">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\ParentalRating.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAABABAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.TrickModes">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\TrickModes.vb</FileName>
+      <HashCode>AAAIAAAEAAAAAAAAAAIAgAAAAAiABABACAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.Utils">
+    <Position X="7" Y="10.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Utils\Utils.vb</FileName>
+      <HashCode>AAACgQiAAkARAECEIEaABAAYAAAALIBIAAAAAAAgACA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Event" />
+      <Field Name="_Channel" />
+    </ShowAsAssociation>
+    <AssociationLine Name="_Event" Type="IEX.ElementaryActions.EPG._Event" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="16.434" />
+        <Point X="5.625" Y="16.434" />
+        <Point X="5.625" Y="18.231" />
+        <Point X="5.25" Y="18.231" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.Menu">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\Menu.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAABABAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.Osd">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\OSDs\Osd.vb</FileName>
+      <HashCode>AAAAAAAAAQAAAAAAIAIAAAAAAAAARABYAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.Settings">
+    <Position X="0.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\Settings.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAABABAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.UI">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\UI.vb</FileName>
+      <HashCode>AAAggAAAACApIAAgIkAAAAQABAAQIAAAgAAAiAAAAgA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_ArchiveRecordings" />
+      <Field Name="_OSDs" />
+    </ShowAsAssociation>
+    <AssociationLine Name="_OSDs" Type="IEX.ElementaryActions.EPG.OSDs">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.482" Y="0.298" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG._DateTime">
+    <Position X="9.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Objects\_DateTime.vb</FileName>
+      <HashCode>AAAIAAAAAAAAAAAEIAICAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG._Channel">
+    <Position X="6.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Objects\_Channel.vb</FileName>
+      <HashCode>QAAAABAAAAAAAAAEAAAgAAAAAAQAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG._Event">
+    <Position X="3.75" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Objects\_Event.vb</FileName>
+      <HashCode>AAAAAAoAAAEAAAAAIAIAAACAAKCAgABAAAEAAAAAQAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.Favorites">
+    <Position X="0.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\Favorites.vb</FileName>
+      <HashCode>AAAAAAAAIgACAAAAIAMAAAAAAAAABABAAAQCAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEX.ElementaryActions.EPG.OSDs">
+    <Position X="5.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\OSDs.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAABABAAAABAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_OSD" />
+      <Field Name="_OSD_PIN" />
+    </ShowAsAssociation>
+    <AssociationLine Name="_OSD" Type="IEX.ElementaryActions.EPG.iOSD">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.338" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_OSD_PIN" Type="IEX.ElementaryActions.EPG.iOSD_PIN">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.036" Y="0.362" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Interface Name="IEX.ElementaryActions.EPG.iOSD">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\OSDs\iOSD.vb</FileName>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAYAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IEX.ElementaryActions.EPG.iOSD_PIN">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Sections\OSDs\iOSD_PIN.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

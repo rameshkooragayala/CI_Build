@@ -1,0 +1,28 @@
+{
+	"ngi_deviceinfo_get_info":{
+		"NGI_STATUS":"NGI_STATUS_OK",
+		"Value":{
+				"deviceInfo":{
+							"manufacturer": "NDS CORPORATION",
+							"manufacturerOUI": "12EFF6" ,
+							"modelName" : "ModelID", 
+							"description": "Complete Descripton",
+							"serialNumber" : "123456789",
+							"hardwareVersion": "123456789123456789123456789123456789123456789123456789123456789",
+							"softwareVersion": "999999999"
+			}
+		}
+	},
+	"ngi_deviceinfo_get_uptime":{
+		"NGI_STATUS": "NGI_STATUS_OK",
+		"Value":{
+			"uptime": 123456		
+		}
+	},
+	"ngi_deviceinfo_get_use_status":{
+		"NGI_STATUS" :"NGI_STATUS_OK",
+		"Value":{
+			"useStatus": "NGI_DEVICEINFO_USE_STATUS_IDLE"	
+		}	
+	}
+}

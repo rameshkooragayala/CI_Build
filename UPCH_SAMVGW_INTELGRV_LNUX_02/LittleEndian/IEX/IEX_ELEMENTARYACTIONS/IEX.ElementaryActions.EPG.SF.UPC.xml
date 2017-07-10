@@ -1,0 +1,351 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF.UPC
+</name>
+</assembly>
+<members>
+<member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.GetLogName(System.Boolean)">
+	<summary>
+   Returns The Log Name
+ </summary>
+	<param name="IsSerial">If True Returns Serial Name Else Returns Telnet Name</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.SetBaudRate">
+	<summary>
+   Sets The BAUDRATE Value Of The Debug
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.GetCurrentEPGVersion(System.Boolean)">
+	<summary>
+    Gets The EPG Version From BuildWinPath
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.GetMountCommand(System.Boolean)">
+	<summary>
+   Gets The Mount Command And Adding Values Needed To Mount
+ </summary>
+	<param name="IsFormat">If True Adds FORMAT FORMAT_FLASH FOUR_K</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.GetFlashCommand(System.Boolean,System.Boolean)">
+	<summary>
+   Gets The Flash Command From Environment.ini And Adds GW/Client Support If Needed
+ </summary>
+	<param name="IsGw">If True It's GW</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.CloseLogs">
+	<summary>
+   Closes The Serial And Telnet Logging
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.BurnImage(System.Boolean,System.Boolean)">
+	<summary>
+   Burns The Flash Image To The STB
+ </summary>
+	<param name="IsGw">If True It Is The GW Else The Client</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.BeginLogging(System.Boolean,System.String,System.Int32)">
+	<summary>
+   Begin Serial Or Telnet Logging 
+ </summary>
+	<param name="IsSerial">If True Begin Serial Logging Else Begin Telnet Logging</param>
+	<param name="LogFileName">The Log FileName</param>
+	<param name="LoopNum">The Loop Iteration For Adding It To The Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.RebootSTB(System.Boolean)">
+	<summary>
+   Reboot The STB And Wait If Asked
+ </summary>
+	<param name="WithIPC">If True Waits 10 Seconds Between Turn OFF And ON</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.UpdateSTBVersion(System.String,System.Boolean,System.Boolean)">
+	<summary>
+   Checkes If Burn Needed And Burn
+ </summary>
+	<param name="CurrentVersion">Current Build Version</param>
+	<param name="IsGW">If True Burnning GW Else Burrning Client</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.GetVersionFromSTB">
+	<summary>
+    Get Version From STB
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.SendMountCommand(System.Boolean,System.String,System.Boolean)">
+	<summary>
+   Sends Mount Command To Telnet
+ </summary>
+	<param name="MountCommand">The Mount Command To Send</param>
+	<param name="IsSerial">If True Sends The Command Through Serial Else Through Telnet</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.InitializeStb(System.String@,System.Boolean)">
+	<summary>
+   Initilizing The STB After STB Passed The First Screen
+ </summary>
+	<param name="Msg">Returned Error Message</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.WaitForFirstScreen">
+	<summary>
+   Waiting For First Screen To Appear On EPG
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.WaitForLegalDisclaimer">
+	<summary>
+   Waits For Legal Disclaimer Screen To Appear
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.WaitForStandbyPowerScreen">
+	<summary>
+   Waits For Standby Power Screen To Appear
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Mount.WaitForPrompt(System.Boolean)">
+	<summary>
+    Waiting For Pormpt
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.UPC.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.UPC.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.UPC.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Banner.CancelBooking(System.Boolean,System.Boolean)">
+	<summary>
+     Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Banner.StopRecording">
+	<summary>
+   Stopping Recording Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>348 - StopRecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.FutureRecordings.isPlanner">
+	<summary>
+    Checks If The EPG Is On Planner Screen 
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.FutureRecordings.VerifyPlanner">
+	<summary>
+   Verify MY RECORDINGS State Is On Screen
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.FutureRecordings.CancelAllEvents">
+	<summary>
+   Canceling All Events From Planner By Deleting All Events DELETE ALL
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>342 - CancelEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.PlannerBase.NavigateToFailedEventScreen">
+	<summary>
+ Navigating to Failed Recorded Event
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Menu.SetManualRecordingChannel(System.String)">
+	<summary>
+  Sets Manual Recording Channel On Channels List
+ </summary>
+	<param name="Channel">Requested Channel</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.ManualRecording.NavigateFromPlanner">
+	<summary>
+   Navigating To Manual Recording From Planner
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.ManualRecording.NavigateToRecord(System.Boolean)">
+	<summary>
+   Navigating To RECORD After Entering All Fields On Manual Recording
+ </summary>
+	<param name="IsFromCurrent">If True Means Manual Recording From Banner Or Modify Manual Else False</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.ManualRecording.GetSelectedChannelName(System.String@)">
+	<summary>
+   Getting Selected Channel Name From Manual Recording Menu
+ </summary>
+	<param name="ChannelName">Returns The Selected Channel Name</param>
+	<remarks>
+ Possible Error Codes:
+ <para>302 - EmptyEpgInfoFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.ManualRecording.SaveAndEnd(System.Boolean,System.Boolean)">
+	<summary>
+   Booking Manual Recording After All Parameters Were Entered
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = False : If True Verifies Current Booking Milestones Else Future Booking Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>339 - RecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.TrickModes.RaiseTrickMode">
+	<summary>
+   Raising Trickmode By Pressing SELECT
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.TrickModes.SetSpeed(System.Double)">
+	<summary>
+   Sets Speed On Trickmode
+ </summary>
+	<param name="Speed">Required Speed Can Be : 1 For Play, 0 For Pause,0.5,2,6,12,30 Or -0.5,-2,-6,-12,-30</param>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>313 - SetTrickModeSpeedFailure</para>
+		<para>328 - INIFailure</para>
+		<para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.TrickModes.VerifySpeedChanged(System.String,System.Double,System.Int32)">
+	<summary>
+   Sending Verifying Speed Change FAS Milestones
+ </summary>
+	<param name="IR">IR To Send</param>
+	<param name="Speed">Speed Of Requirement Trickmode</param>
+	<param name="Timeout"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.TrickModes.VerifyEofBof(System.Int64,System.Double,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Verifying EOF/BOF
+ </summary>
+	<param name="Duration">Duration Of The Event Or Review Buffer</param>
+	<param name="Speed">Speed Of Trickmode</param>
+	<param name="IsReviewBuffer">If True Checkes Review Buffer EOF/BOF</param>
+	<param name="IsReviewBufferFull">If True Review Buffer Is Full</param>
+	<param name="EOF">If True Verifies EOF Else BOF</param>
+	<remarks>
+ Possible Error Codes:
+ <para>320 - VerifyEofBofFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.ArchiveRecordings.NextEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Down In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.ArchiveRecordings.DeleteAllEvents(System.Boolean)">
+	<summary>
+   Deleting All Events From Archive
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.ArchiveRecordings.NavigateBeforeDelete(System.Boolean)">
+	<summary>
+   Navigate to Delete All
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.ArchiveRecordings.VerifySorting(System.Boolean)">
+	<summary>
+   Verifying Sorting ByA-Z Or ByDate
+ </summary>
+	<param name="ByTime">If True Verifyies Sorting By Time Else By Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.ArchiveRecordings.FindEvent(System.String,System.String,System.String,System.String)">
+	<summary>
+   Finding Requested Event On Archive
+ </summary>
+	<param name="EventName">The Name Of The Event</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Utils.ParseEventTime(System.String@,System.String,System.Boolean)">
+	<summary>
+   Parsing Event Time From Returned EPG Time
+ </summary>
+	<param name="ReturnedTime">The Returned Time After Parsing</param>
+	<param name="TimeString">Time String From EPG</param>
+	<param name="IsStartTime">If True Returnes Start Time Else Returns End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Utils.GetSelectedEventStartTime(System.String@)">
+	<summary>
+   Gets The Selected Event Start Time From Archive
+ </summary>
+	<param name="EventDetails">Returns The Selected Event Start Time</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.UPC.Guide.NavigateToRecordEvent(System.Boolean)">
+	<summary>
+   Navigating To RECORD On Action Bar From Guide By Pressing RECORD
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = True : If True Pressing RED Else Pressing Select For Future Events</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member>
+</members>
+</doc>

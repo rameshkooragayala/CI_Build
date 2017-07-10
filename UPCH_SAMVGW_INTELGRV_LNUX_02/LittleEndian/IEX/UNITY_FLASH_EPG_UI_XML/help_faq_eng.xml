@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<root>
+	<category name="Horizon Assistant" image_uri="faq01.png">
+		<category name="Setup" image_uri="faq02.png">
+			<help_item name="Cables and Power" image_uri="faq03.png">The Front Panel “power/standby” LED provides a visual indication of the running mode</help_item>
+			<help_item name="Connecting Home Network" image_uri="faq04.png">Home Networking allows the collaboration of electronic devices at home</help_item>
+			<help_item name="Connection Devices" image_uri="faq01.png">Allow hardware devices to communicate with each other. The most popular example of connecting devices nowadays is wireless connections.</help_item>
+			<help_item name="Security Setup" image_uri="faq02.png">Provides security to the wired and wireless networks at home</help_item>
+			<help_item name="Remote Control" image_uri="faq03.png">The remote control allows traditional control of the device and in addition s a QWERTY device too</help_item>
+			<help_item name="Troubleshooting" image_uri="faq04.png">To isolate the source of a problem and fix it, typically through a process of elimination</help_item>
+		</category>
+		<category name="TV Assistant" image_uri="faq20.png">
+			<help_item name="Watching TV" image_uri="faq20.png">The user has access to standard and high definition content</help_item>
+			<help_item name="Adding Content" image_uri="faq01.png">User can add content through home networking interfaces such as a media server</help_item>
+			<help_item name="Recording and Viewing" image_uri="faq20.png">User can record content and view it latter or can pause the live content and catch up</help_item>
+			<help_item name="Managing Your Library" image_uri="faq20.png">Allows the user to manager recorded content OR content from a media server</help_item>
+			<help_item name="PIN Access" image_uri="faq02.png">Allows the user to restrict access to contents present in the library</help_item>
+			<help_item name="Troubleshooting" image_uri="faq20.png">To isolate the source of a problem and fix it, typically through a process of elimination</help_item>
+		</category>
+		<category name="Internet Assistant" image_uri="faq02.png">
+			<help_item name="Connecting to Internet" image_uri="faq03.png">Manage the interfaces provided to the user to access internet</help_item>
+			<help_item name="Connecting Devices" image_uri="faq04.png">Manage the devices connected on the home network and other interfaces connected to the STB</help_item>
+			<help_item name="Testing Speed" image_uri="faq01.png">Allows the user to gauge the performance of their internet connection</help_item>
+			<help_item name="Email management" image_uri="faq02.png">Allows the user to manage the email account, send and receive emails</help_item>
+			<help_item name="Parental Control" image_uri="faq03.png">Allows the user to restrict access to contents that can be viewed on the STB</help_item>
+			<help_item name="Troubleshooting" image_uri="faq04.png">To isolate the source of a problem and fix it, typically through a process of elimination</help_item>
+		</category>
+		<category name="Telephone Assistant" image_uri="faq03.png">
+			<help_item name="Saving Number" image_uri="faq04.png">Allows the user to manage a phone book containing customer care numbers</help_item>
+			<help_item name="Voicemail" image_uri="faq01.png">Allows user to manage the voice mail account</help_item>
+			<help_item name="Call Forwarding" image_uri="faq.02png">Allows the user to redirect an incoming call to a mobile telephone</help_item>
+			<help_item name="Call Transfer" image_uri="faq03.png">Allows the user to relocate an existing call to another phone or attendant console by using the transfer option</help_item>
+			<help_item name="Full Telephone Function" image_uri="faq04.png">The STB doubles as a full telecommunication device by providing full telephone functionality</help_item>
+			<help_item name="Troubleshooting" image_uri="faq01.png">To isolate the source of a problem and fix it, typically through a process of elimination</help_item>
+		</category>
+	</category>
+	<category name="Account Assistant" image_uri="faq04.png">
+		<category name="Payment and Bill Information" image_uri="faq01.png">
+			<help_item name="Payment" image_uri="faq02.png">Allows the user to make and track payments</help_item>
+			<help_item name="Billing Information" image_uri="faq03.png">Allows the user to manage bills</help_item>
+			<help_item name="Account Profile" image_uri="faq04.png">Allows the user to setup/modify the user and account profile</help_item>
+		</category>
+		<category name="My UPC" image_uri="faq01.png">
+			<help_item name="Vod Rentals" image_uri="faq02.png">View and manage the VOD rentals made by the user</help_item>
+			<help_item name="Recommendations" image_uri="faq03.png">Provides content recommendations based on user profile and usage</help_item>
+			<help_item name="Value Added Services" image_uri="faq04.png">Manage value added services such as catch-up TV, VOD, social networking # Manage value added services such as catch-up TV, VOD, social networking # Manage value added services such as catch-up TV, VOD, social networking # Manage value added services such as catch-up TV, VOD, social networking # Manage value added services such as catch-up TV, VOD, social networking # Manage value added services such as catch-up TV, VOD, social networking # Manage value added services such as catch-up TV, VOD, social networking # Manage value added services such as catch-up TV, VOD, social networking # </help_item>
+		</category>
+	</category>
+	
+
+</root>

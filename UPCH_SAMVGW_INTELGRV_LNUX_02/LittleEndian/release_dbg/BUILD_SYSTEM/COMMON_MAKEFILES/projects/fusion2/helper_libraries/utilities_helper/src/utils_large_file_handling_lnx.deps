@@ -1,0 +1,5 @@
+/local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg//components/../BUILD_SYSTEM/COMMON_MAKEFILES/projects/fusion2/helper_libraries/utilities_helper/src/utils_large_file_handling_lnx.o: \
+ utils_large_file_handling_lnx.c ../inc/nds/xstd.h ../inc/nds/xstore.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/inc/CDI_INC/include/common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/inc/CDI_INC/include/cdi_stdint.h \
+ ../inc/nds/xlarge.h

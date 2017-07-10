@@ -1,0 +1,414 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF.CDIGITAL
+</name>
+</assembly>
+<members>
+<member name="P:IEX.ElementaryActions.EPG.SF.CDIGITAL.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.CDIGITAL.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.CDIGITAL.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Guide.Navigate">
+	<summary>
+   Navigating To Guide
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Guide.SelectCurrentEvent(System.String)">
+	<summary>
+   Selecting Current Event From Guide And Checking Tunning Fas Milestones
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Guide.NavigateToRecordEvent(System.Boolean)">
+	<summary>
+   Navigating To RECORD On Action Bar From Guide By Pressing RED/SELECT
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = True : If True Pressing RED Else Pressing Select For Future Events</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>323 - VerifyStateFailure</para>
+		<para>328 - INIFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Guide.SetEventReminder">
+	<summary>
+   Setting Reminder From Guide
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>311 - SetEventReminderFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Banner.GetEventStartTime(System.String@)">
+	<summary>
+    Getting Event Start Time From Action Bar
+ </summary>
+	<param name="StartTime">Returns Start Time From Action Bar</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Banner.GetEventEndTime(System.String@)">
+	<summary>
+   Getting Event End Time From Action Bar
+ </summary>
+	<param name="ReturnedEndTime">Returns End Time From Action Bar</param>
+	<remarks>
+ Possible Error Codes:
+ <para>350 - ParsingFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Banner.PreRecordEvent(System.Boolean)">
+	<summary>
+   Preparing Recording Event From Action Bar - Navigating To Confirm Record Without Confirming The Record
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>323 - VerifyStateFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Banner.PauseEvent">
+	<summary>
+   Pausing Event From Action Bar
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Banner.Navigate(System.Boolean)">
+	<summary>
+   Navigating To Action Bar
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.MediaCentre.PlayPictureContent(MediaContent,EnumMCPlayMode,System.String)">
+	<summary>
+   Playback Picture content
+ </summary>
+	<param name="content"> Media Content Object</param>
+	<param name="PlayMode">Content Playback Mode : PLAY,SLIDESHOW</param>
+	<param name="PlaybackSetting">Content Playback Setting : Slideshow Setting</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Mount.SendMountCommand(System.Boolean,System.String,System.Boolean)">
+	<summary>
+   Sends Mount Command To Telnet
+ </summary>
+	<param name="MountCommand">The Mount Command To Send</param>
+	<param name="IsSerial">If True Sends The Command Through Serial Else Through Telnet</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ManualRecording.NavigateToChannel(System.Boolean)">
+	<summary>
+   Navigating To CHANNELS On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ManualRecording.NavigateToDate(System.Boolean)">
+	<summary>
+   Navigating To DATE On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ManualRecording.NavigateToStartTime(System.Boolean)">
+	<summary>
+   Navigating To START TIME On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ManualRecording.NavigateToEndTime(System.Boolean)">
+	<summary>
+   Navigating To END TIME On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ManualRecording.NavigateToFrequency(System.Boolean)">
+	<summary>
+   Navigating To FREQUENCY On Manual Recording Menu
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ManualRecording.SetStartTime(System.String)">
+	<summary>
+   Setting Start Time In Start Time Field
+ </summary>
+	<param name="StartTime">Requested Start Time To Set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ManualRecording.SetEndTime(System.String)">
+	<summary>
+   Setting End Time In End Time Field
+ </summary>
+	<param name="EndTime">Requested End Time To Set</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ManualRecording.SetDate(System.String,System.Boolean)">
+	<summary>
+   Setting Date In Date List
+ </summary>
+	<param name="tDate">Requested Date To Set</param>
+	<param name="DefaultValue">If True Only For Logging Purposes Writes Default Value</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ManualRecording.SaveAndEnd(System.Boolean,System.Boolean)">
+	<summary>
+   Booking Manual Recording After All Parameters Were Entered
+ </summary>
+	<param name="IsCurrent">Optional Parameter Default = False : If True Verifies Current Booking Milestones Else Future Booking Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>339 - RecordEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Utils.ReturnToLiveViewing(System.Boolean)">
+	<summary>
+   Return To Live Viewing
+ </summary>
+	<param name="CheckForVideo">Optional Parameter FALSE.If TRUE Checks For Video</param>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>349 - ReturnToLiveFailure</para>
+		<para>334 - VideoNotPresent</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Utils.Standby(System.Boolean)">
+	<summary>
+   Enter Or Exist Standby
+ </summary>
+	<param name="IsOn">If True Exit Standby Else Enter Standby</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Utils.GetEventTimeSeparator">
+	<summary>
+ Retrieving The Event Time Separator To Be Inserted Between Start Time And End Time  
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Utils.SendChannelAsIRSequence(System.String,System.Int32,System.String)">
+	<summary>
+  SendChannelAsIRSequence is overriden which will send keys when rety mechanism is called from Live section
+ </summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ArchiveRecordings.isEmpty">
+	<summary>
+   Checks If Archive Has No Events
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ArchiveRecordings.FindEvent(System.String,System.String,System.String,System.String)">
+	<summary>
+   Finding Requested Event On Archive
+ </summary>
+	<param name="EventName">The Name Of The Event</param>
+	<param name="EventDate">The Event Converted Date</param>
+	<param name="StartTime">The Event Start Time</param>
+	<param name="EndTime">The Event End Time</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ArchiveRecordings.NextEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Right In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ArchiveRecordings.PreviousEvent(System.Int32,System.Boolean)">
+	<summary>
+   Moving Left In Archive
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : Number Of Times To Move</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ArchiveRecordings.DeleteEvent(System.Boolean)">
+	<summary>
+   Deleting Event From Archive
+ </summary>
+	<param name="InReviewBuffer">Optional Parameter Default = False : If True Search Different Milestones</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>328 - INIFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ArchiveRecordings.DeleteAllEvents(System.Boolean)">
+	<summary>
+   Deleting All Events From Archive
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>301 - DictionaryFailure</para>
+		<para>345 - DeleteEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.ArchiveRecordings.VerifySorting(System.Boolean)">
+	<summary>
+   Verifying Sorting ByA-Z Or ByDate
+ </summary>
+	<param name="ByTime">If True Verifyies Sorting By Time Else By Name</param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.FutureRecordings.isEmpty">
+	<summary>
+   Checking If Planner Is Empty
+ </summary>
+	<returns>True If Empty False Is Not</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.FutureRecordings.FindEvent(System.String,System.String,System.String,System.String)">
+	<summary>
+   Finding Requested Event On Planner
+ </summary>
+	<param name="EventName">The Name Of The Event</param>
+	<param name="EventDate">The Event Converted Date</param>
+	<param name="StartTime">The Event Start Time</param>
+	<param name="EndTime">The Event End Time</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>301 - DictionaryFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>328 - INIFailure</para>
+		<para>321 - VerifyChannelAttributeFailure</para>
+		<para>346 - FindEventFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.FutureRecordings.NextEvent(System.Int32,System.Boolean)">
+	<summary>
+    Moving To Next Event In Planner X Times
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : X Events To Move On Planner</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.FutureRecordings.PreviousEvent(System.Int32,System.Boolean)">
+	<summary>
+    Moving To Previous Event In Planner X Times
+ </summary>
+	<param name="times">Optional Parameter Default = 1 : X Events To Move On Planner</param>
+	<remarks>
+ Possible Error Codes:
+ <para>300 - NavigationFailure</para>
+		<para>302 - EmptyEpgInfoFailure</para>
+		<para>304 - IRVerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.FutureRecordings.VerifyPlanner">
+	<summary>
+   Verify Planner State Is On Screen
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>322 - VerificationFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.FutureRecordings.ModifyEvent">
+	<summary>
+   Navigating To Modify Event From Planner
+ </summary>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>359 - ModifyEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.FutureRecordings.SelectEvent(System.String,System.Boolean)">
+	<summary>
+   Selecting Event From Planner By Pressing Select
+ </summary>
+	<param name="EventName">Optional Parameter Default = "" : If EventName Is Empty Select The First Event Else The Requested One</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>306 - GetEventInfoFailure</para>
+		<para>347 - SelectEventFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.Live.TuningToChannel(System.String,System.String,System.Boolean)">
+	<summary>
+   Retry Mechanism to send DCA keys if keys are missed
+   TuningToChannel function is called to resend IR Keys
+ </summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.TrickModes.RaiseTrickMode">
+	<summary>
+   Raising Trickmode By Pressing PAUSE From the LIVE screen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.TrickModes.SetSpeed(System.Double)">
+	<summary>
+   Sets Speed On Trickmode
+ </summary>
+	<param name="Speed">Required Speed Can Be : 1 For Play, 0 For Pause,0.5,2,6,12,30 Or -0.5,-2,-6,-12,-30</param>
+	<remarks>
+ Possible Error Codes:
+ <para>303 - FasVerificationFailure</para>
+		<para>304 - IRVerificationFailure</para>
+		<para>313 - SetTrickModeSpeedFailure</para>
+		<para>328 - INIFailure</para>
+		<para>332 - NoValidParameters</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.TrickModes.VerifyEofBof(System.Int64,System.Double,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Verifying EOF/BOF
+ </summary>
+	<param name="Duration">Duration Of The Event Or Review Buffer</param>
+	<param name="Speed">Speed Of Trickmode</param>
+	<param name="IsReviewBuffer">If True Checkes Review Buffer EOF/BOF</param>
+	<param name="IsReviewBufferFull">If True Review Buffer Is Full</param>
+	<param name="Eof">If True Verifies EOF Else BOF</param>
+	<remarks>
+ Possible Error Codes:
+ <para>320 - VerifyEofBofFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.TrickModes.VerifySpeedChanged(System.String,System.Double,System.Int32)">
+	<summary>
+   Sending Verifying Speed Change FAS Milestones
+ </summary>
+	<param name="IR">IR To Send</param>
+	<param name="Speed">Speed Of Requirement Trickmode</param>
+	<param name="Timeout"></param>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CDIGITAL.TrickModes.StopPlayEvent(System.Boolean)">
+	<summary>
+   Stopping Played Event By Navigating To Stop On TrickMode
+ </summary>
+	<param name="IsReviewBuffer">If True Trickmode Is In Review Buffer Else In Playback</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+		<para>328 - INIFailure</para>
+		<para>343 - StopPlayEventFailure</para>
+	</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,9 @@
+    <stateVariable sendEvents="yes">
+      <name>X_NDS_UpdateDataAvailable</name>
+      <dataType>string</dataType>
+      <defaultValue></defaultValue>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>X_NDS_A_ARG_TYPE_Update</name>
+      <dataType>string</dataType>
+    </stateVariable>

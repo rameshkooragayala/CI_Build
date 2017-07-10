@@ -1,0 +1,14 @@
+/local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg/components/../processes/common_services.o: \
+ common_services.c common_services.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/diag/inc/diag_log.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/diag/inc/diag_common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemcommon/inc/system_common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemconfig/inc/systemconfig.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemconfig/inc/systemconfig_common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSIONOS_10/BLD_UPCH_SAMVGW_INTELGRV_LNUX_02/platform_cfg/linux/inc/nds/xstd.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemutil/inc/systemutil_thread.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemutil/inc/systemutil_common.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemutil/inc/systemutil.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemutil/inc/systemutil_thread_private.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemutil/inc/systemutil_ctx.h \
+ /local/cruisecontrol/SYSTEM_BIN/views/MANIFESTS.upc.master/FUSION_SYSTEM_INTEGRATION/UPC_INTEGRATION/build/components/system_libraries/systemutil/inc/systemutil_libc.h

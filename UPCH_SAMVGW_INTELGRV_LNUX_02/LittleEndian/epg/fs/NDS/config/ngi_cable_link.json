@@ -1,0 +1,46 @@
+{
+    "ngi_cablelink_get_capabilities":{
+	"NGI_STATUS": "NGI_STATUS_OK", 
+        "Value":{
+				"Capabilities":[
+							{
+							"dev" : 12345,
+							"Capabilities":1
+							},
+							{
+							"dev" : 23456,
+							"Capabilities":0
+							}
+				]
+                }
+    },
+    "ngi_cablelink_get_info":{
+	"NGI_STATUS": "NGI_STATUS_OK", 
+        "Value":{
+				"CableLinkInfos":[
+							{
+							"dev" : 12345,
+							"CableLinkInfo":{
+								"state":"NGI_CABLELINK_STATE_OPERATIONAL",
+								"scanStatus":"NGI_CABLELINK_SCAN_STATUS_COMPLETED_OK",
+								"annex":"NGI_CABLELINK_ANNEX_A",
+								"downstreamSNR":105,
+								"downstreamFrequency":10000,
+								"downstreamModulation":"NGI_CABLELINK_MODULATION_16QAM",
+								"downstreamChannelID":0,
+								"downstreamPowerLevel":105,
+								"downstreamSymbolRate":103,
+								"upstreamFrequency":1000,
+								"upstreamModulation":"NGI_CABLELINK_MODULATION_16QAM",
+								"upstreamChannelID":0,
+								"upstreamSymbolRate":10,
+								"upstreamPowerLevel":105
+							}
+						}
+				]
+                }
+    },
+    "ngi_cablelink_set_scanlist":{
+	"NGI_STATUS": "NGI_STATUS_OK" 
+    }
+}

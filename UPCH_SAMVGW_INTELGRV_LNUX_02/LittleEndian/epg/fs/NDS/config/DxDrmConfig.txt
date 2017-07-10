@@ -1,0 +1,12 @@
+DisabledModules = 10
+DebugLevel = 60
+LogFile = /host/DX/DX_LogFile
+#AutoProvisionPlayReady = PlayReady, /NDS/config/.
+NoStrictCurlOption = True
+SfsLocation = ./sfs
+ProvisioningPackagePath = /NDS/config/.
+KeyFilePath = KeyFileFolder
+KeyFileName = DxKeyFile.dat 
+NoStrictCurlOption = True
+NoSignalCurlOption = True
+SetHTTPS=true

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	
+<contentTypes>
+
+	<contentType name="default"    level="PV1"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+    <contentType name="PVA"        level="PV1"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+                                         			
+</contentTypes>
+
+<animations>
+
+	<animation name="showcase-PVA-bg"     		     map="PV1-PV1-bg" ></animation>
+	<animation name="showcase-PVA-nobg"    		     map="PV1-PV1-nobg" ></animation>
+	<animation name="showcase-PVA-d"                 map="PV1-PV1-d" ></animation>
+	<animation name="showcase-PVA-u"                 map="PV1-PV1-u" ></animation>
+	<animation name="showcase-PVA-r"    		     map="PV1-PV1-r" ></animation>
+	<animation name="showcase-PVA-l"    		     map="PV1-PV1-l" ></animation>	
+
+</animations>
+
+</sceneConfig>

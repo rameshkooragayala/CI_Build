@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zone name="g1" type="g" id="1" x="0" y="0" w="1280" h="720"/>
+<zone name="g2" type="g" id="2" x="0" y="750" w="1280" h="720"/>
+<zone name="Horizon_g1" type="Horizon_g1" id="null" x="0" y="1480" w="1280" h="12"/>
+<zone name="Horizon_g2" type="Horizon_g2" id="null" x="0" y="1502" w="1280" h="12"/>
+<!-- static zones -->
+<zone name="SettingHBar" type="SettingHBar" id="null" x="530" y="162" w="694" h="12"/>
+<zone name="SettingHLine" type="SettingHLine" id="null" x="361" y="160" w="1280" h="4"/>
+<zone name="SettingVBar" type="SettingVBar" id="null" x="638" y="124" w="4" h="554"/>
+<zone name="SettingProgressbar" type="SettingProgressbar" id="null" x="634.95" y="405.25" w="457.95" h="73.5"/>
+<zone name="infolist" type="infolist" id="null" x="85.5" y="0" w="1085.1" h="437.45"/>
+<zone name="SettingVlist" type="SettingVlist" id="null" x="490" y="270" w="666.65" h="525.25"/>
+<zone name="infoListMsg" type="infoListMsg" id="null" x="100.60" y="-60.1" w="931.00" h="75.60"/>

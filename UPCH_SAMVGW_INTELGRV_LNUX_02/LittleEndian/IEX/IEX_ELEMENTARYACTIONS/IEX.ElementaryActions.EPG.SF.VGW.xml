@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF.VGW
+</name>
+</assembly>
+<members>
+<member name="M:IEX.ElementaryActions.EPG.SF.VGW.Mount.GetMountCommand(System.Boolean)">
+	<summary>
+   Gets The Mount Command And Adding Values Needed To Mount
+ </summary>
+	<param name="IsFormat">If True Adds FORMAT FORMAT_FLASH FOUR_K</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VGW.Mount.WaitForPrompt(System.Boolean)">
+	<summary>
+    Waiting For Pormpt
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VGW.Mount.TuneToDefaultChannel(System.String)">
+	<summary>
+ Tune to a default channel after Mount. If not handled to tune from this method, it should return false else true.
+ </summary>
+	<param name="ChNumber">Channel Number of the service where it needs to tune to</param>
+	<returns>Boolean</returns>
+	<remarks>Handled to tune to default channel in this method as it cant be handle in Functionality.MountGw.vb</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.VGW.TrickModes.VerifyEofBof(System.Int64,System.Double,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+   Verifying EOF/BOF
+ </summary>
+	<param name="Duration">Duration Of The Event Or Review Buffer</param>
+	<param name="Speed">Speed Of Trickmode</param>
+	<param name="IsReviewBuffer">If True Checkes Review Buffer EOF/BOF</param>
+	<param name="IsReviewBufferFull">If True Review Buffer Is Full</param>
+	<param name="Eof">If True Verifies EOF Else BOF</param>
+	<remarks>
+ Possible Error Codes:
+ <para>320 - VerifyEofBofFailure</para>
+		<para>322 - VerificationFailure</para>
+		<para>328 - INIFailure</para>
+	</remarks>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.VGW.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.VGW.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.VGW.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

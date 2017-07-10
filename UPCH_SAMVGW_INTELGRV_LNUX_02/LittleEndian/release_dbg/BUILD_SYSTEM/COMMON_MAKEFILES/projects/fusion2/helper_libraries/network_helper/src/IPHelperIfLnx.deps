@@ -1,0 +1,4 @@
+/local/cruisecontrol/SYSTEM_BIN/w_drive/824550273/UPCH_SAMVGW_INTELGRV_LNUX_02/LittleEndian/release_dbg//components/../BUILD_SYSTEM/COMMON_MAKEFILES/projects/fusion2/helper_libraries/network_helper/src/IPHelperIfLnx.o: \
+ IPHelperIfLnx.c ../src/inc/IPHelperMsgSocketLnx.h \
+ ../src/inc/IPHelperInt.h ../inc/nds/xnet.h ../src/inc/singleLinkList.h \
+ ../src/inc/IPHelperInt.h

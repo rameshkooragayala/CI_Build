@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- version: 2013-07-03 (UPC FR2 HO6 patched for FR1 NLD CPEs & IE CPE) -->
+<nds>
+   <content type="configuration" format_version="1.0"/>
+   <component name="media_highway_fusion">
+
+      <!-- Default Values (for backward compatibility with UPC FR1) -------------------------- -->
+      <!-- parental_control/use_eit_and_schedule_merge ................... "false"             -->
+      <!-- parental_control/wait_for_eit ................................. "false"             -->
+      <!-- parental_control/use_default_on_eit_timeout ................... "true"              -->
+      <!-- parental_control/default_rating ............................... "none"              -->
+      <!-- parental_control/adult_genres ................................. "1.8"               -->
+      <!-- parental_control/default_adult_flag ........................... "false"             -->
+      <!-- parental_control/linear_contents_scrambling_type_discriminator  "any"               -->
+      <!-- parental_control/checked_metadata ............................. "adult_flag,rating" -->
+      <!-- parental_control/operator_rating_threshold .................... "255"               -->
+      <!-- ----------------------------------------------------------------------------------- -->
+
+      <!-- NLD - Netherlands -->
+      <component name="parental_control" instance="NLD">
+         <!-- Common Metadata Acquisition Parameters (INST-3959 mode 1) -->
+         <parameter name="use_eit_and_schedule_merge" value="true"/>
+         <parameter name="wait_for_eit"               value="false"/> <!-- At zapping, use cached information waiting for first EITp actual -->
+         <parameter name="use_default_on_eit_timeout" value="false"/> <!-- Use cached information if available -->
+         <!-- Rating Acquisition Parameters -->
+         <parameter name="country_code"               value="NLD"/>
+         <parameter name="default_rating"             value="none"/>
+         <!-- Adult Flag Computation Parameters -->
+         <parameter name="adult_genres"                                        
+                    value="0.15,1.8,15.0,15.1,15.2,15.3,15.4,15.5,15.6,15.7,15.8,15.9,15.10,15.11,15.12,15.13,15.14,15.15"/>  <!-- (INST-3961) -->
+         <parameter name="default_adult_flag"         value="false"/>
+         <!-- Discriminators of Contents to be Controlled at Playback -->
+         <parameter name="linear_contents_scrambling_type_discriminator"   value="any"/>
+         <!-- Playback Locking Rule Parameters -->
+         <parameter name="checked_metadata"           value="adult_flag,rating"/>
+         <parameter name="operator_rating_threshold"  value="255"/>
+         <parameter name="rating_thresholds"          value="4,7,10,14,255"/> <!-- 6, 9, 12, 16 and unlimited -->
+         <parameter name="default_rating_threshold"   value="255"/>   
+         <!-- PINs Parameters -->
+         <component name="pin_entry">
+            <parameter name="wrong_pin_count_window"  value="15"/>    
+            <parameter name="wrong_pin_max_count"     value="3"/>     
+            <parameter name="pin_locking_period"      value="15"/>    <!-- minutes -->
+            <parameter name="virtual_keyboard"        value="yes"/>   <!-- (INST-3963 mode 1) -->
+            <parameter name="digit_display_timeout"   value="2"/>     <!-- seconds -->
+         </component>
+         <component name="pin" instance="master">     <!-- (Table 27 MPIN) -->
+             <parameter name="protected_permissions"    value="master,adult,viewing,buying"/>   
+             <parameter name="default_value"          value="0000"/>                   
+             <parameter name="user_modifiable"        value="yes"/>  <!-- modifiable after the first install -->
+             <parameter name="value_validity_rule"    value="4_digits"/>  <!-- can be 4 times the same digit -->
+         </component>
+      </component>
+      
+      <!-- CHE - Switzerland -->
+      <component name="parental_control" instance="CHE">
+         <!-- Common Metadata Acquisition Parameters (INST-3959 mode 1) -->
+         <parameter name="use_eit_and_schedule_merge" value="true"/>
+         <parameter name="wait_for_eit"               value="false"/> <!-- At zapping, use cached information waiting for first EITp actual -->
+         <parameter name="use_default_on_eit_timeout" value="false"/> <!-- Use cached information if available -->
+         <!-- Rating Acquisition Parameters -->
+         <parameter name="country_code"               value="CHE"/>
+         <parameter name="default_rating"             value="none"/>
+         <!-- Adult Flag Computation Parameters -->
+         <parameter name="adult_genres"               
+                    value="0.15,1.8,15.0,15.1,15.2,15.3,15.4,15.5,15.6,15.7,15.8,15.9,15.10,15.11,15.12,15.13,15.14,15.15"/>  <!-- (INST-3961) -->
+         <parameter name="default_adult_flag"         value="false"/>
+         <!-- Discriminators of Contents to be Controlled at Playback -->
+         <parameter name="linear_contents_scrambling_type_discriminator"   value="any"/>
+         <!-- Playback Locking Rule Parameters -->
+         <parameter name="checked_metadata"           value="adult_flag,rating"/>
+         <parameter name="operator_rating_threshold"  value="255"/>
+         <parameter name="rating_thresholds"
+                    value="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,255"/> <!-- from 4 to 18 and unlimited (Table 12) -->
+         <parameter name="default_rating_threshold"   value="255"/>  <!-- unlimited (Table 32) -->
+         <!-- PINs Parameters -->
+         <component name="pin_entry">
+            <parameter name="wrong_pin_count_window"  value="15"/>    
+            <parameter name="wrong_pin_max_count"     value="3"/>     
+            <parameter name="pin_locking_period"      value="15"/>    <!-- minutes -->
+            <parameter name="virtual_keyboard"        value="yes"/>   <!-- INST-3963 mode 1 -->
+            <parameter name="digit_display_timeout"   value="2"/>     <!-- seconds -->
+         </component>
+         <component name="pin" instance="master">     <!-- (Table 27 MPIN) -->
+             <parameter name="protected_permissions"    value="master,adult,viewing,buying"/>   
+             <parameter name="default_value"          value="1234"/>                   
+             <parameter name="user_modifiable"        value="yes"/>  <!-- modifiable after the first install -->
+             <parameter name="value_validity_rule"    value="4_digits"/>  <!-- can be 4 times the same digit -->
+         </component>
+      </component>
+
+      <!-- DEU - Germany (Unitymedia) -->
+      <component name="parental_control" instance="DEU">
+        <!-- Common Metadata Acquisition Parameters (INST-3959 mode 2)-->
+         <parameter name="use_eit_and_schedule_merge" value="true"/> 
+         <parameter name="wait_for_eit"               value="true"/>
+         <parameter name="use_default_on_eit_timeout" value="true"/> 
+          <!-- Rating Acquisition Parameters -->
+         <parameter name="country_code"               value="DEU"/>
+         <parameter name="default_rating"             value="15"/>
+         <!-- Adult Flag Computation Parameters -->
+         <parameter name="adult_genres"               
+                    value="0.15,1.8,15.0,15.1,15.2,15.3,15.4,15.5,15.6,15.7,15.8,15.9,15.10,15.11,15.12,15.13,15.14,15.15"/>  <!-- (INST-3961) -->
+         <parameter name="default_adult_flag"         value="false"/>
+         <!-- Discriminators of Contents to be Controlled at Playback -->
+         <parameter name="linear_contents_scrambling_type_discriminator"   value="scrambled"/> <!-- (PC-9115) -->
+         <!-- Playback Locking Rule Parameters -->
+         <parameter name="checked_metadata"           value="adult_flag,rating"/>
+         <parameter name="operator_rating_threshold"  value="255@00:00,13@06:00,15@22:00,255@23:00"/> <!-- [06:00,22:00[:FSK 16, [22:00,23:00[:FSK 18 (INST-3956) --> 
+         <parameter name="rating_thresholds"          value="3,9,13,15,255"/>    <!-- FSK 6, FSK 12, FSK 16, FSK 18 (Table 12) -->
+         <parameter name="default_rating_threshold"   value="15"/>  <!-- 18 (Table 32) -->
+         <!-- PINs Parameters -->
+         <component name="pin_entry">
+            <parameter name="wrong_pin_count_window"  value="15"/>
+            <parameter name="wrong_pin_max_count"     value="3"/>       
+            <parameter name="pin_locking_period"      value="15"/>    <!-- minutes -->
+            <parameter name="virtual_keyboard"        value="no"/>    <!-- entered digits shall never be visible (INST-3963 mode 2) -->
+            <parameter name="digit_display_timeout"   value="0"/>     <!-- seconds -->
+         </component>
+         <component name="pin" instance="master">     <!-- (Table 27 MPIN) -->
+             <parameter name="protected_permissions"    value="master,buying"/>   
+             <parameter name="default_value"          value="0000"/>                   
+             <parameter name="user_modifiable"        value="yes"/>  <!-- modifiable after the first install -->
+             <parameter name="value_validity_rule"    value="4_digits"/>  <!-- can be 4 times the same digit -->
+         </component>
+         <component name="pin" instance="viewing">    <!-- Youth Portection PIN (Table 27 YPIN) -->
+             <parameter name="protected_permissions"    value="viewing"/>   
+             <parameter name="default_value"          value="none"/> <!-- shall be provided by the PS at first install -->                  
+             <parameter name="user_modifiable"        value="yes"/>  <!-- modifiable after the first install --> 
+             <parameter name="value_validity_rule"    value="4_digits_2_different"/>  <!-- cannot be 4 times the same digit -->
+         </component>
+         <component name="pin" instance="adult">      <!-- Adult PIN (Table 27 APIN) -->
+             <parameter name="protected_permissions"    value="adult"/>   
+             <parameter name="default_value"          value="none"/> <!-- shall be provided by the PS at first install -->                  
+             <parameter name="user_modifiable"        value="no"/>  
+             <parameter name="value_validity_rule"    value="4_digits_2_different"/>  <!-- cannot be 4 times the same digit -->
+         </component>
+       </component>
+
+      <!-- IRL - Ireland -->
+      <component name="parental_control" instance="IRL">
+         <!-- Common Metadata Acquisition Parameters (INST-3959 mode 1) -->
+         <parameter name="use_eit_and_schedule_merge" value="true"/>
+         <parameter name="wait_for_eit"               value="false"/> <!-- At zapping, use cached information waiting for first EITp actual -->
+         <parameter name="use_default_on_eit_timeout" value="false"/> <!-- Use cached information if available -->
+         <!-- Rating Acquisition Parameters -->
+         <parameter name="country_code"               value="IRL"/>
+         <parameter name="default_rating"             value="none"/>
+         <!-- Adult Flag Computation Parameters -->
+         <parameter name="adult_genres"               
+                    value="0.15,1.8,15.0,15.1,15.2,15.3,15.4,15.5,15.6,15.7,15.8,15.9,15.10,15.11,15.12,15.13,15.14,15.15"/>  <!-- (INST-3961) -->
+         <parameter name="default_adult_flag"         value="false"/>
+         <!-- Discriminators of Contents to be Controlled at Playback -->
+         <parameter name="linear_contents_scrambling_type_discriminator"   value="any"/>
+         <!-- Playback Locking Rule Parameters -->
+         <parameter name="checked_metadata"           value="adult_flag,rating"/>
+         <parameter name="operator_rating_threshold"  value="255@00:00,13@05:00,255@20:00"/> <!-- [05:00,20:01[:15 (INST-3956) --> 
+         <parameter name="rating_thresholds"          value="1,6,10,13,15,255"/> <!-- G, PG, 12, 15, 18 and unlimited (Table 12) -->
+         <parameter name="default_rating_threshold"   value="255"/>   <!-- unlimited (Table 32) -->
+          <!-- PINs Parameters -->
+         <component name="pin_entry">
+            <parameter name="wrong_pin_count_window"  value="15"/>    
+            <parameter name="wrong_pin_max_count"     value="3"/>     
+            <parameter name="pin_locking_period"      value="15"/>    <!-- minutes -->
+            <parameter name="virtual_keyboard"        value="yes"/>   <!-- (INST-3963 mode 1) -->
+            <parameter name="digit_display_timeout"   value="2"/>     <!-- seconds -->
+         </component>
+         <component name="pin" instance="master">     <!-- (Table 27 MPIN) -->
+             <parameter name="protected_permissions"    value="master,adult,viewing,buying"/>   
+             <parameter name="default_value"          value="0000"/>                   
+             <parameter name="user_modifiable"        value="yes"/>  <!-- modifiable after the first install -->
+             <parameter name="value_validity_rule"    value="4_digits"/>  <!-- can be 4 times the same digit -->
+        </component> 
+     </component>
+
+      <!-- XXX - Other countries (default) -->
+      <component name="parental_control" instance="XXX">
+         <!-- Common Metadata Acquisition Parameters (INST-3959 mode 1) -->
+         <parameter name="use_eit_and_schedule_merge" value="true"/>
+         <parameter name="wait_for_eit"               value="false"/> <!-- At zapping, use cached information waiting for first EITp actual -->
+         <parameter name="use_default_on_eit_timeout" value="false"/> <!-- Use cached information if available -->
+         <!-- Rating Acquisition Parameters -->
+         <parameter name="country_code"               value="XXX"/>
+         <parameter name="default_rating"             value="none"/>
+         <!-- Adult Flag Computation Parameters -->
+         <parameter name="adult_genres"               
+                    value="0.15,1.8,15.0,15.1,15.2,15.3,15.4,15.5,15.6,15.7,15.8,15.9,15.10,15.11,15.12,15.13,15.14,15.15"/>  <!-- (INST-3961) -->
+         <parameter name="default_adult_flag"         value="false"/>
+         <!-- Discriminators of Contents to be Controlled at Playback -->
+         <parameter name="linear_contents_scrambling_type_discriminator"   value="any"/>
+         <!-- Playback Locking Rule Parameters -->
+         <parameter name="checked_metadata"           value="adult_flag,rating"/>
+         <parameter name="operator_rating_threshold"  value="255"/>
+         <parameter name="rating_thresholds"
+                    value="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,255"/> <!-- from 4 to 18 and unlimited (DVB) -->
+         <parameter name="default_rating_threshold"   value="15"/>    <!-- 18 -->
+         <!-- PINs Parameters -->
+         <component name="pin_entry">
+            <parameter name="wrong_pin_count_window"  value="15"/>    
+            <parameter name="wrong_pin_max_count"     value="3"/>     
+            <parameter name="pin_locking_period"      value="15"/>    <!-- minutes -->
+            <parameter name="virtual_keyboard"        value="yes"/>   <!-- (INST-3963 mode 1) -->
+            <parameter name="digit_display_timeout"   value="2"/>     <!-- seconds -->
+         </component>
+         <component name="pin" instance="master">     <!-- (Table 27 MPIN) -->
+             <parameter name="protected_permissions"    value="master,adult,viewing,buying"/>   
+             <parameter name="default_value"          value="0000"/>                   
+             <parameter name="user_modifiable"        value="yes"/>  <!-- modifiable after the first install -->
+             <parameter name="value_validity_rule"    value="4_digits"/>  <!-- can be 4 times the same digit -->
+         </component>
+      </component>
+
+   </component>
+</nds>

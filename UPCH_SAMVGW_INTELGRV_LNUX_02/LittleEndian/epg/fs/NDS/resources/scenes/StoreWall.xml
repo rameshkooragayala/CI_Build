@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<u:scene xmlns:u="scene_desc">
+  <markers>
+	<marker name="00"	position="0.0"></marker>
+    <marker name="01"	position="1.0"></marker>
+	<marker name="02"	position="2.0"></marker>
+	<marker name="03"	position="3.0"></marker>
+	<marker name="04"	position="4.0"></marker>
+	<marker name="05"	position="5.0"></marker>
+    <marker name="06"	position="6.0"></marker>
+    <marker name="07"	position="7.0"></marker>
+	<marker name="08"	position="8.0"></marker>
+    <marker name="09"	position="9.0"></marker>
+    <marker name="10"	position="10.0"></marker>
+    <marker name="11"	position="11.0"></marker>
+	<marker name="12"	position="12.0"></marker>
+	<marker name="13"	position="13.0"></marker>
+	<marker name="14"	position="14.0"></marker>
+	<marker name="15"	position="15.0"></marker>
+	<marker name="16"	position="16.0"></marker>
+	<marker name="17"	position="17.0"></marker>
+	<marker name="18"	position="18.0"></marker>
+    <marker name="19"	position="19.0"></marker>
+    <marker name="20"	position="20.0"></marker>
+    <marker name="21"	position="21.0"></marker>
+	<marker name="22"	position="22.0"></marker>
+	<marker name="23"	position="23.0"></marker>
+	<marker name="24"	position="24.0"></marker>
+	<marker name="25"	position="25.0"></marker>
+	<marker name="26"	position="26.0"></marker>
+	<marker name="27"	position="27.0"></marker>
+	<marker name="28"	position="28.0"></marker>
+    <marker name="29"	position="29.0"></marker>
+	<marker name="30"	position="30.0"></marker>
+    <marker name="31"	position="31.0"></marker>
+	<marker name="32"	position="32.0"></marker>
+	<marker name="33"	position="33.0"></marker>
+	<marker name="34"	position="34.0"></marker>
+	<marker name="35"	position="35.0"></marker>
+	<marker name="36"	position="36.0"></marker>
+	<marker name="37"	position="37.0"></marker>
+	<marker name="38"	position="38.0"></marker>
+    <marker name="39"	position="39.0"></marker>
+	<marker name="40"	position="40.0"></marker>
+    <marker name="41"	position="41.0"></marker>
+	<marker name="42"	position="42.0"></marker>
+	<marker name="43"	position="43.0"></marker>
+	<marker name="44"	position="44.0"></marker>
+	<marker name="45"	position="45.0"></marker>
+	<marker name="46"	position="46.0"></marker>
+	<marker name="47"	position="47.0"></marker>
+	<marker name="48"	position="48.0"></marker>
+	<marker name="49"	position="49.0"></marker>
+	<marker name="50"	position="50.0"></marker>
+	<marker name="51"	position="51.0"></marker>
+	
+	
+	<marker name="31.2"		position="31.2"></marker>
+	<marker name="36.52"	position="36.52"></marker>
+	<marker name="41.2"		position="41.2"></marker>
+	<marker name="46.52"	position="46.52"></marker>
+	<marker name="47.8"		position="47.8"></marker>
+	<marker name="49.8"		position="49.8"></marker>
+
+
+ </markers>
+ 
+ <animations>
+     	
+     	<animation name="intro-p1-o"		begin_marker="00"       end_marker="01"		 start_pos_marker="00"  	speed="1" loop="false" 	reverse="false"></animation>
+ 		<animation name="intro-p1-b"    	begin_marker="12"       end_marker="13"		 start_pos_marker="12"  	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="outro-p1-o"   		begin_marker="14"       end_marker="15"      start_pos_marker="14"    	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="outro-p1-b"    	begin_marker="16"       end_marker="17"		 start_pos_marker="16"  	speed="1" loop="false" 	reverse="false"></animation>
+    	
+    	<animation name="intro-search-b"    begin_marker="20"       end_marker="21"		 start_pos_marker="20"  	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="outro-search-o"   	begin_marker="18"       end_marker="19"      start_pos_marker="18"    	speed="1" loop="false" 	reverse="false"></animation>
+   	
+   		<animation name="p1-p2-u"   		begin_marker="02"       end_marker="03"      start_pos_marker="02"    	speed="1" loop="false" 	reverse="false"></animation>
+   		
+    	<animation name="p1-search-d"    	begin_marker="04"       end_marker="05"		 start_pos_marker="04"  	speed="1" loop="false" 	reverse="false"></animation>  	
+    	<animation name="search-p1-u"   	begin_marker="06"       end_marker="07"      start_pos_marker="06"    	speed="1" loop="false" 	reverse="false"></animation>
+    	
+    	<animation name="p1-p2-nom-l"    		begin_marker="28"       end_marker="29"		 start_pos_marker="28"  	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="p1-p2-acc-l"    		begin_marker="30"       end_marker="31.2"	 start_pos_marker="30"  	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="p1-p2-lin-l"    		begin_marker="32"       end_marker="33"		 start_pos_marker="32"  	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="p1-p2-dec-l"    		begin_marker="34"       end_marker="36.52"	 start_pos_marker="34"  	speed="1" loop="false" 	reverse="false"></animation>
+
+    	<animation name="p1-p2-nom-r"    		begin_marker="38"       end_marker="39"		 start_pos_marker="38"  	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="p1-p2-acc-r"    		begin_marker="40"       end_marker="41.2"	 start_pos_marker="40"  	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="p1-p2-lin-r"    		begin_marker="42"       end_marker="43"		 start_pos_marker="42"  	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="p1-p2-dec-r"    		begin_marker="44"       end_marker="46.52"	 start_pos_marker="44"  	speed="1" loop="false" 	reverse="false"></animation>
+    	
+    	<animation name="p1-enb"    			begin_marker="47"       end_marker="48"	 	start_pos_marker="47"  	speed="1" loop="false" 	reverse="false"></animation>
+    	<animation name="p1-dsb"    		    begin_marker="49"       end_marker="50"	 	start_pos_marker="49"  	speed="1" loop="false" 	reverse="false"></animation>
+    	
+ </animations>	
+</u:scene>

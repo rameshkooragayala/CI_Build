@@ -1,0 +1,70 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF.IPC
+</name>
+</assembly>
+<members>
+<member name="M:IEX.ElementaryActions.EPG.SF.IPC.FutureRecordings.Navigate">
+	<summary>
+   Navigating To Planner
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.IPC.Mount.GetMountCommand(System.Boolean)">
+	<summary>
+   Gets The Mount Command And Adding Values Needed To Mount
+ </summary>
+	<param name="IsFormat">If True Adds FORMAT FORMAT_FLASH FOUR_K</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.IPC.Mount.WaitForStandbyPowerScreen">
+	<summary>
+   Waits For Standby Power Screen To Appear
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.IPC.Mount.HandleFirstScreens(System.Boolean)">
+	<summary>
+   Handles All The Screens Before LIVE/MENU Arrive
+ </summary>
+	<param name="_IsGw">If True Handles GW First Screens Else The Client</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.IPC.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.IPC.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.IPC.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.IPC.ArchiveRecordings.Navigate">
+	<summary>
+   Navigating To Archive Recording
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.IPC.ArchiveRecordings.isEmpty">
+	<summary>
+   Checks If Archive Has No Events
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.IPC.Utils.SendIR(System.String,System.Int32)">
+	<summary>
+   Sends IR Key
+ </summary>
+	<param name="IRKey">The Key To Send</param>
+	<param name="WaitAfterIR">Optional Parameter Default 2000 : Wait After Sending</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member>
+</members>
+</doc>

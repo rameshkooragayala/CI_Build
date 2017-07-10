@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	
+<contentTypes>
+
+	<contentType name="default"    level="AM1"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+    <contentType name="AMA"        level="AM1"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+    <contentType name="AMB"        level="AM1"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+    <contentType name="AMC"        level="AM2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+    <contentType name="AMD"        level="AM2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+    <contentType name="AME"        level="AM2"  stepRL="no"  stepUD="no"  stepOB="no"></contentType>
+
+</contentTypes>
+
+<animations>
+
+	<animation name="showcase-AMA-bg"     		                 map="AM1-AM1-bg" ></animation>
+	<animation name="showcase-AMA-nobg"    		                 map="AM1-AM1-nobg" ></animation>
+
+	<animation name="showcase-AMA-r"     		                 map="AM1-AM1-r" ></animation>
+	<animation name="showcase-AMA-l"     		                 map="AM1-AM1-l" ></animation>
+
+	<animation name="showcase-AMA-u"     		                 map="AM1-AM1-u" ></animation>
+	<animation name="showcase-AMA-d"     		                 map="AM1-AM1-d" ></animation>
+
+	<animation name="showcase-AMB-bg"     		                 map="AM1-AM1-bg" ></animation>
+	<animation name="showcase-AMB-nobg"    		                 map="AM1-AM1-nobg" ></animation>
+
+	<animation name="showcase-AMB-r"     		                 map="AM1-AM1-r" ></animation>
+	<animation name="showcase-AMB-l"     		                 map="AM1-AM1-l" ></animation>
+
+	<animation name="showcase-AMB-u"     		                 map="AM1-AM1-u" ></animation>
+	<animation name="showcase-AMB-d"     		                 map="AM1-AM1-d" ></animation>
+
+	<animation name="vertlist1-AMA-bg"     		                 map="AM1-AM1-bg" ></animation>
+	<animation name="vertlist1-AMA-nobg"   		                 map="AM1-AM1-nobg" ></animation>
+
+	<animation name="vertlist1-AMA-5-u"    		                 map="AM1-AM1-u" ></animation>
+	<animation name="vertlist1-AMA-5-d"    		                 map="AM1-AM1-d" ></animation>
+	<animation name="vertlist1-AMA-4-u"    		                 map="AM1-AM1-u" ></animation>
+	<animation name="vertlist1-AMA-4-d"    		                 map="AM1-AM1-d" ></animation>
+	<animation name="vertlist1-AMA-3-u"    		                 map="AM1-AM1-u" ></animation>
+	<animation name="vertlist1-AMA-3-d"    		                 map="AM1-AM1-d" ></animation>
+	<animation name="vertlist1-AMA-2-u"    		                 map="AM1-AM1-u" ></animation>
+	<animation name="vertlist1-AMA-2-d"    		                 map="AM1-AM1-d" ></animation>
+
+	<animation name="vertlist1-vertlist2-AMA-AMA-r"              map="AM1-AM1-r" ></animation>
+	<animation name="vertlist1-vertlist2-AMA-AMA-l"              map="AM1-AM1-l" ></animation>
+
+	<animation name="vertlist1-AMA-r"    		                 map="AM1-AM1-r" ></animation>
+	<animation name="vertlist1-AMA-l"    		                 map="AM1-AM1-l" ></animation>
+
+	<animation name="pin-AMA-bg"     		                     map="AM1-AM1-bg" ></animation>
+	<animation name="pin-AMA-nobg"    		                     map="AM1-AM1-nobg" ></animation>
+
+	<animation name="pin-purchase1-AMA-AMC-o"                    map="AM1-AM2-transi-o" ></animation>
+	<animation name="purchase1-pin-AMC-AMA-b"                    map="AM2-AM1-transi-b" ></animation>
+	<animation name="pin-purchase2-AMA-AMC-b"                    map="AM1-AM2-transi-b" ></animation>
+	<animation name="purchase2-pin-AMC-AMA-o"                    map="AM2-AM1-transi-o" ></animation>
+	<animation name="pin-purchase2-AMC-AMC-b"                    map="AM2-AM2-r" ></animation>
+	<animation name="purchase2-pin-AMC-AMC-o"                    map="AM2-AM2-r" ></animation>		
+	<animation name="purchase1-purchase2-AMC-AMC-o"              map="AM2-AM2-r" ></animation>
+
+	<animation name="purchase1-AMC-bg"     		                 map="AM2-AM2-bg" ></animation>
+	<animation name="purchase1-AMC-nobg"   		                 map="AM2-AM2-nobg" ></animation>
+
+	<animation name="info-AMC-bg"       		                 map="AM2-AM2-bg" ></animation>
+	<animation name="info-AMC-nobg"      		                 map="AM2-AM2-nobg" ></animation>
+
+	<animation name="info-AMC-u"                                 map="AM2-AM2-u" ></animation>
+	<animation name="info-AMC-d"                                 map="AM2-AM2-d" ></animation>
+
+	<animation name="showcase-info-AMA-AMC-o"                    map="AM1-AM2-transi-o" ></animation>
+	<animation name="showcase-info-AMB-AMC-o"                    map="AM1-AM2-transi-o" ></animation>
+	<animation name="showcase-info-AMD-AMC-o"                    map="AM2-AM2-r" ></animation>
+	<animation name="showcase-info-AME-AMC-o"                    map="AM2-AM2-r" ></animation>	
+
+	<animation name="info-showcase-AMC-AMA-b"                    map="AM2-AM1-transi-b" ></animation>
+	<animation name="info-showcase-AMC-AMB-b"                    map="AM2-AM1-transi-b" ></animation>
+	<animation name="info-showcase-AMC-AMD-b"                    map="AM2-AM2-r" ></animation>
+	<animation name="info-showcase-AMC-AME-b"                    map="AM2-AM2-r" ></animation>	
+
+	<animation name="showcase-purchase1-AMA-AMC-o"               map="AM1-AM2-transi-o" ></animation>
+	<animation name="showcase-purchase1-AMB-AMC-o"               map="AM1-AM2-transi-o" ></animation>
+	<animation name="showcase-purchase2-AMA-AMC-o"               map="AM1-AM2-transi-o" ></animation>
+	<animation name="showcase-purchase2-AMB-AMC-o"               map="AM1-AM2-transi-o" ></animation>	
+
+	<animation name="purchase1-showcase-AMC-AMA-b"               map="AM2-AM1-transi-b" ></animation>
+	<animation name="purchase1-showcase-AMC-AMB-b"               map="AM2-AM1-transi-b" ></animation>
+	<animation name="purchase2-showcase-AMC-AMA-b"               map="AM2-AM1-transi-b" ></animation>
+	<animation name="purchase2-showcase-AMC-AMB-b"               map="AM2-AM1-transi-b" ></animation>	
+
+	<animation name="vertlist1-info-AMA-AMC-o"                   map="AM1-AM2-transi-o" ></animation>
+	<animation name="info-vertlist1-AMC-AMA-b"                   map="AM2-AM1-transi-b" ></animation>
+
+	<animation name="showcase-pin-AMA-AMA-o"                     map="AM1-AM1-r" ></animation>
+	<animation name="showcase-pin-AMA-AMA-b"                     map="AM1-AM1-r" ></animation>	
+	<animation name="showcase-pin-AMB-AMA-o"                     map="AM1-AM1-r" ></animation>
+	<animation name="showcase-pin-AMB-AMA-b"                     map="AM1-AM1-r" ></animation>
+	<animation name="showcase-pin-AMD-AMA-o"                     map="AM2-AM1-transi-o" ></animation>
+	<animation name="showcase-pin-AME-AMA-o"                     map="AM2-AM1-transi-o" ></animation>			
+
+	<animation name="pin-showcase-AMA-AMA-b"                     map="AM1-AM1-r" ></animation>
+	<animation name="pin-showcase-AMA-AMA-o"                     map="AM1-AM1-r" ></animation>	
+	<animation name="pin-showcase-AMA-AMB-b"                     map="AM1-AM1-r" ></animation>
+	<animation name="pin-showcase-AMA-AMB-o"                     map="AM1-AM1-r" ></animation>
+	<animation name="pin-showcase-AMA-AMD-b"                     map="AM1-AM2-transi-b" ></animation>
+	<animation name="pin-showcase-AMA-AME-b"                     map="AM1-AM2-transi-b" ></animation>		
+
+	<animation name="showcase-vertlist1-AMA-AMA-o"               map="AM1-AM1-r" ></animation>
+	<animation name="showcase-vertlist1-AMB-AMA-o"               map="AM1-AM1-r" ></animation>
+
+	<animation name="vertlist1-showcase-AMA-AMA-b"               map="AM1-AM1-r" ></animation>
+	<animation name="vertlist1-showcase-AMA-AMB-b"               map="AM1-AM1-r" ></animation>
+
+	<animation name="showcase-showcase-AMA-AMD-d"                map="AM1-AM2-transi-o" ></animation>
+	<animation name="showcase-showcase-AMB-AMD-d"                map="AM1-AM2-transi-o" ></animation>
+	<animation name="showcase-showcase-AMD-AMA-u"                map="AM2-AM1-transi-b" ></animation>
+	<animation name="showcase-showcase-AMD-AMB-u"                map="AM2-AM1-transi-b" ></animation>
+
+	<animation name="showcase-AMD-bg"                            map="AM2-AM2-bg" ></animation>
+	<animation name="showcase-AMD-nobg"                          map="AM2-AM2-nobg" ></animation>
+
+	<animation name="showcase-AMD-r"                             map="AM2-AM2-r" ></animation>
+	<animation name="showcase-AMD-l"                             map="AM2-AM2-l" ></animation>
+
+	<animation name="showcase-showcase-AMD-AME-d"                map="AM2-AM2-d" ></animation>
+	<animation name="showcase-showcase-AME-AMD-u"                map="AM2-AM2-u" ></animation>
+
+	<animation name="showcase-AME-bg"                            map="AM2-AM2-bg" ></animation>
+	<animation name="showcase-AME-nobg"                          map="AM2-AM2-nobg" ></animation>
+
+	<animation name="terms-AMC-bg"                               map="AM2-AM2-bg" ></animation>
+	<animation name="terms-AMC-nobg"                             map="AM2-AM2-nobg" ></animation>
+
+	<animation name="terms-AMC-u"                                map="AM2-AM2-u" ></animation>
+	<animation name="terms-AMC-d"                                map="AM2-AM2-d" ></animation>
+
+	<animation name="pin-AMC-bg"                                 map="AM2-AM2-bg" ></animation>
+	<animation name="pin-AMC-nobg"                               map="AM2-AM2-nobg" ></animation>	
+
+	<animation name="showcase-terms-AMA-AMC-o"                   map="AM1-AM2-transi-o" ></animation>
+	<animation name="showcase-terms-AMB-AMC-o"                   map="AM1-AM2-transi-o" ></animation>
+	<animation name="terms-showcase-AMC-AMA-b"                   map="AM2-AM1-transi-b" ></animation>
+	<animation name="terms-showcase-AMC-AMB-b"                   map="AM2-AM1-transi-b" ></animation>
+
+	<animation name="pin-info-AMA-AMC-o"                         map="AM1-AM2-transi-o" ></animation>
+	<animation name="info-pin-AMC-AMA-b"                         map="AM2-AM1-transi-b" ></animation>
+
+	<animation name="pin-showcase-AMC-AMA-b"                     map="AM2-AM1-transi-b" ></animation>
+	<animation name="showcase-pin-AMA-AMC-o"                     map="AM1-AM2-transi-o" ></animation>
+	<animation name="pin-showcase-AMC-AMB-b"                     map="AM2-AM1-transi-b" ></animation>
+	<animation name="showcase-pin-AMB-AMC-o"                     map="AM1-AM2-transi-o" ></animation>
+	
+	<animation name="pin-pin-AMA-AMC-o"                          map="AM1-AM2-transi-o" ></animation>
+	<animation name="pin-pin-AMC-AMA-b"                          map="AM2-AM1-transi-b" ></animation>						
+
+</animations>
+
+</sceneConfig>

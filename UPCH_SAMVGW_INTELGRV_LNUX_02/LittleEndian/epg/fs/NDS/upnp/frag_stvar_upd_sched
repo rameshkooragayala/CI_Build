@@ -1,0 +1,4 @@
+    <stateVariable sendEvents="no">
+      <name>X_NDS_TYPE_TagValueList</name>
+      <dataType>string</dataType>
+    </stateVariable>

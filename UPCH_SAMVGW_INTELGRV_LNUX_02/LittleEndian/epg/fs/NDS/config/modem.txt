@@ -1,0 +1,122 @@
+/*
+Copyright (c) BSkyB Limited 2008
+
+P R O P R I E T A R Y & C O N F I D E N T I A L
+
+The copyright of this code and related documentation together with
+any other associated intellectual property rights are vested in
+BSkyB Limited and may not be used except in accordance with the terms
+of the licence that you have entered into with BSkyB Limited.
+Use of this material without an express licence from BSkyB Limited
+shall be an infringement of copyright and any other intellectual
+property rights that may be incorporated with this material.
+*/
+
+#***********************DESCRIPTION**************************************************
+#The configuration file is a text file which gives the AT commands 
+##for the corresponding modem command.
+##AT commands are generally preceded by keyword AT followed by the actual  
+##commands.Always the modem commands has to be translated to AT commands
+#before sending it modem as modem can execute only AT commands.
+#Here certain commands vary only in their last numric value.Hence to 
+#shorten the configuration file we have provided the field specifier
+#which vary according to the enumerated value of the corresponding
+#command defined in the file "config.h"
+#***********************************************************************************
+#
+#***********************************************************************************
+#Following are some of the basic AT command
+#***********************************************************************************
+ANS_INCOMING= A
+REEXECUTE_CMD= A/
+DIAL= ATD
+DIAL_MODIFIER_FHT= !
+DIAL_MODIFIER_PBC= ,
+DIAL_MODIFIER_RETTOCMD= ;
+DIAL_MODIFIER_WFS= @
+DIAL_MODIFIER_TVM= G
+DIAL_MODIFIER_RDL= L
+DIAL_MODIFIER_PULSE= P
+DIAL_MODIFIER_TONE= T
+DIAL_MODIFIER_WAIT= W
+ECHO_MODE= ATE%d
+HOOK_SWITCH= ATH%d
+IDENTIFICATION_CHECKSUM= ATI%d
+SPEAKER_VOLUME= ATL%d 
+SPEAKER_OPERATION= ATM%d
+RETURN_TO_DATAMODE= ATO%d
+RESPONCE_MODE= ATQ%d
+V23_REVARSAL= ATR
+SREG_READALL= ATS$
+SREG_READ= ATS%d?
+SREG_WRITE= ATS%d=
+RESULTCODE_TYPE= ATV%d
+CALL_PROGRESS_MONITOR= ATX%d
+LONG_SPACE_DISCONNECT= ATY%d
+HARD_RESET= ATZ
+EEPROM_READ= AT:E
+EEPROM_WRITE= AT:M
+INTERRUPT_READ= AT:I
+READ_QUICKCONNECT_DATA= AT:LP%d
+PRAM_WRITE= AT:P
+UREG_READ= AT:R%X
+UREG_WRITE= AT:U%X,
+DATA_COMPRESSION_REPORTING= AT+DR=
+DATA_COMPRESSION_FUNCV42= AT+DS=
+DATA_COMPRESSION_FUNCV44= AT+DS44=
+SYNC_ACCESSMODE= AT+ES=
+SYNC_ACCESSMODE_CTRLPT= AT+ESA=
+CLASS_ONEMODE= AT+FCLASS=
+CLASS_ONEREC_CARRIER= AT+FRM=
+CLASS_ONETRNS_CARRIER= AT+FTM=
+COUNTRY_SETTING_SET= AT+GCI=
+COUNTRY_SETTING_GET= AT+GCI?
+COUNTRY_SETTING_LIST= AT+GCI=?
+FLOW_CONTROL= AT+IFC=
+FLOW_CONTROL_THRESHOLD= AT+ITF=
+MODULATION_REPORT_CONTROL= AT+MR=
+MODULATION_SELECTION= AT+MS=
+CONTROL_ACTION= AT+PCW=
+CONTROL_PCM= AT+PIG=
+MOH_CONTROL= AT+PMH=
+MOH_CONTROL_HOOKFLASH= AT+PMHF=
+MOH_INITIATE= AT+PMHR=
+MOH_CONTROL_ACCESS= AT+PMHT
+V92_PHASE_CONTROL= AT+PQC=
+SELECT_STARTUP_PROCIDURE= AT+PSS=
+CALLERID_TYPE= AT+VCDT=
+CALLERID_ENABLE= AT+VCID=
+CALLERID_INFORMATION= AT+VCIDR?
+ESC_SEQ= +++
+#**********************************************************************
+# Following are some of the extended AT& commands that has been supported
+#**********************************************************************
+EXTENDED_EMPERCENT_SETTING= AT&$
+EXTENDED_ESCAPE_FIUNCTION= AT&D%d
+EXTENDED_LCRL= AT&G%d
+EXTENDED_SNHM= AT&H%d
+EXTENDED_JPD= AT&P%d
+EXTENDED_TESTMODE= AT&T%d
+EXTENDED_TELEPHONELINE_DETECT= AT&X%d
+EXTENDED_CAT= ATY2A
+EXTENDED_POWERDOWN= AT&Z
+#*************************************************************************
+#Following are some of the extended AT% commands
+#*************************************************************************
+EXTENDED_PERCENTAGE_SETTINGS= AT%$
+EXTENDED_REPORT_BLACKLIST= AT%B
+EXTENDED_DATACOMPRESSION= AT%C%d
+EXTENDED_ANSWERMODE= AT%O%d
+EXTENDED_ALSD= AT%V%d
+#************************************************************************
+# Following are some of the extended AT\ commands that has been supported
+#************************************************************************
+EXTENDED_SLASH_SETTINGS= AT\$
+EXTENDED_CHARACTOR_LENTH= AT\B%d
+EXTENDED_ASYNC_PROTOCOL= AT\N%d
+EXTENDED_PARITY_TYPE= AT\P%d
+EXTENDED_MODEM_FLOWCIONTROL= AT\Q%d
+EXTENDED_DTE_RATE= AT\T%d
+EXTENDED_SERALMODE_LOWPULSE= AT\U
+EXTENDED_CONNECT_MSGTYPE= AT\V%d
+

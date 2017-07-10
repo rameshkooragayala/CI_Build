@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sceneConfig>
+	<contentTypes>
+		<contentType name="default" level="xySearch" stepRL="400" stepUD="100" stepOB="800"></contentType>	
+	</contentTypes>
+	<animations>
+		
+	</animations>
+</sceneConfig>

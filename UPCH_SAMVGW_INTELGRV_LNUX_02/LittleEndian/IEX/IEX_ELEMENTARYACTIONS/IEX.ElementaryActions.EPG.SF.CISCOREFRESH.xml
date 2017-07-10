@@ -1,0 +1,62 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IEX.ElementaryActions.EPG.SF.CISCOREFRESH
+</name>
+</assembly>
+<members>
+<member name="M:IEX.ElementaryActions.EPG.SF.CISCOREFRESH.Mount.GetFlashCommand(System.Boolean,System.Boolean)">
+	<summary>
+   Gets The Flash Command From Environment.ini And Adds GW/Client Support If Needed.
+ </summary>
+	<param name="IsGw">If True It's GW</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CISCOREFRESH.Mount.GetMountCommand(System.Boolean)">
+	<summary>
+   Gets The Mount Command And Adding Values Needed To Mount 
+ </summary>
+	<param name="IsFormat">If True Adds FORMAT FORMAT_FLASH FOUR_K</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CISCOREFRESH.Mount.BurnImage(System.Boolean,System.Boolean)">
+	<summary>
+   Burns The Flash Image To The STB
+ </summary>
+	<param name="IsGw">If True It Is The GW Else The Client</param>
+	<remarks>
+ Possible Error Codes:
+ <para>328 - INIFailure</para>
+	</remarks>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CISCOREFRESH.Mount.WaitForPrompt(System.Boolean)">
+	<summary>
+    Waiting For Pormpt
+ </summary>
+	<remarks></remarks>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.CISCOREFRESH.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IEX.ElementaryActions.EPG.SF.CISCOREFRESH.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IEX.ElementaryActions.EPG.SF.CISCOREFRESH.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:IEX.ElementaryActions.EPG.SF.CISCOREFRESH.Utils.SendIR(System.String,System.Int32)">
+	<summary>
+   Sends IR Key
+ </summary>
+	<param name="IRKey">The Key To Send</param>
+	<param name="WaitAfterIR">Optional Parameter Default 2000 : Wait After Sending</param>
+	<remarks>
+ Possible Error Codes:
+ <para>304 - IRVerificationFailure</para>
+	</remarks>
+</member>
+</members>
+</doc>
